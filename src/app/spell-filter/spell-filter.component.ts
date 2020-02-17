@@ -14,6 +14,7 @@ export class SpellFilterComponent implements OnInit {
   types: string[] = ["Attack", "Utility"];
   traditions: string[] = [
     "Air",
+    "Alchemy",
     "Alteration",
     "Arcana",
     "Battle",
@@ -21,6 +22,8 @@ export class SpellFilterComponent implements OnInit {
     "Chaos",
     "Conjuration",
     "Curse *",
+    "Death *",
+    "Demonology *",
     "Destruction",
     "Divination",
     "Earth",
@@ -36,8 +39,11 @@ export class SpellFilterComponent implements OnInit {
     "Rune",
     "Shadow",
     "Song",
+    "Spiritualism",
     "Storm",
     "Technomancy",
+    "Telekinesis",
+    "Telepathy",
     "Teleportation",
     "Theurgy",
     "Time",
