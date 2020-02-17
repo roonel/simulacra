@@ -1,0 +1,32 @@
+<ng-container *ngFor="let item of dataList">
+  <ng-container [ngSwitch]="item.type">
+    <ng-container *ngSwitchCase="'text'">{{ item.value }}</ng-container>
+    <ng-container *ngSwitchCase="'break'"><br /></ng-container>
+    <ng-container *ngSwitchCase="'list'">
+      <ul>
+        <li *ngFor="let li of item.value">
+          {{ li }}
+        </li>
+      </ul>
+    </ng-container>
+    <ng-container *ngSwitchCase="'table'">
+      <table>
+        <thead>
+          <tr>
+            <th *ngFor="let header of item.value.columns">
+              {{ header }}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of item.value.rows">
+            <td *ngFor="let rowCol of row">
+              {{ rowCol }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </ng-container>
+    <ng-container *ngSwitchDefault>{{ item.value }}</ng-container>
+  </ng-container>
+</ng-container>

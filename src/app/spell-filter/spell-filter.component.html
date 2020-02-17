@@ -1,0 +1,44 @@
+<mat-form-field style="width: 100%;">
+  <input
+    matInput
+    [(ngModel)]="dataFilter.name"
+    placeholder="Search"
+    (keyup)="emitChange()"
+  />
+</mat-form-field>
+
+<label>Spell Level</label><br />
+<mat-checkbox
+  (change)="checkboxChanged(data, $event, 'levels')"
+  *ngFor="let data of levels"
+  class="checkbox"
+>
+  Level {{ data }}
+</mat-checkbox>
+<br />
+<label>Type</label><br />
+<mat-checkbox
+  (change)="checkboxChanged(data, $event, 'types')"
+  *ngFor="let data of types"
+  class="checkbox"
+>
+  {{ data }}
+</mat-checkbox>
+<br />
+<label>Tradition</label><br />
+<mat-checkbox
+  (change)="checkboxChanged(data, $event, 'traditions')"
+  *ngFor="let data of traditions"
+  class="checkbox"
+>
+  {{ data }}
+</mat-checkbox>
+<br />
+<label>Source</label><br />
+<mat-checkbox
+  (change)="checkboxChanged(data, $event, 'sources')"
+  *ngFor="let data of sources"
+  class="checkbox"
+>
+  {{ data }}
+</mat-checkbox>

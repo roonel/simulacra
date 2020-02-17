@@ -1,0 +1,29 @@
+<mat-card style="max-width: 500px; min-width: 500px;">
+  <mat-card-title>
+    {{ spell.name }}
+  </mat-card-title>
+  <mat-card-subtitle>
+    {{ spell.tradition }} {{ spell.type }}
+    {{ spell.level }}
+  </mat-card-subtitle>
+  <mat-card-content style="display: flex; flex-direction: column;">
+    <span *ngIf="spell.area"> <b>Area</b> {{ spell.area }} </span>
+    <span *ngIf="spell.duration"> <b>Duration</b> {{ spell.duration }} </span>
+    <span *ngIf="spell.target"> <b>Target</b> {{ spell.target }}</span>
+    <mat-divider [inset]="true"></mat-divider>
+    <app-processed-text [text]="spell.effect"></app-processed-text>
+    <span *ngIf="spell.twentyPlus">
+      <b>Attack roll 20+ </b> {{ spell.twentyPlus }}
+    </span>
+    <span *ngIf="spell.triggered">
+      <b>Triggered </b> {{ spell.triggered }}
+    </span>
+    <span *ngIf="spell.special"> <b>Special </b> {{ spell.special }} </span>
+    <span *ngIf="spell.permanence">
+      <b>Permanence </b> {{ spell.permanence }}
+    </span>
+  </mat-card-content>
+  <mat-card-footer>
+    {{ spell.source.book }} Page {{ spell.source.page }}
+  </mat-card-footer>
+</mat-card>

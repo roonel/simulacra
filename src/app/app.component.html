@@ -1,0 +1,19 @@
+<mat-toolbar [color]="'primary'">
+  <button mat-icon-button>
+    <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+  </button>
+  <span>My Application</span>
+</mat-toolbar>
+<mat-sidenav-container [hasBackdrop]="false">
+  <mat-sidenav #sidenav [mode]="'push'">
+    <mat-nav-list>
+      <a mat-list-item [routerLink]="'spells'"> Spells </a>
+      <a mat-list-item [routerLink]="'data-creator'"> Data Creator </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div style="min-height: 500px; padding: 10px">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
