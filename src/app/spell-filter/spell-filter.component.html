@@ -1,3 +1,49 @@
+<mat-accordion
+  ><mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Filters
+      </mat-panel-title>
+      <mat-panel-description> </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <label>Spell Level</label><br />
+    <mat-checkbox
+      (change)="checkboxChanged(data, $event, 'levels')"
+      *ngFor="let data of levels"
+      class="checkbox"
+    >
+      Level {{ data }}
+    </mat-checkbox>
+    <br />
+    <label>Type</label><br />
+    <mat-checkbox
+      (change)="checkboxChanged(data, $event, 'types')"
+      *ngFor="let data of types"
+      class="checkbox"
+    >
+      {{ data }}
+    </mat-checkbox>
+    <br />
+    <label>Tradition</label><br />
+    <mat-checkbox
+      (change)="checkboxChanged(data, $event, 'traditions')"
+      *ngFor="let data of traditions"
+      class="checkbox"
+    >
+      {{ data }}
+    </mat-checkbox>
+    <br />
+    <label>Source</label><br />
+    <mat-checkbox
+      (change)="checkboxChanged(data, $event, 'sources')"
+      *ngFor="let data of sources"
+      class="checkbox"
+    >
+      {{ data }}
+    </mat-checkbox>
+  </mat-expansion-panel>
+</mat-accordion>
 <mat-form-field style="width: 100%;">
   <input
     matInput
@@ -6,39 +52,3 @@
     (keyup)="emitChange()"
   />
 </mat-form-field>
-
-<label>Spell Level</label><br />
-<mat-checkbox
-  (change)="checkboxChanged(data, $event, 'levels')"
-  *ngFor="let data of levels"
-  class="checkbox"
->
-  Level {{ data }}
-</mat-checkbox>
-<br />
-<label>Type</label><br />
-<mat-checkbox
-  (change)="checkboxChanged(data, $event, 'types')"
-  *ngFor="let data of types"
-  class="checkbox"
->
-  {{ data }}
-</mat-checkbox>
-<br />
-<label>Tradition</label><br />
-<mat-checkbox
-  (change)="checkboxChanged(data, $event, 'traditions')"
-  *ngFor="let data of traditions"
-  class="checkbox"
->
-  {{ data }}
-</mat-checkbox>
-<br />
-<label>Source</label><br />
-<mat-checkbox
-  (change)="checkboxChanged(data, $event, 'sources')"
-  *ngFor="let data of sources"
-  class="checkbox"
->
-  {{ data }}
-</mat-checkbox>
