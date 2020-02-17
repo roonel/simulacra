@@ -21,7 +21,7 @@
         <tbody>
           <tr *ngFor="let row of item.value.rows">
             <td *ngFor="let rowCol of row">
-              {{ rowCol }}
+              <app-processed-text [text]="rowCol"></app-processed-text>
             </td>
           </tr>
         </tbody>

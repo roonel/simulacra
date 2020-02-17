@@ -12,8 +12,10 @@ export class ProcessedTextComponent implements OnInit {
   }
 
   @Input("text") set text(value: string) {
-    this._text = value;
-    this.processText();
+    if (value) {
+      this._text = value;
+      this.processText();
+    }
   }
 
   dataList = [];
@@ -24,6 +26,7 @@ export class ProcessedTextComponent implements OnInit {
 
   processText() {
     var isActionBlock = false;
+    var openings = 0;
     var currentText = "";
     var list = [];
     for (let i = 0; i < this._text.length; i++) {
@@ -38,11 +41,23 @@ export class ProcessedTextComponent implements OnInit {
           currentText += element;
         }
       } else {
-        if (element === ">" && this._text[i + 1] === ">") {
-          isActionBlock = false;
+        if (element === "<" && this._text[i + 1] === "<") {
+          openings++;
+          currentText += element;
+          currentText += element;
           i++;
-          list.push(this.determineAction(currentText));
-          currentText = "";
+        } else if (element === ">" && this._text[i + 1] === ">") {
+          if (openings > 0) {
+            openings--;
+            currentText += element;
+            currentText += element;
+            i++;
+          } else {
+            isActionBlock = false;
+            i++;
+            list.push(this.determineAction(currentText));
+            currentText = "";
+          }
         } else {
           currentText += element;
         }
@@ -62,6 +77,7 @@ export class ProcessedTextComponent implements OnInit {
     let actionData = actionText.substring(actionText.indexOf(":") + 1);
     if (actionType === "table" || actionType === "list") {
       var validJson = actionData.replace(/\'/g, '"');
+      console.log(validJson);
       return { type: actionType, value: JSON.parse(validJson) };
     } else {
       return { type: actionType, value: actionData };

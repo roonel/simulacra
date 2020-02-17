@@ -14,16 +14,17 @@ export class DataCreatorComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    this.spell = new Spell();
+    this.spell = {};
+    this.spell.source = {};
   }
 
   add(): void {
-    var newspell = new Spell();
+    var newspell: Spell = {};
     newspell.tradition = this.spell.tradition;
     newspell.source = this.spell.source;
     newspell.level = this.spell.level;
 
-    var newSource = new Source();
+    var newSource: Source = {};
     newSource.page = this.spell.source.page;
     newSource.book = this.spell.source.book;
 

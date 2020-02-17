@@ -44,7 +44,7 @@ export class SpellFilterComponent implements OnInit {
     "Transformation",
     "Water"
   ];
-  sources: string[] = ["SotDL"];
+  sources: string[] = ["SotDL", "DLC"];
   constructor() {}
 
   ngOnInit() {

@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import spellData from "../../assets/data/spells/sotdl.json";
+import sotdlSpellData from "../../assets/data/spells/sotdl.json";
+import dlcSpellData from "../../assets/data/spells/dlc.json";
 import { Spell } from "../data-model/spell.js";
 import { MatTableDataSource } from "@angular/material/table";
 import { SelectionModel } from "@angular/cdk/collections";
@@ -12,12 +13,15 @@ import { SpellFilter } from "../model/spell-filter";
 })
 export class SpellsComponent implements OnInit {
   columnsToDisplay: string[] = ["name", "tradition", "type", "level"];
-  dataSource = new MatTableDataSource<Spell>(spellData);
+  dataSource;
   selection: SelectionModel<Spell>;
 
   constructor() {}
 
   ngOnInit() {
+    var sotdl: Spell[] = sotdlSpellData;
+    var dlc: Spell[] = dlcSpellData;
+    this.dataSource = new MatTableDataSource<Spell>(sotdl.concat(dlc));
     this.dataSource.filterPredicate = (data: Spell, filterString: string) => {
       if (!filterString) {
         return true;
