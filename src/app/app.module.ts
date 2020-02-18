@@ -11,6 +11,8 @@ import { FormsModule } from "@angular/forms";
 import { SpellFilterComponent } from "./spell-filter/spell-filter.component";
 import { DataCreatorComponent } from "./data-creator/data-creator.component";
 import { ProcessedTextComponent } from './processed-text/processed-text.component';
+import { StringListInputComponent } from './string-list-input/string-list-input.component';
+import { AbilityListInputComponent } from './ability-list-input/ability-list-input.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ProcessedTextComponent } from './processed-text/processed-text.componen
     SpellDetailsComponent,
     SpellFilterComponent,
     DataCreatorComponent,
-    ProcessedTextComponent
+    ProcessedTextComponent,
+    StringListInputComponent,
+    AbilityListInputComponent
   ],
   imports: [
     BrowserModule,

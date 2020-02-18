@@ -1,0 +1,29 @@
+<div>
+  <label
+    >{{ title }}
+    <button mat-mini-fab (click)="add()">
+      <mat-icon>add</mat-icon>
+    </button>
+  </label>
+  <div *ngFor="let item of list; let i = index; trackBy: trackByFn">
+    <mat-form-field>
+      <input
+        matInput
+        [(ngModel)]="item.name"
+        [placeholder]="'Name'"
+        [name]="'title_name_' + i"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <textarea
+        cdkAutosizeMinRows="1"
+        cdkAutosizeMaxRows="5"
+        matInput
+        [(ngModel)]="item.value"
+        [placeholder]="'Value'"
+        [name]="'title_value_' + i"
+      ></textarea>
+      <mat-icon matSuffix (click)="remove(i)">remove</mat-icon>
+    </mat-form-field>
+  </div>
+</div>

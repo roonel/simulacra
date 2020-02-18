@@ -1,97 +1,358 @@
-<mat-form-field>
-  <input matInput [(ngModel)]="spell.name" placeholder="Name" />
-</mat-form-field>
-<mat-form-field>
-  <input matInput [(ngModel)]="spell.tradition" placeholder="Tradition" />
-</mat-form-field>
-<mat-form-field>
-  <input matInput type="number" [(ngModel)]="spell.level" placeholder="Level" />
-</mat-form-field>
-<mat-form-field>
-  <mat-label>Type</mat-label>
-  <mat-select [(value)]="spell.type">
-    <mat-option value="Attack">Attack</mat-option>
-    <mat-option value="Utility">Utility</mat-option>
-  </mat-select>
-</mat-form-field>
-<mat-form-field>
-  <input matInput [(ngModel)]="spell.requirement" placeholder="Requirement" />
-</mat-form-field>
-<mat-form-field>
-  <input matInput [(ngModel)]="spell.area" placeholder="Area" />
-</mat-form-field>
-<mat-form-field>
-  <input matInput [(ngModel)]="spell.duration" placeholder="Duration" />
-</mat-form-field>
-<mat-form-field>
-  <input matInput [(ngModel)]="spell.target" placeholder="Target" />
-</mat-form-field>
-<mat-form-field>
-  <mat-label>Effect</mat-label>
-  <textarea
-    matInput
-    [(ngModel)]="spell.effect"
-    cdkAutosizeMinRows="1"
-    cdkAutosizeMaxRows="5"
-  ></textarea>
-</mat-form-field>
-<mat-form-field>
-  <mat-label>Triggered</mat-label>
-  <textarea
-    matInput
-    [(ngModel)]="spell.triggered"
-    cdkAutosizeMinRows="1"
-    cdkAutosizeMaxRows="5"
-  ></textarea>
-</mat-form-field>
-<mat-form-field>
-  <mat-label>Twenty Plus</mat-label>
-  <textarea
-    matInput
-    [(ngModel)]="spell.twentyPlus"
-    cdkAutosizeMinRows="1"
-    cdkAutosizeMaxRows="5"
-  ></textarea>
-</mat-form-field>
-<mat-form-field>
-  <input matInput [(ngModel)]="spell.afterEffect" placeholder="After Effect" />
-</mat-form-field>
-<mat-checkbox [(ngModel)]="spell.concetration">
-  Concentration
-</mat-checkbox>
-<mat-checkbox [(ngModel)]="spell.incantationOnly">
-  Incantation Only
-</mat-checkbox>
-<mat-form-field>
-  <input matInput [(ngModel)]="spell.sacrifice" placeholder="Sacrifice" />
-</mat-form-field>
-<mat-form-field>
-  <input matInput [(ngModel)]="spell.special" placeholder="Special" />
-</mat-form-field>
-<mat-form-field>
-  <input matInput [(ngModel)]="spell.permanence" placeholder="Permancence" />
-</mat-form-field>
-<mat-form-field>
-  <input matInput [(ngModel)]="spell.source.book" placeholder="Book" />
-</mat-form-field>
-<mat-form-field>
-  <input
-    matInput
-    type="number"
-    [(ngModel)]="spell.source.page"
-    placeholder="Book (Page)"
-  />
-</mat-form-field>
+<mat-tab-group>
+  <mat-tab label="Spell">
+    <mat-card>
+      <mat-form-field>
+        <input matInput [(ngModel)]="spell.name" placeholder="Name" />
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="spell.tradition" placeholder="Tradition" />
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          type="number"
+          [(ngModel)]="spell.level"
+          placeholder="Level"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Type</mat-label>
+        <mat-select [(value)]="spell.type">
+          <mat-option value="Attack">Attack</mat-option>
+          <mat-option value="Utility">Utility</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          [(ngModel)]="spell.requirement"
+          placeholder="Requirement"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="spell.area" placeholder="Area" />
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="spell.duration" placeholder="Duration" />
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="spell.target" placeholder="Target" />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Effect</mat-label>
+        <textarea
+          matInput
+          [(ngModel)]="spell.effect"
+          cdkAutosizeMinRows="1"
+          cdkAutosizeMaxRows="5"
+        ></textarea>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Triggered</mat-label>
+        <textarea
+          matInput
+          [(ngModel)]="spell.triggered"
+          cdkAutosizeMinRows="1"
+          cdkAutosizeMaxRows="5"
+        ></textarea>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Twenty Plus</mat-label>
+        <textarea
+          matInput
+          [(ngModel)]="spell.twentyPlus"
+          cdkAutosizeMinRows="1"
+          cdkAutosizeMaxRows="5"
+        ></textarea>
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          [(ngModel)]="spell.afterEffect"
+          placeholder="After Effect"
+        />
+      </mat-form-field>
+      <mat-checkbox [(ngModel)]="spell.concetration">
+        Concentration
+      </mat-checkbox>
+      <mat-checkbox [(ngModel)]="spell.incantationOnly">
+        Incantation Only
+      </mat-checkbox>
+      <mat-form-field>
+        <input matInput [(ngModel)]="spell.sacrifice" placeholder="Sacrifice" />
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="spell.special" placeholder="Special" />
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          [(ngModel)]="spell.permanence"
+          placeholder="Permancence"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="spell.source.book" placeholder="Book" />
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          type="number"
+          [(ngModel)]="spell.source.page"
+          placeholder="Book (Page)"
+        />
+      </mat-form-field>
+    </mat-card>
 
-<button mat-flat-button (click)="add()">Add</button>
-<div>
-  <p *ngFor="let item of savedSpells; let i = index">
-    {{ item.name }} <span (click)="remove(i)"> X </span>
-  </p>
-</div>
+    <button mat-flat-button (click)="addSpell()">Add</button>
+    <div>
+      <p *ngFor="let item of savedSpells; let i = index">
+        {{ item.name }} <span (click)="removeSpell(i)"> X </span>
+      </p>
+    </div>
 
-<button mat-flat-button (click)="save()">Save</button>
+    <mat-card>
+      {{ savedSpells | json }}
+    </mat-card>
+  </mat-tab>
+  <mat-tab label="Creature">
+    <mat-accordion
+      ><mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Preprocessing
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-form-field>
+          <textarea
+            matInput
+            [(ngModel)]="preproc"
+            cdkAutosizeMinRows="5"
+            cdkAutosizeMaxRows="10"
+          ></textarea>
+        </mat-form-field>
+        <button mat-flat-button (click)="process()">Process</button>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <mat-card>
+      <mat-form-field>
+        <input matInput [(ngModel)]="creature.name" placeholder="Name" />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Difficulty</mat-label>
+        <mat-select [(value)]="creature.difficulty">
+          <mat-option value="1">1</mat-option>
+          <mat-option value="5">5</mat-option>
+          <mat-option value="10">10</mat-option>
+          <mat-option value="25">25</mat-option>
+          <mat-option value="50">50</mat-option>
+          <mat-option value="100">100</mat-option>
+          <mat-option value="250">250</mat-option>
+          <mat-option value="500">500</mat-option>
+          <mat-option value="1000">1000</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="creature.size" placeholder="Size" />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Frightening / Horrifying:</mat-label>
+        <mat-select [(value)]="creature.frightening">
+          <mat-option value=""></mat-option>
+          <mat-option value="Frightening">Frightening</mat-option>
+          <mat-option value="Horrifying">Horrifying</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          [(ngModel)]="creature.descriptor"
+          placeholder="Descriptor"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          type="number"
+          [(ngModel)]="creature.perception"
+          placeholder="Perception"
+        />
+      </mat-form-field>
 
-<mat-card>
-  {{ savedSpells | json }}
-</mat-card>
+      <mat-form-field>
+        <input
+          matInput
+          [(ngModel)]="creature.specialSenses"
+          placeholder="Special Senses"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          type="number"
+          [(ngModel)]="creature.defense"
+          placeholder="Defense"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="creature.armor" placeholder="Armor" />
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          type="number"
+          [(ngModel)]="creature.health"
+          placeholder="Health"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          type="number"
+          [(ngModel)]="creature.strength"
+          placeholder="Strength"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          type="number"
+          [(ngModel)]="creature.agility"
+          placeholder="Agility"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          type="number"
+          [(ngModel)]="creature.intellect"
+          placeholder="Intellect"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          type="number"
+          [(ngModel)]="creature.will"
+          placeholder="Will"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          type="number"
+          [(ngModel)]="creature.speed"
+          placeholder="Speed"
+        />
+      </mat-form-field>
+
+      <mat-form-field>
+        <input
+          matInput
+          [(ngModel)]="creature.specialMovement"
+          placeholder="Special Movement"
+        />
+      </mat-form-field>
+
+      <mat-form-field>
+        <input
+          matInput
+          [(ngModel)]="creature.immunity"
+          placeholder="Immunity"
+        />
+      </mat-form-field>
+
+      <app-ability-list-input
+        [(list)]="creature.defensiveTraits"
+        [title]="'Defensive Traits'"
+      >
+      </app-ability-list-input>
+
+      <app-string-list-input
+        [(list)]="creature.vulnerabilities"
+        [title]="'Vulnerabilities'"
+      ></app-string-list-input>
+
+      <app-ability-list-input
+        [(list)]="creature.traits"
+        [title]="'Other Traits'"
+      >
+      </app-ability-list-input>
+
+      <mat-form-field>
+        <input
+          matInput
+          type="number"
+          [(ngModel)]="creature.insanity"
+          placeholder="Insanity"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          type="number"
+          [(ngModel)]="creature.corruption"
+          placeholder="Corruption"
+        />
+      </mat-form-field>
+
+      <app-ability-list-input [(list)]="creature.attacks" [title]="'Attacks'">
+      </app-ability-list-input>
+      <app-ability-list-input
+        [(list)]="creature.specialAttacks"
+        [title]="'Special Attacks'"
+      >
+      </app-ability-list-input>
+
+      <mat-form-field>
+        <input
+          matInput
+          type="number"
+          [(ngModel)]="creature.power"
+          placeholder="Power"
+        />
+      </mat-form-field>
+
+      <app-string-list-input
+        [(list)]="creature.spells"
+        [title]="'Spells'"
+      ></app-string-list-input>
+
+      <app-ability-list-input
+        [(list)]="creature.endOfRound"
+        [title]="'End of Round'"
+      >
+      </app-ability-list-input>
+
+      <mat-form-field>
+        <mat-label>Description</mat-label>
+        <textarea
+          matInput
+          [(ngModel)]="creature.description"
+          cdkAutosizeMinRows="1"
+          cdkAutosizeMaxRows="5"
+        ></textarea>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="creature.source.book" placeholder="Book" />
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          type="number"
+          [(ngModel)]="creature.source.page"
+          placeholder="Book (Page)"
+        />
+      </mat-form-field>
+    </mat-card>
+    <button mat-flat-button (click)="addCreature()">Add</button>
+    <div>
+      <p *ngFor="let item of savedCreatures; let i = index">
+        {{ item.name }} <span (click)="removeCreature(i)"> X </span>
+      </p>
+    </div>
+    <mat-card>
+      {{ savedCreatures | json }}
+    </mat-card>
+  </mat-tab>
+</mat-tab-group>
