@@ -27,10 +27,10 @@ export class ProcessedTextComponent implements OnInit {
   }
 
   processText() {
-    var isActionBlock = false;
-    var openings = 0;
-    var currentText = '';
-    var list = [];
+    let isActionBlock = false;
+    let openings = 0;
+    let currentText = '';
+    const list = [];
     for (let i = 0; i < this._text.length; i++) {
       const element = this._text[i];
       if (!isActionBlock) {
@@ -75,11 +75,10 @@ export class ProcessedTextComponent implements OnInit {
     if (actionText === 'br') {
       return {type: 'break'};
     }
-    let actionType = actionText.substring(0, actionText.indexOf(':'));
-    let actionData = actionText.substring(actionText.indexOf(':') + 1);
+    const actionType = actionText.substring(0, actionText.indexOf(':'));
+    const actionData = actionText.substring(actionText.indexOf(':') + 1);
     if (actionType === 'table' || actionType === 'list') {
-      var validJson = actionData.replace(/\'/g, '"');
-      console.log(validJson);
+      const validJson = actionData.replace(/\'/g, '"');
       return {type: actionType, value: JSON.parse(validJson)};
     } else {
       return {type: actionType, value: actionData};
