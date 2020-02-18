@@ -1,0 +1,24 @@
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Filters
+      </mat-panel-title>
+      <mat-panel-description></mat-panel-description>
+    </mat-expansion-panel-header>
+    <label>Source</label><br/>
+    <mat-checkbox
+      (change)="checkboxChanged(data, $event, 'sources')"
+      *ngFor="let data of sources"
+      class="checkbox">
+      {{ data }}
+    </mat-checkbox>
+  </mat-expansion-panel>
+</mat-accordion>
+<mat-form-field style="width: 100%;">
+  <input
+    matInput
+    [(ngModel)]="dataFilter.name"
+    placeholder="Search"
+    (keyup)="emitChange()"/>
+</mat-form-field>

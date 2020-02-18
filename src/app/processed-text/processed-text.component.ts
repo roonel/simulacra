@@ -1,9 +1,9 @@
-import { Component, OnInit, Input } from "@angular/core";
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
-  selector: "app-processed-text",
-  templateUrl: "./processed-text.component.html",
-  styleUrls: ["./processed-text.component.css"]
+  selector: 'app-processed-text',
+  templateUrl: './processed-text.component.html',
+  styleUrls: ['./processed-text.component.css']
 })
 export class ProcessedTextComponent implements OnInit {
   private _text: string;
@@ -11,7 +11,7 @@ export class ProcessedTextComponent implements OnInit {
     return this._text;
   }
 
-  @Input("text") set text(value: string) {
+  @Input('text') set text(value: string) {
     if (value) {
       this._text = value;
       this.processText();
@@ -20,33 +20,35 @@ export class ProcessedTextComponent implements OnInit {
 
   dataList = [];
 
-  constructor() {}
+  constructor() {
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
   processText() {
     var isActionBlock = false;
     var openings = 0;
-    var currentText = "";
+    var currentText = '';
     var list = [];
     for (let i = 0; i < this._text.length; i++) {
       const element = this._text[i];
       if (!isActionBlock) {
-        if (element === "<" && this._text[i + 1] === "<") {
+        if (element === '<' && this._text[i + 1] === '<') {
           isActionBlock = true;
           i++;
-          list.push({ type: "text", value: currentText });
-          currentText = "";
+          list.push({type: 'text', value: currentText});
+          currentText = '';
         } else {
           currentText += element;
         }
       } else {
-        if (element === "<" && this._text[i + 1] === "<") {
+        if (element === '<' && this._text[i + 1] === '<') {
           openings++;
           currentText += element;
           currentText += element;
           i++;
-        } else if (element === ">" && this._text[i + 1] === ">") {
+        } else if (element === '>' && this._text[i + 1] === '>') {
           if (openings > 0) {
             openings--;
             currentText += element;
@@ -56,7 +58,7 @@ export class ProcessedTextComponent implements OnInit {
             isActionBlock = false;
             i++;
             list.push(this.determineAction(currentText));
-            currentText = "";
+            currentText = '';
           }
         } else {
           currentText += element;
@@ -64,23 +66,23 @@ export class ProcessedTextComponent implements OnInit {
       }
     }
     if (currentText.length > 0) {
-      list.push({ type: "text", value: currentText });
+      list.push({type: 'text', value: currentText});
     }
     this.dataList = list;
   }
 
   determineAction(actionText: string) {
-    if (actionText === "br") {
-      return { type: "break" };
+    if (actionText === 'br') {
+      return {type: 'break'};
     }
-    let actionType = actionText.substring(0, actionText.indexOf(":"));
-    let actionData = actionText.substring(actionText.indexOf(":") + 1);
-    if (actionType === "table" || actionType === "list") {
+    let actionType = actionText.substring(0, actionText.indexOf(':'));
+    let actionData = actionText.substring(actionText.indexOf(':') + 1);
+    if (actionType === 'table' || actionType === 'list') {
       var validJson = actionData.replace(/\'/g, '"');
       console.log(validJson);
-      return { type: actionType, value: JSON.parse(validJson) };
+      return {type: actionType, value: JSON.parse(validJson)};
     } else {
-      return { type: actionType, value: actionData };
+      return {type: actionType, value: actionData};
     }
   }
 }

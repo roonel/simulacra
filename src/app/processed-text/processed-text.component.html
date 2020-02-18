@@ -1,7 +1,7 @@
 <ng-container *ngFor="let item of dataList">
   <ng-container [ngSwitch]="item.type">
     <ng-container *ngSwitchCase="'text'">{{ item.value }}</ng-container>
-    <ng-container *ngSwitchCase="'break'"><br /></ng-container>
+    <ng-container *ngSwitchCase="'break'"><br/></ng-container>
     <ng-container *ngSwitchCase="'list'">
       <ul>
         <li *ngFor="let li of item.value">
@@ -12,18 +12,18 @@
     <ng-container *ngSwitchCase="'table'">
       <table>
         <thead>
-          <tr>
-            <th *ngFor="let header of item.value.columns">
-              {{ header }}
-            </th>
-          </tr>
+        <tr>
+          <th *ngFor="let header of item.value.columns">
+            {{ header }}
+          </th>
+        </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let row of item.value.rows">
-            <td *ngFor="let rowCol of row">
-              <app-processed-text [text]="rowCol"></app-processed-text>
-            </td>
-          </tr>
+        <tr *ngFor="let row of item.value.rows">
+          <td *ngFor="let rowCol of row">
+            <app-processed-text [text]="rowCol"></app-processed-text>
+          </td>
+        </tr>
         </tbody>
       </table>
     </ng-container>

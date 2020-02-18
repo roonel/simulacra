@@ -1,4 +1,4 @@
-import { Source } from "./source";
+import {Source} from './source';
 
 export interface Spell {
   name?: string;
@@ -14,7 +14,7 @@ export interface Spell {
   triggered?: string;
   afterEffect?: string;
   sacrifice?: string;
-  concetration?: boolean;
+  concentration?: boolean;
   special?: string;
   permanence?: string;
   incantationOnly?: boolean;

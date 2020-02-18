@@ -1,0 +1,83 @@
+<mat-card>
+  <mat-card-title>
+    {{ creature.name }} {{creature.difficulty}}
+  </mat-card-title>
+  <mat-card-subtitle>
+    Size {{creature.size}} {{creature.descriptor}}
+  </mat-card-subtitle>
+  <mat-card-content style="display: flex; flex-direction: column;">
+    <mat-tab-group>
+      <mat-tab label="Stats">
+        <div>
+          <b>Perception</b> {{toStat(creature.perception)}} <span
+          *ngIf="creature.specialSenses">; {{creature.specialSenses}}</span>
+        </div>
+        <div>
+          <b>Defense</b> {{creature.defense}}<span *ngIf="creature.armor"> ({{creature.armor}})</span>;
+          <b>Health</b> {{creature.health}}; <b>Insanity</b> {{creature.insanity != null ? creature.insanity : '—'}}
+          <b>Corruption</b> {{creature.corruption != null ? creature.corruption : '—'}}
+        </div>
+        <div>
+          <b>Strength</b> {{toStat(creature.strength)}}, <b>Agility</b> {{toStat(creature.agility)}},
+          <b>Intellect</b> {{toStat(creature.intellect)}}, <b>Will</b> {{toStat(creature.will)}}
+        </div>
+        <div>
+          <b>Speed</b> {{toStat(creature.speed)}}<span
+          *ngIf="creature.specialMovement">; {{creature.specialMovement}}</span>
+        </div>
+        <span *ngIf="creature.immunity">
+          <b>Immune</b> {{creature.immunity}}
+        </span>
+        <span *ngIf="creature.traits">
+          <div *ngFor="let trait of creature.traits">
+            <b>{{trait.name}} </b>
+            <app-processed-text [text]="trait.effect"></app-processed-text>
+          </div>
+        </span>
+        <mat-divider [inset]="true"></mat-divider>
+        <div *ngIf="creature.attacks">
+          <h2>Attack Options</h2>
+          <div *ngFor="let attack of creature.attacks">
+            <b>{{attack.name}} </b>
+            <app-processed-text [text]="attack.effect"></app-processed-text>
+          </div>
+        </div>
+        <div *ngIf="creature.specialAttacks">
+          <h2>Special Attacks</h2>
+          <div *ngFor="let attack of creature.specialAttacks">
+            <b>{{attack.name}} </b>
+            <app-processed-text [text]="attack.effect"></app-processed-text>
+          </div>
+        </div>
+        <div *ngIf="creature.specialActions">
+          <h2>Special Actions</h2>
+          <div *ngFor="let attack of creature.specialActions">
+            <b>{{attack.name}} </b>
+            <app-processed-text [text]="attack.effect"></app-processed-text>
+          </div>
+        </div>
+        <div *ngIf="creature.magic">
+          <h2>Magic</h2>
+          <b>Power</b> {{creature.magic.power}}
+          <div *ngFor="let trad of creature.magic.traditions">
+            <b>{{trad.tradition}} </b> <span *ngFor="let spell of trad.spells">{{spell}}</span>
+          </div>
+        </div>
+        <div *ngIf="creature.endOfRound">
+          <h2>End of Round</h2>
+          <div *ngFor="let attack of creature.endOfRound">
+            <b>{{attack.name}} </b>
+            <app-processed-text [text]="attack.effect"></app-processed-text>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Lore">
+        <app-processed-text [text]="creature.description"></app-processed-text>
+      </mat-tab>
+    </mat-tab-group>
+
+  </mat-card-content>
+  <mat-card-footer>
+    {{ creature.source.book }} Page {{ creature.source.page }}
+  </mat-card-footer>
+</mat-card>

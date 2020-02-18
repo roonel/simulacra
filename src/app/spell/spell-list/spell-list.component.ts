@@ -1,26 +1,27 @@
-import { Component, OnInit } from "@angular/core";
-import sotdlSpellData from "../../assets/data/spells/sotdl.json";
-import dlcSpellData from "../../assets/data/spells/dlc.json";
-import { Spell } from "../data-model/spell.js";
-import { MatTableDataSource } from "@angular/material/table";
-import { SelectionModel } from "@angular/cdk/collections";
-import { SpellFilter } from "../model/spell-filter";
+import {Component, OnInit} from '@angular/core';
+import sotdlSpellData from '../../../assets/data/spells/sotdl.json';
+import dlcSpellData from '../../../assets/data/spells/dlc.json';
+import {Spell} from '../../data-model/spell';
+import {MatTableDataSource} from '@angular/material/table';
+import {SelectionModel} from '@angular/cdk/collections';
+import {SpellFilter} from '../../model/spell-filter';
 
 @Component({
-  selector: "app-spells",
-  templateUrl: "./spells.component.html",
-  styleUrls: ["./spells.component.css"]
+  selector: 'app-spell-list',
+  templateUrl: './spell-list.component.html',
+  styleUrls: ['./spell-list.component.css']
 })
-export class SpellsComponent implements OnInit {
-  columnsToDisplay: string[] = ["name", "tradition", "type", "level"];
+export class SpellListComponent implements OnInit {
+  columnsToDisplay: string[] = ['name', 'tradition', 'type', 'level'];
   dataSource;
   selection: SelectionModel<Spell>;
 
-  constructor() {}
+  constructor() {
+  }
 
   ngOnInit() {
-    var sotdl: Spell[] = sotdlSpellData;
-    var dlc: Spell[] = dlcSpellData;
+    const sotdl: Spell[] = sotdlSpellData;
+    const dlc: Spell[] = dlcSpellData;
     this.dataSource = new MatTableDataSource<Spell>(sotdl.concat(dlc));
     this.dataSource.filterPredicate = (data: Spell, filterString: string) => {
       if (!filterString) {

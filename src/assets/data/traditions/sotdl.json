@@ -1,0 +1,218 @@
+[
+  {
+    "name": "Air",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Alchemy",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Alteration",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Arcana",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Battle",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Celestial",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Chaos",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Conjuration",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Curse",
+    "attribute": "",
+    "dark": true,
+    "description": ""
+  },
+  {
+    "name": "Death",
+    "attribute": "",
+    "dark": true,
+    "description": ""
+  },
+  {
+    "name": "Demonology",
+    "attribute": "",
+    "dark": true,
+    "description": ""
+  },
+  {
+    "name": "Destruction",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Divination",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Earth",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Enchantment",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Fire",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Forbidden",
+    "attribute": "",
+    "dark": true,
+    "description": ""
+  },
+  {
+    "name": "Illusion",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Life",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Nature",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Necromancy",
+    "attribute": "",
+    "dark": true,
+    "description": ""
+  },
+  {
+    "name": "Primal",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Protection",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Rune",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Shadow",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Song",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Spiritualism",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Storm",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Technomancy",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Telekinesis",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Telepathy",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Teleportation",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Theurgy",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Time",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Transformation",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  },
+  {
+    "name": "Water",
+    "attribute": "",
+    "dark": false,
+    "description": ""
+  }
+]

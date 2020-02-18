@@ -1,24 +1,27 @@
-import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
-  selector: "app-string-list-input",
-  templateUrl: "./string-list-input.component.html",
-  styleUrls: ["./string-list-input.component.css"]
+  selector: 'app-string-list-input',
+  templateUrl: './string-list-input.component.html',
+  styleUrls: ['./string-list-input.component.css']
 })
 export class StringListInputComponent implements OnInit {
-  constructor() {}
+  constructor() {
+  }
+
   @Input() list: string[];
   @Output() listChange = new EventEmitter<string[]>();
   @Input() title: string;
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
   add() {
     if (!this.list) {
       this.list = [];
       this.listChange.emit(this.list);
     }
-    this.list.push("");
+    this.list.push('');
   }
 
   remove(i: number) {

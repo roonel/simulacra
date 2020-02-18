@@ -1,6 +1,6 @@
 <div>
   <label
-    >{{ title }}
+  >{{ title }}
     <button mat-mini-fab (click)="add()">
       <mat-icon>add</mat-icon>
     </button>
@@ -11,7 +11,7 @@
         matInput
         [(ngModel)]="item.name"
         [placeholder]="'Name'"
-        [name]="'title_name_' + i"
+        [name]="title + '_name_' + i"
       />
     </mat-form-field>
     <mat-form-field>
@@ -19,9 +19,9 @@
         cdkAutosizeMinRows="1"
         cdkAutosizeMaxRows="5"
         matInput
-        [(ngModel)]="item.value"
-        [placeholder]="'Value'"
-        [name]="'title_value_' + i"
+        [(ngModel)]="item.effect"
+        [placeholder]="'effect'"
+        [name]="title + '_effect_' + i"
       ></textarea>
       <mat-icon matSuffix (click)="remove(i)">remove</mat-icon>
     </mat-form-field>

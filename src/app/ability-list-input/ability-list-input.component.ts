@@ -1,17 +1,18 @@
-import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
-import { Ability } from "../data-model/ability";
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Ability} from '../data-model/ability';
 
 @Component({
-  selector: "app-ability-list-input",
-  templateUrl: "./ability-list-input.component.html",
-  styleUrls: ["./ability-list-input.component.css"]
+  selector: 'app-ability-list-input',
+  templateUrl: './ability-list-input.component.html',
+  styleUrls: ['./ability-list-input.component.css']
 })
 export class AbilityListInputComponent implements OnInit {
   @Input() list: Ability[];
   @Output() listChange = new EventEmitter<Ability[]>();
   @Input() title: string;
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
   add() {
     if (!this.list) {

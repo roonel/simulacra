@@ -2,10 +2,10 @@
   <mat-tab label="Spell">
     <mat-card>
       <mat-form-field>
-        <input matInput [(ngModel)]="spell.name" placeholder="Name" />
+        <input matInput [(ngModel)]="spell.name" placeholder="Name"/>
       </mat-form-field>
       <mat-form-field>
-        <input matInput [(ngModel)]="spell.tradition" placeholder="Tradition" />
+        <input matInput [(ngModel)]="spell.tradition" placeholder="Tradition"/>
       </mat-form-field>
       <mat-form-field>
         <input
@@ -30,13 +30,13 @@
         />
       </mat-form-field>
       <mat-form-field>
-        <input matInput [(ngModel)]="spell.area" placeholder="Area" />
+        <input matInput [(ngModel)]="spell.area" placeholder="Area"/>
       </mat-form-field>
       <mat-form-field>
-        <input matInput [(ngModel)]="spell.duration" placeholder="Duration" />
+        <input matInput [(ngModel)]="spell.duration" placeholder="Duration"/>
       </mat-form-field>
       <mat-form-field>
-        <input matInput [(ngModel)]="spell.target" placeholder="Target" />
+        <input matInput [(ngModel)]="spell.target" placeholder="Target"/>
       </mat-form-field>
       <mat-form-field>
         <mat-label>Effect</mat-label>
@@ -72,17 +72,17 @@
           placeholder="After Effect"
         />
       </mat-form-field>
-      <mat-checkbox [(ngModel)]="spell.concetration">
+      <mat-checkbox [(ngModel)]="spell.concentration">
         Concentration
       </mat-checkbox>
       <mat-checkbox [(ngModel)]="spell.incantationOnly">
         Incantation Only
       </mat-checkbox>
       <mat-form-field>
-        <input matInput [(ngModel)]="spell.sacrifice" placeholder="Sacrifice" />
+        <input matInput [(ngModel)]="spell.sacrifice" placeholder="Sacrifice"/>
       </mat-form-field>
       <mat-form-field>
-        <input matInput [(ngModel)]="spell.special" placeholder="Special" />
+        <input matInput [(ngModel)]="spell.special" placeholder="Special"/>
       </mat-form-field>
       <mat-form-field>
         <input
@@ -92,7 +92,7 @@
         />
       </mat-form-field>
       <mat-form-field>
-        <input matInput [(ngModel)]="spell.source.book" placeholder="Book" />
+        <input matInput [(ngModel)]="spell.source.book" placeholder="Book"/>
       </mat-form-field>
       <mat-form-field>
         <input
@@ -117,7 +117,8 @@
   </mat-tab>
   <mat-tab label="Creature">
     <mat-accordion
-      ><mat-expansion-panel>
+    >
+      <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
             Preprocessing
@@ -136,24 +137,24 @@
     </mat-accordion>
     <mat-card>
       <mat-form-field>
-        <input matInput [(ngModel)]="creature.name" placeholder="Name" />
+        <input matInput [(ngModel)]="creature.name" placeholder="Name"/>
       </mat-form-field>
       <mat-form-field>
         <mat-label>Difficulty</mat-label>
         <mat-select [(value)]="creature.difficulty">
-          <mat-option value="1">1</mat-option>
-          <mat-option value="5">5</mat-option>
-          <mat-option value="10">10</mat-option>
-          <mat-option value="25">25</mat-option>
-          <mat-option value="50">50</mat-option>
-          <mat-option value="100">100</mat-option>
-          <mat-option value="250">250</mat-option>
-          <mat-option value="500">500</mat-option>
-          <mat-option value="1000">1000</mat-option>
+          <mat-option [value]="1">1</mat-option>
+          <mat-option [value]="5">5</mat-option>
+          <mat-option [value]="10">10</mat-option>
+          <mat-option [value]="25">25</mat-option>
+          <mat-option [value]="50">50</mat-option>
+          <mat-option [value]="100">100</mat-option>
+          <mat-option [value]="250">250</mat-option>
+          <mat-option [value]="500">500</mat-option>
+          <mat-option [value]="1000">1000</mat-option>
         </mat-select>
       </mat-form-field>
       <mat-form-field>
-        <input matInput [(ngModel)]="creature.size" placeholder="Size" />
+        <input matInput [(ngModel)]="creature.size" placeholder="Size"/>
       </mat-form-field>
       <mat-form-field>
         <mat-label>Frightening / Horrifying:</mat-label>
@@ -195,7 +196,7 @@
         />
       </mat-form-field>
       <mat-form-field>
-        <input matInput [(ngModel)]="creature.armor" placeholder="Armor" />
+        <input matInput [(ngModel)]="creature.armor" placeholder="Armor"/>
       </mat-form-field>
       <mat-form-field>
         <input
@@ -245,6 +246,22 @@
           placeholder="Speed"
         />
       </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          type="number"
+          [(ngModel)]="creature.insanity"
+          placeholder="Insanity"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          type="number"
+          [(ngModel)]="creature.corruption"
+          placeholder="Corruption"
+        />
+      </mat-form-field>
 
       <mat-form-field>
         <input
@@ -263,38 +280,10 @@
       </mat-form-field>
 
       <app-ability-list-input
-        [(list)]="creature.defensiveTraits"
-        [title]="'Defensive Traits'"
-      >
-      </app-ability-list-input>
-
-      <app-string-list-input
-        [(list)]="creature.vulnerabilities"
-        [title]="'Vulnerabilities'"
-      ></app-string-list-input>
-
-      <app-ability-list-input
         [(list)]="creature.traits"
-        [title]="'Other Traits'"
+        [title]="'Traits'"
       >
       </app-ability-list-input>
-
-      <mat-form-field>
-        <input
-          matInput
-          type="number"
-          [(ngModel)]="creature.insanity"
-          placeholder="Insanity"
-        />
-      </mat-form-field>
-      <mat-form-field>
-        <input
-          matInput
-          type="number"
-          [(ngModel)]="creature.corruption"
-          placeholder="Corruption"
-        />
-      </mat-form-field>
 
       <app-ability-list-input [(list)]="creature.attacks" [title]="'Attacks'">
       </app-ability-list-input>
@@ -303,20 +292,13 @@
         [title]="'Special Attacks'"
       >
       </app-ability-list-input>
+      <app-ability-list-input
+        [(list)]="creature.specialActions"
+        [title]="'Special Actions'"
+      >
+      </app-ability-list-input>
 
-      <mat-form-field>
-        <input
-          matInput
-          type="number"
-          [(ngModel)]="creature.power"
-          placeholder="Power"
-        />
-      </mat-form-field>
-
-      <app-string-list-input
-        [(list)]="creature.spells"
-        [title]="'Spells'"
-      ></app-string-list-input>
+      <app-creature-magic-input [(magic)]="creature.magic"></app-creature-magic-input>
 
       <app-ability-list-input
         [(list)]="creature.endOfRound"
@@ -334,7 +316,7 @@
         ></textarea>
       </mat-form-field>
       <mat-form-field>
-        <input matInput [(ngModel)]="creature.source.book" placeholder="Book" />
+        <input matInput [(ngModel)]="creature.source.book" placeholder="Book"/>
       </mat-form-field>
       <mat-form-field>
         <input
