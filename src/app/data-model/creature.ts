@@ -19,7 +19,6 @@ export interface Creature {
   will?: number;
   speed?: number;
   specialMovement?: string;
-  immunity?: string;
   traits?: Ability[];
   insanity?: number;
   corruption?: number;
