@@ -1,6 +1,7 @@
 export interface Tradition {
-  name: string;
-  attribute: string;
-  dark: boolean;
-  description: string;
+  name?: string;
+  attribute?: string;
+  dark?: boolean;
+  psychic?: boolean;
+  description?: string;
 }

@@ -1,218 +1,220 @@
 [
   {
     "name": "Air",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Will",
     "description": ""
   },
   {
     "name": "Alchemy",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Intellect",
     "description": ""
   },
   {
     "name": "Alteration",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Will",
     "description": ""
   },
   {
     "name": "Arcana",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Intellect",
     "description": ""
   },
   {
     "name": "Battle",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Intellect",
     "description": ""
   },
   {
     "name": "Celestial",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Will",
     "description": ""
   },
   {
     "name": "Chaos",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Will",
     "description": ""
   },
   {
     "name": "Conjuration",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Intellect",
     "description": ""
   },
   {
     "name": "Curse",
-    "attribute": "",
+    "attribute": "Intellect",
     "dark": true,
     "description": ""
   },
   {
     "name": "Death",
-    "attribute": "",
+    "attribute": "Will",
     "dark": true,
     "description": ""
   },
   {
     "name": "Demonology",
-    "attribute": "",
+    "attribute": "Intellect",
     "dark": true,
     "description": ""
   },
   {
     "name": "Destruction",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Will",
     "description": ""
   },
   {
     "name": "Divination",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Intellect",
     "description": ""
   },
   {
     "name": "Earth",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Will",
     "description": ""
   },
   {
     "name": "Enchantment",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Intellect",
+    "description": ""
+  },
+  {
+    "name": "Fey",
+    "attribute": "Intellect",
     "description": ""
   },
   {
     "name": "Fire",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Will",
     "description": ""
   },
   {
     "name": "Forbidden",
-    "attribute": "",
+    "attribute": "Intellect",
     "dark": true,
+    "description": ""
+  },
+  {
+    "name": "Invocation",
+    "attribute": "Intellect",
     "description": ""
   },
   {
     "name": "Illusion",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Intellect",
     "description": ""
   },
   {
     "name": "Life",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Will",
     "description": ""
   },
   {
-    "name": "Nature",
-    "attribute": "",
-    "dark": false,
-    "description": ""
-  },
-  {
-    "name": "Necromancy",
-    "attribute": "",
+    "name": "Madness",
+    "attribute": "Intellect",
     "dark": true,
     "description": ""
   },
   {
+    "name": "Metal",
+    "attribute": "Will",
+    "description": ""
+  },
+  {
+    "name": "Nature",
+    "attribute": "Will",
+    "description": ""
+  },
+  {
+    "name": "Necromancy",
+    "attribute": "Intellect",
+    "dark": true,
+    "description": ""
+  },
+  {
+    "name": "Order",
+    "attribute": "Will",
+    "description": ""
+  },
+  {
     "name": "Primal",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Will",
     "description": ""
   },
   {
     "name": "Protection",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Intellect",
     "description": ""
   },
   {
     "name": "Rune",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Intellect",
     "description": ""
   },
   {
     "name": "Shadow",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Intellect",
     "description": ""
   },
   {
     "name": "Song",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Will",
+    "description": ""
+  },
+  {
+    "name": "Soul",
+    "attribute": "Will",
     "description": ""
   },
   {
     "name": "Spiritualism",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Will",
     "description": ""
   },
   {
     "name": "Storm",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Will",
     "description": ""
   },
   {
     "name": "Technomancy",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Intellect",
     "description": ""
   },
   {
     "name": "Telekinesis",
-    "attribute": "",
-    "dark": false,
-    "description": ""
+    "attribute": "Will",
+    "description": "",
+    "psychic": true
   },
   {
     "name": "Telepathy",
-    "attribute": "",
-    "dark": false,
-    "description": ""
+    "attribute": "Intellect",
+    "description": "",
+    "psychic": true
   },
   {
     "name": "Teleportation",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Intellect",
     "description": ""
   },
   {
     "name": "Theurgy",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Will",
     "description": ""
   },
   {
     "name": "Time",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Intellect",
     "description": ""
   },
   {
     "name": "Transformation",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Will",
     "description": ""
   },
   {
     "name": "Water",
-    "attribute": "",
-    "dark": false,
+    "attribute": "Will",
     "description": ""
   }
 ]
