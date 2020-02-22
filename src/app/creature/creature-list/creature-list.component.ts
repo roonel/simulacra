@@ -3,7 +3,7 @@ import {SelectionModel} from '@angular/cdk/collections';
 import sotdlCreatureData from '../../../assets/data/creatures/sotdl.json';
 import {MatTableDataSource} from '@angular/material/table';
 import {Creature} from '../../data-model/creature';
-import {CreatureFilter} from '../../model/creature-filter';
+import {CreatureFilter} from '../creature-filter';
 
 @Component({
   selector: 'app-creature-list',

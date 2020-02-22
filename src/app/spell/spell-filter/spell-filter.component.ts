@@ -1,5 +1,5 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {SpellFilter} from '../../model/spell-filter';
+import {SpellFilter} from '../spell-filter';
 import {MatCheckboxChange} from '@angular/material/checkbox';
 import traditionsData from '../../../assets/data/traditions/sotdl.json';
 import {Tradition} from '../../data-model/tradition';

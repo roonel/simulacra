@@ -6,6 +6,7 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./processed-text.component.css']
 })
 export class ProcessedTextComponent implements OnInit {
+  // tslint:disable-next-line:variable-name
   private _text: string;
   get text(): string {
     return this._text;

@@ -12,22 +12,7 @@
       </ul>
     </ng-container>
     <ng-container *ngSwitchCase="'table'">
-      <table>
-        <thead>
-        <tr>
-          <th *ngFor="let header of item.value.columns">
-            {{ header }}
-          </th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr *ngFor="let row of item.value.rows">
-          <td *ngFor="let rowCol of row">
-            <app-processed-text [text]="rowCol"></app-processed-text>
-          </td>
-        </tr>
-        </tbody>
-      </table>
+      <app-table [table]="item.value"></app-table>
     </ng-container>
     <ng-container *ngSwitchDefault>{{ item.value }}</ng-container>
   </ng-container>

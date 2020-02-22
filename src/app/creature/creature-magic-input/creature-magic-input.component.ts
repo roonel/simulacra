@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {Ability} from '../data-model/ability';
-import {CreatureMagic} from '../data-model/creature-magic';
+import {Ability} from '../../data-model/ability';
+import {CreatureMagic} from '../../data-model/creature-magic';
 
 @Component({
   selector: 'app-creature-magic-input',

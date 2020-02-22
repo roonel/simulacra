@@ -43,22 +43,7 @@
       </mat-tab>
       <mat-tab label="Tables">
         <div *ngFor="let item of ancestry.tables">
-          <table>
-            <thead>
-            <tr>
-              <th *ngFor="let header of item.columns">
-                {{ header }}
-              </th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr *ngFor="let row of item.rows">
-              <td *ngFor="let rowCol of row">
-                <app-processed-text [text]="rowCol"></app-processed-text>
-              </td>
-            </tr>
-            </tbody>
-          </table>
+          <app-table [table]="item"></app-table>
         </div>
       </mat-tab>
       <mat-tab label="Description">

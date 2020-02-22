@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {Ability} from '../data-model/ability';
+import {Ability} from '../../data-model/ability';
 
 @Component({
   selector: 'app-ability-list-input',

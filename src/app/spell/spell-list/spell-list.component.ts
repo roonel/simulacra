@@ -5,7 +5,7 @@ import dlc2SpellData from '../../../assets/data/spells/dlc2.json';
 import {Spell} from '../../data-model/spell';
 import {MatTableDataSource} from '@angular/material/table';
 import {SelectionModel} from '@angular/cdk/collections';
-import {SpellFilter} from '../../model/spell-filter';
+import {SpellFilter} from '../spell-filter';
 
 @Component({
   selector: 'app-spell-list',
