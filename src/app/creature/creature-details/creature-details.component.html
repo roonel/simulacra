@@ -25,9 +25,6 @@
           <b>Speed</b> {{toStat(creature.speed)}}<span
           *ngIf="creature.specialMovement">; {{creature.specialMovement}}</span>
         </div>
-        <span *ngIf="creature.immunity">
-          <b>Immune</b> {{creature.immunity}}
-        </span>
         <span *ngIf="creature.traits">
           <div *ngFor="let trait of creature.traits">
             <b>{{trait.name}} </b>

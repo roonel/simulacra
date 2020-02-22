@@ -65,11 +65,13 @@ export class DataCreatorComponent implements OnInit {
 
   addAncestry(): void {
     const newSource: Source = {};
-    newSource.page = this.creature.source.page;
-    newSource.book = this.creature.source.book;
-
+    newSource.page = this.ancestry.source.page;
+    newSource.book = this.ancestry.source.book;
+    if (!this.ancestry.powerfulAncestry.description) {
+      delete this.creature.magic;
+    }
     this.savedAncestry.push(this.ancestry);
-    this.creature = {};
+    this.ancestry = {};
     this.ancestry.powerfulAncestry = {};
     this.ancestry.source = newSource;
   }
