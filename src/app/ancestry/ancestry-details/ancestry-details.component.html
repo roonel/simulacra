@@ -1,0 +1,95 @@
+<mat-card>
+  <mat-card-title>
+    {{ ancestry.name }}
+  </mat-card-title>
+  <mat-card-content style="display: flex; flex-direction: column;">
+    <mat-tab-group>
+      <mat-tab label="Stats">
+        <h1>Creating a {{ancestry.name}}</h1>
+        <div>
+          <b>Starting Attribute Scores</b> Strength {{ancestry.strength}}, Agility {{ancestry.agility}},
+          Intellect {{ancestry.intellect}}, Will {{ancestry.will}} <span
+          *ngIf="ancestry.extraAttributes">. {{ancestry.extraAttributes}}</span>
+        </div>
+        <div>
+          <b>Perception</b> {{ancestry.perception}}
+        </div>
+        <div>
+          <b>Defense</b> {{ancestry.defense}}
+        </div>
+        <div>
+          <b>Health</b> {{ancestry.health}}
+        </div>
+        <div>
+          <b>Healing rate</b> {{ancestry.healingRate}}
+        </div>
+        <div>
+          <b>Size</b> {{ancestry.size}}, <b>Speed</b> {{ancestry.speed}}, <b>Power</b> {{ancestry.power}}
+        </div>
+        <div>
+          <b>Damage</b> {{ancestry.damage}}, <b>Insanity</b> {{ancestry.insanity}},
+          <b>Corruption</b> {{ancestry.corruption}}
+        </div>
+        <div>
+          <b>Languages and Professions</b> {{ancestry.languagesAndProfessions}}
+        </div>
+        <span *ngIf="ancestry.traits">
+           <div *ngFor="let trait of ancestry.traits">
+            <b>{{trait.name}} </b>
+            <app-processed-text [text]="trait.effect"></app-processed-text>
+          </div>
+        </span>
+        <mat-divider [inset]="true"></mat-divider>
+      </mat-tab>
+      <mat-tab label="Tables">
+        <div *ngFor="let item of ancestry.tables">
+          <table>
+            <thead>
+            <tr>
+              <th *ngFor="let header of item.columns">
+                {{ header }}
+              </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let row of item.rows">
+              <td *ngFor="let rowCol of row">
+                <app-processed-text [text]="rowCol"></app-processed-text>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </mat-tab>
+      <mat-tab label="Description">
+        <div>
+          <app-processed-text [text]="ancestry.description"></app-processed-text>
+        </div>
+      </mat-tab>
+      <mat-tab label="Higher levels">
+        <div *ngIf="ancestry.powerfulAncestry">
+
+        </div>
+        <div>
+          <h2>Level 4 Expert {{ancestry.name}}</h2>
+          <div>
+            <b>Characteristics</b> {{ancestry.level4Characteristics}}
+          </div>
+          <div>
+            {{ancestry.level4OptionsText}}
+          </div>
+          <span *ngIf="ancestry.level4Benefits">
+           <div *ngFor="let benefit of ancestry.level4Benefits">
+            <b>{{benefit.name}} </b>
+            <app-processed-text [text]="benefit.effect"></app-processed-text>
+          </div>
+        </span>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+
+  </mat-card-content>
+  <mat-card-footer>
+    {{ ancestry.source.book }} Page {{ ancestry.source.page }}
+  </mat-card-footer>
+</mat-card>

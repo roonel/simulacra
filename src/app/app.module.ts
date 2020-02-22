@@ -17,6 +17,11 @@ import { CreatureListComponent } from './creature/creature-list/creature-list.co
 import { CreatureFilterComponent } from './creature/creature-filter/creature-filter.component';
 import { CreatureDetailsComponent } from './creature/creature-details/creature-details.component';
 import { CreatureMagicInputComponent } from './creature-magic-input/creature-magic-input.component';
+import { AncestryDetailsComponent } from './ancestry/ancestry-details/ancestry-details.component';
+import { SpellEditComponent } from './data-creator/spell-edit/spell-edit.component';
+import { CreatureEditComponent } from './data-creator/creature-edit/creature-edit.component';
+import { AncestryEditComponent } from './data-creator/ancestry-edit/ancestry-edit.component';
+import { AncestryListComponent } from './ancestry/ancestry-list/ancestry-list.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +36,12 @@ import { CreatureMagicInputComponent } from './creature-magic-input/creature-mag
     CreatureListComponent,
     CreatureFilterComponent,
     CreatureDetailsComponent,
-    CreatureMagicInputComponent
+    CreatureMagicInputComponent,
+    AncestryDetailsComponent,
+    SpellEditComponent,
+    CreatureEditComponent,
+    AncestryEditComponent,
+    AncestryListComponent
   ],
   imports: [
     BrowserModule,

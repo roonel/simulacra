@@ -3,6 +3,7 @@
     <ng-container *ngSwitchCase="'text'">{{ item.value }}</ng-container>
     <ng-container *ngSwitchCase="'break'"><br/></ng-container>
     <ng-container *ngSwitchCase="'header'"><h2>{{ item.value }}</h2></ng-container>
+    <ng-container *ngSwitchCase="'bold'"><b>{{ item.value }}</b></ng-container>
     <ng-container *ngSwitchCase="'list'">
       <ul>
         <li *ngFor="let li of item.value">
