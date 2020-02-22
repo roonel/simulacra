@@ -48,7 +48,6 @@ export class CreatureListComponent implements OnInit {
   }
 
   select(row: Creature) {
-    console.log(row);
     this.selection.select(row);
   }
 

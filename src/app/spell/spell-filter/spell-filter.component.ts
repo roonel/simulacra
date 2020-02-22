@@ -15,7 +15,7 @@ export class SpellFilterComponent implements OnInit {
   levels: number[] = [0, 1, 2, 3, 4, 5];
   types: string[] = ['Attack', 'Utility'];
   traditions: Tradition[] = traditionsData;
-  sources: string[] = ['SotDL', 'DLC'];
+  sources: string[] = ['SotDL', 'DLC', 'DLC2'];
 
   constructor() {
   }

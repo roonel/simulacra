@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Spell} from '../data-model/spell';
 import {Source} from '../data-model/source';
 import {Creature} from '../data-model/creature';
+import {Ancestry} from '../data-model/ancestry';
 
 @Component({
   selector: 'app-data-creator',
@@ -15,10 +16,11 @@ export class DataCreatorComponent implements OnInit {
 
   spell: Spell;
   creature: Creature;
+  ancestry: Ancestry;
   savedSpells: Spell[] = [];
   savedCreatures: Creature[] = [];
+  savedAncestry: Ancestry[] = [];
 
-  preproc: string;
 
   ngOnInit(): void {
     this.spell = {};
@@ -26,6 +28,9 @@ export class DataCreatorComponent implements OnInit {
     this.creature = {};
     this.creature.source = {};
     this.creature.magic = {};
+    this.ancestry = {};
+    this.ancestry.powerfulAncestry = {};
+    this.ancestry.source = {};
   }
 
   addSpell(): void {
@@ -49,13 +54,24 @@ export class DataCreatorComponent implements OnInit {
     newSource.book = this.creature.source.book;
 
     if (!this.creature.magic.power) {
-     delete this.creature.magic;
+      delete this.creature.magic;
     }
 
     this.savedCreatures.push(this.creature);
     this.creature = {};
     this.creature.magic = {};
     this.creature.source = newSource;
+  }
+
+  addAncestry(): void {
+    const newSource: Source = {};
+    newSource.page = this.creature.source.page;
+    newSource.book = this.creature.source.book;
+
+    this.savedAncestry.push(this.ancestry);
+    this.creature = {};
+    this.ancestry.powerfulAncestry = {};
+    this.ancestry.source = newSource;
   }
 
   removeSpell(i): void {
@@ -66,33 +82,7 @@ export class DataCreatorComponent implements OnInit {
     this.savedCreatures.splice(i, 1);
   }
 
-  process(): void {
-    const r = new RegExp(
-      // tslint:disable-next-line:max-line-length
-      'Perception\\s(\\d*)\\s\\(.*\\d*\\);{0,1}\\s{0,1}(.*)\\sDefense\\s(\\d*)\\s{0,1}\\(*\\({0,1}(.*)\\){0,1};\\sHealth\\s(\\d*); Insanity\\s(.*);\\sCorruption\\s(.*)\\sStrength\\s(\\d*)\\s\\(.*\\d*\\),\\sAgility\\s(\\d*)\\s\\(.*\\d*\\),\\sIntellect\\s(\\d*)\\s\\(.*\\d*\\),\\sWill\\s(\\d*)\\s\\(.*\\d*\\)\\sSpeed\\s(\\d*);{0,1}\\s{0,1}'
-    );
-    const result = this.preproc.match(r);
-    console.log(result);
-    this.creature.perception = Number(result[1]);
-    if (result[2]) {
-      this.creature.specialSenses = result[2];
-    }
-    this.creature.defense = Number(result[3]);
-    if (result[4]) {
-      this.creature.armor = result[4];
-    }
-    this.creature.health = Number(result[5]);
-    if (result[6] !== '—') {
-      this.creature.insanity = Number(result[6]);
-    }
-    if (result[7] !== '—') {
-      this.creature.corruption = Number(result[7]);
-    }
-    this.creature.strength = Number(result[8]);
-    this.creature.agility = Number(result[9]);
-    this.creature.intellect = Number(result[10]);
-    this.creature.will = Number(result[11]);
-    this.creature.speed = Number(result[12]);
-    this.preproc = '';
+  removeAncestry(i): void {
+    this.savedAncestry.splice(i, 1);
   }
 }
