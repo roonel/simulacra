@@ -316,6 +316,15 @@
         ></textarea>
       </mat-form-field>
       <mat-form-field>
+        <mat-label>Extra</mat-label>
+        <textarea
+          matInput
+          [(ngModel)]="creature.extra"
+          cdkAutosizeMinRows="1"
+          cdkAutosizeMaxRows="5"
+        ></textarea>
+      </mat-form-field>
+      <mat-form-field>
         <input matInput [(ngModel)]="creature.source.book" placeholder="Book"/>
       </mat-form-field>
       <mat-form-field>

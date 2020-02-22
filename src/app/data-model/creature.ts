@@ -29,5 +29,6 @@ export interface Creature {
   magic?: CreatureMagic;
   endOfRound?: Ability[];
   description?: string;
+  extra?: string;
   source?: Source;
 }

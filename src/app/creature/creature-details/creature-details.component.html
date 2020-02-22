@@ -74,6 +74,10 @@
       <mat-tab label="Lore">
         <app-processed-text [text]="creature.description"></app-processed-text>
       </mat-tab>
+
+      <mat-tab label="Extra" *ngIf="creature.extra">
+        <app-processed-text [text]="creature.extra"></app-processed-text>
+      </mat-tab>
     </mat-tab-group>
 
   </mat-card-content>
