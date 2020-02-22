@@ -10,18 +10,23 @@ import {SpellDetailsComponent} from './spell/spell-details/spell-details.compone
 import {FormsModule} from '@angular/forms';
 import {SpellFilterComponent} from './spell/spell-filter/spell-filter.component';
 import {DataCreatorComponent} from './data-creator/data-creator.component';
-import {ProcessedTextComponent} from './processed-text/processed-text.component';
-import {StringListInputComponent} from './string-list-input/string-list-input.component';
-import {AbilityListInputComponent} from './ability-list-input/ability-list-input.component';
+import {ProcessedTextComponent} from './shared/processed-text/processed-text.component';
+import {StringListInputComponent} from './shared/string-list-input/string-list-input.component';
+import {AbilityListInputComponent} from './shared/ability-list-input/ability-list-input.component';
 import { CreatureListComponent } from './creature/creature-list/creature-list.component';
 import { CreatureFilterComponent } from './creature/creature-filter/creature-filter.component';
 import { CreatureDetailsComponent } from './creature/creature-details/creature-details.component';
-import { CreatureMagicInputComponent } from './creature-magic-input/creature-magic-input.component';
+import { CreatureMagicInputComponent } from './creature/creature-magic-input/creature-magic-input.component';
 import { AncestryDetailsComponent } from './ancestry/ancestry-details/ancestry-details.component';
 import { SpellEditComponent } from './data-creator/spell-edit/spell-edit.component';
 import { CreatureEditComponent } from './data-creator/creature-edit/creature-edit.component';
 import { AncestryEditComponent } from './data-creator/ancestry-edit/ancestry-edit.component';
 import { AncestryListComponent } from './ancestry/ancestry-list/ancestry-list.component';
+import { PathListComponent } from './path/path-list/path-list.component';
+import { PathDetailsComponent } from './path/path-details/path-details.component';
+import { PathEditComponent } from './data-creator/path-edit/path-edit.component';
+import { TableComponent } from './shared/table/table.component';
+import { PathLevelInputComponent } from './path/path-level-input/path-level-input.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +46,12 @@ import { AncestryListComponent } from './ancestry/ancestry-list/ancestry-list.co
     SpellEditComponent,
     CreatureEditComponent,
     AncestryEditComponent,
-    AncestryListComponent
+    AncestryListComponent,
+    PathListComponent,
+    PathDetailsComponent,
+    PathEditComponent,
+    TableComponent,
+    PathLevelInputComponent
   ],
   imports: [
     BrowserModule,

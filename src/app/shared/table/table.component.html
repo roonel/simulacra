@@ -1,0 +1,17 @@
+<h2 *ngIf="table.title">{{table.title}}</h2>
+<table>
+  <thead>
+  <tr>
+    <th *ngFor="let header of table.columns">
+      {{ header }}
+    </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let row of table.rows">
+    <td *ngFor="let rowCol of row">
+      <app-processed-text [text]="rowCol"></app-processed-text>
+    </td>
+  </tr>
+  </tbody>
+</table>

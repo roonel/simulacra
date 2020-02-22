@@ -1,8 +1,13 @@
-export class Path {
+import {PathLevel} from './pathLevel';
+import {Source} from './source';
+import {Table} from './table';
+
+export interface Path {
+  name?: string;
   description?: string;
-  storyDevelopment?: object;
-  type?: string;
-  firstAdvancement?: [];
-  secondAdvancement?: [];
-  thirdAdvancement?: [];
+  storyDevelopment?: Table;
+  tier?: string;
+  pathLevels?: PathLevel[];
+  extra?: string;
+  source?: Source;
 }

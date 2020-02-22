@@ -38,4 +38,18 @@
       {{ savedAncestry | json }}
     </mat-card>
   </mat-tab>
+
+  <mat-tab label="Path">
+    <app-path-edit [path]="path"></app-path-edit>
+
+    <button mat-flat-button (click)="addPath()">Add</button>
+    <div>
+      <p *ngFor="let item of savedPaths; let i = index">
+        {{ item.name }} <span (click)="removePath(i)"> X </span>
+      </p>
+    </div>
+    <mat-card>
+      {{ savedPaths | json }}
+    </mat-card>
+  </mat-tab>
 </mat-tab-group>

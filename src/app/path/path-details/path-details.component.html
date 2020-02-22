@@ -1,0 +1,46 @@
+<mat-card>
+  <mat-card-title>
+    {{ path.name }}
+  </mat-card-title>
+  <mat-card-subtitle>
+    {{path.tier}} Path
+  </mat-card-subtitle>
+  <mat-card-content style="display: flex; flex-direction: column;">
+    <mat-tab-group>
+      <mat-tab label="Levels">
+        <div *ngFor="let level of path.pathLevels">
+          <h2>Level {{level.level}} {{path.name}}</h2>
+          <div *ngIf="level.attributes">
+            <b>Attributes</b> {{level.attributes}}
+          </div>
+          <div *ngIf="level.characteristics">
+            <b>Characteristics</b> {{level.characteristics}}
+          </div>
+          <span *ngIf="level.talents">
+            <div *ngFor="let talent of level.talents">
+              <b>{{talent.name}} </b>
+              <app-processed-text [text]="talent.effect"></app-processed-text>
+            </div>
+          </span>
+        </div>
+      </mat-tab>
+      <mat-tab label="Extra" *ngIf="path.extra">
+        <div>
+          <app-processed-text [text]="path.extra"></app-processed-text>
+        </div>
+      </mat-tab>
+      <mat-tab label="Description">
+        <div>
+          <app-processed-text [text]="path.description"></app-processed-text>
+        </div>
+      </mat-tab>
+      <mat-tab label="Story Development">
+        <app-table [table]="path.storyDevelopment"></app-table>
+      </mat-tab>
+    </mat-tab-group>
+
+  </mat-card-content>
+  <mat-card-footer>
+    {{ path.source.book }} Page {{ path.source.page }}
+  </mat-card-footer>
+</mat-card>

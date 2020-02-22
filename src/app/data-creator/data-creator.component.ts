@@ -3,6 +3,7 @@ import {Spell} from '../data-model/spell';
 import {Source} from '../data-model/source';
 import {Creature} from '../data-model/creature';
 import {Ancestry} from '../data-model/ancestry';
+import {Path} from '../data-model/path';
 
 @Component({
   selector: 'app-data-creator',
@@ -17,9 +18,11 @@ export class DataCreatorComponent implements OnInit {
   spell: Spell;
   creature: Creature;
   ancestry: Ancestry;
+  path: Path;
   savedSpells: Spell[] = [];
   savedCreatures: Creature[] = [];
   savedAncestry: Ancestry[] = [];
+  savedPaths: Path[] = [];
 
 
   ngOnInit(): void {
@@ -31,6 +34,9 @@ export class DataCreatorComponent implements OnInit {
     this.ancestry = {};
     this.ancestry.powerfulAncestry = {};
     this.ancestry.source = {};
+    this.path = {};
+    this.path.source = {};
+
   }
 
   addSpell(): void {
@@ -76,6 +82,16 @@ export class DataCreatorComponent implements OnInit {
     this.ancestry.source = newSource;
   }
 
+  addPath(): void {
+    const newSource: Source = {};
+    newSource.page = this.path.source.page;
+    newSource.book = this.path.source.book;
+
+    this.savedPaths.push(this.path);
+    this.path = {};
+    this.path.source = newSource;
+  }
+
   removeSpell(i): void {
     this.savedSpells.splice(i, 1);
   }
@@ -85,6 +101,10 @@ export class DataCreatorComponent implements OnInit {
   }
 
   removeAncestry(i): void {
+    this.savedAncestry.splice(i, 1);
+  }
+
+  removePath(i): void {
     this.savedAncestry.splice(i, 1);
   }
 }
