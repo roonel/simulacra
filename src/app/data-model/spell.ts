@@ -18,5 +18,6 @@ export interface Spell {
   special?: string;
   permanence?: string;
   incantationOnly?: boolean;
+  pathSpell?: boolean;
   source?: Source;
 }
