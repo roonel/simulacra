@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {SpellFilter} from '../spell-filter';
 import {MatCheckboxChange} from '@angular/material/checkbox';
 import traditionsData from '../../../assets/data/traditions/sotdl.json';
@@ -15,7 +15,7 @@ export class SpellFilterComponent implements OnInit {
   levels: number[] = [0, 1, 2, 3, 4, 5];
   types: string[] = ['Attack', 'Utility'];
   traditions: Tradition[] = traditionsData;
-  sources: string[] = ['SotDL', 'DLC', 'DLC2'];
+  @Input() sources: string[];
 
   constructor() {
   }

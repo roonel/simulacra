@@ -10,9 +10,9 @@ export interface Creature {
   descriptor?: string;
   perception?: number;
   specialSenses?: string;
-  defense?: number;
+  defense?: string;
   armor?: string;
-  health?: number;
+  health?: string;
   strength?: number;
   agility?: number;
   intellect?: number;

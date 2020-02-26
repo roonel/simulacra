@@ -6,15 +6,16 @@
       </mat-panel-title>
       <mat-panel-description></mat-panel-description>
     </mat-expansion-panel-header>
-    <label>Descriptors</label><br/>
+
+    <label>Tier</label><br/>
     <mat-checkbox
-      (change)="checkboxChanged(data, $event, 'descriptors')"
-      *ngFor="let data of descriptors"
+      (change)="checkboxChanged(data, $event, 'tiers')"
+      *ngFor="let data of tiers"
       class="checkbox">
       {{ data }}
     </mat-checkbox>
-    <br>
-    <label>Source</label><br/>
+    <br/>
+       <label>Source</label><br/>
     <mat-checkbox
       (change)="checkboxChanged(data, $event, 'sources')"
       *ngFor="let data of sources"

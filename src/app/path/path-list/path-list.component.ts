@@ -1,8 +1,10 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {SelectionModel} from '@angular/cdk/collections';
 import {Path} from '../../data-model/path';
-import pathData from '../../../assets/data/paths/sotdl.json';
 import {MatTableDataSource} from '@angular/material/table';
+import {ContentService} from '../../content.service';
+import {PathFilter} from '../path-filter';
+import {MatSort} from '@angular/material/sort';
 
 @Component({
   selector: 'app-path-list',
@@ -10,22 +12,37 @@ import {MatTableDataSource} from '@angular/material/table';
   styleUrls: ['./path-list.component.css']
 })
 export class PathListComponent implements OnInit {
-
-  constructor() {
+  @ViewChild(MatSort, {static: true}) sort: MatSort;
+  constructor(private contentService: ContentService) {
   }
 
   columnsToDisplay: string[] = ['name', 'tier', 'source'];
-  dataSource;
+  bookSources: string[];
+  dataSource: MatTableDataSource<Path>;
   selection: SelectionModel<Path>;
 
   ngOnInit() {
-    const sotdl: Path[] = pathData;
-    this.dataSource = new MatTableDataSource<Path>(sotdl);
-    this.dataSource.filterPredicate = (data: Path, filterString: string) => {
+    const data = this.contentService.getPathList();
+    this.bookSources = [... new Set(data.map(d => d.source.book))];
+    this.dataSource = new MatTableDataSource<Path>(data);
+    this.dataSource.sort = this.sort;
+    this.dataSource.filterPredicate = (d: Path, filterString: string) => {
       if (!filterString) {
         return true;
       }
-      return data.name.toLowerCase().includes(filterString.toLowerCase());
+      let pred = true;
+      const filter: PathFilter = JSON.parse(filterString);
+      if (filter.name) {
+        pred =
+          pred && d.name.toLowerCase().includes(filter.name.toLowerCase());
+      }
+      if (pred && filter.tiers && filter.tiers.length > 0) {
+        pred = pred && filter.tiers.includes(d.tier);
+      }
+      if (pred && filter.sources && filter.sources.length > 0) {
+        pred = pred && filter.sources.includes(d.source.book);
+      }
+      return pred;
     };
 
     this.selection = new SelectionModel<Path>(false, null);

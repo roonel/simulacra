@@ -1,9 +1,10 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {SelectionModel} from '@angular/cdk/collections';
-import sotdlCreatureData from '../../../assets/data/creatures/sotdl.json';
 import {MatTableDataSource} from '@angular/material/table';
 import {Creature} from '../../data-model/creature';
 import {CreatureFilter} from '../creature-filter';
+import {ContentService} from '../../content.service';
+import {MatSort} from '@angular/material/sort';
 
 @Component({
   selector: 'app-creature-list',
@@ -11,35 +12,39 @@ import {CreatureFilter} from '../creature-filter';
   styleUrls: ['./creature-list.component.css']
 })
 export class CreatureListComponent implements OnInit {
-
+  @ViewChild(MatSort, {static: true}) sort: MatSort;
   columnsToDisplay: string[] = ['name', 'descriptor', 'difficulty'];
-  dataSource;
+  dataSource: MatTableDataSource<Creature>;
   selection: SelectionModel<Creature>;
+  bookSources: string[];
+  descriptors: string[];
 
-  constructor() {
+  constructor(private contentService: ContentService) {
   }
 
   ngOnInit() {
-    const sotdl: Creature[] = sotdlCreatureData;
-    // const dlc: Creature[] = dlcSpellData;
-    this.dataSource = new MatTableDataSource<Creature>(sotdl);
-    this.dataSource.filterPredicate = (data: Creature, filterString: string) => {
+    const data = this.contentService.getCreatureList();
+    this.dataSource = new MatTableDataSource<Creature>(data);
+    this.bookSources = [... new Set(data.map(d => d.source.book))];
+    this.descriptors = [... new Set(data.map(d => d.descriptor).filter(d => d))];
+    this.dataSource.sort = this.sort;
+    this.dataSource.filterPredicate = (d: Creature, filterString: string) => {
       if (!filterString) {
         return true;
       }
       let pred = true;
       const filter: CreatureFilter = JSON.parse(filterString);
       if (filter.name) {
-        pred = pred && data.name.toLowerCase().includes(filter.name.toLowerCase());
+        pred = pred && d.name.toLowerCase().includes(filter.name.toLowerCase());
       }
       if (pred && filter.descriptors && filter.descriptors.length > 0) {
-        pred = pred && filter.descriptors.includes(data.descriptor);
+        pred = pred && filter.descriptors.includes(d.descriptor);
       }
       if (pred && filter.difficulty) {
-        pred = pred && data.difficulty === filter.difficulty;
+        pred = pred && d.difficulty === filter.difficulty;
       }
       if (pred && filter.sources && filter.sources.length > 0) {
-        pred = pred && filter.sources.includes(data.source.book);
+        pred = pred && filter.sources.includes(d.source.book);
       }
       return pred;
     };

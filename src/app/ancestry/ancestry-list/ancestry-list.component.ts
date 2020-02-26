@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {SelectionModel} from '@angular/cdk/collections';
 import {Ancestry} from '../../data-model/ancestry';
-import ancestryData from '../../../assets/data/ancestries/sotdl.json';
 import {MatTableDataSource} from '@angular/material/table';
+import {ContentService} from '../../content.service';
+import {MatSort} from '@angular/material/sort';
 
 @Component({
   selector: 'app-ancestry-list',
@@ -10,21 +11,22 @@ import {MatTableDataSource} from '@angular/material/table';
   styleUrls: ['./ancestry-list.component.css']
 })
 export class AncestryListComponent implements OnInit {
-
-  constructor() { }
+  @ViewChild(MatSort, {static: true}) sort: MatSort;
+  constructor(private contentService: ContentService) { }
 
   columnsToDisplay: string[] = ['name', 'source'];
   dataSource;
   selection: SelectionModel<Ancestry>;
 
   ngOnInit() {
-    const sotdl: Ancestry[] = ancestryData;
-    this.dataSource = new MatTableDataSource<Ancestry>(sotdl);
-    this.dataSource.filterPredicate = (data: Ancestry, filterString: string) => {
+    const data = this.contentService.getAncestryList();
+    this.dataSource = new MatTableDataSource<Ancestry>(data);
+    this.dataSource.sort = this.sort;
+    this.dataSource.filterPredicate = (d: Ancestry, filterString: string) => {
       if (!filterString) {
         return true;
       }
-      return data.name.toLowerCase().includes(filterString.toLowerCase());
+      return d.name.toLowerCase().includes(filterString.toLowerCase());
     };
 
     this.selection = new SelectionModel<Ancestry>(false, null);

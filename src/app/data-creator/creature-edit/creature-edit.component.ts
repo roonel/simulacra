@@ -24,11 +24,11 @@ export class CreatureEditComponent implements OnInit {
     if (result[2]) {
       this.creature.specialSenses = result[2];
     }
-    this.creature.defense = Number(result[3]);
+    this.creature.defense = result[3];
     if (result[4]) {
       this.creature.armor = result[4];
     }
-    this.creature.health = Number(result[5]);
+    this.creature.health = result[5];
     if (result[6] !== '—') {
       this.creature.insanity = Number(result[6]);
     }

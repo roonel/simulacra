@@ -1,0 +1,10 @@
+<mat-card>
+  <h2>Content list</h2>
+  <ul>
+    <li *ngFor="let c of addedContent">
+      {{c}} <span (click)="removeContent(c)"> X </span>
+    </li>
+  </ul>
+  <input type="file" #file name="File Upload"
+         id="txtFileUpload" (change)="onFilesAdded($event) " accept=".json "/>
+</mat-card>

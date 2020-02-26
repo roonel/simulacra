@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {SpellFilter} from '../../spell/spell-filter';
 import {Tradition} from '../../data-model/tradition';
 import traditionsData from '../../../assets/data/traditions/sotdl.json';
@@ -14,7 +14,8 @@ export class CreatureFilterComponent implements OnInit {
 
   @Output() filterChange: EventEmitter<string> = new EventEmitter<string>();
   dataFilter: CreatureFilter;
-  sources: string[] = ['SotDL', 'DLC'];
+  @Input() sources: string[];
+  @Input() descriptors: string[];
 
   constructor() {
   }

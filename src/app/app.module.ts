@@ -10,10 +10,12 @@ import {ItemModule} from './item/item.module';
 import {PathModule} from './path/path.module';
 import {SpellModule} from './spell/spell.module';
 import {SharedModule} from './shared/shared.module';
+import { ContentHandlerComponent } from './content-handler/content-handler.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ContentHandlerComponent,
   ],
   imports: [
     BrowserModule,

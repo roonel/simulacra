@@ -79,7 +79,7 @@ export class ProcessedTextComponent implements OnInit {
     const actionType = actionText.substring(0, actionText.indexOf(':'));
     const actionData = actionText.substring(actionText.indexOf(':') + 1);
     if (actionType === 'table' || actionType === 'list') {
-      const validJson = actionData.replace(/\'/g, '"');
+      const validJson = actionData.replace('/\'', '’').replace(/\'/g, '"');
       return {type: actionType, value: JSON.parse(validJson)};
     } else {
       return {type: actionType, value: actionData};

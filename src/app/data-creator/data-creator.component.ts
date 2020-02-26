@@ -101,7 +101,7 @@ export class DataCreatorComponent implements OnInit {
   }
 
   saveTableInline(): void {
-    this.savedTable = JSON.stringify(this.table).replace('"', '\'');
+    this.savedTable = JSON.stringify(this.table).replace('\'', '/\'').replace('"', '\'');
   }
 
   removeSpell(i): void {
