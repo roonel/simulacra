@@ -1,0 +1,29 @@
+<mat-card>
+  <mat-form-field>
+    <input matInput [(ngModel)]="item.name" placeholder="Name"/>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput [(ngModel)]="item.availability" placeholder="Availability"/>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput [(ngModel)]="item.price" placeholder="Price"/>
+  </mat-form-field>
+
+  <app-string-list-input [(list)]="item.tags" [title]="'Tags'"></app-string-list-input>
+
+  <mat-form-field>
+    <mat-label>Description</mat-label>
+    <textarea matInput [(ngModel)]="item.description"
+              cdkAutosizeMinRows="1" cdkAutosizeMaxRows="5"></textarea>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput [(ngModel)]="item.source.book" placeholder="Book"/>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="number" [(ngModel)]="item.source.page"
+           placeholder="Book (Page)"/>
+  </mat-form-field>
+</mat-card>

@@ -15,7 +15,7 @@ export class AncestryListComponent implements OnInit {
   constructor(private contentService: ContentService) { }
 
   columnsToDisplay: string[] = ['name', 'source'];
-  dataSource;
+  dataSource: MatTableDataSource<Ancestry>;
   selection: SelectionModel<Ancestry>;
 
   ngOnInit() {

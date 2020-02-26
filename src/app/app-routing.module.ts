@@ -6,12 +6,14 @@ import {CreatureListComponent} from './creature/creature-list/creature-list.comp
 import {AncestryListComponent} from './ancestry/ancestry-list/ancestry-list.component';
 import {PathListComponent} from './path/path-list/path-list.component';
 import {ContentHandlerComponent} from './content-handler/content-handler.component';
+import {ItemListComponent} from './item/item-list/item-list.component';
 
 const routes: Routes = [
   {path: 'spell-list', component: SpellListComponent},
   {path: 'creature-list', component: CreatureListComponent},
   {path: 'ancestry-list', component: AncestryListComponent},
   {path: 'path-list', component: PathListComponent},
+  {path: 'item-list', component: ItemListComponent},
   {path: 'data-creator', component: DataCreatorComponent},
   {path: 'contents', component: ContentHandlerComponent}
 ];

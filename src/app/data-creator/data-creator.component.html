@@ -52,6 +52,18 @@
       {{ savedPaths | json }}
     </mat-card>
   </mat-tab>
+  <mat-tab label="Item">
+    <app-item-edit [item]="item"></app-item-edit>
+    <button mat-flat-button (click)="addItem()">Add</button>
+    <div>
+      <p *ngFor="let item of savedItems; let i = index">
+        {{ item.name }} <span (click)="removeItem(i)"> X </span>
+      </p>
+    </div>
+    <mat-card>
+      {{ savedItems | json }}
+    </mat-card>
+  </mat-tab>
   <mat-tab label="Table">
     <button mat-flat-button (click)="autoFillTableForStoryDevelopment()">StoryDev</button>
     <app-table-edit [table]="table"></app-table-edit>

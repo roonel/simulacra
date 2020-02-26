@@ -4,6 +4,7 @@ import {Spell} from './data-model/spell';
 import {Path} from './data-model/path';
 import {Creature} from './data-model/creature';
 import {Content} from './data-model/content';
+import {Item} from './data-model/item';
 
 @Injectable({
   providedIn: 'root'
@@ -14,6 +15,7 @@ export class ContentService {
   private spellList: Spell[];
   private pathList: Path[];
   private creatureList: Creature[];
+  private itemList: Item[];
 
   constructor() {
   }
@@ -23,13 +25,25 @@ export class ContentService {
     this.spellList = [];
     this.pathList = [];
     this.creatureList = [];
+    this.itemList = [];
     this.getContentList().forEach(cj => {
       const data = localStorage.getItem(cj);
       const content: Content = JSON.parse(data);
-      this.ancestryList = this.ancestryList.concat(content.ancestries);
-      this.spellList = this.spellList.concat(content.spells);
-      this.creatureList = this.creatureList.concat(content.creatures);
-      this.pathList = this.pathList.concat(content.paths);
+      if (content.ancestries) {
+        this.ancestryList = this.ancestryList.concat(content.ancestries);
+      }
+      if (content.spells) {
+        this.spellList = this.spellList.concat(content.spells);
+      }
+      if (content.creatures) {
+        this.creatureList = this.creatureList.concat(content.creatures);
+      }
+      if (content.paths) {
+        this.pathList = this.pathList.concat(content.paths);
+      }
+      if (content.items) {
+        this.itemList = this.itemList.concat(content.items);
+      }
     });
   }
 
@@ -58,31 +72,38 @@ export class ContentService {
     this.loadDataFromLocalStorage();
   }
 
-  getAncestryList() {
+  getAncestryList(): Ancestry[] {
     if (this.ancestryList == null) {
       this.loadDataFromLocalStorage();
     }
     return this.ancestryList;
   }
 
-  getCreatureList() {
+  getCreatureList(): Creature[] {
     if (this.creatureList == null) {
       this.loadDataFromLocalStorage();
     }
     return this.creatureList;
   }
 
-  getPathList() {
+  getPathList(): Path[] {
     if (this.pathList == null) {
       this.loadDataFromLocalStorage();
     }
     return this.pathList;
   }
 
-  getSpellList() {
+  getSpellList(): Spell[] {
     if (this.spellList == null) {
       this.loadDataFromLocalStorage();
     }
     return this.spellList;
+  }
+
+  getItemList(): Item[] {
+    if (this.itemList == null) {
+      this.loadDataFromLocalStorage();
+    }
+    return this.itemList;
   }
 }

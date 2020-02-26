@@ -5,6 +5,7 @@ import {Creature} from '../data-model/creature';
 import {Ancestry} from '../data-model/ancestry';
 import {Path} from '../data-model/path';
 import {Table} from '../data-model/table';
+import {Item} from '../data-model/item';
 
 @Component({
   selector: 'app-data-creator',
@@ -20,11 +21,13 @@ export class DataCreatorComponent implements OnInit {
   creature: Creature;
   ancestry: Ancestry;
   path: Path;
+  item: Item;
   table: Table;
   savedSpells: Spell[] = [];
   savedCreatures: Creature[] = [];
   savedAncestry: Ancestry[] = [];
   savedPaths: Path[] = [];
+  savedItems: Item[] = [];
   savedTable: string;
 
 
@@ -39,6 +42,8 @@ export class DataCreatorComponent implements OnInit {
     this.ancestry.source = {};
     this.path = {};
     this.path.source = {};
+    this.item = {};
+    this.item.source = {};
     this.table = {};
   }
 
@@ -95,6 +100,15 @@ export class DataCreatorComponent implements OnInit {
     this.path.source = newSource;
   }
 
+  addItem(): void {
+    const newSource: Source = {};
+    newSource.page = this.item.source.page;
+    newSource.book = this.item.source.book;
+    this.savedItems.push(this.item);
+    this.item = {};
+    this.item.source = newSource;
+  }
+
   saveTableJson(): void {
     this.savedTable = JSON.stringify(this.table);
     this.table = {};
@@ -118,6 +132,10 @@ export class DataCreatorComponent implements OnInit {
 
   removePath(i): void {
     this.savedAncestry.splice(i, 1);
+  }
+
+  removeItem(i): void {
+    this.savedItems.splice(i, 1);
   }
 
   autoFillTableForStoryDevelopment() {
