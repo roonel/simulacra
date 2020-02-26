@@ -1,0 +1,8 @@
+<mat-card>
+  <mat-form-field>
+    <input matInput [(ngModel)]="table.title" placeholder="Title"/>
+  </mat-form-field>
+  <app-string-list-input [title]="'Columns: '" [(list)]="table.columns"></app-string-list-input>
+
+  <app-row-input [(list)]="table.rows" [columns]="table.columns?.length"></app-row-input>
+</mat-card>

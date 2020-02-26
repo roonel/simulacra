@@ -34,7 +34,7 @@
           <app-processed-text [text]="path.description"></app-processed-text>
         </div>
       </mat-tab>
-      <mat-tab label="Story Development">
+      <mat-tab label="Story Development" *ngIf="path.storyDevelopment">
         <app-table [table]="path.storyDevelopment"></app-table>
       </mat-tab>
     </mat-tab-group>

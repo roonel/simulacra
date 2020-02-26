@@ -4,7 +4,7 @@
   </mat-form-field>
   <mat-form-field>
     <mat-label>Tier</mat-label>
-    <mat-select [(value)]="path.tier">
+    <mat-select [(value)]="path.tier" (selectionChange)="onTierSelect()">
       <mat-option [value]="'Novice'">Novice</mat-option>
       <mat-option [value]="'Expert'">Expert</mat-option>
       <mat-option [value]="'Master'">Master</mat-option>

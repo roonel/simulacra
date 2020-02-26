@@ -4,6 +4,7 @@ import {Source} from '../data-model/source';
 import {Creature} from '../data-model/creature';
 import {Ancestry} from '../data-model/ancestry';
 import {Path} from '../data-model/path';
+import {Table} from '../data-model/table';
 
 @Component({
   selector: 'app-data-creator',
@@ -19,10 +20,12 @@ export class DataCreatorComponent implements OnInit {
   creature: Creature;
   ancestry: Ancestry;
   path: Path;
+  table: Table;
   savedSpells: Spell[] = [];
   savedCreatures: Creature[] = [];
   savedAncestry: Ancestry[] = [];
   savedPaths: Path[] = [];
+  savedTable: string;
 
 
   ngOnInit(): void {
@@ -36,7 +39,7 @@ export class DataCreatorComponent implements OnInit {
     this.ancestry.source = {};
     this.path = {};
     this.path.source = {};
-
+    this.table = {};
   }
 
   addSpell(): void {
@@ -92,6 +95,15 @@ export class DataCreatorComponent implements OnInit {
     this.path.source = newSource;
   }
 
+  saveTableJson(): void {
+    this.savedTable = JSON.stringify(this.table);
+    this.table = {};
+  }
+
+  saveTableInline(): void {
+    this.savedTable = JSON.stringify(this.table).replace('"', '\'');
+  }
+
   removeSpell(i): void {
     this.savedSpells.splice(i, 1);
   }
@@ -106,5 +118,11 @@ export class DataCreatorComponent implements OnInit {
 
   removePath(i): void {
     this.savedAncestry.splice(i, 1);
+  }
+
+  autoFillTableForStoryDevelopment() {
+    this.table.title = 'xx Story Development';
+    this.table.columns = ['d6', 'Story Development'];
+    this.table.rows = [['1', ''], ['2', ''], ['3', ''], ['4', ''], ['5', ''], ['6', '']];
   }
 }

@@ -52,4 +52,13 @@
       {{ savedPaths | json }}
     </mat-card>
   </mat-tab>
+  <mat-tab label="Table">
+    <button mat-flat-button (click)="autoFillTableForStoryDevelopment()">StoryDev</button>
+    <app-table-edit [table]="table"></app-table-edit>
+    <button mat-flat-button (click)="saveTableJson()">Json</button>
+    <button mat-flat-button (click)="saveTableInline()">Inline</button>
+    <mat-card>
+      {{ savedTable }}
+    </mat-card>
+  </mat-tab>
 </mat-tab-group>

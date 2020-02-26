@@ -27,6 +27,8 @@ import { PathDetailsComponent } from './path/path-details/path-details.component
 import { PathEditComponent } from './data-creator/path-edit/path-edit.component';
 import { TableComponent } from './shared/table/table.component';
 import { PathLevelInputComponent } from './path/path-level-input/path-level-input.component';
+import { TableEditComponent } from './data-creator/table-edit/table-edit.component';
+import { RowInputComponent } from './data-creator/table-edit/row-input/row-input.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,9 @@ import { PathLevelInputComponent } from './path/path-level-input/path-level-inpu
     PathDetailsComponent,
     PathEditComponent,
     TableComponent,
-    PathLevelInputComponent
+    PathLevelInputComponent,
+    TableEditComponent,
+    RowInputComponent,
   ],
   imports: [
     BrowserModule,
