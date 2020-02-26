@@ -104,9 +104,11 @@ export class DataCreatorComponent implements OnInit {
     const newSource: Source = {};
     newSource.page = this.item.source.page;
     newSource.book = this.item.source.book;
+    const newItem: Item = {};
+    newItem.type = this.item.type;
+    newItem.source = newSource;
     this.savedItems.push(this.item);
-    this.item = {};
-    this.item.source = newSource;
+    this.item = newItem;
   }
 
   saveTableJson(): void {

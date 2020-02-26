@@ -3,15 +3,17 @@
     {{ item.name }}
   </mat-card-title>
   <mat-card-subtitle>
-    {{item.tags}}
+    {{item.type}}
   </mat-card-subtitle>
   <mat-card-content>
-    <app-processed-text [text]="item.description"></app-processed-text>
+    <span *ngIf="item.description">
+      <app-processed-text [text]="item.description"></app-processed-text>
+    </span>
   </mat-card-content>
   <mat-card-footer>
     {{ item.source.book }} Page {{ item.source.page }}
     <span style="float: right">
-      {{item.price}} - {{item.availability}}
+      {{getPrice(item.price)}} - {{item.availability}}
     </span>
   </mat-card-footer>
 </mat-card>
