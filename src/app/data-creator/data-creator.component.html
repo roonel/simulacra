@@ -64,6 +64,18 @@
       {{ savedItems | json }}
     </mat-card>
   </mat-tab>
+  <mat-tab label="Relic">
+    <app-relic-edit [relic]="relic"></app-relic-edit>
+    <button mat-flat-button (click)="addRelic()">Add</button>
+    <div>
+      <p *ngFor="let item of savedRelics; let i = index">
+        {{ item.name }} <span (click)="removeRelic(i)"> X </span>
+      </p>
+    </div>
+    <mat-card>
+      {{ savedRelics | json }}
+    </mat-card>
+  </mat-tab>
   <mat-tab label="Table">
     <button mat-flat-button (click)="autoFillTableForStoryDevelopment()">StoryDev</button>
     <app-table-edit [table]="table"></app-table-edit>

@@ -3,6 +3,7 @@ import {Creature} from './creature';
 import {Path} from './path';
 import {Spell} from './spell';
 import {Item} from './item';
+import {Relic} from './relic';
 
 export interface Content {
   ancestries?: Ancestry[];
@@ -10,4 +11,5 @@ export interface Content {
   paths?: Path[];
   spells?: Spell[];
   items?: Item[];
+  relics?: Relic[];
 }

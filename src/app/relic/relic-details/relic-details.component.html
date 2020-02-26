@@ -1,0 +1,16 @@
+<mat-card>
+  <mat-card-title>
+    {{ relic.name }}
+  </mat-card-title>
+  <mat-card-content>
+    <app-processed-text [text]="relic.description"></app-processed-text>
+    <mat-divider [inset]="true"></mat-divider>
+    <div *ngFor="let effect of relic.gameEffects">
+      <b>{{effect.name}} </b>
+      <app-processed-text [text]="effect.effect"></app-processed-text>
+    </div>
+  </mat-card-content>
+  <mat-card-footer>
+    {{ relic.source.book }} Page {{ relic.source.page }}
+  </mat-card-footer>
+</mat-card>

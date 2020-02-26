@@ -4,8 +4,6 @@ import { ItemDetailsComponent } from './item-details/item-details.component';
 import { ItemListComponent } from './item-list/item-list.component';
 import {SharedModule} from '../shared/shared.module';
 
-
-
 @NgModule({
   declarations: [
     ItemDetailsComponent,
