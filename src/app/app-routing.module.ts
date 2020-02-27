@@ -10,6 +10,7 @@ import {ItemListComponent} from './item/item-list/item-list.component';
 import {TraditionListComponent} from './tradition/tradition-list/tradition-list.component';
 
 const routes: Routes = [
+  {path: 'spell-list/:id', component: SpellListComponent},
   {path: 'spell-list', component: SpellListComponent},
   {path: 'creature-list', component: CreatureListComponent},
   {path: 'ancestry-list', component: AncestryListComponent},
