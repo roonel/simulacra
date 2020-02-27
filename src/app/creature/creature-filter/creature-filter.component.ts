@@ -1,7 +1,4 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {SpellFilter} from '../../spell/spell-filter';
-import {Tradition} from '../../data-model/tradition';
-import traditionsData from '../../../assets/data/traditions/sotdl.json';
 import {MatCheckboxChange} from '@angular/material/checkbox';
 import {CreatureFilter} from '../creature-filter';
 

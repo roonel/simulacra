@@ -6,6 +6,7 @@ import {Ancestry} from '../data-model/ancestry';
 import {Path} from '../data-model/path';
 import {Table} from '../data-model/table';
 import {Item} from '../data-model/item';
+import {Tradition} from '../data-model/tradition';
 
 @Component({
   selector: 'app-data-creator',
@@ -18,12 +19,14 @@ export class DataCreatorComponent implements OnInit {
   }
 
   spell: Spell;
+  tradition: Tradition;
   creature: Creature;
   ancestry: Ancestry;
   path: Path;
   item: Item;
   table: Table;
   savedSpells: Spell[] = [];
+  savedTraditions: Tradition[] = [];
   savedCreatures: Creature[] = [];
   savedAncestry: Ancestry[] = [];
   savedPaths: Path[] = [];
@@ -34,6 +37,8 @@ export class DataCreatorComponent implements OnInit {
   ngOnInit(): void {
     this.spell = {};
     this.spell.source = {};
+    this.tradition = {};
+    this.tradition.source = {};
     this.creature = {};
     this.creature.source = {};
     this.creature.magic = {};
@@ -111,6 +116,16 @@ export class DataCreatorComponent implements OnInit {
     this.item = newItem;
   }
 
+  addTradition(): void {
+    const newSource: Source = {};
+    newSource.page = this.tradition.source.page;
+    newSource.book = this.tradition.source.book;
+
+    this.savedTraditions.push(this.tradition);
+    this.tradition = {};
+    this.tradition.source = newSource;
+  }
+
   saveTableJson(): void {
     this.savedTable = JSON.stringify(this.table);
     this.table = {};
@@ -138,6 +153,10 @@ export class DataCreatorComponent implements OnInit {
 
   removeItem(i): void {
     this.savedItems.splice(i, 1);
+  }
+
+  removeTradition(i): void {
+    this.savedTraditions.splice(i, 1);
   }
 
   autoFillTableForStoryDevelopment() {

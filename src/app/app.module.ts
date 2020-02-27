@@ -11,6 +11,7 @@ import {PathModule} from './path/path.module';
 import {SpellModule} from './spell/spell.module';
 import {SharedModule} from './shared/shared.module';
 import { ContentHandlerComponent } from './content-handler/content-handler.component';
+import {TraditionModule} from './tradition/tradition.module';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ContentHandlerComponent } from './content-handler/content-handler.compo
     ItemModule,
     PathModule,
     SpellModule,
+    TraditionModule,
     SharedModule
   ],
   providers: [],

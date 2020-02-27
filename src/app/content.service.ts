@@ -5,6 +5,7 @@ import {Path} from './data-model/path';
 import {Creature} from './data-model/creature';
 import {Content} from './data-model/content';
 import {Item} from './data-model/item';
+import {Tradition} from './data-model/tradition';
 
 @Injectable({
   providedIn: 'root'
@@ -16,6 +17,7 @@ export class ContentService {
   private pathList: Path[];
   private creatureList: Creature[];
   private itemList: Item[];
+  private traditionList: Tradition[];
 
   constructor() {
   }
@@ -26,6 +28,7 @@ export class ContentService {
     this.pathList = [];
     this.creatureList = [];
     this.itemList = [];
+    this.traditionList = [];
     this.getContentList().forEach(cj => {
       const data = localStorage.getItem(cj);
       const content: Content = JSON.parse(data);
@@ -43,6 +46,9 @@ export class ContentService {
       }
       if (content.items) {
         this.itemList = this.itemList.concat(content.items);
+      }
+      if (content.traditions) {
+        this.traditionList = this.traditionList.concat(content.traditions);
       }
     });
   }
@@ -105,5 +111,12 @@ export class ContentService {
       this.loadDataFromLocalStorage();
     }
     return this.itemList;
+  }
+
+  getTraditionList(): Tradition[] {
+    if (this.traditionList == null) {
+      this.loadDataFromLocalStorage();
+    }
+    return this.traditionList;
   }
 }

@@ -13,6 +13,7 @@ import {AbilityListInputComponent} from './ability-list-input/ability-list-input
 import {SharedModule} from '../shared/shared.module';
 import {CreatureMagicInputComponent} from './creature-edit/creature-magic-input/creature-magic-input.component';
 import { ItemEditComponent } from './item-edit/item-edit.component';
+import { TraditionEditComponent } from './tradition-edit/tradition-edit.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ItemEditComponent } from './item-edit/item-edit.component';
     StringListInputComponent,
     AbilityListInputComponent,
     CreatureMagicInputComponent,
-    ItemEditComponent
+    ItemEditComponent,
+    TraditionEditComponent
   ],
   exports:[
     DataCreatorComponent

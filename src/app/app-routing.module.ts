@@ -7,6 +7,7 @@ import {AncestryListComponent} from './ancestry/ancestry-list/ancestry-list.comp
 import {PathListComponent} from './path/path-list/path-list.component';
 import {ContentHandlerComponent} from './content-handler/content-handler.component';
 import {ItemListComponent} from './item/item-list/item-list.component';
+import {TraditionListComponent} from './tradition/tradition-list/tradition-list.component';
 
 const routes: Routes = [
   {path: 'spell-list', component: SpellListComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'ancestry-list', component: AncestryListComponent},
   {path: 'path-list', component: PathListComponent},
   {path: 'item-list', component: ItemListComponent},
+  {path: 'tradition-list', component: TraditionListComponent},
   {path: 'data-creator', component: DataCreatorComponent},
   {path: 'contents', component: ContentHandlerComponent}
 ];

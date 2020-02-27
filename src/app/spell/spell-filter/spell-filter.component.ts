@@ -1,8 +1,8 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {SpellFilter} from '../spell-filter';
 import {MatCheckboxChange} from '@angular/material/checkbox';
-import traditionsData from '../../../assets/data/traditions/sotdl.json';
 import {Tradition} from '../../data-model/tradition';
+import {ContentService} from '../../content.service';
 
 @Component({
   selector: 'app-spell-filter',
@@ -14,13 +14,14 @@ export class SpellFilterComponent implements OnInit {
   dataFilter: SpellFilter;
   levels: number[] = [0, 1, 2, 3, 4, 5];
   types: string[] = ['Attack', 'Utility'];
-  traditions: Tradition[] = traditionsData;
+  traditions: Tradition[] = [];
   @Input() sources: string[];
 
-  constructor() {
+  constructor(private contentService: ContentService) {
   }
 
   ngOnInit() {
+    this.traditions = this.contentService.getTraditionList();
     this.dataFilter = new SpellFilter();
     this.dataFilter.levels = [];
     this.dataFilter.types = [];

@@ -1,0 +1,24 @@
+<mat-card>
+  <mat-form-field>
+    <input matInput [(ngModel)]="tradition.name" placeholder="Name"/>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Description</mat-label>
+    <textarea matInput [(ngModel)]="tradition.description"
+              cdkAutosizeMinRows="1" cdkAutosizeMaxRows="5"></textarea>
+  </mat-form-field>
+  <mat-checkbox [(ngModel)]="tradition.dark">
+    Dark
+  </mat-checkbox>
+  <mat-checkbox [(ngModel)]="tradition.psychic">
+    Psychic
+  </mat-checkbox>
+  <mat-form-field>
+    <input matInput [(ngModel)]="tradition.source.book" placeholder="Book"/>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="number" [(ngModel)]="tradition.source.page"
+           placeholder="Book (Page)"/>
+  </mat-form-field>
+</mat-card>
