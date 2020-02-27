@@ -5,6 +5,7 @@ import {SelectionModel} from '@angular/cdk/collections';
 import {SpellFilter} from '../spell-filter';
 import {ContentService} from '../../content.service';
 import {MatSort} from '@angular/material/sort';
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-spell-list',
@@ -18,7 +19,7 @@ export class SpellListComponent implements OnInit {
   selection: SelectionModel<Spell>;
   bookSources: string[];
 
-  constructor(private contentService: ContentService) {
+  constructor(private contentService: ContentService, private route: ActivatedRoute, private router: Router) {
   }
 
   ngOnInit() {
@@ -52,10 +53,16 @@ export class SpellListComponent implements OnInit {
     };
 
     this.selection = new SelectionModel<Spell>(false, null);
+    this.route.paramMap.subscribe(paramMap => {
+      if (paramMap.has('id')) {
+        const id = paramMap.get('id');
+        this.selection.select(this.dataSource.data.find(s => s.name === id));
+      }
+    });
   }
 
   select(row: Spell) {
-    this.selection.select(row);
+    this.router.navigate(['spell-list', row.name ]);
   }
 
   applyFilter(filter: string) {

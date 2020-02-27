@@ -12,6 +12,7 @@ import {SpellModule} from './spell/spell.module';
 import {SharedModule} from './shared/shared.module';
 import { ContentHandlerComponent } from './content-handler/content-handler.component';
 import {RelicModule} from './relic/relic.module';
+import {TraditionModule} from './tradition/tradition.module';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import {RelicModule} from './relic/relic.module';
     ItemModule,
     PathModule,
     SpellModule,
+    TraditionModule,
     RelicModule,
     SharedModule
   ],

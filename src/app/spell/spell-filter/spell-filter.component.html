@@ -8,43 +8,39 @@
     </mat-expansion-panel-header>
 
     <label>Spell Level</label><br/>
-    <mat-checkbox
-      (change)="checkboxChanged(data, $event, 'levels')"
-      *ngFor="let data of levels"
-      class="checkbox">
+    <mat-checkbox (change)="checkboxChanged(data, $event, 'levels')"
+                  *ngFor="let data of levels" class="checkbox">
       Level {{ data }}
     </mat-checkbox>
     <br/>
     <label>Type</label><br/>
-    <mat-checkbox
-      (change)="checkboxChanged(data, $event, 'types')"
-      *ngFor="let data of types"
-      class="checkbox">
+    <mat-checkbox (change)="checkboxChanged(data, $event, 'types')"
+                  *ngFor="let data of types" class="checkbox">
       {{ data }}
     </mat-checkbox>
     <br/>
     <label>Tradition</label><br/>
-    <mat-checkbox
-      (change)="checkboxChanged(data.name, $event, 'traditions')"
-      *ngFor="let data of traditions"
-      class="checkbox">
-      {{ data.name }}
-      <mat-icon *ngIf="data.dark">warning</mat-icon>
+    <mat-checkbox (change)="checkboxChanged(data.name, $event, 'traditions')"
+                  *ngFor="let data of traditions" class="checkbox">
+      <span class="icon-wrapper">
+          {{ data.name }}
+        <span *ngIf="data.dark">
+            <app-tradition-icon [type]="'dark'"></app-tradition-icon>
+          </span>
+          <span *ngIf="data.psychic">
+            <app-tradition-icon [type]="'psychic'"></app-tradition-icon>
+          </span>
+      </span>
     </mat-checkbox>
     <br/>
     <label>Source</label><br/>
-    <mat-checkbox
-      (change)="checkboxChanged(data, $event, 'sources')"
-      *ngFor="let data of sources"
-      class="checkbox">
+    <mat-checkbox (change)="checkboxChanged(data, $event, 'sources')"
+                  *ngFor="let data of sources" class="checkbox">
       {{ data }}
     </mat-checkbox>
   </mat-expansion-panel>
 </mat-accordion>
 <mat-form-field style="width: 100%;">
-  <input
-    matInput
-    [(ngModel)]="dataFilter.name"
-    placeholder="Search"
-    (keyup)="emitChange()"/>
+  <input matInput [(ngModel)]="dataFilter.name"
+         placeholder="Search" (keyup)="emitChange()"/>
 </mat-form-field>

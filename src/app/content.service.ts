@@ -6,6 +6,7 @@ import {Creature} from './data-model/creature';
 import {Content} from './data-model/content';
 import {Item} from './data-model/item';
 import {Relic} from './data-model/relic';
+import {Tradition} from './data-model/tradition';
 
 @Injectable({
   providedIn: 'root'
@@ -18,6 +19,7 @@ export class ContentService {
   private creatureList: Creature[];
   private itemList: Item[];
   private relicList: Relic[];
+  private traditionList: Tradition[];
 
   constructor() {
   }
@@ -29,6 +31,7 @@ export class ContentService {
     this.creatureList = [];
     this.itemList = [];
     this.relicList = [];
+    this.traditionList = [];
     this.getContentList().forEach(cj => {
       const data = localStorage.getItem(cj);
       const content: Content = JSON.parse(data);
@@ -49,6 +52,9 @@ export class ContentService {
       }
       if (content.relics) {
         this.relicList = this.relicList.concat(content.relics);
+      }
+      if (content.traditions) {
+        this.traditionList = this.traditionList.concat(content.traditions);
       }
     });
   }
@@ -118,5 +124,12 @@ export class ContentService {
       this.loadDataFromLocalStorage();
     }
     return this.relicList;
+  }
+
+  getTraditionList(): Tradition[] {
+    if (this.traditionList == null) {
+      this.loadDataFromLocalStorage();
+    }
+    return this.traditionList;
   }
 }

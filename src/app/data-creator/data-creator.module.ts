@@ -14,6 +14,7 @@ import {SharedModule} from '../shared/shared.module';
 import {CreatureMagicInputComponent} from './creature-edit/creature-magic-input/creature-magic-input.component';
 import { ItemEditComponent } from './item-edit/item-edit.component';
 import { RelicEditComponent } from './relic-edit/relic-edit.component';
+import { TraditionEditComponent } from './tradition-edit/tradition-edit.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,8 @@ import { RelicEditComponent } from './relic-edit/relic-edit.component';
     CreatureMagicInputComponent,
     ItemEditComponent,
     RelicEditComponent
+    ItemEditComponent,
+    TraditionEditComponent
   ],
   exports:[
     DataCreatorComponent

@@ -12,6 +12,19 @@
       {{ savedSpells | json }}
     </mat-card>
   </mat-tab>
+  <mat-tab label="Tradition">
+    <app-tradition-edit [tradition]="tradition"></app-tradition-edit>
+    <button mat-flat-button (click)="addTradition()">Add</button>
+    <div>
+      <p *ngFor="let item of savedTraditions; let i = index">
+        {{ item.name }} <span (click)="removeTradition(i)"> X </span>
+      </p>
+    </div>
+
+    <mat-card>
+      {{ savedTraditions | json }}
+    </mat-card>
+  </mat-tab>
   <mat-tab label="Creature">
     <app-creature-edit [creature]="creature"></app-creature-edit>
 

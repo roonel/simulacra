@@ -1,0 +1,24 @@
+<mat-card>
+  <mat-card-title>
+    <span class="icon-wrapper">{{ tradition.name }}
+      <span *ngIf="tradition.dark">
+        <app-tradition-icon [type]="'dark'"></app-tradition-icon>
+      </span>
+      <span *ngIf="tradition.psychic">
+        <app-tradition-icon [type]="'psychic'"></app-tradition-icon>
+      </span>
+    </span>
+  </mat-card-title>
+  <mat-card-subtitle>
+    {{tradition.attribute}}
+
+  </mat-card-subtitle>
+  <mat-card-content>
+    <span *ngIf="tradition.description">
+      <app-processed-text [text]="tradition.description"></app-processed-text>
+    </span>
+  </mat-card-content>
+  <mat-card-footer>
+    {{ tradition.source.book }} Page {{ tradition.source.page }}
+  </mat-card-footer>
+</mat-card>
