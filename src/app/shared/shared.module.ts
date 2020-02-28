@@ -7,6 +7,7 @@ import {MaterialModule} from '../material.module';
 import {TraditionIconComponent} from './tradition-icon/tradition-icon.component';
 import {HttpClientModule} from '@angular/common/http';
 import {PricePipe} from './price.pipe';
+import { CastingsPipe } from './castings.pipe';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import {PricePipe} from './price.pipe';
     TableComponent,
     TraditionIconComponent,
     PricePipe,
+    CastingsPipe,
   ],
   imports: [
     CommonModule,
@@ -29,7 +31,8 @@ import {PricePipe} from './price.pipe';
     ProcessedTextComponent,
     TableComponent,
     TraditionIconComponent,
-    PricePipe
+    PricePipe,
+    CastingsPipe
   ],
 })
 export class SharedModule {

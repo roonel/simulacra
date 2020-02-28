@@ -55,7 +55,10 @@
           <h2>Magic</h2>
           <b>Power</b> {{creature.magic.power}}
           <div *ngFor="let trad of creature.magic.traditions">
-            <b>{{trad.tradition}} </b> <span *ngFor="let spell of trad.spells">{{spell}}</span>
+            <b>{{trad.tradition}} </b>
+            <span *ngFor="let spell of trad.spells; let isLast = last;">
+              <app-processed-text [text]="(spell | castings: creature.magic.power)"></app-processed-text> {{ isLast ? '' : ', ' }}
+            </span>
           </div>
         </div>
         <div *ngIf="creature.endOfRound">
