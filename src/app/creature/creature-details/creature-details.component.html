@@ -3,14 +3,13 @@
     {{ creature.name }} {{creature.difficulty}}
   </mat-card-title>
   <mat-card-subtitle>
-    Size {{creature.size}} {{creature.descriptor}}
+    Size {{creature.size}} <span *ngIf="creature.frightening">{{creature.frightening}}</span> {{creature.descriptor}}
   </mat-card-subtitle>
   <mat-card-content style="display: flex; flex-direction: column;">
     <mat-tab-group>
       <mat-tab label="Stats">
         <div>
-          <b>Perception</b> {{toStat(creature.perception)}} <span
-          *ngIf="creature.specialSenses">; {{creature.specialSenses}}</span>
+          <b>Perception</b> {{toStat(creature.perception)}}<span *ngIf="creature.specialSenses">; {{creature.specialSenses}}</span>
         </div>
         <div>
           <b>Defense</b> {{creature.defense}}<span *ngIf="creature.armor"> ({{creature.armor}})</span>;
@@ -22,8 +21,7 @@
           <b>Intellect</b> {{toStat(creature.intellect)}}, <b>Will</b> {{toStat(creature.will)}}
         </div>
         <div>
-          <b>Speed</b> {{toStat(creature.speed)}}<span
-          *ngIf="creature.specialMovement">; {{creature.specialMovement}}</span>
+          <b>Speed</b> {{creature.speed}}<span *ngIf="creature.specialMovement">; {{creature.specialMovement}}</span>
         </div>
         <span *ngIf="creature.traits">
           <div *ngFor="let trait of creature.traits">
