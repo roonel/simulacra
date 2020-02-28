@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-processed-text',
@@ -21,7 +22,7 @@ export class ProcessedTextComponent implements OnInit {
 
   dataList = [];
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
   ngOnInit(): void {
@@ -84,5 +85,9 @@ export class ProcessedTextComponent implements OnInit {
     } else {
       return {type: actionType, value: actionData};
     }
+  }
+
+  navigate(item: any) {
+    this.router.navigate([item.type + '-list', item.value]);
   }
 }

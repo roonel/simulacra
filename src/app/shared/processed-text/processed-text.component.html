@@ -4,6 +4,9 @@
     <ng-container *ngSwitchCase="'break'"><br/></ng-container>
     <ng-container *ngSwitchCase="'header'"><h2>{{ item.value }}</h2></ng-container>
     <ng-container *ngSwitchCase="'bold'"><b>{{ item.value }}</b></ng-container>
+    <ng-container *ngSwitchCase="'creature'"><a (click)="navigate(item)">{{ item.value }}</a></ng-container>
+    <ng-container *ngSwitchCase="'spell'"><a (click)="navigate(item)">{{ item.value }}</a></ng-container>
+    <ng-container *ngSwitchCase="'item'"><a (click)="navigate(item)">{{ item.value }}</a></ng-container>
     <ng-container *ngSwitchCase="'list'">
       <ul>
         <li *ngFor="let li of item.value">
