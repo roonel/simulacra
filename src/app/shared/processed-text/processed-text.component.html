@@ -2,15 +2,21 @@
   <ng-container [ngSwitch]="item.type">
     <ng-container *ngSwitchCase="'text'">{{ item.value }}</ng-container>
     <ng-container *ngSwitchCase="'break'"><br/></ng-container>
-    <ng-container *ngSwitchCase="'header'"><h2>{{ item.value }}</h2></ng-container>
+    <ng-container *ngSwitchCase="'header'"><h2>{{ item.value }} {{item.level}}</h2></ng-container>
     <ng-container *ngSwitchCase="'bold'"><b>{{ item.value }}</b></ng-container>
-    <ng-container *ngSwitchCase="'creature'"><a (click)="navigate(item)">{{ item.value }}</a></ng-container>
-    <ng-container *ngSwitchCase="'spell'"><a (click)="navigate(item)">{{ item.value }}</a></ng-container>
-    <ng-container *ngSwitchCase="'item'"><a (click)="navigate(item)">{{ item.value }}</a></ng-container>
+    <ng-container *ngSwitchCase="'italics'"><i>{{ item.value }}</i></ng-container>
+    <ng-container *ngSwitchCase="'link'"><a (click)="navigate(item.link)">{{ item.value }}</a></ng-container>
     <ng-container *ngSwitchCase="'list'">
       <ul>
         <li *ngFor="let li of item.value">
-          <app-processed-text [text]="li"></app-processed-text>
+          <span *ngFor="let part of li">
+            <ng-container [ngSwitch]="part.type">
+              <ng-container *ngSwitchCase="'text'">{{ part.value }}</ng-container>
+              <ng-container *ngSwitchCase="'bold'"><b>{{ part.value }}</b></ng-container>
+              <ng-container *ngSwitchCase="'italics'"><i>{{ part.value }}</i></ng-container>
+              <ng-container *ngSwitchCase="'link'"><a (click)="navigate(part.link)">{{ part.value }}</a></ng-container>
+            </ng-container>
+          </span>
         </li>
       </ul>
     </ng-container>
