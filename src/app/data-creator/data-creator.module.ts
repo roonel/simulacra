@@ -30,7 +30,7 @@ import { TraditionEditComponent } from './tradition-edit/tradition-edit.componen
     AbilityListInputComponent,
     CreatureMagicInputComponent,
     ItemEditComponent,
-    RelicEditComponent
+    RelicEditComponent,
     ItemEditComponent,
     TraditionEditComponent
   ],

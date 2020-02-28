@@ -4,6 +4,7 @@ import {Ancestry} from '../../data-model/ancestry';
 import {MatTableDataSource} from '@angular/material/table';
 import {ContentService} from '../../content.service';
 import {MatSort} from '@angular/material/sort';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-ancestry-list',
@@ -12,7 +13,7 @@ import {MatSort} from '@angular/material/sort';
 })
 export class AncestryListComponent implements OnInit {
   @ViewChild(MatSort, {static: true}) sort: MatSort;
-  constructor(private contentService: ContentService) { }
+  constructor(private contentService: ContentService, private route: ActivatedRoute, private router: Router) { }
 
   columnsToDisplay: string[] = ['name', 'source'];
   dataSource: MatTableDataSource<Ancestry>;
@@ -30,10 +31,16 @@ export class AncestryListComponent implements OnInit {
     };
 
     this.selection = new SelectionModel<Ancestry>(false, null);
+    this.route.paramMap.subscribe(paramMap => {
+      if (paramMap.has('id')) {
+        const id = paramMap.get('id');
+        this.selection.select(this.dataSource.data.find(s => s.name === id));
+      }
+    });
   }
 
   select(row: Ancestry) {
-    this.selection.select(row);
+    this.router.navigate(['ancestry-list', row.name ]);
   }
 
   applyFilter(filter: string) {

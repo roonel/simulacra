@@ -5,6 +5,7 @@ import {MatTableDataSource} from '@angular/material/table';
 import {ContentService} from '../../content.service';
 import {PathFilter} from '../path-filter';
 import {MatSort} from '@angular/material/sort';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-path-list',
@@ -13,7 +14,7 @@ import {MatSort} from '@angular/material/sort';
 })
 export class PathListComponent implements OnInit {
   @ViewChild(MatSort, {static: true}) sort: MatSort;
-  constructor(private contentService: ContentService) {
+  constructor(private contentService: ContentService, private route: ActivatedRoute, private router: Router) {
   }
 
   columnsToDisplay: string[] = ['name', 'tier', 'source'];
@@ -46,10 +47,16 @@ export class PathListComponent implements OnInit {
     };
 
     this.selection = new SelectionModel<Path>(false, null);
+    this.route.paramMap.subscribe(paramMap => {
+      if (paramMap.has('id')) {
+        const id = paramMap.get('id');
+        this.selection.select(this.dataSource.data.find(s => s.name === id));
+      }
+    });
   }
 
   select(row: Path) {
-    this.selection.select(row);
+    this.router.navigate(['path-list', row.name ]);
   }
 
   applyFilter(filter: string) {

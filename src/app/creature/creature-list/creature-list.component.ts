@@ -5,6 +5,7 @@ import {Creature} from '../../data-model/creature';
 import {CreatureFilter} from '../creature-filter';
 import {ContentService} from '../../content.service';
 import {MatSort} from '@angular/material/sort';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-creature-list',
@@ -19,7 +20,7 @@ export class CreatureListComponent implements OnInit {
   bookSources: string[];
   descriptors: string[];
 
-  constructor(private contentService: ContentService) {
+  constructor(private contentService: ContentService, private route: ActivatedRoute, private router: Router) {
   }
 
   ngOnInit() {
@@ -50,10 +51,16 @@ export class CreatureListComponent implements OnInit {
     };
 
     this.selection = new SelectionModel<Creature>(false, null);
+    this.route.paramMap.subscribe(paramMap => {
+      if (paramMap.has('id')) {
+        const id = paramMap.get('id');
+        this.selection.select(this.dataSource.data.find(s => s.name === id));
+      }
+    });
   }
 
   select(row: Creature) {
-    this.selection.select(row);
+    this.router.navigate(['creature-list', row.name ]);
   }
 
   applyFilter(filter: string) {

@@ -5,7 +5,7 @@ import {SelectionModel} from '@angular/cdk/collections';
 import {SpellFilter} from '../spell-filter';
 import {ContentService} from '../../content.service';
 import {MatSort} from '@angular/material/sort';
-import {ActivatedRoute, Router} from "@angular/router";
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-spell-list',

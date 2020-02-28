@@ -4,6 +4,7 @@ import {ContentService} from '../../content.service';
 import {MatTableDataSource} from '@angular/material/table';
 import {SelectionModel} from '@angular/cdk/collections';
 import {Relic} from '../../data-model/relic';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-relic-list',
@@ -13,7 +14,7 @@ import {Relic} from '../../data-model/relic';
 export class RelicListComponent implements OnInit {
   @ViewChild(MatSort, {static: true}) sort: MatSort;
 
-  constructor(private contentService: ContentService) {
+  constructor(private contentService: ContentService, private route: ActivatedRoute, private router: Router) {
   }
 
   columnsToDisplay: string[] = ['name', 'source'];
@@ -33,10 +34,16 @@ export class RelicListComponent implements OnInit {
     };
 
     this.selection = new SelectionModel<Relic>(false, null);
+    this.route.paramMap.subscribe(paramMap => {
+      if (paramMap.has('id')) {
+        const id = paramMap.get('id');
+        this.selection.select(this.dataSource.data.find(s => s.name === id));
+      }
+    });
   }
 
   select(row: Relic) {
-    this.selection.select(row);
+    this.router.navigate(['relic-list', row.name ]);
   }
 
   applyFilter(filter: string) {

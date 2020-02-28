@@ -4,6 +4,7 @@ import {ContentService} from '../../content.service';
 import {MatTableDataSource} from '@angular/material/table';
 import {SelectionModel} from '@angular/cdk/collections';
 import {Tradition} from '../../data-model/tradition';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-tradition-list',
@@ -13,7 +14,7 @@ import {Tradition} from '../../data-model/tradition';
 export class TraditionListComponent implements OnInit {
   @ViewChild(MatSort, {static: true}) sort: MatSort;
 
-  constructor(private contentService: ContentService) {
+  constructor(private contentService: ContentService, private route: ActivatedRoute, private router: Router) {
   }
 
   columnsToDisplay: string[] = ['name', 'attribute', 'source'];
@@ -32,10 +33,16 @@ export class TraditionListComponent implements OnInit {
     };
 
     this.selection = new SelectionModel<Tradition>(false, null);
+    this.route.paramMap.subscribe(paramMap => {
+      if (paramMap.has('id')) {
+        const id = paramMap.get('id');
+        this.selection.select(this.dataSource.data.find(s => s.name === id));
+      }
+    });
   }
 
   select(row: Tradition) {
-    this.selection.select(row);
+    this.router.navigate(['tradition-list', row.name ]);
   }
 
   applyFilter(filter: string) {

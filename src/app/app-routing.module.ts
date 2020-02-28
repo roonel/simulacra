@@ -13,11 +13,17 @@ import {TraditionListComponent} from './tradition/tradition-list/tradition-list.
 const routes: Routes = [
   {path: 'spell-list/:id', component: SpellListComponent},
   {path: 'spell-list', component: SpellListComponent},
+  {path: 'creature-list/:id', component: CreatureListComponent},
   {path: 'creature-list', component: CreatureListComponent},
+  {path: 'ancestry-list/:id', component: AncestryListComponent},
   {path: 'ancestry-list', component: AncestryListComponent},
+  {path: 'path-list/:id', component: PathListComponent},
   {path: 'path-list', component: PathListComponent},
+  {path: 'item-list/:id', component: ItemListComponent},
   {path: 'item-list', component: ItemListComponent},
+  {path: 'relic-list/:id', component: RelicListComponent},
   {path: 'relic-list', component: RelicListComponent},
+  {path: 'tradition-list/:id', component: TraditionListComponent},
   {path: 'tradition-list', component: TraditionListComponent},
   {path: 'data-creator', component: DataCreatorComponent},
   {path: 'contents', component: ContentHandlerComponent}
