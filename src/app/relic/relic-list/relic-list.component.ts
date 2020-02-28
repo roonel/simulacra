@@ -37,13 +37,13 @@ export class RelicListComponent implements OnInit {
     this.route.paramMap.subscribe(paramMap => {
       if (paramMap.has('id')) {
         const id = paramMap.get('id');
-        this.selection.select(this.dataSource.data.find(s => s.name === id));
+        this.selection.select(this.dataSource.data.find(s => s.name.replace(/\s/g, '') === id));
       }
     });
   }
 
   select(row: Relic) {
-    this.router.navigate(['relic-list', row.name ]);
+    this.router.navigate(['relic-list', row.name.replace(/\s/g, '') ]);
   }
 
   applyFilter(filter: string) {
