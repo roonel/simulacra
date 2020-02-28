@@ -9,8 +9,11 @@ import {ContentHandlerComponent} from './content-handler/content-handler.compone
 import {ItemListComponent} from './item/item-list/item-list.component';
 import {RelicListComponent} from './relic/relic-list/relic-list.component';
 import {TraditionListComponent} from './tradition/tradition-list/tradition-list.component';
+import {DashboardComponent} from './dashboard/dashboard.component';
 
 const routes: Routes = [
+  {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
+  {path: 'dashboard', component: DashboardComponent},
   {path: 'spell-list/:id', component: SpellListComponent},
   {path: 'spell-list', component: SpellListComponent},
   {path: 'creature-list/:id', component: CreatureListComponent},

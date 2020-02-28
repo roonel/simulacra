@@ -13,11 +13,13 @@ import {SharedModule} from './shared/shared.module';
 import { ContentHandlerComponent } from './content-handler/content-handler.component';
 import {RelicModule} from './relic/relic.module';
 import {TraditionModule} from './tradition/tradition.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContentHandlerComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
