@@ -14,7 +14,7 @@
 
         <ng-container matColumnDef="price">
           <th mat-header-cell *matHeaderCellDef mat-sort-header>Price</th>
-          <td mat-cell *matCellDef="let element">{{ getPrice(element.price) }}</td>
+          <td mat-cell *matCellDef="let element">{{ element.price | price }}</td>
         </ng-container>
 
         <ng-container matColumnDef="source">

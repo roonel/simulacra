@@ -13,7 +13,7 @@
   <mat-card-footer>
     {{ item.source.book }} Page {{ item.source.page }}
     <span style="float: right">
-      {{getPrice(item.price)}} - {{item.availability}}
+      {{item.price | price}} - {{item.availability}}
     </span>
   </mat-card-footer>
 </mat-card>
