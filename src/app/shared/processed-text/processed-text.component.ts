@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {Remarkable} from 'remarkable';
+import {Table} from '../../data-model/table';
 
 @Component({
   selector: 'app-processed-text',
@@ -36,6 +37,7 @@ export class ProcessedTextComponent implements OnInit {
     let elements = [];
     const blockLevel = [];
     this.md.block.parse(this._text, {}, {}, blockLevel);
+    console.log(blockLevel);
     for (let i = 0; i < blockLevel.length; i++) {
       const current = blockLevel[i];
       if (current.type === 'paragraph_open') {
@@ -70,6 +72,45 @@ export class ProcessedTextComponent implements OnInit {
         this.md.inline.parse(next.content, {}, {}, headingInline);
         elements.push({type: 'header', value: headingInline[0].content, level: current.hLevel});
         i++;
+      } else if (current.type === 'table_open') {
+        const table: Table = {columns: [], rows: []};
+        i++;
+        let next = blockLevel[i]; // should be thead_open
+        i++; // should be tr_open
+        i++;
+        next = blockLevel[i]; // should be th_open
+        while (next.type !== 'tr_close') {
+          if (next.type === 'th_open') {
+            i++;
+            next = blockLevel[i]; // should be inline
+            table.columns.push(next.content);
+          }
+          i++;
+          next = blockLevel[i];
+        }
+        i++; // should be thead_close
+        i++; // should be tbody_open
+        next = blockLevel[i];
+        while (next.type !== 'tbody_close') {
+          if (next.type === 'tr_open') {
+            const row = [];
+            i++;
+            next = blockLevel[i]; // should be td_open
+            while (next.type !== 'tr_close') {
+              if (next.type === 'td_open') {
+                i++;
+                next = blockLevel[i]; // should be inline
+                row.push(next.content);
+              }
+              i++;
+              next = blockLevel[i];
+            }
+            table.rows.push(row);
+          }
+          i++;
+          next = blockLevel[i];
+        }
+        elements.push({type: 'table', value: table});
       }
     }
     this.dataList = elements;
