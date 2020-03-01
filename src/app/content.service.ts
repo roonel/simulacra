@@ -67,6 +67,11 @@ export class ContentService {
     return contentJsons.split(',');
   }
 
+  getContentFor(contentName: string): Content {
+    const data = localStorage.getItem(contentName);
+    return JSON.parse(data);
+  }
+
   uploadJson(json: string, filename: string): boolean {
     if (localStorage.getItem(filename)) {
       return false;

@@ -8,11 +8,12 @@ import {ContentService} from '../content.service';
 })
 export class ContentHandlerComponent implements OnInit {
 
-  addedContent: string[];
+  addedContent: any[];
   constructor(private contentService: ContentService) { }
 
   ngOnInit(): void {
-    this.addedContent = this.contentService.getContentList();
+    this.addedContent = [];
+    this.contentService.getContentList().forEach(ci => this.addedContent.push({fileName: ci, data: this.contentService.getContentFor(ci)}));
   }
 
   onFilesAdded($event: any) {
