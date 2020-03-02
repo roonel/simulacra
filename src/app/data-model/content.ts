@@ -9,9 +9,9 @@ import {Tradition} from './tradition';
 export interface Content {
   ancestries?: Ancestry[];
   creatures?: Creature[];
+  items?: Item[];
   paths?: Path[];
+  relics?: Relic[];
   spells?: Spell[];
   traditions?: Tradition[];
-  items?: Item[];
-  relics?: Relic[];
 }

@@ -1,3 +1,5 @@
+<h2 mat-dialog-title>Creature : {{creature.name}}</h2>
+<mat-dialog-content class="mat-typography">
 <mat-accordion>
   <mat-expansion-panel>
     <mat-expansion-panel-header>
@@ -133,3 +135,8 @@
            placeholder="Book (Page)"/>
   </mat-form-field>
 </mat-card>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button (click)="save()">Save</button>
+</mat-dialog-actions>

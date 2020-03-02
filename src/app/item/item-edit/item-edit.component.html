@@ -1,0 +1,43 @@
+<h2 mat-dialog-title>Item : {{item.name}}</h2>
+<mat-dialog-content class="mat-typography">
+  <mat-card>
+    <mat-form-field>
+      <input matInput [(ngModel)]="item.name" placeholder="Name"/>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Availability</mat-label>
+      <mat-select [(value)]="item.availability">
+        <mat-option [value]="'Common'">Common</mat-option>
+        <mat-option [value]="'Uncommon'">Uncommon</mat-option>
+        <mat-option [value]="'Rare'">Rare</mat-option>
+        <mat-option [value]="'Exotic'">Exotic</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput type="number" [(ngModel)]="item.price" placeholder="Price"/>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput [(ngModel)]="item.type" placeholder="Type"/>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Description</mat-label>
+      <textarea matInput [(ngModel)]="item.description"
+                cdkAutosizeMinRows="1" cdkAutosizeMaxRows="5"></textarea>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput [(ngModel)]="item.source.book" placeholder="Book"/>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="number" [(ngModel)]="item.source.page"
+             placeholder="Book (Page)"/>
+    </mat-form-field>
+  </mat-card>
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button (click)="save()">Save</button>
+  </mat-dialog-actions>

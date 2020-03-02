@@ -4,12 +4,14 @@ import {SharedModule} from '../shared/shared.module';
 import {SpellListComponent} from './spell-list/spell-list.component';
 import {SpellDetailsComponent} from './spell-details/spell-details.component';
 import {SpellFilterComponent} from './spell-filter/spell-filter.component';
+import {SpellEditComponent} from './spell-edit/spell-edit.component';
 
 @NgModule({
   declarations: [
     SpellListComponent,
     SpellDetailsComponent,
     SpellFilterComponent,
+    SpellEditComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +19,11 @@ import {SpellFilterComponent} from './spell-filter/spell-filter.component';
   ],
   exports: [
     SpellListComponent,
-    SpellDetailsComponent
+    SpellDetailsComponent,
+    SpellEditComponent
+  ],
+  entryComponents: [
+    SpellEditComponent
   ]
 })
 export class SpellModule {

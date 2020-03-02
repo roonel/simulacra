@@ -1,5 +1,6 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import {Ancestry} from '../../data-model/ancestry';
+import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-ancestry-edit',
@@ -8,10 +9,12 @@ import {Ancestry} from '../../data-model/ancestry';
 })
 export class AncestryEditComponent implements OnInit {
 
-  @Input() ancestry: Ancestry;
+  ancestry: Ancestry;
   preproc: string;
 
-  constructor() {
+  constructor(public dialogRef: MatDialogRef<AncestryEditComponent>,
+              @Inject(MAT_DIALOG_DATA) public data: any) {
+    this.ancestry = JSON.parse(JSON.stringify(data));
   }
 
   ngOnInit(): void {
@@ -40,5 +43,13 @@ export class AncestryEditComponent implements OnInit {
     this.ancestry.damage = Number(result[14]);
     this.ancestry.corruption = Number(result[15]);
     this.preproc = '';
+  }
+
+  save() {
+    this.dialogRef.close(this.ancestry);
+  }
+
+  applyId() {
+    this.ancestry.id = this.ancestry.name.replace(/\s/g, '');
   }
 }
