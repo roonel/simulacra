@@ -1,28 +1,19 @@
 <ng-container *ngFor="let item of dataList">
   <ng-container [ngSwitch]="item.type">
-    <ng-container *ngSwitchCase="'text'">{{ item.value }}</ng-container>
-    <ng-container *ngSwitchCase="'break'"><br/></ng-container>
-    <ng-container *ngSwitchCase="'header'"><h2>{{ item.value }} {{item.level}}</h2></ng-container>
-    <ng-container *ngSwitchCase="'bold'"><b>{{ item.value }}</b></ng-container>
-    <ng-container *ngSwitchCase="'italics'"><i>{{ item.value }}</i></ng-container>
-    <ng-container *ngSwitchCase="'link'"><a (click)="navigate(item.link)">{{ item.value }}</a></ng-container>
+    <ng-container *ngSwitchCase="'heading'"><h2>{{ item.content }} {{item.level}}</h2></ng-container>
+    <ng-container *ngSwitchCase="'inline'">
+      <app-inline-render [content]="item.content" (linkClicked)="navigate($event)"></app-inline-render>
+    </ng-container>
     <ng-container *ngSwitchCase="'list'">
       <ul>
-        <li *ngFor="let li of item.value">
-          <span *ngFor="let part of li">
-            <ng-container [ngSwitch]="part.type">
-              <ng-container *ngSwitchCase="'text'">{{ part.value }}</ng-container>
-              <ng-container *ngSwitchCase="'bold'"><b>{{ part.value }}</b></ng-container>
-              <ng-container *ngSwitchCase="'italics'"><i>{{ part.value }}</i></ng-container>
-              <ng-container *ngSwitchCase="'link'"><a (click)="navigate(part.link)">{{ part.value }}</a></ng-container>
-            </ng-container>
-          </span>
+        <li *ngFor="let li of item.content">
+          <app-inline-render [content]="li.content" (linkClicked)="navigate($event)"></app-inline-render>
         </li>
       </ul>
     </ng-container>
     <ng-container *ngSwitchCase="'table'">
-      <app-table [table]="item.value"></app-table>
+      <app-table [table]="item"></app-table>
     </ng-container>
-    <ng-container *ngSwitchDefault>{{ item.value }}</ng-container>
+    <ng-container *ngSwitchDefault>{{ item.content }}</ng-container>
   </ng-container>
 </ng-container>
