@@ -1,0 +1,9 @@
+<span *ngFor="let part of content">
+  <ng-container [ngSwitch]="part.type">
+    <ng-container *ngSwitchCase="'text'">{{ part.content }}</ng-container>
+    <ng-container *ngSwitchCase="'strong'"><b>{{ part.content }}</b></ng-container>
+    <ng-container *ngSwitchCase="'italics'"><i>{{ part.content }}</i></ng-container>
+    <ng-container *ngSwitchCase="'link'"><a (click)="linkClicked.emit(part.url)">{{ part.text }}</a></ng-container>
+    <ng-container *ngSwitchCase="'softbreak'"><br/></ng-container>
+  </ng-container>
+</span>

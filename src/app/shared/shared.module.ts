@@ -8,6 +8,7 @@ import {TraditionIconComponent} from './tradition-icon/tradition-icon.component'
 import {HttpClientModule} from '@angular/common/http';
 import {PricePipe} from './price.pipe';
 import { CastingsPipe } from './castings.pipe';
+import { InlineRenderComponent } from './inline-render/inline-render.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { CastingsPipe } from './castings.pipe';
     TraditionIconComponent,
     PricePipe,
     CastingsPipe,
+    InlineRenderComponent,
   ],
   imports: [
     CommonModule,
