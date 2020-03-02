@@ -5,6 +5,7 @@ import {Table} from './table';
 
 export interface Ancestry {
   name?: string;
+  id?: string;
   description?: string;
   strength?: number;
   agility?: number;

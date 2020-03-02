@@ -1,0 +1,10 @@
+<h2 mat-dialog-title>Content Group</h2>
+<mat-dialog-content>
+  <mat-form-field>
+    <input matInput [(ngModel)]="groupName">
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="groupName" [disabled]="!groupName">Yes</button>
+</mat-dialog-actions>

@@ -1,42 +1,53 @@
 <mat-card>
-  <h2>Content list</h2>
-  <mat-expansion-panel *ngFor="let c of addedContent">
+  <h2>Content Groups</h2>
+  <mat-expansion-panel *ngFor="let c of addedContent; let i = index">
     <mat-expansion-panel-header>
       <mat-panel-title>
         {{c.fileName}}
       </mat-panel-title>
       <mat-panel-description>
-        <button mat-icon-button (click)="removeContent(c)">
+        <button mat-icon-button (click)="removeContent(c.fileName, $event)">
           <mat-icon>delete</mat-icon>
+        </button>
+        <button mat-icon-button (click)="downloadContent(i, $event)">
+          <mat-icon>cloud_download</mat-icon>
         </button>
       </mat-panel-description>
       <ng-template matExpansionPanelContent>
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              Ancestries
-            </mat-panel-title>
-            <mat-panel-description>
-              {{c.data.ancestries.length}}
-            </mat-panel-description>
-          </mat-expansion-panel-header>
-          <ng-template matExpansionPanelContent>
-            <mat-list>
-              <mat-list-item *ngFor="let a of c.data.ancestries"> {{a.name}}
-                <button mat-icon-button>
-                  <mat-icon>edit</mat-icon>
-                </button>
-                <button mat-icon-button>
-                  <mat-icon>delete</mat-icon>
-                </button>
-              </mat-list-item>
-              <mat-list-item>Add new Ancestry</mat-list-item>
-            </mat-list>
-          </ng-template>
-        </mat-expansion-panel>
+        <app-content-category-display [title]="'Ancestry'" [data]="c.data.ancestries"
+                                      (addEntry)="addNewAncestry(i)" (editEntry)="editAncestry($event,i)"
+                                      (deleteEntry)="removeEntry('ancestries', $event, i)">
+        </app-content-category-display>
+        <app-content-category-display [title]="'Creature'" [data]="c.data.creatures"
+                                      (addEntry)="addNewCreature(i)" (editEntry)="editCreature($event,i)"
+                                      (deleteEntry)="removeEntry('creatures', $event, i)">
+        </app-content-category-display>
+        <app-content-category-display [title]="'Item'" [data]="c.data.items"
+                                      (addEntry)="addNewItem(i)" (editEntry)="editItem($event,i)"
+                                      (deleteEntry)="removeEntry('items', $event, i)">
+        </app-content-category-display>
+        <app-content-category-display [title]="'Path'" [data]="c.data.paths"
+                                      (addEntry)="addNewPath(i)" (editEntry)="editPath($event,i)"
+                                      (deleteEntry)="removeEntry('paths', $event, i)">
+        </app-content-category-display>
+        <app-content-category-display [title]="'Relic'" [data]="c.data.relics"
+                                      (addEntry)="addNewRelic(i)" (editEntry)="editRelic($event,i)"
+                                      (deleteEntry)="removeEntry('relics', $event, i)">
+        </app-content-category-display>
+        <app-content-category-display [title]="'Spell'" [data]="c.data.spells"
+                                      (addEntry)="addNewSpell(i)" (editEntry)="editSpell($event,i)"
+                                      (deleteEntry)="removeEntry('spells', $event, i)">
+        </app-content-category-display>
+        <app-content-category-display [title]="'Tradition'" [data]="c.data.traditions"
+                                      (addEntry)="addNewTradition(i)" (editEntry)="editTradition($event,i)"
+                                      (deleteEntry)="removeEntry('traditions', $event, i)">
+        </app-content-category-display>
       </ng-template>
     </mat-expansion-panel-header>
   </mat-expansion-panel>
+</mat-card>
+<mat-card>
   <input type="file" #file name="File Upload"
          id="txtFileUpload" (change)="onFilesAdded($event) " accept=".json "/>
+  <button mat-raised-button (click)="addContentGroup()">Create Content Group</button>
 </mat-card>

@@ -9,6 +9,11 @@ import {HttpClientModule} from '@angular/common/http';
 import {PricePipe} from './price.pipe';
 import { CastingsPipe } from './castings.pipe';
 import { InlineRenderComponent } from './inline-render/inline-render.component';
+import {AbilityListInputComponent} from './ability-list-input/ability-list-input.component';
+import { ConfirmationModalComponent } from './confirmation-modal/confirmation-modal.component';
+import {TableEditComponent} from './table-edit/table-edit.component';
+import {RowInputComponent} from './table-edit/row-input/row-input.component';
+import {StringListInputComponent} from './string-list-input/string-list-input.component';
 
 
 @NgModule({
@@ -19,6 +24,11 @@ import { InlineRenderComponent } from './inline-render/inline-render.component';
     PricePipe,
     CastingsPipe,
     InlineRenderComponent,
+    AbilityListInputComponent,
+    ConfirmationModalComponent,
+    TableEditComponent,
+    RowInputComponent,
+    StringListInputComponent,
   ],
   imports: [
     CommonModule,
@@ -34,8 +44,15 @@ import { InlineRenderComponent } from './inline-render/inline-render.component';
     TableComponent,
     TraditionIconComponent,
     PricePipe,
-    CastingsPipe
+    CastingsPipe,
+    AbilityListInputComponent,
+    TableEditComponent,
+    RowInputComponent,
+    StringListInputComponent,
   ],
+  entryComponents: [
+    ConfirmationModalComponent
+  ]
 })
 export class SharedModule {
 }

@@ -1,5 +1,6 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Inject, Input, OnInit} from '@angular/core';
 import {Creature} from '../../data-model/creature';
+import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-creature-edit',
@@ -8,8 +9,11 @@ import {Creature} from '../../data-model/creature';
 })
 export class CreatureEditComponent implements OnInit {
 
-  @Input() creature: Creature;
-  constructor() { }
+  creature: Creature;
+  constructor(public dialogRef: MatDialogRef<CreatureEditComponent>,
+              @Inject(MAT_DIALOG_DATA) public data: any) {
+    this.creature = JSON.parse(JSON.stringify(data));
+  }
   preproc: string;
   ngOnInit(): void {
   }
@@ -43,4 +47,7 @@ export class CreatureEditComponent implements OnInit {
     this.preproc = '';
   }
 
+  save() {
+    this.dialogRef.close(this.creature);
+  }
 }

@@ -137,4 +137,11 @@ export class ContentService {
     }
     return this.traditionList;
   }
+
+  refresh(fileName: string, data: any) {
+    if (localStorage.getItem(fileName)) {
+      localStorage.setItem(fileName, JSON.stringify(data));
+      this.loadDataFromLocalStorage();
+    }
+  }
 }

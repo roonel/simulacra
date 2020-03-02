@@ -1,7 +1,6 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {SpellListComponent} from './spell/spell-list/spell-list.component';
-import {DataCreatorComponent} from './data-creator/data-creator.component';
 import {CreatureListComponent} from './creature/creature-list/creature-list.component';
 import {AncestryListComponent} from './ancestry/ancestry-list/ancestry-list.component';
 import {PathListComponent} from './path/path-list/path-list.component';
@@ -28,7 +27,6 @@ const routes: Routes = [
   {path: 'relic-list', component: RelicListComponent},
   {path: 'tradition-list/:id', component: TraditionListComponent},
   {path: 'tradition-list', component: TraditionListComponent},
-  {path: 'data-creator', component: DataCreatorComponent},
   {path: 'contents', component: ContentHandlerComponent}
 ];
 

@@ -1,5 +1,6 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import {Path} from '../../data-model/path';
+import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-path-edit',
@@ -8,12 +9,18 @@ import {Path} from '../../data-model/path';
 })
 export class PathEditComponent implements OnInit {
 
-  @Input() path: Path;
+  path: Path;
 
-  constructor() {
+  constructor(public dialogRef: MatDialogRef<PathEditComponent>,
+              @Inject(MAT_DIALOG_DATA) public data: any) {
+    this.path = JSON.parse(JSON.stringify(data));
   }
 
   ngOnInit(): void {
+  }
+
+  save() {
+    this.dialogRef.close(this.path);
   }
 
   onTierSelect(): void {

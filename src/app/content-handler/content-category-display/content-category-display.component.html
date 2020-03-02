@@ -1,0 +1,23 @@
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      {{title}}
+    </mat-panel-title>
+    <mat-panel-description>
+      {{data.length}}
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <ng-template matExpansionPanelContent>
+    <mat-list>
+      <mat-list-item *ngFor="let entry of data; let eIndex = index"> {{entry.name}}
+        <button mat-icon-button (click)="editEntry.emit(eIndex )">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-icon-button (click)="deleteEntry.emit(eIndex)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-list-item>
+      <mat-list-item (click)="addEntry.emit()">Add new {{title}}</mat-list-item>
+    </mat-list>
+  </ng-template>
+</mat-expansion-panel>
