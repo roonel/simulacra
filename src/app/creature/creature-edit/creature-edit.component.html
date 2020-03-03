@@ -1,140 +1,140 @@
 <h2 mat-dialog-title>Creature : {{creature.name}}</h2>
-<mat-dialog-content class="mat-typography">
-<mat-accordion>
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        Preprocessing
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-    <mat-form-field>
+<mat-dialog-content>
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Preprocessing
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-form-field>
           <textarea matInput [(ngModel)]="preproc"
                     cdkAutosizeMinRows="5" cdkAutosizeMaxRows="10"></textarea>
+      </mat-form-field>
+      <button mat-flat-button (click)="process()">Process</button>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <mat-card>
+    <mat-form-field>
+      <input matInput [(ngModel)]="creature.name" placeholder="Name"/>
     </mat-form-field>
-    <button mat-flat-button (click)="process()">Process</button>
-  </mat-expansion-panel>
-</mat-accordion>
-<mat-card>
-  <mat-form-field>
-    <input matInput [(ngModel)]="creature.name" placeholder="Name"/>
-  </mat-form-field>
-  <mat-form-field>
-    <mat-label>Difficulty</mat-label>
-    <mat-select [(value)]="creature.difficulty">
-      <mat-option [value]="1">1</mat-option>
-      <mat-option [value]="5">5</mat-option>
-      <mat-option [value]="10">10</mat-option>
-      <mat-option [value]="25">25</mat-option>
-      <mat-option [value]="50">50</mat-option>
-      <mat-option [value]="100">100</mat-option>
-      <mat-option [value]="250">250</mat-option>
-      <mat-option [value]="500">500</mat-option>
-      <mat-option [value]="1000">1000</mat-option>
-    </mat-select>
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput [(ngModel)]="creature.size" placeholder="Size"/>
-  </mat-form-field>
-  <mat-form-field>
-    <mat-label>Frightening / Horrifying:</mat-label>
-    <mat-select [(value)]="creature.frightening">
-      <mat-option value=""></mat-option>
-      <mat-option value="frightening">frightening</mat-option>
-      <mat-option value="horrifying">horrifying</mat-option>
-    </mat-select>
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput [(ngModel)]="creature.descriptor"
-           placeholder="Descriptor"/>
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput type="number"
-           [(ngModel)]="creature.perception"
-           placeholder="Perception"/>
-  </mat-form-field>
+    <mat-form-field>
+      <mat-label>Difficulty</mat-label>
+      <mat-select [(value)]="creature.difficulty">
+        <mat-option [value]="1">1</mat-option>
+        <mat-option [value]="5">5</mat-option>
+        <mat-option [value]="10">10</mat-option>
+        <mat-option [value]="25">25</mat-option>
+        <mat-option [value]="50">50</mat-option>
+        <mat-option [value]="100">100</mat-option>
+        <mat-option [value]="250">250</mat-option>
+        <mat-option [value]="500">500</mat-option>
+        <mat-option [value]="1000">1000</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [(ngModel)]="creature.size" placeholder="Size"/>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Frightening / Horrifying:</mat-label>
+      <mat-select [(value)]="creature.frightening">
+        <mat-option value=""></mat-option>
+        <mat-option value="frightening">frightening</mat-option>
+        <mat-option value="horrifying">horrifying</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [(ngModel)]="creature.descriptor"
+             placeholder="Descriptor"/>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="number"
+             [(ngModel)]="creature.perception"
+             placeholder="Perception"/>
+    </mat-form-field>
 
-  <mat-form-field>
-    <input matInput [(ngModel)]="creature.specialSenses"
-           placeholder="Special Senses"/>
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput [(ngModel)]="creature.defense"
-           placeholder="Defense"/>
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput [(ngModel)]="creature.armor" placeholder="Armor"/>
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput [(ngModel)]="creature.health"
-           placeholder="Health"/>
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput type="number"
-           [(ngModel)]="creature.strength"
-           placeholder="Strength"/>
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput type="number" [(ngModel)]="creature.agility"
-           placeholder="Agility"/>
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput type="number" [(ngModel)]="creature.intellect"
-           placeholder="Intellect"/>
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput type="number" [(ngModel)]="creature.will"
-           placeholder="Will"/>
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput type="number" [(ngModel)]="creature.speed"
-           placeholder="Speed"/>
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput type="number" [(ngModel)]="creature.insanity"
-           placeholder="Insanity"/>
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput type="number" [(ngModel)]="creature.corruption"
-           placeholder="Corruption"/>
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput [(ngModel)]="creature.specialMovement"
-           placeholder="Special Movement"/>
-  </mat-form-field>
+    <mat-form-field>
+      <input matInput [(ngModel)]="creature.specialSenses"
+             placeholder="Special Senses"/>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [(ngModel)]="creature.defense"
+             placeholder="Defense"/>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [(ngModel)]="creature.armor" placeholder="Armor"/>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [(ngModel)]="creature.health"
+             placeholder="Health"/>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="number"
+             [(ngModel)]="creature.strength"
+             placeholder="Strength"/>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="number" [(ngModel)]="creature.agility"
+             placeholder="Agility"/>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="number" [(ngModel)]="creature.intellect"
+             placeholder="Intellect"/>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="number" [(ngModel)]="creature.will"
+             placeholder="Will"/>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="number" [(ngModel)]="creature.speed"
+             placeholder="Speed"/>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="number" [(ngModel)]="creature.insanity"
+             placeholder="Insanity"/>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="number" [(ngModel)]="creature.corruption"
+             placeholder="Corruption"/>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [(ngModel)]="creature.specialMovement"
+             placeholder="Special Movement"/>
+    </mat-form-field>
 
-  <app-ability-list-input [(list)]="creature.traits" [title]="'Traits'">
-  </app-ability-list-input>
+    <app-ability-list-input [(list)]="creature.traits" [title]="'Traits'">
+    </app-ability-list-input>
 
-  <app-ability-list-input [(list)]="creature.attacks" [title]="'Attacks'">
-  </app-ability-list-input>
-  <app-ability-list-input [(list)]="creature.specialAttacks" [title]="'Special Attacks'">
-  </app-ability-list-input>
-  <app-ability-list-input [(list)]="creature.specialActions" [title]="'Special Actions'">
-  </app-ability-list-input>
+    <app-ability-list-input [(list)]="creature.attacks" [title]="'Attacks'">
+    </app-ability-list-input>
+    <app-ability-list-input [(list)]="creature.specialAttacks" [title]="'Special Attacks'">
+    </app-ability-list-input>
+    <app-ability-list-input [(list)]="creature.specialActions" [title]="'Special Actions'">
+    </app-ability-list-input>
 
-  <app-creature-magic-input [(magic)]="creature.magic"></app-creature-magic-input>
+    <app-creature-magic-input [(magic)]="creature.magic"></app-creature-magic-input>
 
-  <app-ability-list-input [(list)]="creature.endOfRound" [title]="'End of Round'">
-  </app-ability-list-input>
+    <app-ability-list-input [(list)]="creature.endOfRound" [title]="'End of Round'">
+    </app-ability-list-input>
 
-  <mat-form-field>
-    <mat-label>Description</mat-label>
-    <textarea matInput [(ngModel)]="creature.description"
-              cdkAutosizeMinRows="1" cdkAutosizeMaxRows="5"></textarea>
-  </mat-form-field>
-  <mat-form-field>
-    <mat-label>Extra</mat-label>
-    <textarea matInput [(ngModel)]="creature.extra"
-              cdkAutosizeMinRows="1" cdkAutosizeMaxRows="5"></textarea>
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput [(ngModel)]="creature.source.book" placeholder="Book"/>
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput type="number" [(ngModel)]="creature.source.page"
-           placeholder="Book (Page)"/>
-  </mat-form-field>
-</mat-card>
+    <mat-form-field>
+      <mat-label>Description</mat-label>
+      <textarea matInput [(ngModel)]="creature.description"
+                cdkAutosizeMinRows="1" cdkAutosizeMaxRows="5"></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Extra</mat-label>
+      <textarea matInput [(ngModel)]="creature.extra"
+                cdkAutosizeMinRows="1" cdkAutosizeMaxRows="5"></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [(ngModel)]="creature.source.book" placeholder="Book"/>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="number" [(ngModel)]="creature.source.page"
+             placeholder="Book (Page)"/>
+    </mat-form-field>
+  </mat-card>
 </mat-dialog-content>
 <mat-dialog-actions align="end">
   <button mat-button mat-dialog-close>Cancel</button>

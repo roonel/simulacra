@@ -3,7 +3,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 @Component({
   selector: 'app-row-input',
   templateUrl: './row-input.component.html',
-  styleUrls: ['./row-input.component.css']
+  styleUrls: ['./row-input.component.scss']
 })
 export class RowInputComponent implements OnInit {
 

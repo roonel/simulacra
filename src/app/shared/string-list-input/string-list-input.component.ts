@@ -3,7 +3,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 @Component({
   selector: 'app-string-list-input',
   templateUrl: './string-list-input.component.html',
-  styleUrls: ['./string-list-input.component.css']
+  styleUrls: ['./string-list-input.component.scss']
 })
 export class StringListInputComponent implements OnInit {
   constructor() {

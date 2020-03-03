@@ -4,6 +4,7 @@ import {AncestryDetailsComponent} from './ancestry-details/ancestry-details.comp
 import {AncestryListComponent} from './ancestry-list/ancestry-list.component';
 import {SharedModule} from '../shared/shared.module';
 import {AncestryEditComponent} from './ancestry-edit/ancestry-edit.component';
+import { AncestryFilterComponent } from './ancestry-filter/ancestry-filter.component';
 
 
 
@@ -11,7 +12,8 @@ import {AncestryEditComponent} from './ancestry-edit/ancestry-edit.component';
   declarations: [
     AncestryDetailsComponent,
     AncestryListComponent,
-    AncestryEditComponent],
+    AncestryEditComponent,
+    AncestryFilterComponent],
   exports: [
     AncestryDetailsComponent,
     AncestryListComponent,

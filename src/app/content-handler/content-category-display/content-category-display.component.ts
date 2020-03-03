@@ -3,7 +3,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 @Component({
   selector: 'app-content-category-display',
   templateUrl: './content-category-display.component.html',
-  styleUrls: ['./content-category-display.component.css']
+  styleUrls: ['./content-category-display.component.scss']
 })
 export class ContentCategoryDisplayComponent implements OnInit {
   @Input() title: string;

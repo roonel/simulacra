@@ -4,7 +4,7 @@ import {Creature} from '../../data-model/creature';
 @Component({
   selector: 'app-creature-details',
   templateUrl: './creature-details.component.html',
-  styleUrls: ['./creature-details.component.css']
+  styleUrls: ['./creature-details.component.scss']
 })
 export class CreatureDetailsComponent implements OnInit {
   @Input() creature: Creature;

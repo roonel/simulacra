@@ -9,7 +9,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 @Component({
   selector: 'app-tradition-list',
   templateUrl: './tradition-list.component.html',
-  styleUrls: ['./tradition-list.component.css']
+  styleUrls: ['./tradition-list.component.scss']
 })
 export class TraditionListComponent implements OnInit {
   @ViewChild(MatSort, {static: true}) sort: MatSort;

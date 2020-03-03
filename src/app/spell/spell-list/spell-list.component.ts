@@ -10,7 +10,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 @Component({
   selector: 'app-spell-list',
   templateUrl: './spell-list.component.html',
-  styleUrls: ['./spell-list.component.css']
+  styleUrls: ['./spell-list.component.scss']
 })
 export class SpellListComponent implements OnInit {
   @ViewChild(MatSort, {static: true}) sort: MatSort;

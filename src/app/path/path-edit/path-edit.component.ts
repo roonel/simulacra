@@ -5,7 +5,7 @@ import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 @Component({
   selector: 'app-path-edit',
   templateUrl: './path-edit.component.html',
-  styleUrls: ['./path-edit.component.css']
+  styleUrls: ['./path-edit.component.scss']
 })
 export class PathEditComponent implements OnInit {
 

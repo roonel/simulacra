@@ -7,21 +7,24 @@
       <mat-panel-description></mat-panel-description>
     </mat-expansion-panel-header>
 
-    <label>Spell Level</label><br/>
-    <mat-checkbox (change)="checkboxChanged(data, $event, 'levels')"
-                  *ngFor="let data of levels" class="checkbox">
-      Level {{ data }}
-    </mat-checkbox>
-    <br/>
-    <label>Type</label><br/>
-    <mat-checkbox (change)="checkboxChanged(data, $event, 'types')"
-                  *ngFor="let data of types" class="checkbox">
-      {{ data }}
-    </mat-checkbox>
-    <br/>
-    <label>Tradition</label><br/>
-    <mat-checkbox (change)="checkboxChanged(data.name, $event, 'traditions')"
-                  *ngFor="let data of traditions" class="checkbox">
+    <label>Spell Level</label>
+    <div class="checkbox-container">
+      <mat-checkbox (change)="checkboxChanged(data, $event, 'levels')"
+                    *ngFor="let data of levels" class="small">
+        Level {{ data }}
+      </mat-checkbox>
+    </div>
+    <label>Type</label>
+    <div class="checkbox-container">
+      <mat-checkbox (change)="checkboxChanged(data, $event, 'types')"
+                    *ngFor="let data of types" class="medium">
+        {{ data }}
+      </mat-checkbox>
+    </div>
+    <label>Tradition</label>
+    <div class="checkbox-container">
+      <mat-checkbox (change)="checkboxChanged(data.name, $event, 'traditions')"
+                    *ngFor="let data of traditions" class="medium">
       <span class="icon-wrapper">
           {{ data.name }}
         <span *ngIf="data.dark">
@@ -31,16 +34,24 @@
             <app-tradition-icon [type]="'psychic'"></app-tradition-icon>
           </span>
       </span>
-    </mat-checkbox>
-    <br/>
-    <label>Source</label><br/>
-    <mat-checkbox (change)="checkboxChanged(data, $event, 'sources')"
-                  *ngFor="let data of sources" class="checkbox">
-      {{ data }}
-    </mat-checkbox>
+      </mat-checkbox>
+    </div>
+    <label>Source</label>
+
+    <div class="checkbox-container">
+      <mat-checkbox (change)="checkboxChanged(data, $event, 'sources')"
+                    *ngFor="let data of sources" class="checkbox">
+        {{ data }}
+      </mat-checkbox>
+    </div>
   </mat-expansion-panel>
 </mat-accordion>
-<mat-form-field style="width: 100%;">
-  <input matInput [(ngModel)]="dataFilter.name"
-         placeholder="Search" (keyup)="emitChange()"/>
-</mat-form-field>
+<div class="forced-white-color">
+  <mat-form-field style="width: 100%;">
+    <input matInput [(ngModel)]="dataFilter.name"
+           placeholder="Search" (keyup)="emitChange()"/>
+    <button mat-button *ngIf="dataFilter.name" matSuffix mat-icon-button aria-label="Clear" (click)="resetNameFilter()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+</div>

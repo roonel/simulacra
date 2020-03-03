@@ -5,7 +5,7 @@ import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 @Component({
   selector: 'app-item-edit',
   templateUrl: './item-edit.component.html',
-  styleUrls: ['./item-edit.component.css']
+  styleUrls: ['./item-edit.component.scss']
 })
 export class ItemEditComponent implements OnInit {
 

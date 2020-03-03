@@ -5,7 +5,7 @@ import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 @Component({
   selector: 'app-ancestry-edit',
   templateUrl: './ancestry-edit.component.html',
-  styleUrls: ['./ancestry-edit.component.css']
+  styleUrls: ['./ancestry-edit.component.scss']
 })
 export class AncestryEditComponent implements OnInit {
 

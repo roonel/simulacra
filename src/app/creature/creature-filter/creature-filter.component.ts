@@ -5,7 +5,7 @@ import {CreatureFilter} from '../creature-filter';
 @Component({
   selector: 'app-creature-filter',
   templateUrl: './creature-filter.component.html',
-  styleUrls: ['./creature-filter.component.css']
+  styleUrls: ['./creature-filter.component.scss']
 })
 export class CreatureFilterComponent implements OnInit {
 

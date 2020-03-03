@@ -9,7 +9,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 @Component({
   selector: 'app-relic-list',
   templateUrl: './relic-list.component.html',
-  styleUrls: ['./relic-list.component.css']
+  styleUrls: ['./relic-list.component.scss']
 })
 export class RelicListComponent implements OnInit {
   @ViewChild(MatSort, {static: true}) sort: MatSort;

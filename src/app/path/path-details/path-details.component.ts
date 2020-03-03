@@ -4,7 +4,7 @@ import {Path} from '../../data-model/path';
 @Component({
   selector: 'app-path-details',
   templateUrl: './path-details.component.html',
-  styleUrls: ['./path-details.component.css']
+  styleUrls: ['./path-details.component.scss']
 })
 export class PathDetailsComponent implements OnInit {
 

@@ -10,7 +10,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 @Component({
   selector: 'app-creature-list',
   templateUrl: './creature-list.component.html',
-  styleUrls: ['./creature-list.component.css']
+  styleUrls: ['./creature-list.component.scss']
 })
 export class CreatureListComponent implements OnInit {
   @ViewChild(MatSort, {static: true}) sort: MatSort;

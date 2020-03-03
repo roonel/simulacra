@@ -4,7 +4,7 @@ import {Relic} from '../../data-model/relic';
 @Component({
   selector: 'app-relic-details',
   templateUrl: './relic-details.component.html',
-  styleUrls: ['./relic-details.component.css']
+  styleUrls: ['./relic-details.component.scss']
 })
 export class RelicDetailsComponent implements OnInit {
 

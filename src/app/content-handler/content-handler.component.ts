@@ -15,7 +15,7 @@ import {Content} from '../data-model/content';
 @Component({
   selector: 'app-content-handler',
   templateUrl: './content-handler.component.html',
-  styleUrls: ['./content-handler.component.css']
+  styleUrls: ['./content-handler.component.scss']
 })
 export class ContentHandlerComponent implements OnInit {
 

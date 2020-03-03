@@ -4,7 +4,7 @@ import {Tradition} from '../../data-model/tradition';
 @Component({
   selector: 'app-tradition-details',
   templateUrl: './tradition-details.component.html',
-  styleUrls: ['./tradition-details.component.css']
+  styleUrls: ['./tradition-details.component.scss']
 })
 export class TraditionDetailsComponent implements OnInit {
   @Input() tradition: Tradition;

@@ -4,7 +4,7 @@ import {Ability} from '../../data-model/ability';
 @Component({
   selector: 'app-ability-list-input',
   templateUrl: './ability-list-input.component.html',
-  styleUrls: ['./ability-list-input.component.css']
+  styleUrls: ['./ability-list-input.component.scss']
 })
 export class AbilityListInputComponent implements OnInit {
   @Input() list: Ability[];

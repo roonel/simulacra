@@ -4,7 +4,7 @@ import {PathLevel} from '../../../data-model/pathLevel';
 @Component({
   selector: 'app-path-level-input',
   templateUrl: './path-level-input.component.html',
-  styleUrls: ['./path-level-input.component.css']
+  styleUrls: ['./path-level-input.component.scss']
 })
 export class PathLevelInputComponent implements OnInit {
   @Input() pathLevels: PathLevel[];

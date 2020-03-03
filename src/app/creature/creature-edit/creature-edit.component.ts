@@ -5,7 +5,7 @@ import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 @Component({
   selector: 'app-creature-edit',
   templateUrl: './creature-edit.component.html',
-  styleUrls: ['./creature-edit.component.css']
+  styleUrls: ['./creature-edit.component.scss']
 })
 export class CreatureEditComponent implements OnInit {
 

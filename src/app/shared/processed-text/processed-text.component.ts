@@ -6,7 +6,7 @@ import {MarkdownService} from '../../markdown.service';
 @Component({
   selector: 'app-processed-text',
   templateUrl: './processed-text.component.html',
-  styleUrls: ['./processed-text.component.css']
+  styleUrls: ['./processed-text.component.scss']
 })
 export class ProcessedTextComponent implements OnInit {
   // tslint:disable-next-line:variable-name

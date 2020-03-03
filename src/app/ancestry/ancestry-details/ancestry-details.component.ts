@@ -4,7 +4,7 @@ import {Ancestry} from '../../data-model/ancestry';
 @Component({
   selector: 'app-ancestry-details',
   templateUrl: './ancestry-details.component.html',
-  styleUrls: ['./ancestry-details.component.css']
+  styleUrls: ['./ancestry-details.component.scss']
 })
 export class AncestryDetailsComponent implements OnInit {
 

@@ -10,7 +10,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 @Component({
   selector: 'app-path-list',
   templateUrl: './path-list.component.html',
-  styleUrls: ['./path-list.component.css']
+  styleUrls: ['./path-list.component.scss']
 })
 export class PathListComponent implements OnInit {
   @ViewChild(MatSort, {static: true}) sort: MatSort;

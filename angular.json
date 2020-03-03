@@ -24,8 +24,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/assets/styles"
+              ]
+            },
             "scripts": []
           },
           "configurations": {
@@ -88,7 +93,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
@@ -119,6 +124,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "shadow-tools"
+    }
+  },
+  "defaultProject": "shadow-tools",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

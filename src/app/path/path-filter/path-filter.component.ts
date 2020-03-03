@@ -5,7 +5,7 @@ import {MatCheckboxChange} from "@angular/material/checkbox";
 @Component({
   selector: 'app-path-filter',
   templateUrl: './path-filter.component.html',
-  styleUrls: ['./path-filter.component.css']
+  styleUrls: ['./path-filter.component.scss']
 })
 export class PathFilterComponent implements OnInit {
   @Output() filterChange: EventEmitter<string> = new EventEmitter<string>();

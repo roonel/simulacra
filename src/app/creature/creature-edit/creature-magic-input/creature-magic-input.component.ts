@@ -4,7 +4,7 @@ import {CreatureMagic} from '../../../data-model/creature-magic';
 @Component({
   selector: 'app-creature-magic-input',
   templateUrl: './creature-magic-input.component.html',
-  styleUrls: ['./creature-magic-input.component.css']
+  styleUrls: ['./creature-magic-input.component.scss']
 })
 export class CreatureMagicInputComponent implements OnInit {
   @Input() magic: CreatureMagic;

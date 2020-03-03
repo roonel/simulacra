@@ -5,7 +5,7 @@ import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 @Component({
   selector: 'app-spell-edit',
   templateUrl: './spell-edit.component.html',
-  styleUrls: ['./spell-edit.component.css']
+  styleUrls: ['./spell-edit.component.scss']
 })
 export class SpellEditComponent implements OnInit {
 

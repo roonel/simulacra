@@ -7,7 +7,7 @@ import {ContentService} from '../../content.service';
 @Component({
   selector: 'app-spell-filter',
   templateUrl: './spell-filter.component.html',
-  styleUrls: ['./spell-filter.component.css']
+  styleUrls: ['./spell-filter.component.scss']
 })
 export class SpellFilterComponent implements OnInit {
   @Output() filterChange: EventEmitter<string> = new EventEmitter<string>();
@@ -43,5 +43,10 @@ export class SpellFilterComponent implements OnInit {
 
   emitChange() {
     this.filterChange.emit(JSON.stringify(this.dataFilter));
+  }
+
+  resetNameFilter() {
+    this.dataFilter.name = '';
+    this.emitChange();
   }
 }

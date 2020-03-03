@@ -5,7 +5,7 @@ import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 @Component({
   selector: 'app-relic-edit',
   templateUrl: './relic-edit.component.html',
-  styleUrls: ['./relic-edit.component.css']
+  styleUrls: ['./relic-edit.component.scss']
 })
 export class RelicEditComponent implements OnInit {
 

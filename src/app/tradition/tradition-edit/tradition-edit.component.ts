@@ -5,7 +5,7 @@ import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 @Component({
   selector: 'app-tradition-edit',
   templateUrl: './tradition-edit.component.html',
-  styleUrls: ['./tradition-edit.component.css']
+  styleUrls: ['./tradition-edit.component.scss']
 })
 export class TraditionEditComponent implements OnInit {
 

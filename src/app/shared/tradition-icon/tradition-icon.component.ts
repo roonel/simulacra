@@ -5,7 +5,7 @@ import {MatIconRegistry} from '@angular/material/icon';
 @Component({
   selector: 'app-tradition-icon',
   templateUrl: './tradition-icon.component.html',
-  styleUrls: ['./tradition-icon.component.css']
+  styleUrls: ['./tradition-icon.component.scss']
 })
 export class TraditionIconComponent implements OnInit {
 
