@@ -72,15 +72,15 @@ export class MarkdownService {
       if (quickInline) {
         return inlineNode.content;
       }
-      const extracted = this.collapse(nodes[1].content, {}, true);
+      const extracted = this.collapse(inlineNode.content, {}, true);
       return {
         type: 'inline', content: extracted.nodes.map(inline => {
           if (inline.nodes) {
             if (inline.type === 'link') {
               return {
                 type: 'link',
-                url: nodes[1].children[0].href,
-                text: nodes[1].children[1].content,
+                url: inline.nodes[0].href,
+                text: inline.nodes[1].content,
               };
             }
             return {type: inline.type, content: inline.nodes[1].content};
