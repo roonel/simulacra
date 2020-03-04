@@ -30,6 +30,11 @@ export class ItemFilterComponent implements OnInit {
     this.emitChange();
   }
 
+  resetNameFilter() {
+    this.dataFilter.name = '';
+    this.emitChange();
+  }
+
   emitChange() {
     this.filterChange.emit(JSON.stringify(this.dataFilter));
   }

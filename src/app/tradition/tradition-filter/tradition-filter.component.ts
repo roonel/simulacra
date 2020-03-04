@@ -35,4 +35,9 @@ export class TraditionFilterComponent implements OnInit {
   emitChange() {
     this.filterChange.emit(JSON.stringify(this.dataFilter));
   }
+
+  resetNameFilter() {
+    this.dataFilter.name = '';
+    this.emitChange();
+  }
 }

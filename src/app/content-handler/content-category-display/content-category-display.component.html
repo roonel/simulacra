@@ -4,7 +4,7 @@
       {{title}}
     </mat-panel-title>
     <mat-panel-description>
-      {{data.length}}
+      {{data ? data.length : 0}}
     </mat-panel-description>
   </mat-expansion-panel-header>
   <ng-template matExpansionPanelContent>

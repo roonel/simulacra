@@ -46,13 +46,13 @@ export class AncestryListComponent implements OnInit {
     this.route.paramMap.subscribe(paramMap => {
       if (paramMap.has('id')) {
         const id = paramMap.get('id');
-        this.selection.select(this.dataSource.data.find(s => s.name.replace(/\s/g, '') === id));
+        this.selection.select(this.dataSource.data.find(s => s.id === id));
       }
     });
   }
 
   select(row: Ancestry) {
-    this.router.navigate(['ancestry-list', row.name.replace(/\s/g, '') ]);
+    this.router.navigate(['ancestry-list', row.id ]);
   }
 
   applyFilter(filter: string) {

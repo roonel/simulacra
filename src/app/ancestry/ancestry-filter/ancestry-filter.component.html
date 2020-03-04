@@ -18,7 +18,7 @@
 <mat-form-field style="width: 100%;" class="forced-white-color">
   <input matInput [(ngModel)]="dataFilter.name"
          placeholder="Search" (keyup)="emitChange()"/>
-  <button mat-button *ngIf="dataFilter.name" matSuffix mat-icon-button aria-label="Clear" (click)="dataFilter.name=''">
+  <button mat-button *ngIf="dataFilter.name" matSuffix mat-icon-button aria-label="Clear" (click)="resetNameFilter()">
     <mat-icon>close</mat-icon>
   </button>
 </mat-form-field>

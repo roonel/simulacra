@@ -48,13 +48,13 @@ export class ItemListComponent implements OnInit {
     this.route.paramMap.subscribe(paramMap => {
       if (paramMap.has('id')) {
         const id = paramMap.get('id');
-        this.selection.select(this.dataSource.data.find(s => s.name.replace(/\s/g, '') === id));
+        this.selection.select(this.dataSource.data.find(s => s.id === id));
       }
     });
   }
 
   select(row: Item) {
-    this.router.navigate(['item-list', row.name.replace(/\s/g, '') ]);
+    this.router.navigate(['item-list', row.id ]);
   }
 
   applyFilter(filter: string) {

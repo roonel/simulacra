@@ -6,27 +6,30 @@
       </mat-panel-title>
       <mat-panel-description></mat-panel-description>
     </mat-expansion-panel-header>
-    <label>Descriptors</label><br/>
-    <mat-checkbox
-      (change)="checkboxChanged(data, $event, 'descriptors')"
-      *ngFor="let data of descriptors"
-      class="checkbox">
-      {{ data }}
-    </mat-checkbox>
-    <br>
-    <label>Source</label><br/>
-    <mat-checkbox
-      (change)="checkboxChanged(data, $event, 'sources')"
-      *ngFor="let data of sources"
-      class="checkbox">
-      {{ data }}
-    </mat-checkbox>
+    <label>Descriptors</label>
+      <div class="checkbox-container">
+        <mat-checkbox
+          (change)="checkboxChanged(data, $event, 'descriptors')"
+          *ngFor="let data of descriptors"
+          class="small">
+          {{ data }}
+        </mat-checkbox>
+      </div>
+      <label>Source</label>
+      <div class="checkbox-container">
+        <mat-checkbox
+          (change)="checkboxChanged(data, $event, 'sources')"
+          *ngFor="let data of sources"
+          class="small">
+          {{ data }}
+        </mat-checkbox>
+      </div>
   </mat-expansion-panel>
 </mat-accordion>
-<mat-form-field style="width: 100%;">
-  <input
-    matInput
-    [(ngModel)]="dataFilter.name"
-    placeholder="Search"
-    (keyup)="emitChange()"/>
+<mat-form-field style="width: 100%;" class="forced-white-color">
+  <input matInput [(ngModel)]="dataFilter.name"
+         placeholder="Search" (keyup)="emitChange()"/>
+  <button mat-button *ngIf="dataFilter.name" matSuffix mat-icon-button aria-label="Clear" (click)="resetNameFilter()">
+    <mat-icon>close</mat-icon>
+  </button>
 </mat-form-field>

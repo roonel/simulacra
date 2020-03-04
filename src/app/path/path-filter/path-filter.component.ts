@@ -36,4 +36,8 @@ export class PathFilterComponent implements OnInit {
     this.filterChange.emit(JSON.stringify(this.dataFilter));
   }
 
+  resetNameFilter() {
+    this.dataFilter.name = '';
+    this.emitChange();
+  }
 }

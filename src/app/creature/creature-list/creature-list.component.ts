@@ -54,13 +54,13 @@ export class CreatureListComponent implements OnInit {
     this.route.paramMap.subscribe(paramMap => {
       if (paramMap.has('id')) {
         const id = paramMap.get('id');
-        this.selection.select(this.dataSource.data.find(s => s.name.replace(/\s/g, '') === id));
+        this.selection.select(this.dataSource.data.find(s => s.id === id));
       }
     });
   }
 
   select(row: Creature) {
-    this.router.navigate(['creature-list', row.name.replace(/\s/g, '') ]);
+    this.router.navigate(['creature-list', row.id ]);
   }
 
   applyFilter(filter: string) {

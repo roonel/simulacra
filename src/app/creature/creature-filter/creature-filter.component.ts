@@ -39,4 +39,9 @@ export class CreatureFilterComponent implements OnInit {
   emitChange() {
     this.filterChange.emit(JSON.stringify(this.dataFilter));
   }
+
+  resetNameFilter() {
+    this.dataFilter.name = '';
+    this.emitChange();
+  }
 }
