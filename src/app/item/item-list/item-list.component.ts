@@ -5,6 +5,7 @@ import {MatTableDataSource} from '@angular/material/table';
 import {SelectionModel} from '@angular/cdk/collections';
 import {Item} from '../../data-model/item';
 import {ActivatedRoute, Router} from '@angular/router';
+import {ItemFilter} from '../item-filter';
 
 @Component({
   selector: 'app-item-list',
@@ -20,16 +21,27 @@ export class ItemListComponent implements OnInit {
   columnsToDisplay: string[] = ['name', 'type', 'price', 'source'];
   dataSource: MatTableDataSource<Item>;
   selection: SelectionModel<Item>;
+  bookSources: string[];
 
   ngOnInit() {
     const data = this.contentService.getItemList();
+    this.bookSources = [... new Set(data.map(d => d.source.book))];
     this.dataSource = new MatTableDataSource<Item>(data);
     this.dataSource.sort = this.sort;
     this.dataSource.filterPredicate = (d: Item, filterString: string) => {
       if (!filterString) {
         return true;
       }
-      return d.name.toLowerCase().includes(filterString.toLowerCase());
+      let pred = true;
+      const filter: ItemFilter = JSON.parse(filterString);
+      if (filter.name) {
+        pred =
+          pred && d.name.toLowerCase().includes(filter.name.toLowerCase());
+      }
+      if (pred && filter.sources && filter.sources.length > 0) {
+        pred = pred && filter.sources.includes(d.source.book);
+      }
+      return pred;
     };
 
     this.selection = new SelectionModel<Item>(false, null);

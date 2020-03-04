@@ -5,6 +5,7 @@ import {MatTableDataSource} from '@angular/material/table';
 import {SelectionModel} from '@angular/cdk/collections';
 import {Relic} from '../../data-model/relic';
 import {ActivatedRoute, Router} from '@angular/router';
+import {RelicFilter} from '../relic-filter';
 
 @Component({
   selector: 'app-relic-list',
@@ -20,17 +21,27 @@ export class RelicListComponent implements OnInit {
   columnsToDisplay: string[] = ['name', 'source'];
   dataSource: MatTableDataSource<Relic>;
   selection: SelectionModel<Relic>;
-
+  bookSources: string[];
 
   ngOnInit() {
     const data = this.contentService.getRelicList();
+    this.bookSources = [... new Set(data.map(d => d.source.book))];
     this.dataSource = new MatTableDataSource<Relic>(data);
     this.dataSource.sort = this.sort;
     this.dataSource.filterPredicate = (d: Relic, filterString: string) => {
       if (!filterString) {
         return true;
       }
-      return d.name.toLowerCase().includes(filterString.toLowerCase());
+      let pred = true;
+      const filter: RelicFilter = JSON.parse(filterString);
+      if (filter.name) {
+        pred =
+          pred && d.name.toLowerCase().includes(filter.name.toLowerCase());
+      }
+      if (pred && filter.sources && filter.sources.length > 0) {
+        pred = pred && filter.sources.includes(d.source.book);
+      }
+      return pred;
     };
 
     this.selection = new SelectionModel<Relic>(false, null);

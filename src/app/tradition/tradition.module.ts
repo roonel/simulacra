@@ -4,12 +4,14 @@ import { TraditionListComponent } from './tradition-list/tradition-list.componen
 import { TraditionDetailsComponent } from './tradition-details/tradition-details.component';
 import {SharedModule} from '../shared/shared.module';
 import {TraditionEditComponent} from './tradition-edit/tradition-edit.component';
+import { TraditionFilterComponent } from './tradition-filter/tradition-filter.component';
 
 @NgModule({
   declarations: [
     TraditionListComponent,
     TraditionDetailsComponent,
-    TraditionEditComponent
+    TraditionEditComponent,
+    TraditionFilterComponent
   ],
   imports: [
     CommonModule, SharedModule
