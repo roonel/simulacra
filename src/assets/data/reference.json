@@ -4,7 +4,7 @@
       "name": "Changeling",
       "id": "Changeling",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 13
       }
     },
@@ -12,7 +12,7 @@
       "name": "Clockwork",
       "id": "Clockwork",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 15
       }
     },
@@ -20,7 +20,7 @@
       "name": "Dwarf",
       "id": "Dwarf",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 17
       }
     },
@@ -28,7 +28,7 @@
       "name": "Goblin",
       "id": "Goblin",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 19
       }
     },
@@ -36,7 +36,7 @@
       "name": "Human",
       "id": "Human",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 12
       }
     },
@@ -44,7 +44,7 @@
       "name": "Orc",
       "id": "Orc",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 22
       }
     },
@@ -848,7 +848,7 @@
       "id": "BlessedChild",
       "difficulty": 5,
       "source": {
-        "book": "Hunger in the Void",
+       "book": "The Hunger in the Void",
         "page": 28
       }
     },
@@ -1064,7 +1064,7 @@
       "id": "Bugbear",
       "difficulty": 50,
       "source": {
-        "book": "Hunger in the Void",
+       "book": "The Hunger in the Void",
         "page": 48
       }
     },
@@ -1073,7 +1073,7 @@
       "id": "BugbearHeadhunter",
       "difficulty": 100,
       "source": {
-        "book": "Hunger in the Void",
+       "book": "The Hunger in the Void",
         "page": 48
       }
     },
@@ -1838,7 +1838,7 @@
       "id": "FomorMob",
       "difficulty": 10,
       "source": {
-        "book": "Hunger in the Void",
+       "book": "The Hunger in the Void",
         "page": 44
       }
     },
@@ -1847,7 +1847,7 @@
       "id": "FomorWarrior",
       "difficulty": 10,
       "source": {
-        "book": "Hunger in the Void",
+       "book": "The Hunger in the Void",
         "page": 44
       }
     },
@@ -1856,7 +1856,7 @@
       "id": "FomorVoidCaller",
       "difficulty": 25,
       "source": {
-        "book": "Hunger in the Void",
+       "book": "The Hunger in the Void",
         "page": 45
       }
     },
@@ -2450,7 +2450,7 @@
       "id": "KnightoftheOneTrueGod",
       "difficulty": 50,
       "source": {
-        "book": "Hunger in the Void",
+       "book": "The Hunger in the Void",
         "page": 27
       }
     },
@@ -2873,7 +2873,7 @@
       "id": "Nameless",
       "difficulty": 25,
       "source": {
-        "book": "Hunger in the Void",
+       "book": "The Hunger in the Void",
         "page": 25
       }
     },
@@ -3053,7 +3053,7 @@
       "id": "PhilosopheroftheGlisteningPrince",
       "difficulty": 5,
       "source": {
-        "book": "Hunger in the Void",
+       "book": "The Hunger in the Void",
         "page": 31
       }
     },
@@ -3179,7 +3179,7 @@
       "id": "ReaveroftheSkullKing",
       "difficulty": 25,
       "source": {
-        "book": "Hunger in the Void",
+       "book": "The Hunger in the Void",
         "page": 32
       }
     },
@@ -3485,7 +3485,7 @@
       "id": "SisteroftheBlueHand",
       "difficulty": 25,
       "source": {
-        "book": "Hunger in the Void",
+       "book": "The Hunger in the Void",
         "page": 36
       }
     },
@@ -3818,7 +3818,7 @@
       "id": "VoidBull",
       "difficulty": 250,
       "source": {
-        "book": "Hunger in the Void",
+       "book": "The Hunger in the Void",
         "page": 48
       }
     },
@@ -3854,7 +3854,7 @@
       "id": "WargBerserker",
       "difficulty": 50,
       "source": {
-        "book": "Hunger in the Void",
+       "book": "The Hunger in the Void",
         "page": 46
       }
     },
@@ -3863,7 +3863,7 @@
       "id": "WargHunter",
       "difficulty": 25,
       "source": {
-        "book": "Hunger in the Void",
+       "book": "The Hunger in the Void",
         "page": 46
       }
     },
@@ -3971,7 +3971,7 @@
       "id": "DemonPrince",
       "difficulty": 1000,
       "source": {
-        "book": "Hunger in the Void",
+       "book": "The Hunger in the Void",
         "page": 64
       }
     },
@@ -4000,7 +4000,7 @@
       "id": "Magician",
       "tier": "Novice",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 55
       }
     },
@@ -4009,7 +4009,7 @@
       "id": "Priest",
       "tier": "Novice",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 56
       }
     },
@@ -4018,7 +4018,7 @@
       "id": "Rogue",
       "tier": "Novice",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 57
       }
     },
@@ -4027,7 +4027,7 @@
       "id": "Warrior",
       "tier": "Novice",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 58
       }
     },
@@ -4315,7 +4315,7 @@
       "id": "Artificer",
       "tier": "Expert",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 61
       }
     },
@@ -4333,7 +4333,7 @@
       "id": "Assassin",
       "tier": "Expert",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 62
       }
     },
@@ -4369,7 +4369,7 @@
       "id": "Berserker",
       "tier": "Expert",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 63
       }
     },
@@ -4432,7 +4432,7 @@
       "id": "Cleric",
       "tier": "Expert",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 64
       }
     },
@@ -4585,7 +4585,7 @@
       "id": "Druid",
       "tier": "Expert",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 65
       }
     },
@@ -4657,7 +4657,7 @@
       "id": "Fighter",
       "tier": "Expert",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 66
       }
     },
@@ -4963,7 +4963,7 @@
       "id": "Oracle",
       "tier": "Expert",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 67
       }
     },
@@ -4981,7 +4981,7 @@
       "id": "Paladin",
       "tier": "Expert",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 68
       }
     },
@@ -5044,7 +5044,7 @@
       "id": "Ranger",
       "tier": "Expert",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 69
       }
     },
@@ -5125,7 +5125,7 @@
       "id": "Scout",
       "tier": "Expert",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 70
       }
     },
@@ -5188,7 +5188,7 @@
       "id": "Sorcerer",
       "tier": "Expert",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 71
       }
     },
@@ -5215,7 +5215,7 @@
       "id": "Spellbinder",
       "tier": "Expert",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 72
       }
     },
@@ -5287,7 +5287,7 @@
       "id": "Thief",
       "tier": "Expert",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 73
       }
     },
@@ -5368,7 +5368,7 @@
       "id": "Warlock",
       "tier": "Expert",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 74
       }
     },
@@ -5386,7 +5386,7 @@
       "id": "Witch",
       "tier": "Expert",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 75
       }
     },
@@ -5395,7 +5395,7 @@
       "id": "Wizard",
       "tier": "Expert",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 76
       }
     },
@@ -5458,7 +5458,7 @@
       "id": "Acrobat",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 79
       }
     },
@@ -5467,7 +5467,7 @@
       "id": "Abjurer",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 79
       }
     },
@@ -5476,7 +5476,7 @@
       "id": "Aeromancer",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 79
       }
     },
@@ -5485,7 +5485,7 @@
       "id": "Apocalyptist",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 80
       }
     },
@@ -5494,7 +5494,7 @@
       "id": "Arcanist",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 80
       }
     },
@@ -5503,7 +5503,7 @@
       "id": "Astromancer",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 80
       }
     },
@@ -5512,7 +5512,7 @@
       "id": "Avenger",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 80
       }
     },
@@ -5521,7 +5521,7 @@
       "id": "Bard",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 81
       }
     },
@@ -5530,7 +5530,7 @@
       "id": "Beastmaster",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 81
       }
     },
@@ -5539,7 +5539,7 @@
       "id": "Blade",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 82
       }
     },
@@ -5548,7 +5548,7 @@
       "id": "Brute",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 82
       }
     },
@@ -5557,7 +5557,7 @@
       "id": "Cavalier",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 82
       }
     },
@@ -5566,7 +5566,7 @@
       "id": "Champion",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 82
       }
     },
@@ -5575,7 +5575,7 @@
       "id": "Chaplain",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 82
       }
     },
@@ -5584,7 +5584,7 @@
       "id": "Chronomancer",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 83
       }
     },
@@ -5593,7 +5593,7 @@
       "id": "Conjurer",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 83
       }
     },
@@ -5602,7 +5602,7 @@
       "id": "Conqueror",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 83
       }
     },
@@ -5611,7 +5611,7 @@
       "id": "Destroyer",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 84
       }
     },
@@ -5620,7 +5620,7 @@
       "id": "DeathDealer",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 84
       }
     },
@@ -5629,7 +5629,7 @@
       "id": "Defender",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 84
       }
     },
@@ -5638,7 +5638,7 @@
       "id": "Dervish",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 84
       }
     },
@@ -5647,7 +5647,7 @@
       "id": "Diviner",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 85
       }
     },
@@ -5656,7 +5656,7 @@
       "id": "Diplomat",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 85
       }
     },
@@ -5665,7 +5665,7 @@
       "id": "Dreadnaught",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 85
       }
     },
@@ -5674,7 +5674,7 @@
       "id": "Enchanter",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 86
       }
     },
@@ -5683,7 +5683,7 @@
       "id": "Duelist",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 86
       }
     },
@@ -5692,7 +5692,7 @@
       "id": "Engineer",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 86
       }
     },
@@ -5701,7 +5701,7 @@
       "id": "Executioner",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 87
       }
     },
@@ -5710,7 +5710,7 @@
       "id": "Exorcist",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 87
       }
     },
@@ -5719,7 +5719,7 @@
       "id": "Explorer",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 87
       }
     },
@@ -5728,7 +5728,7 @@
       "id": "Geomancer",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 88
       }
     },
@@ -5737,7 +5737,7 @@
       "id": "Gladiator",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 88
       }
     },
@@ -5746,7 +5746,7 @@
       "id": "Healer",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 89
       }
     },
@@ -5755,7 +5755,7 @@
       "id": "Hexer",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 89
       }
     },
@@ -5764,7 +5764,7 @@
       "id": "Hydromancer",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 89
       }
     },
@@ -5773,7 +5773,7 @@
       "id": "Gunslinger",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 89
       }
     },
@@ -5782,7 +5782,7 @@
       "id": "Illusionist",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 90
       }
     },
@@ -5791,7 +5791,7 @@
       "id": "Infiltrator",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 90
       }
     },
@@ -5800,7 +5800,7 @@
       "id": "MageKnight",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 91
       }
     },
@@ -5809,7 +5809,7 @@
       "id": "Inquisitor",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 91
       }
     },
@@ -5818,7 +5818,7 @@
       "id": "Jack-Of-All-Trades",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 91
       }
     },
@@ -5827,7 +5827,7 @@
       "id": "Magus",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 92
       }
     },
@@ -5836,7 +5836,7 @@
       "id": "Marauder",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 92
       }
     },
@@ -5845,7 +5845,7 @@
       "id": "MiracleWorker",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 92
       }
     },
@@ -5854,7 +5854,7 @@
       "id": "Necromancer",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 93
       }
     },
@@ -5863,7 +5863,7 @@
       "id": "Myrmidon",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 93
       }
     },
@@ -5872,7 +5872,7 @@
       "id": "Poisoner",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 93
       }
     },
@@ -5881,7 +5881,7 @@
       "id": "Pyromancer",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 94
       }
     },
@@ -5890,7 +5890,7 @@
       "id": "Runesmith",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 94
       }
     },
@@ -5899,7 +5899,7 @@
       "id": "Savant",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 94
       }
     },
@@ -5908,7 +5908,7 @@
       "id": "Shapeshifter",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 95
       }
     },
@@ -5917,7 +5917,7 @@
       "id": "Stormbringer",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 95
       }
     },
@@ -5926,7 +5926,7 @@
       "id": "Sentinel",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 95
       }
     },
@@ -5935,7 +5935,7 @@
       "id": "Sharpshooter",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 95
       }
     },
@@ -5944,7 +5944,7 @@
       "id": "Technomancer",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 96
       }
     },
@@ -5953,7 +5953,7 @@
       "id": "Tenebrist",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 96
       }
     },
@@ -5962,7 +5962,7 @@
       "id": "Templar",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 96
       }
     },
@@ -5971,7 +5971,7 @@
       "id": "Thaumaturge",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 97
       }
     },
@@ -5980,7 +5980,7 @@
       "id": "Theurge",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 97
       }
     },
@@ -5989,7 +5989,7 @@
       "id": "Transmuter",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 97
       }
     },
@@ -5998,7 +5998,7 @@
       "id": "Traveler",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 97
       }
     },
@@ -6007,7 +6007,7 @@
       "id": "Woodwose",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 98
       }
     },
@@ -6016,7 +6016,7 @@
       "id": "WeaponMaster",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 98
       }
     },
@@ -6025,7 +6025,7 @@
       "id": "Zealot",
       "tier": "Master",
       "source": {
-        "book": "Core",
+       "book": "Shadow of the Demon Lord",
         "page": 98
       }
     },
