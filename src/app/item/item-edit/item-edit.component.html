@@ -2,8 +2,9 @@
 <mat-dialog-content>
   <mat-card>
     <mat-form-field>
-      <input matInput [(ngModel)]="item.name" placeholder="Name"/>
+      <input matInput [(ngModel)]="item.name" (ngModelChange)="applyId()" placeholder="Name"/>
     </mat-form-field>
+    <app-id-edit [(value)]="item.id"></app-id-edit>
 
     <mat-form-field>
       <mat-label>Availability</mat-label>

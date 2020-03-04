@@ -23,4 +23,7 @@ export class SpellEditComponent implements OnInit {
     this.dialogRef.close(this.spell);
   }
 
+  applyId() {
+    this.spell.id = this.spell.name.replace(/\s/g, '');
+  }
 }

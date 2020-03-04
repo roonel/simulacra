@@ -33,4 +33,7 @@ export class PathEditComponent implements OnInit {
     }
   }
 
+  applyId() {
+    this.path.id = this.path.name.replace(/\s/g, '');
+  }
 }

@@ -2,8 +2,9 @@
 <mat-dialog-content>
   <mat-card>
     <mat-form-field>
-      <input matInput [(ngModel)]="path.name" placeholder="Name"/>
+      <input matInput [(ngModel)]="path.name" (ngModelChange)="applyId()" placeholder="Name"/>
     </mat-form-field>
+    <app-id-edit [(value)]="path.id"></app-id-edit>
     <mat-form-field>
       <mat-label>Tier</mat-label>
       <mat-select [(value)]="path.tier" (selectionChange)="onTierSelect()">

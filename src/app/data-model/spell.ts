@@ -2,6 +2,7 @@ import {Source} from './source';
 
 export interface Spell {
   name?: string;
+  id?: string;
   tradition?: string;
   type?: string;
   level?: number;

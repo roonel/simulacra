@@ -4,6 +4,7 @@ import {CreatureMagic} from './creature-magic';
 
 export interface Creature {
   name?: string;
+  id?: string;
   difficulty?: number;
   size?: string;
   frightening?: string;

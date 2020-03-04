@@ -20,4 +20,8 @@ export class TraditionEditComponent implements OnInit {
   save() {
     this.dialogRef.close(this.tradition);
   }
+
+  applyId() {
+    this.tradition.id = this.tradition.name.replace(/\s/g, '');
+  }
 }

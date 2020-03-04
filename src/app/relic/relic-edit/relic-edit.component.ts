@@ -24,4 +24,7 @@ export class RelicEditComponent implements OnInit {
     this.dialogRef.close(this.relic);
   }
 
+  applyId() {
+    this.relic.id = this.relic.name.replace(/\s/g, '');
+  }
 }

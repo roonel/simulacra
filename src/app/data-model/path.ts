@@ -4,6 +4,7 @@ import {Table} from './table';
 
 export interface Path {
   name?: string;
+  id?: string;
   description?: string;
   storyDevelopment?: Table;
   tier?: string;

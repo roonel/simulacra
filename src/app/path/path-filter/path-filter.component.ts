@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {PathFilter} from '../path-filter';
-import {MatCheckboxChange} from "@angular/material/checkbox";
+import {MatCheckboxChange} from '@angular/material/checkbox';
 
 @Component({
   selector: 'app-path-filter',

@@ -2,8 +2,9 @@
 <mat-dialog-content>
   <mat-card>
     <mat-form-field>
-      <input matInput [(ngModel)]="relic.name" placeholder="Name"/>
+      <input matInput [(ngModel)]="relic.name" (ngModelChange)="applyId()" placeholder="Name"/>
     </mat-form-field>
+    <app-id-edit [(value)]="relic.id"></app-id-edit>
 
     <app-ability-list-input [(list)]="relic.gameEffects" [title]="'Game Effect'"></app-ability-list-input>
 

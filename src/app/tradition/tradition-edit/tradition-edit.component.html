@@ -2,9 +2,9 @@
 <mat-dialog-content>
   <mat-card>
     <mat-form-field>
-      <input matInput [(ngModel)]="tradition.name" placeholder="Name"/>
+      <input matInput [(ngModel)]="tradition.name" (ngModelChange)="applyId()" placeholder="Name"/>
     </mat-form-field>
-
+    <app-id-edit [(value)]="tradition.id"></app-id-edit>
     <mat-form-field>
       <mat-label>Description</mat-label>
       <textarea matInput [(ngModel)]="tradition.description"

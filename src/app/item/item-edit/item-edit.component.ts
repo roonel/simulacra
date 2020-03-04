@@ -22,4 +22,7 @@ export class ItemEditComponent implements OnInit {
     this.dialogRef.close(this.item);
   }
 
+  applyId() {
+    this.item.id = this.item.name.replace(/\s/g, '');
+  }
 }

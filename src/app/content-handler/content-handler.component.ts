@@ -41,7 +41,7 @@ export class ContentHandlerComponent implements OnInit {
     reader.onload = (data) => {
       const finalJson = reader.result;
       this.contentService.uploadJson(finalJson.toString(), files[0].name);
-      this.addedContent = this.contentService.getContentList();
+      this.refresh();
     };
   }
 
@@ -148,6 +148,9 @@ export class ContentHandlerComponent implements OnInit {
     });
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
+        if (!this.addedContent[contentIndex].data.ancestries) {
+          this.addedContent[contentIndex].data.ancestries = [];
+        }
         this.addedContent[contentIndex].data.ancestries.push(result);
         this.contentService.refresh(this.addedContent[contentIndex].fileName, this.addedContent[contentIndex].data);
       }
@@ -160,6 +163,9 @@ export class ContentHandlerComponent implements OnInit {
     });
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
+        if (!this.addedContent[contentIndex].data.creatures) {
+          this.addedContent[contentIndex].data.creatures = [];
+        }
         this.addedContent[contentIndex].data.creatures.push(result);
         this.contentService.refresh(this.addedContent[contentIndex].fileName, this.addedContent[contentIndex].data);
       }
@@ -172,6 +178,9 @@ export class ContentHandlerComponent implements OnInit {
     });
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
+        if (!this.addedContent[contentIndex].data.items) {
+          this.addedContent[contentIndex].data.items = [];
+        }
         this.addedContent[contentIndex].data.items.push(result);
         this.contentService.refresh(this.addedContent[contentIndex].fileName, this.addedContent[contentIndex].data);
       }
@@ -184,6 +193,9 @@ export class ContentHandlerComponent implements OnInit {
     });
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
+        if (!this.addedContent[contentIndex].data.paths) {
+          this.addedContent[contentIndex].data.paths = [];
+        }
         this.addedContent[contentIndex].data.paths.push(result);
         this.contentService.refresh(this.addedContent[contentIndex].fileName, this.addedContent[contentIndex].data);
       }
@@ -196,6 +208,9 @@ export class ContentHandlerComponent implements OnInit {
     });
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
+        if (!this.addedContent[contentIndex].data.relics) {
+          this.addedContent[contentIndex].data.relics = [];
+        }
         this.addedContent[contentIndex].data.relics.push(result);
         this.contentService.refresh(this.addedContent[contentIndex].fileName, this.addedContent[contentIndex].data);
       }
@@ -208,6 +223,9 @@ export class ContentHandlerComponent implements OnInit {
     });
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
+        if (!this.addedContent[contentIndex].data.spells) {
+          this.addedContent[contentIndex].data.spells = [];
+        }
         this.addedContent[contentIndex].data.spells.push(result);
         this.contentService.refresh(this.addedContent[contentIndex].fileName, this.addedContent[contentIndex].data);
       }
@@ -220,6 +238,9 @@ export class ContentHandlerComponent implements OnInit {
     });
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
+        if (!this.addedContent[contentIndex].data.traditions) {
+          this.addedContent[contentIndex].data.traditions = [];
+        }
         this.addedContent[contentIndex].data.traditions.push(result);
         this.contentService.refresh(this.addedContent[contentIndex].fileName, this.addedContent[contentIndex].data);
       }
@@ -266,6 +287,46 @@ export class ContentHandlerComponent implements OnInit {
         };
         this.contentService.uploadJson(JSON.stringify(content), result);
         this.refresh();
+      }
+    });
+  }
+
+  generateIds() {
+    this.addedContent.forEach(ac => {
+      if (ac.data.ancestries) {
+      ac.data.ancestries.forEach(e => {
+        e.id = e.name.replace(/\s/g, '');
+      });
+      }
+      if (ac.data.creatures) {
+        ac.data.creatures.forEach(e => {
+          e.id = e.name.replace(/\s/g, '');
+        });
+      }
+      if (ac.data.items) {
+      ac.data.items.forEach(e => {
+        e.id = e.name.replace(/\s/g, '');
+      });
+      }
+      if (ac.data.paths) {
+      ac.data.paths.forEach(e => {
+        e.id = e.name.replace(/\s/g, '');
+      });
+      }
+      if (ac.data.relics) {
+      ac.data.relics.forEach(e => {
+        e.id = e.name.replace(/\s/g, '');
+      });
+      }
+      if (ac.data.spells) {
+      ac.data.spells.forEach(e => {
+        e.id = e.name.replace(/\s/g, '');
+      });
+      }
+      if (ac.data.traditions) {
+      ac.data.traditions.forEach(e => {
+        e.id = e.name.replace(/\s/g, '');
+      });
       }
     });
   }

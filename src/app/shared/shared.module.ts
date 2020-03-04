@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {ProcessedTextComponent} from './processed-text/processed-text.component';
 import {TableComponent} from './table/table.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MaterialModule} from '../material.module';
 import {TraditionIconComponent} from './tradition-icon/tradition-icon.component';
 import {HttpClientModule} from '@angular/common/http';
@@ -14,6 +14,7 @@ import { ConfirmationModalComponent } from './confirmation-modal/confirmation-mo
 import {TableEditComponent} from './table-edit/table-edit.component';
 import {RowInputComponent} from './table-edit/row-input/row-input.component';
 import {StringListInputComponent} from './string-list-input/string-list-input.component';
+import { IdEditComponent } from '../shared/id-edit/id-edit.component';
 
 
 @NgModule({
@@ -29,16 +30,19 @@ import {StringListInputComponent} from './string-list-input/string-list-input.co
     TableEditComponent,
     RowInputComponent,
     StringListInputComponent,
+    IdEditComponent,
   ],
   imports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     MaterialModule,
     HttpClientModule,
   ],
   exports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     MaterialModule,
     ProcessedTextComponent,
     TableComponent,
@@ -49,6 +53,7 @@ import {StringListInputComponent} from './string-list-input/string-list-input.co
     TableEditComponent,
     RowInputComponent,
     StringListInputComponent,
+    IdEditComponent,
   ],
   entryComponents: [
     ConfirmationModalComponent

@@ -1,26 +1,10 @@
 <h2 mat-dialog-title>Ancestry : {{ancestry.name}}</h2>
 <mat-dialog-content>
-  <mat-accordion>
-    <mat-expansion-panel>
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Preprocessing
-        </mat-panel-title>
-      </mat-expansion-panel-header>
-      <mat-form-field>
-          <textarea matInput [(ngModel)]="preproc"
-                    cdkAutosizeMinRows="5" cdkAutosizeMaxRows="10"></textarea>
-      </mat-form-field>
-      <button mat-flat-button (click)="process()">Process</button>
-    </mat-expansion-panel>
-  </mat-accordion>
   <mat-card>
     <mat-form-field>
       <input matInput [(ngModel)]="ancestry.name" (ngModelChange)="applyId()" placeholder="Name"/>
     </mat-form-field>
-    <mat-form-field>
-      <input matInput [(ngModel)]="ancestry.id" placeholder="Id"/>
-    </mat-form-field>
+    <app-id-edit [(value)]="ancestry.id"></app-id-edit>
     <mat-form-field>
       <input matInput type="number" [(ngModel)]="ancestry.strength"
              placeholder="Strength"/>
