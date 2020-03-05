@@ -13,11 +13,15 @@ import {RelicModule} from './relic/relic.module';
 import {TraditionModule} from './tradition/tradition.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {ContentHandlerModule} from './content-handler/content-handler.module';
+import { FooterComponent } from './footer/footer.component';
+import { LicenseComponent } from './license/license.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
+    FooterComponent,
+    LicenseComponent,
   ],
   imports: [
     BrowserModule,

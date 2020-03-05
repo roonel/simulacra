@@ -9,6 +9,7 @@ import {ItemListComponent} from './item/item-list/item-list.component';
 import {RelicListComponent} from './relic/relic-list/relic-list.component';
 import {TraditionListComponent} from './tradition/tradition-list/tradition-list.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
+import {LicenseComponent} from './license/license.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
@@ -27,6 +28,7 @@ const routes: Routes = [
   {path: 'relic-list', component: RelicListComponent},
   {path: 'tradition-list/:id', component: TraditionListComponent},
   {path: 'tradition-list', component: TraditionListComponent},
+  {path: 'license', component: LicenseComponent},
   {path: 'contents', component: ContentHandlerComponent}
 ];
 
