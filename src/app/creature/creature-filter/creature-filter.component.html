@@ -7,23 +7,19 @@
       <mat-panel-description></mat-panel-description>
     </mat-expansion-panel-header>
     <label>Descriptors</label>
-      <div class="checkbox-container">
-        <mat-checkbox
-          (change)="checkboxChanged(data, $event, 'descriptors')"
-          *ngFor="let data of descriptors"
-          class="small">
-          {{ data }}
-        </mat-checkbox>
-      </div>
-      <label>Source</label>
-      <div class="checkbox-container">
-        <mat-checkbox
-          (change)="checkboxChanged(data, $event, 'sources')"
-          *ngFor="let data of sources"
-          class="small">
-          {{ data }}
-        </mat-checkbox>
-      </div>
+    <div class="checkbox-container">
+      <mat-checkbox (change)="checkboxChanged(data, $event, 'descriptors')"
+                    *ngFor="let data of descriptors" class="small">
+        {{ data }}
+      </mat-checkbox>
+    </div>
+    <label>Source</label>
+    <div class="checkbox-container">
+      <mat-checkbox (change)="checkboxChanged(data, $event, 'sources')"
+                    *ngFor="let data of sources" class="medium">
+        {{ data }}
+      </mat-checkbox>
+    </div>
   </mat-expansion-panel>
 </mat-accordion>
 <mat-form-field style="width: 100%;" class="forced-white-color">

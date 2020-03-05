@@ -9,20 +9,16 @@
 
     <label>Tier</label>
     <div class="checkbox-container">
-      <mat-checkbox
-        (change)="checkboxChanged(data, $event, 'tiers')"
-        *ngFor="let data of tiers"
-        class="medium">
+      <mat-checkbox (change)="checkboxChanged(data, $event, 'tiers')"
+                    *ngFor="let data of tiers" class="medium">
         {{ data }}
       </mat-checkbox>
     </div>
 
     <label>Source</label>
     <div class="checkbox-container">
-      <mat-checkbox
-        (change)="checkboxChanged(data, $event, 'sources')"
-        *ngFor="let data of sources"
-        class="small">
+      <mat-checkbox (change)="checkboxChanged(data, $event, 'sources')"
+                    *ngFor="let data of sources" class="medium">
         {{ data }}
       </mat-checkbox>
     </div>
