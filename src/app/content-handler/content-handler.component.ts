@@ -291,43 +291,8 @@ export class ContentHandlerComponent implements OnInit {
     });
   }
 
-  generateIds() {
-    this.addedContent.forEach(ac => {
-      if (ac.data.ancestries) {
-      ac.data.ancestries.forEach(e => {
-        e.id = e.name.replace(/\s/g, '');
-      });
-      }
-      if (ac.data.creatures) {
-        ac.data.creatures.forEach(e => {
-          e.id = e.name.replace(/\s/g, '');
-        });
-      }
-      if (ac.data.items) {
-      ac.data.items.forEach(e => {
-        e.id = e.name.replace(/\s/g, '');
-      });
-      }
-      if (ac.data.paths) {
-      ac.data.paths.forEach(e => {
-        e.id = e.name.replace(/\s/g, '');
-      });
-      }
-      if (ac.data.relics) {
-      ac.data.relics.forEach(e => {
-        e.id = e.name.replace(/\s/g, '');
-      });
-      }
-      if (ac.data.spells) {
-      ac.data.spells.forEach(e => {
-        e.id = e.name.replace(/\s/g, '');
-      });
-      }
-      if (ac.data.traditions) {
-      ac.data.traditions.forEach(e => {
-        e.id = e.name.replace(/\s/g, '');
-      });
-      }
-    });
+  addExamples() {
+    this.contentService.addExample();
+    this.refresh();
   }
 }

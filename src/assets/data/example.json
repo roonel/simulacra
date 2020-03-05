@@ -1,0 +1,333 @@
+{
+  "ancestries": [
+    {
+      "source": {
+        "book": "Example",
+        "page": null
+      },
+      "powerfulAncestry": {},
+      "name": "Example Ancestry",
+      "id": "ExampleAncestry",
+      "strength": 10,
+      "agility": 10,
+      "intellect": 10,
+      "will": 11,
+      "extraAttributes": "Receives some extra",
+      "perception": "equals your Intellect",
+      "defense": "equals your Agility",
+      "health": "equals you Strength",
+      "healingRate": "one fourth of your Strenght",
+      "size": "1",
+      "speed": 10,
+      "power": 0,
+      "damage": 0,
+      "insanity": 0,
+      "corruption": 0,
+      "languagesAndProfessions": "speaks Common",
+      "level4Characteristics": "Health +10",
+      "level4OptionsText": "Learn a spell or gain a benefit",
+      "level4Benefits": [
+        {
+          "name": "Example Benefit",
+          "effect": "Effects of example benefit."
+        }
+      ],
+      "description": "This is an example ancestry. \n- **Random information:** This is just more text to show you the lists\n- **Bold entry** Formating uses basic *markdown* commands"
+    }
+  ],
+  "creatures": [
+    {
+      "source": {
+        "book": "Example"
+      },
+      "magic": {
+        "power": 3,
+        "traditions": [
+          {
+            "tradition": "Example",
+            "spells": [
+              "AttackSpell",
+              "UtilitySpell"
+            ]
+          }
+        ]
+      },
+      "name": "Example Creature",
+      "id": "ExampleCreature",
+      "difficulty": 10,
+      "size": "3",
+      "frightening": "horrifying",
+      "descriptor": "example",
+      "perception": 10,
+      "specialSenses": "darksight",
+      "defense": "10",
+      "armor": "plate mail",
+      "health": "50",
+      "strength": 10,
+      "agility": 10,
+      "intellect": 10,
+      "will": 10,
+      "speed": 10,
+      "insanity": 2,
+      "specialMovement": "flier",
+      "traits": [
+        {
+          "name": "Some Vulnerability",
+          "effect": "Hit it with this"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Punch",
+          "effect": "1d6 damage"
+        }
+      ],
+      "specialAttacks": [
+        {
+          "name": "More punch",
+          "effect": "2d6 damage"
+        }
+      ],
+      "specialActions": [
+        {
+          "name": "Ready Punch",
+          "effect": "4d6 damage next round"
+        }
+      ],
+      "endOfRound": [
+        {
+          "name": "Stop Punching",
+          "effect": "Stops punching"
+        }
+      ],
+      "description": "Creature descriptions come here. Use markdown!",
+      "extra": "If there are more tables or information that needs to be displayed this tab will show up"
+    }
+  ],
+  "items": [
+    {
+      "source": {
+        "book": "Example"
+      },
+      "name": "Exmaple Item",
+      "id": "ExmapleItem",
+      "availability": "Uncommon",
+      "price": 1251,
+      "type": "Example",
+      "description": "This is an item. Very useful to have, but it might be a bit pricey"
+    }
+  ],
+  "paths": [
+    {
+      "source": {
+        "book": "Example"
+      },
+      "name": "Examply",
+      "id": "Examply",
+      "tier": "Novice",
+      "pathLevels": [
+        {
+          "level": 1,
+          "attributes": "Increase some attributes",
+          "characteristics": "Gain some stats",
+          "talents": [
+            {
+              "name": "New ability",
+              "effect": "Awesome!"
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "talents": [
+            {
+              "name": "More new abilities",
+              "effect": "I'm getting stronger"
+            }
+          ],
+          "characteristics": "Gain some more stats"
+        },
+        {
+          "level": 5,
+          "characteristics": "Even more stats!",
+          "talents": [
+            {
+              "name": "New power",
+              "effect": "Get new powaa"
+            },
+            {
+              "name": "More?",
+              "effect": "Yes!"
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "characteristics": "Can't have enough stats",
+          "talents": [
+            {
+              "name": "High level power",
+              "effect": "I reached level 8 and all I got is this power"
+            }
+          ]
+        }
+      ],
+      "description": "You start in this. Just a young example",
+      "extra": ""
+    },
+    {
+      "source": {
+        "book": "Example"
+      },
+      "name": "Real Example",
+      "id": "RealExample",
+      "tier": "Expert",
+      "pathLevels": [
+        {
+          "level": 3,
+          "attributes": "Free attributes",
+          "characteristics": "some sweet health",
+          "talents": [
+            {
+              "name": "Get a talent",
+              "effect": "Choose a talent from the **Talents!** list"
+            }
+          ]
+        },
+        {
+          "level": 6,
+          "characteristics": "get some stats",
+          "talents": [
+            {
+              "name": "Test",
+              "effect": "Test effect"
+            },
+            {
+              "name": "Reroll",
+              "effect": "Reroll everything"
+            }
+          ]
+        },
+        {
+          "level": 9,
+          "characteristics": "more stats",
+          "talents": [
+            {
+              "name": "Beefy ability",
+              "effect": "You become strong"
+            }
+          ]
+        }
+      ],
+      "description": "Not much different",
+      "extra": "It might have some extra talents or categories to choose from.\n## Talents!\n- **Fighting** you can fight\n- **Dancing** you can dance"
+    },
+    {
+      "source": {
+        "book": "Example"
+      },
+      "name": "Super Example",
+      "id": "SuperExample",
+      "tier": "Master",
+      "pathLevels": [
+        {
+          "level": 7,
+          "attributes": "Even more attributes",
+          "characteristics": "And some stats",
+          "talents": [
+            {
+              "name": "The lvl7 ability",
+              "effect": "Amazing"
+            }
+          ]
+        },
+        {
+          "level": 10,
+          "characteristics": "statssss",
+          "talents": [
+            {
+              "name": "Shatter World",
+              "effect": "It's over"
+            }
+          ]
+        }
+      ],
+      "description": "This is peak perfomance"
+    }
+  ],
+  "relics": [
+    {
+      "source": {
+        "book": "Example"
+      },
+      "name": "Dark Relic of Great Importance",
+      "id": "DarkRelicofGreatImportance",
+      "description": "Very important relic description that tells you how it was made and stuff",
+      "gameEffects": [
+        {
+          "name": "Powerful effect",
+          "effect": "This weapon does 30d6 damage but eats your soul"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "source": {
+        "book": "Example"
+      },
+      "name": "Attack Spell",
+      "id": "AttackSpell",
+      "tradition": "Example",
+      "level": 2,
+      "type": "Attack",
+      "duration": "",
+      "target": "Some unfortunate folk",
+      "effect": "Do some damage on the target",
+      "triggered": "Do less damage",
+      "twentyPlus": "Even more damage"
+    },
+    {
+      "source": {
+        "book": "Example"
+      },
+      "name": "Utility Spell",
+      "id": "UtilitySpell",
+      "tradition": "Example",
+      "level": 1,
+      "type": "Utility",
+      "area": "Big circle on the ground",
+      "effect": "Some useful stuff",
+      "afterEffect": "",
+      "sacrifice": "Do some other spell"
+    }
+  ],
+  "traditions": [
+    {
+      "source": {
+        "book": "Example"
+      },
+      "name": "Example",
+      "id": "Example",
+      "description": "Just an example tradition"
+    },
+    {
+      "source": {
+        "book": "Example"
+      },
+      "name": "Dark Example",
+      "id": "DarkExample",
+      "description": "This tradition gains you corruption",
+      "dark": true
+    },
+    {
+      "source": {
+        "book": "Example"
+      },
+      "name": "Psychic Example",
+      "id": "PsychicExample",
+      "description": "Use your mind!",
+      "psychic": true
+    }
+  ]
+}
