@@ -9,7 +9,13 @@
         </ng-container>
         <ng-container matColumnDef="tradition">
           <th mat-header-cell *matHeaderCellDef mat-sort-header>Tradition</th>
-          <td mat-cell *matCellDef="let element">{{ element.tradition }}</td>
+          <td mat-cell *matCellDef="let element">{{ element.tradition }}
+            <span *ngIf="traditions[element.tradition]?.dark">
+                <app-tradition-icon [type]="'dark'"></app-tradition-icon>
+              </span>
+            <span *ngIf="traditions[element.tradition]?.psychic">
+                <app-tradition-icon [type]="'psychic'"></app-tradition-icon>
+              </span></td>
         </ng-container>
         <ng-container matColumnDef="type">
           <th mat-header-cell *matHeaderCellDef mat-sort-header>Type</th>

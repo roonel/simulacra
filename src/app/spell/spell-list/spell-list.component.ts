@@ -6,6 +6,7 @@ import {SpellFilter} from '../spell-filter';
 import {ContentService} from '../../content.service';
 import {MatSort} from '@angular/material/sort';
 import {ActivatedRoute, Router} from '@angular/router';
+import {Tradition} from '../../data-model/tradition';
 
 @Component({
   selector: 'app-spell-list',
@@ -18,12 +19,14 @@ export class SpellListComponent implements OnInit {
   dataSource: MatTableDataSource<Spell>;
   selection: SelectionModel<Spell>;
   bookSources: string[];
+  traditions: {} = {};
 
   constructor(private contentService: ContentService, private route: ActivatedRoute, private router: Router) {
   }
 
   ngOnInit() {
     const data = this.contentService.getSpellList();
+    this.contentService.getTraditionList().forEach(t => this.traditions[t.id] = t);
     this.bookSources = [... new Set(data.map(d => d.source.book))];
     this.dataSource = new MatTableDataSource<Spell>(data);
     this.dataSource.sort = this.sort;
