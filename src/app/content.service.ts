@@ -7,6 +7,7 @@ import {Content} from './data-model/content';
 import {Item} from './data-model/item';
 import {Relic} from './data-model/relic';
 import {Tradition} from './data-model/tradition';
+import referenceDoc from '../assets/data/reference.json';
 
 @Injectable({
   providedIn: 'root'
@@ -32,6 +33,10 @@ export class ContentService {
     this.itemList = [];
     this.relicList = [];
     this.traditionList = [];
+    const contentList = this.getContentList();
+    if (contentList.length === 0){
+      this.addReferenceDoc();
+    }
     this.getContentList().forEach(cj => {
       const data = localStorage.getItem(cj);
       const content: Content = JSON.parse(data);
@@ -143,5 +148,9 @@ export class ContentService {
       localStorage.setItem(fileName, JSON.stringify(data));
       this.loadDataFromLocalStorage();
     }
+  }
+
+  private addReferenceDoc() {
+    this.uploadJson(JSON.stringify(referenceDoc), 'Reference');
   }
 }

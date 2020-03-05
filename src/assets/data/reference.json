@@ -1960,8 +1960,8 @@
       }
     },
     {
-      "name": "Gablan",
-      "id": "Gablan",
+      "name": "Gabalan",
+      "id": "Gabalan",
       "difficulty": 25,
       "source": {
         "book": "Beyond the World's Edge",
@@ -3069,7 +3069,16 @@
     {
       "name": "Pirate",
       "id": "Pirate",
-      "difficulty": 43976,
+      "difficulty": 5,
+      "source": {
+        "book": "Freeport Companion",
+        "page": 54
+      }
+    },
+    {
+      "name": "Pirate Captain",
+      "id": "PirateCaptain",
+      "difficulty": 25,
       "source": {
         "book": "Freeport Companion",
         "page": 54
@@ -3159,7 +3168,25 @@
     {
       "name": "Rakeshame",
       "id": "Rakeshame",
-      "difficulty": 43961,
+      "difficulty": 5,
+      "source": {
+        "book": "Beyond the World's Edge",
+        "page": 5
+      }
+    },
+    {
+      "name": "Rakeshame Chief",
+      "id": "RakeshameChief",
+      "difficulty": 10,
+      "source": {
+        "book": "Beyond the World's Edge",
+        "page": 5
+      }
+    },
+    {
+      "name": "Rakeshame Listener",
+      "id": "RakeshameListener",
+      "difficulty": 10,
       "source": {
         "book": "Beyond the World's Edge",
         "page": 5
