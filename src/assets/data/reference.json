@@ -4,7 +4,7 @@
       "name": "Changeling",
       "id": "Changeling",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 13
       }
     },
@@ -12,7 +12,7 @@
       "name": "Clockwork",
       "id": "Clockwork",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 15
       }
     },
@@ -20,7 +20,7 @@
       "name": "Dwarf",
       "id": "Dwarf",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 17
       }
     },
@@ -28,7 +28,7 @@
       "name": "Goblin",
       "id": "Goblin",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 19
       }
     },
@@ -36,7 +36,7 @@
       "name": "Human",
       "id": "Human",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 12
       }
     },
@@ -44,7 +44,7 @@
       "name": "Orc",
       "id": "Orc",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 22
       }
     },
@@ -331,3395 +331,1397 @@
   ],
   "creatures": [
     {
-      "name": "Abomination",
-      "id": "Abomination",
-      "difficulty": 100,
-      "source": {
-        "book": "Wretched and Unclean",
-        "page": 6
-      }
-    },
-    {
-      "name": "Acolyte of the One True God",
-      "id": "AcolyteoftheOneTrueGod",
-      "difficulty": 5,
+      "name": "Amphisbaena",
+      "id": "Amphisbaena",
+      "difficulty": 25,
+      "descriptor": "monster",
       "source": {
         "book": "Shadow of the Demon Lord",
-        "page": 260
-      }
-    },
-    {
-      "name": "Ancient Dragon",
-      "id": "AncientDragon",
-      "difficulty": 1000,
-      "source": {
-        "book": "A Glorious Death",
-        "page": 32
+        "page": 216
       }
     },
     {
       "name": "Huge Animal",
       "id": "HugeAnimal",
       "difficulty": 50,
+      "descriptor": "animal",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 218
+        "page": 217,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Large Animal",
       "id": "LargeAnimal",
       "difficulty": 25,
+      "descriptor": "animal",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 218
+        "page": 217,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Medium Animal",
       "id": "MediumAnimal",
       "difficulty": 10,
+      "descriptor": "animal",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 218
+        "page": 217,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Small Animal",
       "id": "SmallAnimal",
       "difficulty": 1,
+      "descriptor": "animal",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 218
+        "page": 217,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Tiny Animal",
       "id": "TinyAnimal",
       "difficulty": 1,
+      "descriptor": "animal",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 218
+        "page": 217,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Animal Swarm",
       "id": "AnimalSwarm",
       "difficulty": 5,
+      "descriptor": "animal (swarm)",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 218
-      }
-    },
-    {
-      "name": "Anubin",
-      "id": "Anubin",
-      "difficulty": 25,
-      "source": {
-        "book": "Tombs of the Desolation",
-        "page": 26
-      }
-    },
-    {
-      "name": "Amphisbaenas",
-      "id": "Amphisbaenas",
-      "difficulty": 25,
-      "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 217
-      }
-    },
-    {
-      "name": "Animated Beast",
-      "id": "AnimatedBeast",
-      "difficulty": 25,
-      "source": {
-        "book": "Slaves in Death",
-        "page": 2
+        "page": 217,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Animated Corpse",
       "id": "AnimatedCorpse",
       "difficulty": 1,
+      "descriptor": "undead",
       "source": {
         "book": "Shadow of the Demon Lord",
-        "page": 219
-      }
-    },
-    {
-      "name": "Animated Hulk",
-      "id": "AnimatedHulk",
-      "difficulty": 50,
-      "source": {
-        "book": "Slaves in Death",
-        "page": 3
-      }
-    },
-    {
-      "name": "Animated Plant",
-      "id": "AnimatedPlant",
-      "difficulty": 10,
-      "source": {
-        "book": "Occult Philosophy",
-        "page": 135
-      }
-    },
-    {
-      "name": "Animated Steed",
-      "id": "AnimatedSteed",
-      "difficulty": 1,
-      "source": {
-        "book": "Slaves in Death",
-        "page": 2
-      }
-    },
-    {
-      "name": "Animated Tree",
-      "id": "AnimatedTree",
-      "difficulty": 100,
-      "source": {
-        "book": "Occult Philosophy",
-        "page": 135
-      }
-    },
-    {
-      "name": "Angel",
-      "id": "Angel",
-      "difficulty": 50,
-      "source": {
-        "book": "Exquisite Agony",
-        "page": 23
-      }
-    },
-    {
-      "name": "Apparition",
-      "id": "Apparition",
-      "difficulty": 1,
-      "source": {
-        "book": "Beyond the World's Edge",
-        "page": 27
-      }
-    },
-    {
-      "name": "Apprentice Witch",
-      "id": "ApprenticeWitch",
-      "difficulty": 5,
-      "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 260
-      }
-    },
-    {
-      "name": "Apprentice Wizard",
-      "id": "ApprenticeWizard",
-      "difficulty": 5,
-      "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 261
-      }
-    },
-    {
-      "name": "Arachne",
-      "id": "Arachne",
-      "difficulty": 10,
-      "source": {
-        "book": "Demon Lord's Companion",
-        "page": 46
-      }
-    },
-    {
-      "name": "Arachne Abomination",
-      "id": "ArachneAbomination",
-      "difficulty": 5,
-      "source": {
-        "book": "Curse of the Spider Wood",
-        "page": 14
-      }
-    },
-    {
-      "name": "Arachne Champion",
-      "id": "ArachneChampion",
-      "difficulty": 100,
-      "source": {
-        "book": "Curse of the Spider Wood",
-        "page": 12
-      }
-    },
-    {
-      "name": "Arachne High Priest",
-      "id": "ArachneHighPriest",
-      "difficulty": 250,
-      "source": {
-        "book": "Curse of the Spider Wood",
-        "page": 11
-      }
-    },
-    {
-      "name": "Arachne Spider Guard",
-      "id": "ArachneSpiderGuard",
-      "difficulty": 5,
-      "source": {
-        "book": "Curse of the Spider Wood",
-        "page": 13
-      }
-    },
-    {
-      "name": "Arachne Shadow Crawler",
-      "id": "ArachneShadowCrawler",
-      "difficulty": 25,
-      "source": {
-        "book": "Curse of the Spider Wood",
-        "page": 13
-      }
-    },
-    {
-      "name": "Arachne peasant",
-      "id": "ArachnePeasant",
-      "difficulty": 1,
-      "source": {
-        "book": "Curse of the Spider Wood",
-        "page": 14
-      }
-    },
-    {
-      "name": "Arachne Underpriest",
-      "id": "ArachneUnderpriest",
-      "difficulty": 10,
-      "source": {
-        "book": "Curse of the Spider Wood",
-        "page": 12
-      }
-    },
-    {
-      "name": "Arcolinus, The Joyous One",
-      "id": "Arcolinus,theJoyousOne",
-      "difficulty": 25,
-      "source": {
-        "book": "Unholy Champions of the Demon Lord",
-        "page": 2
-      }
-    },
-    {
-      "name": "Arion Charger",
-      "id": "ArionCharger",
-      "difficulty": 100,
-      "source": {
-        "book": "Occult Philosophy",
-        "page": 136
-      }
-    },
-    {
-      "name": "Assassin",
-      "id": "Assassin",
-      "difficulty": 25,
-      "source": {
-        "book": "Freeport Companion",
-        "page": 53
-      }
-    },
-    {
-      "name": "Assembled",
-      "id": "Assembled",
-      "difficulty": 25,
-      "source": {
-        "book": "False Lives",
-        "page": 6
-      }
-    },
-    {
-      "name": "Asrai",
-      "id": "Asrai",
-      "difficulty": 5,
-      "source": {
-        "book": "Terrible Beauty",
-        "page": 39
-      }
-    },
-    {
-      "name": "Splitter",
-      "id": "Splitter",
-      "difficulty": 10,
-      "source": {
-        "book": "False Lives",
-        "page": 2
-      }
-    },
-    {
-      "name": "Driller",
-      "id": "Driller",
-      "difficulty": 10,
-      "source": {
-        "book": "False Lives",
-        "page": 2
-      }
-    },
-    {
-      "name": "Hammerer",
-      "id": "Hammerer",
-      "difficulty": 25,
-      "source": {
-        "book": "False Lives",
-        "page": 3
-      }
-    },
-    {
-      "name": "Hauler",
-      "id": "Hauler",
-      "difficulty": 50,
-      "source": {
-        "book": "False Lives",
-        "page": 3
-      }
-    },
-    {
-      "name": "Loader",
-      "id": "Loader",
-      "difficulty": 5,
-      "source": {
-        "book": "False Lives",
-        "page": 3
-      }
-    },
-    {
-      "name": "Smelter",
-      "id": "Smelter",
-      "difficulty": 10,
-      "source": {
-        "book": "False Lives",
-        "page": 3
-      }
-    },
-    {
-      "name": "Bandit",
-      "id": "Bandit",
-      "difficulty": 1,
-      "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 261
-      }
-    },
-    {
-      "name": "Banshee",
-      "id": "Banshee",
-      "difficulty": 500,
-      "source": {
-        "book": "Terrible Beauty",
-        "page": 40
-      }
-    },
-    {
-      "name": "Balbator",
-      "id": "Balbator",
-      "difficulty": 750,
-      "source": {
-        "book": "Men of Gog",
-        "page": 24
+        "page": 218
       }
     },
     {
       "name": "Barghest",
       "id": "Barghest",
       "difficulty": 250,
+      "descriptor": "faerie (devil)",
       "source": {
         "book": "Shadow of the Demon Lord",
-        "page": 219
-      }
-    },
-    {
-      "name": "Barrow Grim",
-      "id": "BarrowGrim",
-      "difficulty": 10,
-      "source": {
-        "book": "Lords of the Barrows",
-        "page": 10
-      }
-    },
-    {
-      "name": "Barrow Warrior",
-      "id": "BarrowWarrior",
-      "difficulty": 25,
-      "source": {
-        "book": "Lords of the Barrows",
-        "page": 5
+        "page": 218
       }
     },
     {
       "name": "Barrow Wight",
       "id": "BarrowWight",
       "difficulty": 25,
+      "descriptor": "undead",
       "source": {
         "book": "Shadow of the Demon Lord",
-        "page": 220
+        "page": 219
       }
     },
     {
       "name": "Basilisk",
       "id": "Basilisk",
       "difficulty": 250,
+      "descriptor": "monster",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 220
-      }
-    },
-    {
-      "name": "Bean-nighe",
-      "id": "Bean-Nighe",
-      "difficulty": 50,
-      "source": {
-        "book": "Terrible Beauty",
-        "page": 41
+        "page": 219,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Bear",
       "id": "Bear",
       "difficulty": 50,
+      "descriptor": "animal",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 220
+        "page": 219,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Fomor",
       "id": "Fomor",
       "difficulty": 1,
+      "descriptor": "beastman",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 221
+        "page": 220,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Warg",
       "id": "Warg",
       "difficulty": 10,
+      "descriptor": "beastman",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 221
+        "page": 220,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Minotaur",
       "id": "Minotaur",
       "difficulty": 100,
+      "descriptor": "beastman",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 222
-      }
-    },
-    {
-      "name": "Beggar",
-      "id": "Beggar",
-      "difficulty": 1,
-      "source": {
-        "book": "Freeport Companion",
-        "page": 53
-      }
-    },
-    {
-      "name": "Behemoth",
-      "id": "Behemoth",
-      "difficulty": 750,
-      "source": {
-        "book": "Exquisite Agony",
-        "page": 23
-      }
-    },
-    {
-      "name": "Bestia Chief",
-      "id": "BestiaChief",
-      "difficulty": 250,
-      "source": {
-        "book": "Beyond the World's Edge",
-        "page": 14
-      }
-    },
-    {
-      "name": "Bestia Shaman",
-      "id": "BestiaShaman",
-      "difficulty": 50,
-      "source": {
-        "book": "Beyond the World's Edge",
-        "page": 14
-      }
-    },
-    {
-      "name": "Blessed Child",
-      "id": "BlessedChild",
-      "difficulty": 5,
-      "source": {
-       "book": "The Hunger in the Void",
-        "page": 28
-      }
-    },
-    {
-      "name": "Bloated Duchess, The",
-      "id": "BloatedDuchess,The",
-      "difficulty": 250,
-      "source": {
-        "book": "Unholy Champions of the Demon Lord",
-        "page": 4
-      }
-    },
-    {
-      "name": "Bloodsipper Drake",
-      "id": "BloodsipperDrake",
-      "difficulty": 250,
-      "source": {
-        "book": "Of Fire and Venom",
-        "page": 6
-      }
-    },
-    {
-      "name": "Blighter",
-      "id": "Blighter",
-      "difficulty": 100,
-      "source": {
-        "book": "Men of Gog",
-        "page": 28
-      }
-    },
-    {
-      "name": "Blight Steed",
-      "id": "BlightSteed",
-      "difficulty": 25,
-      "source": {
-        "book": "Lords of the Barrows",
-        "page": 8
-      }
-    },
-    {
-      "name": "Blight Wyvern",
-      "id": "BlightWyvern",
-      "difficulty": 250,
-      "source": {
-        "book": "Men of Gog",
-        "page": 21
+        "page": 221,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Bloody Bones",
       "id": "BloodyBones",
       "difficulty": 25,
+      "descriptor": "faerie",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 222
-      }
-    },
-    {
-      "name": "Bloated",
-      "id": "Bloated",
-      "difficulty": 25,
-      "source": {
-        "book": "Trapped in Bone and Flesh",
-        "page": 7
+        "page": 221,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Boggart",
       "id": "Boggart",
       "difficulty": 50,
+      "descriptor": "monster",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 223
-      }
-    },
-    {
-      "name": "Boggle",
-      "id": "Boggle",
-      "difficulty": 10,
-      "source": {
-        "book": "Odd Monsters",
-        "page": 3
-      }
-    },
-    {
-      "name": "Boggie",
-      "id": "Boggie",
-      "difficulty": 5,
-      "source": {
-        "book": "Exquisite Agony",
-        "page": 24
-      }
-    },
-    {
-      "name": "Boogeyman",
-      "id": "Boogeyman",
-      "difficulty": 50,
-      "source": {
-        "book": "Ghastly Gourmands",
-        "page": 5
+        "page": 221,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Bone Machine",
       "id": "BoneMachine",
       "difficulty": 250,
+      "descriptor": "undead",
       "source": {
         "book": "Shadow of the Demon Lord",
-        "page": 223
+        "page": 222
       }
     },
     {
-      "name": "Boneguard",
-      "id": "Boneguard",
+      "name": "Bone Guard",
+      "id": "BoneGuard",
       "difficulty": 25,
+      "descriptor": "undead",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 223
-      }
-    },
-    {
-      "name": "Boneguard Executioner",
-      "id": "BoneguardExecutioner",
-      "difficulty": 50,
-      "source": {
-        "book": "Trapped in Bone and Flesh",
-        "page": 3
-      }
-    },
-    {
-      "name": "Boneguard Commander",
-      "id": "BoneguardCommander",
-      "difficulty": 100,
-      "source": {
-        "book": "Trapped in Bone and Flesh",
-        "page": 3
-      }
-    },
-    {
-      "name": "Boneguard Conflagorator",
-      "id": "BoneguardConflagorator",
-      "difficulty": 50,
-      "source": {
-        "book": "Trapped in Bone and Flesh",
-        "page": 3
-      }
-    },
-    {
-      "name": "Ghastly Boneguard",
-      "id": "GhastlyBoneguard",
-      "difficulty": 50,
-      "source": {
-        "book": "Trapped in Bone and Flesh",
-        "page": 3
-      }
-    },
-    {
-      "name": "Symbiotic Boneguard",
-      "id": "SymbioticBoneguard",
-      "difficulty": 100,
-      "source": {
-        "book": "Trapped in Bone and Flesh",
-        "page": 3
-      }
-    },
-    {
-      "name": "Spider Boneguard",
-      "id": "SpiderBoneguard",
-      "difficulty": 100,
-      "source": {
-        "book": "Trapped in Bone and Flesh",
-        "page": 3
-      }
-    },
-    {
-      "name": "Brag",
-      "id": "Brag",
-      "difficulty": 25,
-      "source": {
-        "book": "Odd Monsters",
-        "page": 4
-      }
-    },
-    {
-      "name": "Brigand",
-      "id": "Brigand",
-      "difficulty": 10,
-      "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 261
+        "page": 222,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Broodling",
       "id": "Broodling",
       "difficulty": 100,
+      "descriptor": "monster",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 224
-      }
-    },
-    {
-      "name": "Brownie",
-      "id": "Brownie",
-      "difficulty": 10,
-      "source": {
-        "book": "Demon Lord's Companion",
-        "page": 10
-      }
-    },
-    {
-      "name": "Bugbear",
-      "id": "Bugbear",
-      "difficulty": 50,
-      "source": {
-       "book": "The Hunger in the Void",
-        "page": 48
-      }
-    },
-    {
-      "name": "Bugbear Headhunter",
-      "id": "BugbearHeadhunter",
-      "difficulty": 100,
-      "source": {
-       "book": "The Hunger in the Void",
-        "page": 48
-      }
-    },
-    {
-      "name": "Buggane",
-      "id": "Buggane",
-      "difficulty": 50,
-      "source": {
-        "book": "Odd Monsters",
-        "page": 4
+        "page": 222,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Burrowing Centipede",
       "id": "BurrowingCentipede",
       "difficulty": 5,
+      "descriptor": "animal",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 224
-      }
-    },
-    {
-      "name": "Butcher",
-      "id": "Butcher",
-      "difficulty": 25,
-      "source": {
-        "book": "Exquisite Agony",
-        "page": 24
-      }
-    },
-    {
-      "name": "Blind Butcher",
-      "id": "BlindButcher",
-      "difficulty": 100,
-      "source": {
-        "book": "Trapped in Bone and Flesh",
-        "page": 7
-      }
-    },
-    {
-      "name": "Butcherbird",
-      "id": "Butcherbird",
-      "difficulty": 5,
-      "source": {
-        "book": "Lords of the Barrows",
-        "page": 5
-      }
-    },
-    {
-      "name": "Cambion",
-      "id": "Cambion",
-      "difficulty": 5,
-      "source": {
-        "book": "Exquisite Agony",
-        "page": 25
+        "page": 223,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Catoblepas",
       "id": "Catoblepas",
       "difficulty": 100,
+      "descriptor": "monster",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 225
-      }
-    },
-    {
-      "name": "Carnivorous Ape",
-      "id": "CarnivorousApe",
-      "difficulty": 10,
-      "source": {
-        "book": "Curse of the Spider Wood",
-        "page": 5
-      }
-    },
-    {
-      "name": "Centaur",
-      "id": "Centaur",
-      "difficulty": 5,
-      "source": {
-        "book": "Demon Lord's Companion",
-        "page": 5
-      }
-    },
-    {
-      "name": "Centaur Archer",
-      "id": "CentaurArcher",
-      "difficulty": 10,
-      "source": {
-        "book": "Riders of the Wind",
-        "page": 4
-      }
-    },
-    {
-      "name": "Centaur Champion",
-      "id": "CentaurChampion",
-      "difficulty": 25,
-      "source": {
-        "book": "Riders of the Wind",
-        "page": 25
-      }
-    },
-    {
-      "name": "Centaur Wind-Caller",
-      "id": "CentaurWind-Caller",
-      "difficulty": 10,
-      "source": {
-        "book": "Riders of the Wind",
-        "page": 4
+        "page": 223,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Chainbound",
       "id": "Chainbound",
       "difficulty": 50,
+      "descriptor": "undead",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 225
+        "page": 224,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Changeling",
       "id": "Changeling",
       "difficulty": 10,
+      "descriptor": "faerie",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 226
-      }
-    },
-    {
-      "name": "Chimera",
-      "id": "Chimera",
-      "difficulty": 750,
-      "source": {
-        "book": "Exquisite Agony",
-        "page": 25
+        "page": 224,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Clockwork",
       "id": "Clockwork",
       "difficulty": 10,
+      "descriptor": "clockwork",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 226
+        "page": 225,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Cockatrice",
       "id": "Cockatrice",
       "difficulty": 25,
+      "descriptor": "monster",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 226
-      }
-    },
-    {
-      "name": "Commoner",
-      "id": "Commoner",
-      "difficulty": 1,
-      "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 261
+        "page": 225,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Huge Construct",
       "id": "HugeConstruct",
       "difficulty": 100,
+      "descriptor": "construct",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 226
+        "page": 225,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Large Construct",
       "id": "LargeConstruct",
       "difficulty": 50,
+      "descriptor": "construct",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 227
+        "page": 225,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Medium Construct",
       "id": "MediumConstruct",
       "difficulty": 10,
+      "descriptor": "construct",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 227
+        "page": 225,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Small Construct",
       "id": "SmallConstruct",
       "difficulty": 5,
+      "descriptor": "construct",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 227
-      }
-    },
-    {
-      "name": "Constrictor Snake",
-      "id": "ConstrictorSnake",
-      "difficulty": 10,
-      "source": {
-        "book": "Curse of the Spider Wood",
-        "page": 5
-      }
-    },
-    {
-      "name": "Colossus",
-      "id": "Colossus",
-      "difficulty": 1000,
-      "source": {
-        "book": "False Lives",
-        "page": 8
-      }
-    },
-    {
-      "name": "Cold Lover",
-      "id": "ColdLover",
-      "difficulty": 10,
-      "source": {
-        "book": "Trapped in Bone and Flesh",
-        "page": 8
-      }
-    },
-    {
-      "name": "Corpse Mother",
-      "id": "CorpseMother",
-      "difficulty": 50,
-      "source": {
-        "book": "Trapped in Bone and Flesh",
-        "page": 8
-      }
-    },
-    {
-      "name": "Crocodile",
-      "id": "Crocodile",
-      "difficulty": 10,
-      "source": {
-        "book": "Curse of the Spider Wood",
-        "page": 5
-      }
-    },
-    {
-      "name": "Cromethius",
-      "id": "Cromethius",
-      "difficulty": 250,
-      "source": {
-        "book": "Unholy Champions of the Demon Lord",
-        "page": 5
-      }
-    },
-    {
-      "name": "Cthonic",
-      "id": "Cthonic",
-      "difficulty": 250,
-      "source": {
-        "book": "Beyond the World's Edge",
-        "page": 26
-      }
-    },
-    {
-      "name": "Cultist",
-      "id": "Cultist",
-      "difficulty": 1,
-      "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 261
-      }
-    },
-    {
-      "name": "High Cultist",
-      "id": "HighCultist",
-      "difficulty": 50,
-      "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 262
-      }
-    },
-    {
-      "name": "Cu Sith",
-      "id": "CuSith",
-      "difficulty": 50,
-      "source": {
-        "book": "Terrible Beauty",
-        "page": 41
-      }
-    },
-    {
-      "name": "Cyclops",
-      "id": "Cyclops",
-      "difficulty": 100,
-      "source": {
-        "book": "Tombs of the Desolation",
-        "page": 27
-      }
-    },
-    {
-      "name": "Dark Speaker",
-      "id": "DarkSpeaker",
-      "difficulty": 50,
-      "source": {
-        "book": "Wretched and Unclean",
-        "page": 5
-      }
-    },
-    {
-      "name": "Darkling",
-      "id": "Darkling",
-      "difficulty": 1,
-      "source": {
-        "book": "Scions of the Betrayer",
-        "page": 22
-      }
-    },
-    {
-      "name": "Darkling Man Hunter",
-      "id": "DarklingManHunter",
-      "difficulty": 50,
-      "source": {
-        "book": "Scions of the Betrayer",
-        "page": 24
+        "page": 225,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Huge Demon",
       "id": "HugeDemon",
       "difficulty": 500,
+      "descriptor": "demon",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 228
+        "page": 226,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Large Demon",
       "id": "LargeDemon",
       "difficulty": 250,
+      "descriptor": "demon",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 228
+        "page": 226,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Medium Demon",
       "id": "MediumDemon",
       "difficulty": 100,
+      "descriptor": "demon",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 228
+        "page": 226,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Small Demon",
       "id": "SmallDemon",
       "difficulty": 25,
+      "descriptor": "demon",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 230
+        "page": 226,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Tiny Demon",
       "id": "TinyDemon",
       "difficulty": 10,
+      "descriptor": "demon",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 230
-      }
-    },
-    {
-      "name": "Demonbinder",
-      "id": "Demonbinder",
-      "difficulty": 100,
-      "source": {
-        "book": "Men of Gog",
-        "page": 28
-      }
-    },
-    {
-      "name": "Death Angel",
-      "id": "DeathAngel",
-      "difficulty": 100,
-      "source": {
-        "book": "Trapped in Bone and Flesh",
-        "page": 9
-      }
-    },
-    {
-      "name": "Death Lord",
-      "id": "DeathLord",
-      "difficulty": 500,
-      "source": {
-        "book": "Tombs of the Desolation",
-        "page": 27
-      }
-    },
-    {
-      "name": "Death Dragon",
-      "id": "DeathDragon",
-      "difficulty": 1000,
-      "source": {
-        "book": "Of Fire and Venom",
-        "page": 6
-      }
-    },
-    {
-      "name": "Deathless",
-      "id": "Deathless",
-      "difficulty": 500,
-      "source": {
-        "book": "Lords of the Barrows",
-        "page": 6
-      }
-    },
-    {
-      "name": "Desiccated One",
-      "id": "DesiccatedOne",
-      "difficulty": 10,
-      "source": {
-        "book": "Tombs of the Desolation",
-        "page": 28
-      }
-    },
-    {
-      "name": "Devourer",
-      "id": "Devourer",
-      "difficulty": 25,
-      "source": {
-        "book": "Beyond the World's Edge",
-        "page": 11
-      }
-    },
-    {
-      "name": "Devilkin",
-      "id": "Devilkin",
-      "difficulty": 5,
-      "source": {
-        "book": "Exquisite Agony",
-        "page": 26
+        "page": 226,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Dire Wolf",
       "id": "DireWolf",
       "difficulty": 50,
+      "descriptor": "faerie",
       "source": {
         "book": "Shadow of the Demon Lord",
-        "page": 230
+        "page": 229
       }
     },
     {
       "name": "Dragon",
       "id": "Dragon",
       "difficulty": 500,
+      "descriptor": "monster",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 230
-      }
-    },
-    {
-      "name": "Dragonman",
-      "id": "Dragonman",
-      "difficulty": 50,
-      "source": {
-        "book": "Foulest Reptiles",
-        "page": 5
+        "page": 229,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Drake",
       "id": "Drake",
       "difficulty": 100,
+      "descriptor": "monster",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 231
-      }
-    },
-    {
-      "name": "Dreamstealer",
-      "id": "Dreamstealer",
-      "difficulty": 25,
-      "source": {
-        "book": "Men of Gog",
-        "page": 22
-      }
-    },
-    {
-      "name": "Dead Cabalist",
-      "id": "DeadCabalist",
-      "difficulty": 250,
-      "source": {
-        "book": "Men of Gog",
-        "page": 29
-      }
-    },
-    {
-      "name": "Drop Spider",
-      "id": "DropSpider",
-      "difficulty": 25,
-      "source": {
-        "book": "Curse of the Spider Wood",
-        "page": 5
-      }
-    },
-    {
-      "name": "Drowned",
-      "id": "Drowned",
-      "difficulty": 1,
-      "source": {
-        "book": "Beyond the World's Edge",
-        "page": 11
-      }
-    },
-    {
-      "name": "Draugr",
-      "id": "Draugr",
-      "difficulty": 50,
-      "source": {
-        "book": "A Glorious Death",
-        "page": 35
+        "page": 230,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Dread Mother",
       "id": "DreadMother",
       "difficulty": 25,
+      "descriptor": "monster",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 231
+        "page": 230,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Dryad",
       "id": "Dryad",
       "difficulty": 50,
+      "descriptor": "faerie",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 232
-      }
-    },
-    {
-      "name": "Disciple of the Witch-King",
-      "id": "DiscipleoftheWitch-King",
-      "difficulty": 1000,
-      "source": {
-        "book": "Men of Gog",
-        "page": 29
-      }
-    },
-    {
-      "name": "Dust Devil",
-      "id": "DustDevil",
-      "difficulty": 25,
-      "source": {
-        "book": "Tombs of the Desolation",
-        "page": 25
+        "page": 231,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Dwarf",
       "id": "Dwarf",
       "difficulty": 10,
+      "descriptor": "dwarf",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 232
-      }
-    },
-    {
-      "name": "Dying Bride",
-      "id": "DyingBride",
-      "difficulty": 1,
-      "source": {
-        "book": "Trapped in Bone and Flesh",
-        "page": 9
-      }
-    },
-    {
-      "name": "Eater of the Dead",
-      "id": "EateroftheDead",
-      "difficulty": 25,
-      "source": {
-        "book": "Trapped in Bone and Flesh",
-        "page": 10
-      }
-    },
-    {
-      "name": "Einherjar",
-      "id": "Einherjar",
-      "difficulty": 50,
-      "source": {
-        "book": "A Glorious Death",
-        "page": 37
+        "page": 231,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Elf",
       "id": "Elf",
       "difficulty": 10,
+      "descriptor": "faerie",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 233
-      }
-    },
-    {
-      "name": "Elf Highborn",
-      "id": "ElfHighborn",
-      "difficulty": 50,
-      "source": {
-        "book": "Terrible Beauty",
-        "page": 42
-      }
-    },
-    {
-      "name": "Elf Knight-Errant",
-      "id": "ElfKnight-Errant",
-      "difficulty": 25,
-      "source": {
-        "book": "Terrible Beauty",
-        "page": 43
-      }
-    },
-    {
-      "name": "Elf Reveller",
-      "id": "ElfReveller",
-      "difficulty": 5,
-      "source": {
-        "book": "Terrible Beauty",
-        "page": 43
-      }
-    },
-    {
-      "name": "Encaged",
-      "id": "Encaged",
-      "difficulty": 25,
-      "source": {
-        "book": "Trapped in Bone and Flesh",
-        "page": 11
-      }
-    },
-    {
-      "name": "Emerald Darter",
-      "id": "EmeraldDarter",
-      "difficulty": 25,
-      "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 233
-      }
-    },
-    {
-      "name": "Exquisite One",
-      "id": "ExquisiteOne",
-      "difficulty": 100,
-      "source": {
-        "book": "Men of Gog",
-        "page": 30
-      }
-    },
-    {
-      "name": "Fallen",
-      "id": "Fallen",
-      "difficulty": 1,
-      "source": {
-        "book": "Men of Gog",
-        "page": 30
-      }
-    },
-    {
-      "name": "Faceless Servant",
-      "id": "FacelessServant",
-      "difficulty": 1,
-      "source": {
-        "book": "Occult Philosophy",
-        "page": 137
-      }
-    },
-    {
-      "name": "Fachen",
-      "id": "Fachen",
-      "difficulty": 10,
-      "source": {
-        "book": "Terrible Beauty",
-        "page": 43
-      }
-    },
-    {
-      "name": "Faun",
-      "id": "Faun",
-      "difficulty": 1,
-      "source": {
-        "book": "Terrible Beauty",
-        "page": 43
-      }
-    },
-    {
-      "name": "Familiar",
-      "id": "Familiar",
-      "difficulty": 5,
-      "source": {
-        "book": "Exquisite Agony",
-        "page": 26
-      }
-    },
-    {
-      "name": "Fenrir",
-      "id": "Fenrir",
-      "difficulty": 100,
-      "source": {
-        "book": "A Glorious Death",
-        "page": 32
-      }
-    },
-    {
-      "name": "Fire Imp",
-      "id": "FireImp",
-      "difficulty": 10,
-      "source": {
-        "book": "Occult Philosophy",
-        "page": 138
-      }
-    },
-    {
-      "name": "Flash Tailor",
-      "id": "FlashTailor",
-      "difficulty": 50,
-      "source": {
-        "book": "Horrific Parasites",
-        "page": 5
-      }
-    },
-    {
-      "name": "Frost Zombie",
-      "id": "FrostZombie",
-      "difficulty": 10,
-      "source": {
-        "book": "A Glorious Death",
-        "page": 31
-      }
-    },
-    {
-      "name": "Forsaken",
-      "id": "Forsaken",
-      "difficulty": 25,
-      "source": {
-        "book": "Tombs of the Desolation",
-        "page": 29
-      }
-    },
-    {
-      "name": "Fossergrim",
-      "id": "Fossergrim",
-      "difficulty": 100,
-      "source": {
-        "book": "A Glorious Death",
-        "page": 27
-      }
-    },
-    {
-      "name": "Fomor Mob",
-      "id": "FomorMob",
-      "difficulty": 10,
-      "source": {
-       "book": "The Hunger in the Void",
-        "page": 44
-      }
-    },
-    {
-      "name": "Fomor Warrior",
-      "id": "FomorWarrior",
-      "difficulty": 10,
-      "source": {
-       "book": "The Hunger in the Void",
-        "page": 44
-      }
-    },
-    {
-      "name": "Fomor Void Caller",
-      "id": "FomorVoidCaller",
-      "difficulty": 25,
-      "source": {
-       "book": "The Hunger in the Void",
-        "page": 45
+        "page": 231,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Fungal Hulk",
       "id": "FungalHulk",
       "difficulty": 50,
+      "descriptor": "fungus",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 233
+        "page": 232,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Fungal Mite",
       "id": "FungalMite",
       "difficulty": 5,
+      "descriptor": "fungus",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 233
+        "page": 232,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Fury",
       "id": "Fury",
       "difficulty": 250,
+      "descriptor": "faerie (devil)",
       "source": {
         "book": "Shadow of the Demon Lord",
-        "page": 234
+        "page": 232
       }
     },
     {
-      "name": "Earth Djinn",
-      "id": "EarthDjinn",
+      "name": "Earth Genie",
+      "id": "EarthGenie",
       "difficulty": 100,
+      "descriptor": "genie",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 234
+        "page": 233,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
-      "name": "Flame Djinn",
-      "id": "FlameDjinn",
+      "name": "Flame Genie",
+      "id": "FlameGenie",
       "difficulty": 100,
+      "descriptor": "genie",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 235
+        "page": 233,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
-      "name": "Ice Djinn",
-      "id": "IceDjinn",
+      "name": "Water Genie",
+      "id": "WaterGenie",
       "difficulty": 100,
+      "descriptor": "genie",
       "source": {
-        "book": "A Glorious Death",
-        "page": 28
+        "page": 233,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
-      "name": "Storm Djinn",
-      "id": "StormDjinn",
+      "name": "Wind Genie",
+      "id": "WindGenie",
       "difficulty": 100,
+      "descriptor": "genie",
       "source": {
-        "book": "Occult Philosophy",
-        "page": 138
-      }
-    },
-    {
-      "name": "Water Djinn",
-      "id": "WaterDjinn",
-      "difficulty": 100,
-      "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 235
-      }
-    },
-    {
-      "name": "Wind Djinn",
-      "id": "WindDjinn",
-      "difficulty": 100,
-      "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 235
-      }
-    },
-    {
-      "name": "Gaping Gorger",
-      "id": "GapingGorger",
-      "difficulty": 100,
-      "source": {
-        "book": "Of Fire and Venom",
-        "page": 7
-      }
-    },
-    {
-      "name": "Gargoyle",
-      "id": "Gargoyle",
-      "difficulty": 50,
-      "source": {
-        "book": "Exquisite Agony",
-        "page": 26
-      }
-    },
-    {
-      "name": "Gabalan",
-      "id": "Gabalan",
-      "difficulty": 25,
-      "source": {
-        "book": "Beyond the World's Edge",
-        "page": 9
-      }
-    },
-    {
-      "name": "Gaunt",
-      "id": "Gaunt",
-      "difficulty": 50,
-      "source": {
-        "book": "Exquisite Agony",
-        "page": 27
-      }
-    },
-    {
-      "name": "Grim Reaper",
-      "id": "GrimReaper",
-      "difficulty": 1000,
-      "source": {
-        "book": "Occult Philosophy",
-        "page": 138
-      }
-    },
-    {
-      "name": "Ghast",
-      "id": "Ghast",
-      "difficulty": 25,
-      "source": {
-        "book": "Beyond the World's Edge",
-        "page": 29
+        "page": 233,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Ghastly Chorus",
       "id": "GhastlyChorus",
       "difficulty": 50,
+      "descriptor": "undead",
       "source": {
         "book": "Shadow of the Demon Lord",
-        "page": 236
+        "page": 235
       }
     },
     {
       "name": "Ghoul",
       "id": "Ghoul",
       "difficulty": 25,
+      "descriptor": "monster",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 236
+        "page": 235,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Giant",
       "id": "Giant",
       "difficulty": 100,
+      "descriptor": "giant",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 237
-      }
-    },
-    {
-      "name": "Giant",
-      "id": "Giant",
-      "difficulty": 100,
-      "source": {
-        "book": "Tombs of the Desolation",
-        "page": 29
+        "page": 236,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Goblin",
       "id": "Goblin",
-      "difficulty": 10,
+      "difficulty": 1,
+      "descriptor": "faerie",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 237
-      }
-    },
-    {
-      "name": "Gloom Creeper",
-      "id": "GloomCreeper",
-      "difficulty": 50,
-      "source": {
-        "book": "Curse of the Spider Wood",
-        "page": 6
-      }
-    },
-    {
-      "name": "God-Killer",
-      "id": "God-Killer",
-      "difficulty": 50,
-      "source": {
-        "book": "Wretched and Unclean",
-        "page": 4
-      }
-    },
-    {
-      "name": "God-Hunter",
-      "id": "God-Hunter",
-      "difficulty": 100,
-      "source": {
-        "book": "Men of Gog",
-        "page": 31
+        "page": 236,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Golem",
       "id": "Golem",
       "difficulty": 500,
+      "descriptor": "construct",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 237
-      }
-    },
-    {
-      "name": "Gog Deathseeker",
-      "id": "GogDeathseeker",
-      "difficulty": 25,
-      "source": {
-        "book": "Men of Gog",
-        "page": 31
+        "page": 236,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Gorgon",
       "id": "Gorgon",
       "difficulty": 500,
+      "descriptor": "monster",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 238
-      }
-    },
-    {
-      "name": "Gnome",
-      "id": "Gnome",
-      "difficulty": 1,
-      "source": {
-        "book": "Children of the Restless Earth",
-        "page": 5
+        "page": 237,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Grave Thrall",
       "id": "GraveThrall",
       "difficulty": 10,
+      "descriptor": "undead",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 239
-      }
-    },
-    {
-      "name": "Infested Grave Thrall",
-      "id": "InfestedGraveThrall",
-      "difficulty": 25,
-      "source": {
-        "book": "Trapped in Bone and Flesh",
-        "page": 5
-      }
-    },
-    {
-      "name": "Grave Thrall Champion",
-      "id": "GraveThrallChampion",
-      "difficulty": 100,
-      "source": {
-        "book": "Trapped in Bone and Flesh",
-        "page": 6
-      }
-    },
-    {
-      "name": "Relentless Grave Thrall",
-      "id": "RelentlessGraveThrall",
-      "difficulty": 10,
-      "source": {
-        "book": "Trapped in Bone and Flesh",
-        "page": 6
-      }
-    },
-    {
-      "name": "Grave Regent",
-      "id": "GraveRegent",
-      "difficulty": 500,
-      "source": {
-        "book": "Lords of the Barrows",
-        "page": 3
+        "page": 237,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Great Cat",
       "id": "GreatCat",
       "difficulty": 50,
+      "descriptor": "animal",
       "source": {
         "book": "Shadow of the Demon Lord",
-        "page": 239
-      }
-    },
-    {
-      "name": "Great Horned Beetle",
-      "id": "GreatHornedBeetle",
-      "difficulty": 100,
-      "source": {
-        "book": "Tombs of the Desolation",
-        "page": 30
+        "page": 238
       }
     },
     {
       "name": "Gremlin",
       "id": "Gremlin",
       "difficulty": 5,
+      "descriptor": "faerie",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 239
+        "page": 238,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Griffon",
       "id": "Griffon",
       "difficulty": 50,
+      "descriptor": "animal",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 239
-      }
-    },
-    {
-      "name": "Gug",
-      "id": "Gug",
-      "difficulty": 250,
-      "source": {
-        "book": "Beyond the World's Edge",
-        "page": 31
+        "page": 238,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Hag",
       "id": "Hag",
       "difficulty": 500,
+      "descriptor": "faerie",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 240
+        "page": 238,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Halfling",
       "id": "Halfling",
-      "difficulty": 10,
+      "difficulty": 1,
+      "descriptor": "halfling",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 241
-      }
-    },
-    {
-      "name": "Harpy",
-      "id": "Harpy",
-      "difficulty": 50,
-      "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 241
+        "page": 239,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Organ Filch",
       "id": "OrganFilch",
       "difficulty": 10,
+      "descriptor": "harvester",
       "source": {
         "book": "Shadow of the Demon Lord",
-        "page": 241
+        "page": 240
       }
     },
     {
       "name": "Tear Thief",
       "id": "TearThief",
       "difficulty": 50,
+      "descriptor": "harvester",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 242
-      }
-    },
-    {
-      "name": "Hellbound Pale One",
-      "id": "HellboundPaleOne",
-      "difficulty": 250,
-      "source": {
-        "book": "Scions of the Betrayer",
-        "page": 23
+        "page": 240,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Hell Swine",
       "id": "HellSwine",
       "difficulty": 50,
+      "descriptor": "animal",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 242
+        "page": 241,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
-      "name": "Hired Killer",
-      "id": "HiredKiller",
-      "difficulty": 10,
-      "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 262
-      }
-    },
-    {
-      "name": "Hogman",
-      "id": "Hogman",
-      "difficulty": 1,
-      "source": {
-        "book": "Exquisite Agony",
-        "page": 27
-      }
-    },
-    {
-      "name": "Hob-Goblin",
-      "id": "Hob-Goblin",
+      "name": "Hobgoblin",
+      "id": "Hobgoblin",
       "difficulty": 5,
+      "descriptor": "faerie",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 242
+        "page": 241,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Hood",
       "id": "Hood",
       "difficulty": 25,
+      "descriptor": "monster",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 243
+        "page": 242,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Horse",
       "id": "Horse",
       "difficulty": 1,
+      "descriptor": "animal",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 243
+        "page": 242,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
-      "name": "Horned Devil",
-      "id": "HornedDevil",
-      "difficulty": 50,
-      "source": {
-        "book": "Foulest Reptiles",
-        "page": 5
-      }
-    },
-    {
-      "name": "Horned Ogre",
-      "id": "HornedOgre",
+      "name": "Jack-O'-Lantern",
+      "id": "JackOLantern",
       "difficulty": 250,
+      "descriptor": "faerie",
       "source": {
-        "book": "Ghastly Gourmands",
-        "page": 7
-      }
-    },
-    {
-      "name": "Hinnom",
-      "id": "Hinnom",
-      "difficulty": 25,
-      "source": {
-        "book": "Unholy Champions of the Demon Lord",
-        "page": 6
-      }
-    },
-    {
-      "name": "Humor Drinker",
-      "id": "HumorDrinker",
-      "difficulty": 100,
-      "source": {
-        "book": "Horrific Parasites",
-        "page": 5
-      }
-    },
-    {
-      "name": "Hujeta",
-      "id": "Hujeta",
-      "difficulty": 250,
-      "source": {
-        "book": "Men of Gog",
-        "page": 25
-      }
-    },
-    {
-      "name": "Ifrit",
-      "id": "Ifrit",
-      "difficulty": 500,
-      "source": {
-        "book": "Exquisite Agony",
-        "page": 28
-      }
-    },
-    {
-      "name": "Incarnation of Nature",
-      "id": "IncarnationofNature",
-      "difficulty": 1000,
-      "source": {
-        "book": "Occult Philosophy",
-        "page": 139
-      }
-    },
-    {
-      "name": "Incubus and Succubus",
-      "id": "IncubusAndSuccubus",
-      "difficulty": 750,
-      "source": {
-        "book": "Exquisite Agony",
-        "page": 29
-      }
-    },
-    {
-      "name": "Indigon",
-      "id": "Indigon",
-      "difficulty": 10,
-      "source": {
-        "book": "Foulest Reptiles",
-        "page": 5
-      }
-    },
-    {
-      "name": "Initiate of the Old Faith",
-      "id": "InitiateoftheOldFaith",
-      "difficulty": 5,
-      "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 262
-      }
-    },
-    {
-      "name": "Imp",
-      "id": "Imp",
-      "difficulty": 25,
-      "source": {
-        "book": "Terrible Beauty",
-        "page": 44
-      }
-    },
-    {
-      "name": "Immortal",
-      "id": "Immortal",
-      "difficulty": 250,
-      "source": {
-        "book": "Men of Gog",
-        "page": 20
-      }
-    },
-    {
-      "name": "Iron Guardian",
-      "id": "IronGuardian",
-      "difficulty": 750,
-      "source": {
-        "book": "Occult Philosophy",
-        "page": 140
-      }
-    },
-    {
-      "name": "Jabberwock",
-      "id": "Jabberwock",
-      "difficulty": 500,
-      "source": {
-        "book": "Terrible Beauty",
-        "page": 44
-      }
-    },
-    {
-      "name": "Jack-o’-lantern",
-      "id": "Jack-O’-Lantern",
-      "difficulty": 250,
-      "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 243
-      }
-    },
-    {
-      "name": "Jotun",
-      "id": "Jotun",
-      "difficulty": 25,
-      "source": {
-        "book": "A Glorious Death",
-        "page": 26
-      }
-    },
-    {
-      "name": "Knight of the One True God",
-      "id": "KnightoftheOneTrueGod",
-      "difficulty": 50,
-      "source": {
-       "book": "The Hunger in the Void",
-        "page": 27
-      }
-    },
-    {
-      "name": "Kobold",
-      "id": "Kobold",
-      "difficulty": 5,
-      "source": {
-        "book": "Terrible Beauty",
-        "page": 45
-      }
-    },
-    {
-      "name": "Kraken",
-      "id": "Kraken",
-      "difficulty": 1000,
-      "source": {
-        "book": "A Glorious Death",
-        "page": 33
-      }
-    },
-    {
-      "name": "Krin",
-      "id": "Krin",
-      "difficulty": 5,
-      "source": {
-        "book": "Beyond the World's Edge",
-        "page": 31
-      }
-    },
-    {
-      "name": "Krin Priest",
-      "id": "KrinPriest",
-      "difficulty": 25,
-      "source": {
-        "book": "Beyond the World's Edge",
-        "page": 31
+        "page": 242,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Killing Mist",
       "id": "KillingMist",
       "difficulty": 250,
+      "descriptor": "undead",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 244
-      }
-    },
-    {
-      "name": "Lares",
-      "id": "Lares",
-      "difficulty": 5,
-      "source": {
-        "book": "Terrible Beauty",
-        "page": 45
+        "page": 243,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Large Spider",
       "id": "LargeSpider",
       "difficulty": 10,
+      "descriptor": "animal",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 244
+        "page": 243,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Lash Crawler",
       "id": "LashCrawler",
       "difficulty": 1,
+      "descriptor": "monster",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 245
-      }
-    },
-    {
-      "name": "Lamia",
-      "id": "Lamia",
-      "difficulty": 250,
-      "source": {
-        "book": "Tombs of the Desolation",
-        "page": 31
-      }
-    },
-    {
-      "name": "Lemure",
-      "id": "Lemure",
-      "difficulty": 25,
-      "source": {
-        "book": "Exquisite Agony",
-        "page": 29
-      }
-    },
-    {
-      "name": "Legion",
-      "id": "Legion",
-      "difficulty": 50,
-      "source": {
-        "book": "False Lives",
-        "page": 9
+        "page": 244,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Leshy",
       "id": "Leshy",
       "difficulty": 250,
+      "descriptor": "plant",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 245
-      }
-    },
-    {
-      "name": "Lobsterman",
-      "id": "Lobsterman",
-      "difficulty": 5,
-      "source": {
-        "book": "Freeport Companion",
-        "page": 54
-      }
-    },
-    {
-      "name": "Longshoreman",
-      "id": "Longshoreman",
-      "difficulty": 1,
-      "source": {
-        "book": "Freeport Companion",
-        "page": 54
-      }
-    },
-    {
-      "name": "Lindorm",
-      "id": "Lindorm",
-      "difficulty": 250,
-      "source": {
-        "book": "A Glorious Death",
-        "page": 33
-      }
-    },
-    {
-      "name": "Living Idol",
-      "id": "LivingIdol",
-      "difficulty": 500,
-      "source": {
-        "book": "Beyond the World's Edge",
-        "page": 28
+        "page": 244,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Living Tar",
       "id": "LivingTar",
       "difficulty": 100,
+      "descriptor": "ooze",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 246
+        "page": 244,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Lizardman",
       "id": "Lizardman",
       "difficulty": 25,
+      "descriptor": "lizardman",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 246
-      }
-    },
-    {
-      "name": "Lizardman Shaman",
-      "id": "LizardmanShaman",
-      "difficulty": 50,
-      "source": {
-        "book": "Foulest Reptiles",
-        "page": 3
+        "page": 245,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Lurk",
       "id": "Lurk",
       "difficulty": 50,
+      "descriptor": "monster",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 246
-      }
-    },
-    {
-      "name": "Malebranche",
-      "id": "Malebranche",
-      "difficulty": 100,
-      "source": {
-        "book": "Exquisite Agony",
-        "page": 30
+        "page": 245,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Manes",
       "id": "Manes",
       "difficulty": 5,
+      "descriptor": "spirit",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 247
+        "page": 246,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Manticore",
       "id": "Manticore",
       "difficulty": 250,
+      "descriptor": "monster",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 247
-      }
-    },
-    {
-      "name": "Merchant",
-      "id": "Merchant",
-      "difficulty": 1,
-      "source": {
-        "book": "Freeport Companion",
-        "page": 54
-      }
-    },
-    {
-      "name": "Mercenary",
-      "id": "Mercenary",
-      "difficulty": 10,
-      "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 262
-      }
-    },
-    {
-      "name": "Menyhad",
-      "id": "Menyhad",
-      "difficulty": 50,
-      "source": {
-        "book": "Malicious Mischief",
-        "page": 4
-      }
-    },
-    {
-      "name": "Merrow",
-      "id": "Merrow",
-      "difficulty": 10,
-      "source": {
-        "book": "Terrible Beauty",
-        "page": 46
-      }
-    },
-    {
-      "name": "Mindkiller",
-      "id": "Mindkiller",
-      "difficulty": 50,
-      "source": {
-        "book": "Men of Gog",
-        "page": 24
-      }
-    },
-    {
-      "name": "Mob of Corpses",
-      "id": "MobofCorpses",
-      "difficulty": 10,
-      "source": {
-        "book": "Occult Philosophy",
-        "page": 135
-      }
-    },
-    {
-      "name": "Mob of Small Zerroths",
-      "id": "MobofSmallZerroths",
-      "difficulty": 100,
-      "source": {
-        "book": "Occult Philosophy",
-        "page": 137
-      }
-    },
-    {
-      "name": "Mob of Manes",
-      "id": "MobofManes",
-      "difficulty": 25,
-      "source": {
-        "book": "Occult Philosophy",
-        "page": 140
-      }
-    },
-    {
-      "name": "Mob of Medium Monsters",
-      "id": "MobofMediumMonsters",
-      "difficulty": 25,
-      "source": {
-        "book": "Occult Philosophy",
-        "page": 141
-      }
-    },
-    {
-      "name": "Mob of Phantoms",
-      "id": "MobofPhantoms",
-      "difficulty": 100,
-      "source": {
-        "book": "Occult Philosophy",
-        "page": 142
-      }
-    },
-    {
-      "name": "Mog",
-      "id": "Mog",
-      "difficulty": 25,
-      "source": {
-        "book": "Demon Lord's Companion",
-        "page": 48
-      }
-    },
-    {
-      "name": "Mog Croaker",
-      "id": "MogCroaker",
-      "difficulty": 10,
-      "source": {
-        "book": "Men of Gog",
-        "page": 35
-      }
-    },
-    {
-      "name": "Great Mog",
-      "id": "GreatMog",
-      "difficulty": 50,
-      "source": {
-        "book": "Men of Gog",
-        "page": 35
+        "page": 246,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Huge Monster",
       "id": "HugeMonster",
       "difficulty": 100,
+      "descriptor": "monster",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 247
+        "page": 246,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Large Monster",
       "id": "LargeMonster",
       "difficulty": 50,
+      "descriptor": "monster",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 247
+        "page": 246,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Medium Monster",
       "id": "MediumMonster",
       "difficulty": 10,
+      "descriptor": "monster",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 247
+        "page": 246,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Small Monster",
       "id": "SmallMonster",
       "difficulty": 5,
+      "descriptor": "monster",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 248
+        "page": 246,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Tiny Monster",
       "id": "TinyMonster",
       "difficulty": 1,
+      "descriptor": "monster",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 248
-      }
-    },
-    {
-      "name": "Mospal",
-      "id": "Mospal",
-      "difficulty": 25,
-      "source": {
-        "book": "Beyond the World's Edge",
-        "page": 12
-      }
-    },
-    {
-      "name": "Mountain Giant",
-      "id": "MountainGiant",
-      "difficulty": 1000,
-      "source": {
-        "book": "A Glorious Death",
-        "page": 29
+        "page": 246,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Muttering Maw",
       "id": "MutteringMaw",
       "difficulty": 50,
+      "descriptor": "monster",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 248
-      }
-    },
-    {
-      "name": "Mummy",
-      "id": "Mummy",
-      "difficulty": 100,
-      "source": {
-        "book": "Tombs of the Desolation",
-        "page": 31
-      }
-    },
-    {
-      "name": "Murk",
-      "id": "Murk",
-      "difficulty": 50,
-      "source": {
-        "book": "Tombs of the Desolation",
-        "page": 31
-      }
-    },
-    {
-      "name": "Nameless",
-      "id": "Nameless",
-      "difficulty": 25,
-      "source": {
-       "book": "The Hunger in the Void",
-        "page": 25
-      }
-    },
-    {
-      "name": "Nephilim",
-      "id": "Nephilim",
-      "difficulty": 500,
-      "source": {
-        "book": "Beyond the World's Edge",
-        "page": 10
-      }
-    },
-    {
-      "name": "Net Weaver",
-      "id": "NetWeaver",
-      "difficulty": 25,
-      "source": {
-        "book": "Curse of the Spider Wood",
-        "page": 6
+        "page": 247,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Nisse",
       "id": "Nisse",
       "difficulty": 25,
+      "descriptor": "faerie",
       "source": {
         "book": "Shadow of the Demon Lord",
-        "page": 249
-      }
-    },
-    {
-      "name": "Noferatu",
-      "id": "Noferatu",
-      "difficulty": 250,
-      "source": {
-        "book": "Men of Gog",
-        "page": 22
-      }
-    },
-    {
-      "name": "Nymph",
-      "id": "Nymph",
-      "difficulty": 250,
-      "source": {
-        "book": "Terrible Beauty",
-        "page": 47
-      }
-    },
-    {
-      "name": "Oathbound",
-      "id": "Oathbound",
-      "difficulty": 100,
-      "source": {
-        "book": "Lords of the Barrows",
-        "page": 100
+        "page": 248
       }
     },
     {
       "name": "Oculus",
       "id": "Oculus",
       "difficulty": 50,
+      "descriptor": "monster",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 249
+        "page": 248,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Ogre",
       "id": "Ogre",
       "difficulty": 50,
+      "descriptor": "ogre",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 250
+        "page": 249,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Ettin",
       "id": "Ettin",
       "difficulty": 100,
+      "descriptor": "ogre",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 250
+        "page": 249,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Horned Ogre",
       "id": "HornedOgre",
       "difficulty": 250,
+      "descriptor": "ogre",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 250
+        "page": 249,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Ooze",
       "id": "Ooze",
       "difficulty": 50,
+      "descriptor": "ooze",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 251
-      }
-    },
-    {
-      "name": "Orange Leaper",
-      "id": "OrangeLeaper",
-      "difficulty": 1,
-      "source": {
-        "book": "Curse of the Spider Wood",
-        "page": 6
+        "page": 249,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Orc",
       "id": "Orc",
       "difficulty": 10,
+      "descriptor": "orc",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 251
-      }
-    },
-    {
-      "name": "Ore Thrall",
-      "id": "OreThrall",
-      "difficulty": 25,
-      "source": {
-        "book": "Occult Philosophy",
-        "page": 142
-      }
-    },
-    {
-      "name": "Oni",
-      "id": "Oni",
-      "difficulty": 100,
-      "source": {
-        "book": "Ghastly Gourmands",
-        "page": 8
-      }
-    },
-    {
-      "name": "Pale Bride",
-      "id": "PaleBride",
-      "difficulty": 50,
-      "source": {
-        "book": "Wretched and Unclean",
-        "page": 50
-      }
-    },
-    {
-      "name": "Patroller",
-      "id": "Patroller",
-      "difficulty": 1,
-      "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 263
-      }
-    },
-    {
-      "name": "Perooka",
-      "id": "Perooka",
-      "difficulty": 10,
-      "source": {
-        "book": "Malicious Mischief",
-        "page": 7
+        "page": 250,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Phantom",
       "id": "Phantom",
       "difficulty": 25,
+      "descriptor": "spirit",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 251
-      }
-    },
-    {
-      "name": "Philosopher of the Glistening Prince",
-      "id": "PhilosopheroftheGlisteningPrince",
-      "difficulty": 5,
-      "source": {
-       "book": "The Hunger in the Void",
-        "page": 31
-      }
-    },
-    {
-      "name": "Pickpocket",
-      "id": "Pickpocket",
-      "difficulty": 10,
-      "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 263
-      }
-    },
-    {
-      "name": "Pirate",
-      "id": "Pirate",
-      "difficulty": 5,
-      "source": {
-        "book": "Freeport Companion",
-        "page": 54
-      }
-    },
-    {
-      "name": "Pirate Captain",
-      "id": "PirateCaptain",
-      "difficulty": 25,
-      "source": {
-        "book": "Freeport Companion",
-        "page": 54
-      }
-    },
-    {
-      "name": "Pixie",
-      "id": "Pixie",
-      "difficulty": 5,
-      "source": {
-        "book": "Terrible Beauty",
-        "page": 48
+        "page": 250,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Poltergeist",
       "id": "Poltergeist",
       "difficulty": 5,
+      "descriptor": "spirit",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 252
-      }
-    },
-    {
-      "name": "Plague Zombie",
-      "id": "PlagueZombie",
-      "difficulty": 10,
-      "source": {
-        "book": "Men of Gog",
-        "page": 20
-      }
-    },
-    {
-      "name": "Primal Champion",
-      "id": "PrimalChampion",
-      "difficulty": 250,
-      "source": {
-        "book": "Occult Philosophy",
-        "page": 142
+        "page": 250,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Promethean",
       "id": "Promethean",
       "difficulty": 250,
+      "descriptor": "construct",
       "source": {
         "book": "Shadow of the Demon Lord",
-        "page": 252
-      }
-    },
-    {
-      "name": "Prophet of Decay",
-      "id": "ProphetofDecay",
-      "difficulty": 50,
-      "source": {
-        "book": "Lords of the Barrows",
-        "page": 4
-      }
-    },
-    {
-      "name": "Pyron",
-      "id": "Pyron",
-      "difficulty": 250,
-      "source": {
-        "book": "Men of Gog",
-        "page": 25
-      }
-    },
-    {
-      "name": "Ragamuffin",
-      "id": "Ragamuffin",
-      "difficulty": 1,
-      "source": {
-        "book": "Trapped in Bone and Flesh",
-        "page": 11
-      }
-    },
-    {
-      "name": "Raptor Wasp",
-      "id": "RaptorWasp",
-      "difficulty": 5,
-      "source": {
-        "book": "Curse of the Spider Wood",
-        "page": 7
-      }
-    },
-    {
-      "name": "Rakeshame",
-      "id": "Rakeshame",
-      "difficulty": 5,
-      "source": {
-        "book": "Beyond the World's Edge",
-        "page": 5
-      }
-    },
-    {
-      "name": "Rakeshame Chief",
-      "id": "RakeshameChief",
-      "difficulty": 10,
-      "source": {
-        "book": "Beyond the World's Edge",
-        "page": 5
-      }
-    },
-    {
-      "name": "Rakeshame Listener",
-      "id": "RakeshameListener",
-      "difficulty": 10,
-      "source": {
-        "book": "Beyond the World's Edge",
-        "page": 5
-      }
-    },
-    {
-      "name": "Razor Fish Swarm",
-      "id": "RazorFishSwarm",
-      "difficulty": 25,
-      "source": {
-        "book": "Curse of the Spider Wood",
-        "page": 7
-      }
-    },
-    {
-      "name": "Reaver of the Skull King",
-      "id": "ReaveroftheSkullKing",
-      "difficulty": 25,
-      "source": {
-       "book": "The Hunger in the Void",
-        "page": 32
+        "page": 251
       }
     },
     {
       "name": "Redcap",
       "id": "Redcap",
       "difficulty": 5,
+      "descriptor": "faerie",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 253
-      }
-    },
-    {
-      "name": "Red-Throated Scale Beast",
-      "id": "Red-ThroatedScaleBeast",
-      "difficulty": 100,
-      "source": {
-        "book": "Curse of the Spider Wood",
-        "page": 7
+        "page": 252,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Reen",
       "id": "Reen",
       "difficulty": 50,
+      "descriptor": "construct",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 253
-      }
-    },
-    {
-      "name": "Reen Vivsector",
-      "id": "ReenVivsector",
-      "difficulty": 250,
-      "source": {
-        "book": "From Beyond This World",
-        "page": 5
-      }
-    },
-    {
-      "name": "Reen Spellbreaker",
-      "id": "ReenSpellbreaker",
-      "difficulty": 500,
-      "source": {
-        "book": "From Beyond This World",
-        "page": 6
-      }
-    },
-    {
-      "name": "Reen Drone Commoner",
-      "id": "ReenDroneCommoner",
-      "difficulty": 1,
-      "source": {
-        "book": "From Beyond This World",
-        "page": 7
-      }
-    },
-    {
-      "name": "Reen Drone Patroller",
-      "id": "ReenDronePatroller",
-      "difficulty": 5,
-      "source": {
-        "book": "From Beyond This World",
-        "page": 7
-      }
-    },
-    {
-      "name": "Reen Drone Mercenary",
-      "id": "ReenDroneMercenary",
-      "difficulty": 10,
-      "source": {
-        "book": "From Beyond This World",
-        "page": 7
-      }
-    },
-    {
-      "name": "Revenant",
-      "id": "Revenant",
-      "difficulty": 50,
-      "source": {
-        "book": "Tombs of the Desolation",
-        "page": 32
-      }
-    },
-    {
-      "name": "Revenant Assassin",
-      "id": "RevenantAssassin",
-      "difficulty": 100,
-      "source": {
-        "book": "Men of Gog",
-        "page": 32
-      }
-    },
-    {
-      "name": "Revenant Knight",
-      "id": "RevenantKnight",
-      "difficulty": 100,
-      "source": {
-        "book": "Men of Gog",
-        "page": 33
-      }
-    },
-    {
-      "name": "Revenant Necromancer",
-      "id": "RevenantNecromancer",
-      "difficulty": 50,
-      "source": {
-        "book": "Men of Gog",
-        "page": 33
-      }
-    },
-    {
-      "name": "Reviled",
-      "id": "Reviled",
-      "difficulty": 250,
-      "source": {
-        "book": "Men of Gog",
-        "page": 31
-      }
-    },
-    {
-      "name": "Roc",
-      "id": "Roc",
-      "difficulty": 250,
-      "source": {
-        "book": "Demon Lord's Companion",
-        "page": 48
+        "page": 252,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Rot Maiden",
       "id": "RotMaiden",
       "difficulty": 25,
+      "descriptor": "fungus",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 254
-      }
-    },
-    {
-      "name": "Rotten",
-      "id": "Rotten",
-      "difficulty": 1,
-      "source": {
-        "book": "Trapped in Bone and Flesh",
-        "page": 12
-      }
-    },
-    {
-      "name": "Rune-Carved Giant",
-      "id": "Rune-CarvedGiant",
-      "difficulty": 1000,
-      "source": {
-        "book": "Forces of Nature",
-        "page": 4
-      }
-    },
-    {
-      "name": "Rime Dragon",
-      "id": "RimeDragon",
-      "difficulty": 500,
-      "source": {
-        "book": "Of Fire and Venom",
-        "page": 7
-      }
-    },
-    {
-      "name": "Sand Mite Swarm",
-      "id": "SandMiteSwarm",
-      "difficulty": 10,
-      "source": {
-        "book": "Tombs of the Desolation",
-        "page": 33
-      }
-    },
-    {
-      "name": "Salamander",
-      "id": "Salamander",
-      "difficulty": 5,
-      "source": {
-        "book": "Tombs of the Desolation",
-        "page": 32
-      }
-    },
-    {
-      "name": "Sailor",
-      "id": "Sailor",
-      "difficulty": 1,
-      "source": {
-        "book": "Freeport Companion",
-        "page": 56
-      }
-    },
-    {
-      "name": "Saytr",
-      "id": "Saytr",
-      "difficulty": 25,
-      "source": {
-        "book": "Terrible Beauty",
-        "page": 49
-      }
-    },
-    {
-      "name": "Sawbeak",
-      "id": "Sawbeak",
-      "difficulty": 1,
-      "source": {
-        "book": "Curse of the Spider Wood",
-        "page": 8
-      }
-    },
-    {
-      "name": "Sea Dragon",
-      "id": "SeaDragon",
-      "difficulty": 500,
-      "source": {
-        "book": "Of Fire and Venom",
-        "page": 8
-      }
-    },
-    {
-      "name": "Sea Giant",
-      "id": "SeaGiant",
-      "difficulty": 500,
-      "source": {
-        "book": "Beyond the World's Edge",
-        "page": 21
-      }
-    },
-    {
-      "name": "Severed",
-      "id": "Severed",
-      "difficulty": 1,
-      "source": {
-        "book": "Tombs of the Desolation",
-        "page": 33
-      }
-    },
-    {
-      "name": "Serpent of the Witch King",
-      "id": "SerpentoftheWitchKing",
-      "difficulty": 500,
-      "source": {
-        "book": "Wretched and Unclean",
-        "page": 6
-      }
-    },
-    {
-      "name": "Seraphim",
-      "id": "Seraphim",
-      "difficulty": 50,
-      "source": {
-        "book": "Exquisite Agony",
-        "page": 30
+        "page": 253,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Shadow",
       "id": "Shadow",
       "difficulty": 25,
+      "descriptor": "spirit",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 254
+        "page": 253,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Shadow Weaver",
       "id": "ShadowWeaver",
       "difficulty": 25,
+      "descriptor": "monster",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 255
-      }
-    },
-    {
-      "name": "Shedim",
-      "id": "Shedim",
-      "difficulty": 25,
-      "source": {
-        "book": "Exquisite Agony",
-        "page": 30
+        "page": 254,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Shrieking Eel",
       "id": "ShriekingEel",
       "difficulty": 10,
+      "descriptor": "animal (aquatic)",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 255
+        "page": 254,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
-      "name": "Siren",
-      "id": "Siren",
-      "difficulty": 5,
-      "source": {
-        "book": "Beyond the World's Edge",
-        "page": 21
-      }
-    },
-    {
-      "name": "Sister of the Blue Hand",
-      "id": "SisteroftheBlueHand",
+      "name": "Skinchager",
+      "id": "Skinchager",
       "difficulty": 25,
+      "descriptor": "monster",
       "source": {
-       "book": "The Hunger in the Void",
-        "page": 36
-      }
-    },
-    {
-      "name": "Skeletal Steed",
-      "id": "SkeletalSteed",
-      "difficulty": 5,
-      "source": {
-        "book": "Tombs of the Desolation",
-        "page": 33
-      }
-    },
-    {
-      "name": "Skinchanger",
-      "id": "Skinchanger",
-      "difficulty": 25,
-      "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 255
-      }
-    },
-    {
-      "name": "Son of Winter",
-      "id": "SonofWinter",
-      "difficulty": 5,
-      "source": {
-        "book": "A Glorious Death",
-        "page": 5
-      }
-    },
-    {
-      "name": "Slave of Ashrikal",
-      "id": "SlaveofAshrikal",
-      "difficulty": 10,
-      "source": {
-        "book": "Wretched and Unclean",
-        "page": 4
-      }
-    },
-    {
-      "name": "Slime",
-      "id": "Slime",
-      "difficulty": 10,
-      "source": {
-        "book": "Occult Philosophy",
-        "page": 143
-      }
-    },
-    {
-      "name": "Slime Brute",
-      "id": "SlimeBrute",
-      "difficulty": 100,
-      "source": {
-        "book": "Demon Lord's Companion",
-        "page": 49
-      }
-    },
-    {
-      "name": "Specter",
-      "id": "Specter",
-      "difficulty": 250,
-      "source": {
-        "book": "Demon Lord's Companion",
-        "page": 49
+        "page": 254,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Spriggan",
       "id": "Spriggan",
       "difficulty": 25,
+      "descriptor": "plant",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 256
-      }
-    },
-    {
-      "name": "Sprite",
-      "id": "Sprite",
-      "difficulty": 5,
-      "source": {
-        "book": "Occult Philosophy",
-        "page": 144
-      }
-    },
-    {
-      "name": "Spider Assassin",
-      "id": "SpiderAssassin",
-      "difficulty": 1,
-      "source": {
-        "book": "Demon Lord's Companion",
-        "page": 49
-      }
-    },
-    {
-      "name": "Spider Swarm",
-      "id": "SpiderSwarm",
-      "difficulty": 10,
-      "source": {
-        "book": "Curse of the Spider Wood",
-        "page": 8
-      }
-    },
-    {
-      "name": "Stalwart Defender",
-      "id": "StalwartDefender",
-      "difficulty": 100,
-      "source": {
-        "book": "Occult Philosophy",
-        "page": 144
-      }
-    },
-    {
-      "name": "Stallos",
-      "id": "Stallos",
-      "difficulty": 100,
-      "source": {
-        "book": "Ghastly Gourmands",
-        "page": 8
+        "page": 255,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Stone Worm",
       "id": "StoneWorm",
       "difficulty": 50,
+      "descriptor": "monster",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 256
+        "page": 255,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Stranglevine",
       "id": "Stranglevine",
       "difficulty": 50,
+      "descriptor": "plant",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 257
-      }
-    },
-    {
-      "name": "Systhren",
-      "id": "Systhren",
-      "difficulty": 50,
-      "source": {
-        "book": "Beyond the World's Edge",
-        "page": 26
-      }
-    },
-    {
-      "name": "Termagant",
-      "id": "Termagant",
-      "difficulty": 250,
-      "source": {
-        "book": "Exquisite Agony",
-        "page": 31
-      }
-    },
-    {
-      "name": "Tick-Tock",
-      "id": "Tick-Tock",
-      "difficulty": 25,
-      "source": {
-        "book": "False Lives",
-        "page": 7
-      }
-    },
-    {
-      "name": "Tormentor",
-      "id": "Tormentor",
-      "difficulty": 100,
-      "source": {
-        "book": "Exquisite Agony",
-        "page": 32
+        "page": 256,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Tomb Scarab Swarm",
       "id": "TombScarabSwarm",
       "difficulty": 25,
+      "descriptor": "animal (swarm)",
       "source": {
         "book": "Shadow of the Demon Lord",
-        "page": 257
+        "page": 256
       }
     },
     {
       "name": "Troglodyte",
       "id": "Troglodyte",
       "difficulty": 10,
+      "descriptor": "troglodyte",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 257
+        "page": 256,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
       "name": "Troll",
       "id": "Troll",
       "difficulty": 250,
+      "descriptor": "troll",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 258
+        "page": 257,
+        "book": "Shadow of the Demon Lord"
       }
     },
     {
-      "name": "Troll-Kin",
-      "id": "Troll-Kin",
-      "difficulty": 500,
+      "name": "Vampire",
+      "id": "Vampire",
+      "difficulty": 250,
+      "descriptor": "undead",
       "source": {
-        "book": "Forces of Nature",
+        "page": 257,
+        "book": "Shadow of the Demon Lord"
+      }
+    },
+    {
+      "name": "Vampire Bat",
+      "id": "VampireBat",
+      "difficulty": 10,
+      "descriptor": "animal",
+      "source": {
+        "page": 258,
+        "book": "Shadow of the Demon Lord"
+      }
+    },
+    {
+      "name": "Void Larva",
+      "id": "VoidLarva",
+      "difficulty": 1,
+      "descriptor": "demon",
+      "source": {
+        "page": 258,
+        "book": "Shadow of the Demon Lord"
+      }
+    },
+    {
+      "name": "Wraith",
+      "id": "Wraith",
+      "difficulty": 100,
+      "descriptor": "spirit",
+      "source": {
+        "page": 258,
+        "book": "Shadow of the Demon Lord"
+      }
+    },
+    {
+      "name": "Zombie",
+      "id": "Zombie",
+      "difficulty": 5,
+      "descriptor": "undead",
+      "source": {
+        "page": 259,
+        "book": "Shadow of the Demon Lord"
+      }
+    },
+    {
+      "name": "Acolyte of the New God",
+      "id": "AcolyteoftheNewGod",
+      "difficulty": 5,
+      "descriptor": "human",
+      "source": {
+        "book": "Shadow of the Demon Lord",
+        "page": 259
+      }
+    },
+    {
+      "name": "Apprentice Witch",
+      "id": "ApprenticeWitch",
+      "difficulty": 5,
+      "descriptor": "human",
+      "source": {
+        "page": 259,
+        "book": "Shadow of the Demon Lord"
+      }
+    },
+    {
+      "name": "Apprentice Wizard",
+      "id": "ApprenticeWizard",
+      "difficulty": 5,
+      "descriptor": "human",
+      "source": {
+        "page": 260,
+        "book": "Shadow of the Demon Lord"
+      }
+    },
+    {
+      "name": "Bandit",
+      "id": "Bandit",
+      "difficulty": 1,
+      "descriptor": "human",
+      "source": {
+        "page": 260,
+        "book": "Shadow of the Demon Lord"
+      }
+    },
+    {
+      "name": "Brigand",
+      "id": "Brigand",
+      "difficulty": 10,
+      "descriptor": "human",
+      "source": {
+        "page": 260,
+        "book": "Shadow of the Demon Lord"
+      }
+    },
+    {
+      "name": "Commoner or Professional",
+      "id": "CommonerorProfessional",
+      "difficulty": 1,
+      "descriptor": "human",
+      "source": {
+        "page": 260,
+        "book": "Shadow of the Demon Lord"
+      }
+    },
+    {
+      "name": "Cultist",
+      "id": "Cultist",
+      "difficulty": 1,
+      "descriptor": "human",
+      "source": {
+        "page": 260,
+        "book": "Shadow of the Demon Lord"
+      }
+    },
+    {
+      "name": "High Cultist",
+      "id": "HighCultist",
+      "difficulty": 50,
+      "descriptor": "human",
+      "source": {
+        "page": 260,
+        "book": "Shadow of the Demon Lord"
+      }
+    },
+    {
+      "name": "Hired Killer",
+      "id": "HiredKiller",
+      "difficulty": 10,
+      "descriptor": "human",
+      "source": {
+        "page": 261,
+        "book": "Shadow of the Demon Lord"
+      }
+    },
+    {
+      "name": "Initiate of the Old Faith",
+      "id": "InitiateoftheOldFaith",
+      "difficulty": 5,
+      "descriptor": "human",
+      "source": {
+        "page": 261,
+        "book": "Shadow of the Demon Lord"
+      }
+    },
+    {
+      "name": "Mercenary",
+      "id": "Mercenary",
+      "difficulty": 10,
+      "descriptor": "human",
+      "source": {
+        "page": 261,
+        "book": "Shadow of the Demon Lord"
+      }
+    },
+    {
+      "name": "Patroller",
+      "id": "Patroller",
+      "difficulty": 1,
+      "descriptor": "human",
+      "source": {
+        "page": 261,
+        "book": "Shadow of the Demon Lord"
+      }
+    },
+    {
+      "name": "Pickpocket",
+      "id": "Pickpocket",
+      "difficulty": 10,
+      "descriptor": "human",
+      "source": {
+        "page": 262,
+        "book": "Shadow of the Demon Lord"
+      }
+    },
+    {
+      "name": "Veteran",
+      "id": "Veteran",
+      "difficulty": 25,
+      "descriptor": "human",
+      "source": {
+        "page": 262,
+        "book": "Shadow of the Demon Lord"
+      }
+    },
+    {
+      "name": "Object Form",
+      "id": "ObjectForm",
+      "source": {
+        "book": "Shadow of the Demon Lord",
+        "page": 15
+      }
+    },
+    {
+      "name": "Eidolon",
+      "id": "Eidolon",
+      "descriptor": "construct",
+      "source": {
+        "book": "Shadow of the Demon Lord",
+        "page": 87
+      }
+    },
+    {
+      "name": "Ancient Dragon",
+      "id": "AncientDragon",
+      "difficulty": 1000,
+      "descriptor": "dragon",
+      "source": {
+        "book": "A Glorious Death",
+        "page": 32
+      }
+    },
+    {
+      "name": "Draugr",
+      "id": "Draugr",
+      "difficulty": 50,
+      "descriptor": "spirit",
+      "source": {
+        "book": "A Glorious Death",
+        "page": 35
+      }
+    },
+    {
+      "name": "Einherjar",
+      "id": "Einherjar",
+      "difficulty": 50,
+      "descriptor": "spirit",
+      "source": {
+        "book": "A Glorious Death",
+        "page": 37
+      }
+    },
+    {
+      "name": "Fenrir",
+      "id": "Fenrir",
+      "difficulty": 100,
+      "descriptor": "monster",
+      "source": {
+        "book": "A Glorious Death",
+        "page": 32
+      }
+    },
+    {
+      "name": "Cold One",
+      "id": "ColdOne",
+      "difficulty": 10,
+      "descriptor": "monster",
+      "source": {
+        "book": "A Glorious Death",
+        "page": 31
+      }
+    },
+    {
+      "name": "Fossergrim",
+      "id": "Fossergrim",
+      "difficulty": 100,
+      "descriptor": "faerie",
+      "source": {
+        "book": "A Glorious Death",
+        "page": 27
+      }
+    },
+    {
+      "name": "Ice Genie",
+      "id": "IceGenie",
+      "difficulty": 100,
+      "descriptor": "genie",
+      "source": {
+        "book": "A Glorious Death",
+        "page": 28
+      }
+    },
+    {
+      "name": "Jotun",
+      "id": "Jotun",
+      "difficulty": 25,
+      "descriptor": "jotun",
+      "source": {
+        "book": "A Glorious Death",
+        "page": 26
+      }
+    },
+    {
+      "name": "Kraken",
+      "id": "Kraken",
+      "difficulty": 1000,
+      "descriptor": "monster",
+      "source": {
+        "book": "A Glorious Death",
+        "page": 33
+      }
+    },
+    {
+      "name": "Kraken Tentacle",
+      "id": "KrakenTentacle",
+      "source": {
+        "book": "A Glorious Death",
+        "page": 33
+      }
+    },
+    {
+      "name": "Lindorm",
+      "id": "Lindorm",
+      "difficulty": 250,
+      "descriptor": "monster",
+      "source": {
+        "book": "A Glorious Death",
+        "page": 33
+      }
+    },
+    {
+      "name": "Mountain Giant",
+      "id": "MountainGiant",
+      "difficulty": 1000,
+      "descriptor": "giant",
+      "source": {
+        "book": "A Glorious Death",
+        "page": 29
+      }
+    },
+    {
+      "name": "Son of Winter",
+      "id": "SonofWinter",
+      "difficulty": 5,
+      "descriptor": "human",
+      "source": {
+        "book": "A Glorious Death",
         "page": 5
       }
     },
@@ -3727,240 +1729,37 @@
       "name": "Trow",
       "id": "Trow",
       "difficulty": 5,
+      "descriptor": "dwarf",
       "source": {
         "book": "A Glorious Death",
         "page": 25
       }
     },
     {
-      "name": "Urchin",
-      "id": "Urchin",
-      "difficulty": 1,
-      "source": {
-        "book": "Freeport Companion",
-        "page": 53
-      }
-    },
-    {
-      "name": "Unclean",
-      "id": "Unclean",
-      "difficulty": 5,
-      "source": {
-        "book": "Beyond the World's Edge",
-        "page": 19
-      }
-    },
-    {
-      "name": "Uncrowned",
-      "id": "Uncrowned",
-      "difficulty": 500,
-      "source": {
-        "book": "Men of Gog",
-        "page": 21
-      }
-    },
-    {
-      "name": "Unicorn",
-      "id": "Unicorn",
-      "difficulty": 100,
-      "source": {
-        "book": "Occult Philosophy",
-        "page": 145
-      }
-    },
-    {
       "name": "Valkyrie",
       "id": "Valkyrie",
       "difficulty": 250,
+      "descriptor": "spirit",
       "source": {
         "book": "A Glorious Death",
         "page": 37
       }
     },
     {
-      "name": "Vampire",
-      "id": "Vampire",
-      "difficulty": 250,
-      "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 258
-      }
-    },
-    {
-      "name": "Vampire Bat",
-      "id": "VampireBat",
-      "difficulty": 10,
-      "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 259
-      }
-    },
-    {
-      "name": "Vampire Brood",
-      "id": "VampireBrood",
-      "difficulty": 50,
-      "source": {
-        "book": "Tombs of the Desolation",
-        "page": 34
-      }
-    },
-    {
-      "name": "Veteran",
-      "id": "Veteran",
-      "difficulty": 25,
-      "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 263
-      }
-    },
-    {
-      "name": "Viper",
-      "id": "Viper",
-      "difficulty": 5,
-      "source": {
-        "book": "Curse of the Spider Wood",
-        "page": 8
-      }
-    },
-    {
-      "name": "Vremen",
-      "id": "Vremen",
-      "difficulty": 25,
-      "source": {
-        "book": "Beyond the World's Edge",
-        "page": 30
-      }
-    },
-    {
-      "name": "Vodyanoy",
-      "id": "Vodyanoy",
-      "difficulty": 50,
-      "source": {
-        "book": "Ghastly Gourmands",
-        "page": 9
-      }
-    },
-    {
-      "name": "Void Bull",
-      "id": "VoidBull",
-      "difficulty": 250,
-      "source": {
-       "book": "The Hunger in the Void",
-        "page": 48
-      }
-    },
-    {
-      "name": "Void Larva",
-      "id": "VoidLarva",
-      "difficulty": 1,
-      "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 259
-      }
-    },
-    {
-      "name": "Warhorse",
-      "id": "Warhorse",
-      "difficulty": 10,
-      "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 259
-      }
-    },
-    {
-      "name": "Warrior Ant Swarm",
-      "id": "WarriorAntSwarm",
-      "difficulty": 25,
-      "source": {
-        "book": "Curse of the Spider Wood",
-        "page": 9
-      }
-    },
-    {
-      "name": "Warg Berserker",
-      "id": "WargBerserker",
-      "difficulty": 50,
-      "source": {
-       "book": "The Hunger in the Void",
-        "page": 46
-      }
-    },
-    {
-      "name": "Warg Hunter",
-      "id": "WargHunter",
-      "difficulty": 25,
-      "source": {
-       "book": "The Hunger in the Void",
-        "page": 46
-      }
-    },
-    {
-      "name": "Welterkin",
-      "id": "Welterkin",
-      "difficulty": 5,
-      "source": {
-        "book": "Malicious Mischief",
-        "page": 2
-      }
-    },
-    {
-      "name": "Welterkin Matriarch",
-      "id": "WelterkinMatriarch",
-      "difficulty": 50,
-      "source": {
-        "book": "Malicious Mischief",
-        "page": 3
-      }
-    },
-    {
-      "name": "Wraith",
-      "id": "Wraith",
-      "difficulty": 100,
-      "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 259
-      }
-    },
-    {
       "name": "White Worm",
       "id": "WhiteWorm",
       "difficulty": 250,
+      "descriptor": "monster",
       "source": {
         "book": "A Glorious Death",
         "page": 34
       }
     },
     {
-      "name": "Whisper Cactus",
-      "id": "WhisperCactus",
-      "difficulty": 1,
-      "source": {
-        "book": "Tombs of the Desolation",
-        "page": 34
-      }
-    },
-    {
-      "name": "Wight Champion",
-      "id": "WightChampion",
-      "difficulty": 250,
-      "source": {
-        "book": "Lords of the Barrows",
-        "page": 4
-      }
-    },
-    {
-      "name": "Wight Witch",
-      "id": "WightWitch",
-      "difficulty": 50,
-      "source": {
-        "book": "Lords of the Barrows",
-        "page": 5
-      }
-    },
-    {
       "name": "Winged Horse",
       "id": "WingedHorse",
       "difficulty": 50,
+      "descriptor": "animal",
       "source": {
         "book": "A Glorious Death",
         "page": 24
@@ -3970,54 +1769,3257 @@
       "name": "Wyvern",
       "id": "Wyvern",
       "difficulty": 250,
+      "descriptor": "monster",
       "source": {
         "book": "A Glorious Death",
         "page": 34
       }
     },
     {
-      "name": "Yg’Zg’Zor",
-      "id": "Yg’Zg’Zor",
-      "difficulty": 500,
+      "name": "Apparition",
+      "id": "Apparition",
+      "difficulty": 1,
+      "descriptor": "spirit",
       "source": {
-        "book": "Unholy Champions of the Demon Lord",
+        "book": "Beyond the World's Edge",
+        "page": 27
+      }
+    },
+    {
+      "name": "Bestia Chief",
+      "id": "BestiaChief",
+      "difficulty": 250,
+      "descriptor": "bestia",
+      "source": {
+        "book": "Beyond the World's Edge",
+        "page": 14
+      }
+    },
+    {
+      "name": "Bestia Shaman",
+      "id": "BestiaShaman",
+      "difficulty": 50,
+      "descriptor": "bestia",
+      "source": {
+        "book": "Beyond the World's Edge",
+        "page": 14
+      }
+    },
+    {
+      "name": "Cthonic",
+      "id": "Cthonic",
+      "difficulty": 250,
+      "descriptor": "monster",
+      "source": {
+        "book": "Beyond the World's Edge",
+        "page": 26
+      }
+    },
+    {
+      "name": "Devourer",
+      "id": "Devourer",
+      "difficulty": 25,
+      "descriptor": "undead (aquatic)",
+      "source": {
+        "book": "Beyond the World's Edge",
+        "page": 11
+      }
+    },
+    {
+      "name": "Drowned",
+      "id": "Drowned",
+      "difficulty": 1,
+      "descriptor": "undead",
+      "source": {
+        "book": "Beyond the World's Edge",
+        "page": 11
+      }
+    },
+    {
+      "name": "Gabalan",
+      "id": "Gabalan",
+      "difficulty": 25,
+      "descriptor": "monster",
+      "source": {
+        "book": "Beyond the World's Edge",
         "page": 9
       }
     },
     {
-      "name": "Zeboul",
-      "id": "Zeboul",
+      "name": "Ghast",
+      "id": "Ghast",
+      "difficulty": 25,
+      "descriptor": "monster",
+      "source": {
+        "book": "Beyond the World's Edge",
+        "page": 29
+      }
+    },
+    {
+      "name": "Shen Tribesman",
+      "id": "ShenTribesman",
+      "difficulty": 1,
+      "descriptor": "human",
+      "source": {
+        "book": "Beyond the World's Edge",
+        "page": 29
+      }
+    },
+    {
+      "name": "Gug",
+      "id": "Gug",
+      "difficulty": 250,
+      "descriptor": "monster",
+      "source": {
+        "book": "Beyond the World's Edge",
+        "page": 31
+      }
+    },
+    {
+      "name": "Krin",
+      "id": "Krin",
+      "difficulty": 5,
+      "descriptor": "mosnter",
+      "source": {
+        "book": "Beyond the World's Edge",
+        "page": 31
+      }
+    },
+    {
+      "name": "Krin Priest",
+      "id": "KrinPriest",
+      "difficulty": 25,
+      "descriptor": "monster",
+      "source": {
+        "book": "Beyond the World's Edge",
+        "page": 31
+      }
+    },
+    {
+      "name": "Living Idol",
+      "id": "LivingIdol",
+      "difficulty": 500,
+      "descriptor": "construct",
+      "source": {
+        "book": "Beyond the World's Edge",
+        "page": 28
+      }
+    },
+    {
+      "name": "Mospal",
+      "id": "Mospal",
+      "difficulty": 25,
+      "descriptor": "monster",
+      "source": {
+        "book": "Beyond the World's Edge",
+        "page": 12
+      }
+    },
+    {
+      "name": "Nephilim",
+      "id": "Nephilim",
+      "difficulty": 500,
+      "descriptor": "spirit",
+      "source": {
+        "book": "Beyond the World's Edge",
+        "page": 10
+      }
+    },
+    {
+      "name": "Rakeshame",
+      "id": "Rakeshame",
+      "difficulty": 5,
+      "descriptor": "human",
+      "source": {
+        "book": "Beyond the World's Edge",
+        "page": 5
+      }
+    },
+    {
+      "name": "Rakeshame Listener",
+      "id": "RakeshameListener",
+      "difficulty": 10,
+      "descriptor": "human",
+      "source": {
+        "book": "Beyond the World's Edge",
+        "page": 5
+      }
+    },
+    {
+      "name": "Rakeshame Chief",
+      "id": "RakeshameChief",
+      "difficulty": 10,
+      "descriptor": "human",
+      "source": {
+        "book": "Beyond the World's Edge",
+        "page": 5
+      }
+    },
+    {
+      "name": "Sea Giant",
+      "id": "SeaGiant",
+      "difficulty": 500,
+      "descriptor": "giant",
+      "source": {
+        "book": "Beyond the World's Edge",
+        "page": 21
+      }
+    },
+    {
+      "name": "Siren",
+      "id": "Siren",
+      "difficulty": 5,
+      "descriptor": "faerie",
+      "source": {
+        "book": "Beyond the World's Edge",
+        "page": 21
+      }
+    },
+    {
+      "name": "Systhren",
+      "id": "Systhren",
+      "difficulty": 50,
+      "descriptor": "monster",
+      "source": {
+        "book": "Beyond the World's Edge",
+        "page": 26
+      }
+    },
+    {
+      "name": "Unclean",
+      "id": "Unclean",
+      "difficulty": 5,
+      "descriptor": "human",
+      "source": {
+        "book": "Beyond the World's Edge",
+        "page": 19
+      }
+    },
+    {
+      "name": "Vremen",
+      "id": "Vremen",
+      "difficulty": 25,
+      "descriptor": "monster",
+      "source": {
+        "book": "Beyond the World's Edge",
+        "page": 30
+      }
+    },
+    {
+      "name": "Gnome",
+      "id": "Gnome",
+      "difficulty": 1,
+      "descriptor": "elemental",
+      "source": {
+        "book": "Children of the Restless Earth",
+        "page": 5
+      }
+    },
+    {
+      "name": "Arachne Abomination",
+      "id": "ArachneAbomination",
+      "difficulty": 5,
+      "descriptor": "monster",
+      "source": {
+        "book": "Curse of the Spider Wood",
+        "page": 14
+      }
+    },
+    {
+      "name": "Arachne Champion",
+      "id": "ArachneChampion",
       "difficulty": 100,
+      "descriptor": "monster",
+      "source": {
+        "book": "Curse of the Spider Wood",
+        "page": 12
+      }
+    },
+    {
+      "name": "Arachne High Priest",
+      "id": "ArachneHighPriest",
+      "difficulty": 250,
+      "descriptor": "monster",
+      "source": {
+        "book": "Curse of the Spider Wood",
+        "page": 11
+      }
+    },
+    {
+      "name": "Arachne Spider Guard",
+      "id": "ArachneSpiderGuard",
+      "difficulty": 5,
+      "descriptor": "monster",
+      "source": {
+        "book": "Curse of the Spider Wood",
+        "page": 13
+      }
+    },
+    {
+      "name": "Arachne Shadow Crawler",
+      "id": "ArachneShadowCrawler",
+      "difficulty": 25,
+      "descriptor": "monster",
+      "source": {
+        "book": "Curse of the Spider Wood",
+        "page": 13
+      }
+    },
+    {
+      "name": "Arachne Peasant",
+      "id": "ArachnePeasant",
+      "difficulty": 1,
+      "descriptor": "monster",
+      "source": {
+        "book": "Curse of the Spider Wood",
+        "page": 14
+      }
+    },
+    {
+      "name": "Arachne Underpriest",
+      "id": "ArachneUnderpriest",
+      "difficulty": 10,
+      "descriptor": "monster",
+      "source": {
+        "book": "Curse of the Spider Wood",
+        "page": 12
+      }
+    },
+    {
+      "name": "Anointed Spider",
+      "id": "AnointedSpied",
+      "descriptor": "monster",
+      "source": {
+        "book": "Curse of the Spider Wood",
+        "page": 12
+      }
+    },
+    {
+      "name": "Carnivorous Ape",
+      "id": "CarnivorousApe",
+      "difficulty": 10,
+      "descriptor": "animal",
+      "source": {
+        "book": "Curse of the Spider Wood",
+        "page": 5
+      }
+    },
+    {
+      "name": "Constrictor Snake",
+      "id": "ConstrictorSnake",
+      "difficulty": 10,
+      "descriptor": "animal",
+      "source": {
+        "book": "Curse of the Spider Wood",
+        "page": 5
+      }
+    },
+    {
+      "name": "Crocodile",
+      "id": "Crocodile",
+      "difficulty": 10,
+      "descriptor": "animal",
+      "source": {
+        "book": "Curse of the Spider Wood",
+        "page": 5
+      }
+    },
+    {
+      "name": "Drop Spider",
+      "id": "DropSpider",
+      "difficulty": 25,
+      "descriptor": "animal",
+      "source": {
+        "book": "Curse of the Spider Wood",
+        "page": 5
+      }
+    },
+    {
+      "name": "Gloom Creeper",
+      "id": "GloomCreeper",
+      "difficulty": 50,
+      "descriptor": "monster",
+      "source": {
+        "book": "Curse of the Spider Wood",
+        "page": 6
+      }
+    },
+    {
+      "name": "Net Weaver",
+      "id": "NetWeaver",
+      "difficulty": 25,
+      "descriptor": "animal",
+      "source": {
+        "book": "Curse of the Spider Wood",
+        "page": 6
+      }
+    },
+    {
+      "name": "Orange Leaper",
+      "id": "OrangeLeaper",
+      "difficulty": 1,
+      "descriptor": "animal",
+      "source": {
+        "book": "Curse of the Spider Wood",
+        "page": 6
+      }
+    },
+    {
+      "name": "Raptor Wasp",
+      "id": "RaptorWasp",
+      "difficulty": 5,
+      "descriptor": "animal",
+      "source": {
+        "book": "Curse of the Spider Wood",
+        "page": 7
+      }
+    },
+    {
+      "name": "Razor Fish Swarm",
+      "id": "RazorFishSwarm",
+      "difficulty": 25,
+      "descriptor": "animal (aquatic, swarm)",
+      "source": {
+        "book": "Curse of the Spider Wood",
+        "page": 7
+      }
+    },
+    {
+      "name": "Red-Throated Scale Beast",
+      "id": "Red-ThroatedScaleBeast",
+      "difficulty": 100,
+      "descriptor": "animal",
+      "source": {
+        "book": "Curse of the Spider Wood",
+        "page": 7
+      }
+    },
+    {
+      "name": "Sawbeak",
+      "id": "Sawbeak",
+      "difficulty": 1,
+      "descriptor": "animal",
+      "source": {
+        "book": "Curse of the Spider Wood",
+        "page": 8
+      }
+    },
+    {
+      "name": "Spider Swarm",
+      "id": "SpiderSwarm",
+      "difficulty": 10,
+      "descriptor": "animal (swarm)",
+      "source": {
+        "book": "Curse of the Spider Wood",
+        "page": 8
+      }
+    },
+    {
+      "name": "Viper",
+      "id": "Viper",
+      "difficulty": 5,
+      "descriptor": "animal",
+      "source": {
+        "book": "Curse of the Spider Wood",
+        "page": 8
+      }
+    },
+    {
+      "name": "Warrior Ant Swarm",
+      "id": "WarriorAntSwarm",
+      "difficulty": 25,
+      "descriptor": "animal (swarm)",
+      "source": {
+        "book": "Curse of the Spider Wood",
+        "page": 9
+      }
+    },
+    {
+      "name": "Arachne",
+      "id": "Arachne",
+      "difficulty": 10,
+      "descriptor": "mosnter",
+      "source": {
+        "book": "Demon Lord's Companion",
+        "page": 46
+      }
+    },
+    {
+      "name": "Brownie",
+      "id": "Brownie",
+      "difficulty": 10,
+      "descriptor": "faerie",
+      "source": {
+        "book": "Demon Lord's Companion",
+        "page": 10
+      }
+    },
+    {
+      "name": "Centaur",
+      "id": "Centaur",
+      "difficulty": 5,
+      "descriptor": "centaur",
+      "source": {
+        "book": "Demon Lord's Companion",
+        "page": 5
+      }
+    },
+    {
+      "name": "Mog",
+      "id": "Mog",
+      "difficulty": 25,
+      "descriptor": "monster",
+      "source": {
+        "book": "Demon Lord's Companion",
+        "page": 48
+      }
+    },
+    {
+      "name": "Roc",
+      "id": "Roc",
+      "difficulty": 250,
+      "descriptor": "animal",
+      "source": {
+        "book": "Demon Lord's Companion",
+        "page": 48
+      }
+    },
+    {
+      "name": "Slime Brute",
+      "id": "SlimeBrute",
+      "difficulty": 100,
+      "descriptor": "plant",
+      "source": {
+        "book": "Demon Lord's Companion",
+        "page": 49
+      }
+    },
+    {
+      "name": "Specter",
+      "id": "Specter",
+      "difficulty": 250,
+      "descriptor": "spirit",
+      "source": {
+        "book": "Demon Lord's Companion",
+        "page": 49
+      }
+    },
+    {
+      "name": "Spider Assassin",
+      "id": "SpiderAssassin",
+      "difficulty": 1,
+      "descriptor": "construct",
+      "source": {
+        "book": "Demon Lord's Companion",
+        "page": 49
+      }
+    },
+    {
+      "name": "Bestia",
+      "id": "Bestia",
+      "difficulty": 50,
+      "descriptor": "bestia",
+      "source": {
+        "book": "Demon Lord's Companion",
+        "page": 46
+      }
+    },
+    {
+      "name": "Angel",
+      "id": "Angel",
+      "difficulty": 50,
+      "descriptor": "faerie (devil)",
+      "source": {
+        "book": "Occult Philosophy",
+        "page": 133
+      }
+    },
+    {
+      "name": "Behemoth",
+      "id": "Behemoth",
+      "difficulty": 750,
+      "descriptor": "demon",
+      "source": {
+        "book": "Exquisite Agony",
+        "page": 23
+      }
+    },
+    {
+      "name": "Bogie",
+      "id": "Bogie",
+      "difficulty": 5,
+      "descriptor": "faerie (devil)",
+      "source": {
+        "book": "Exquisite Agony",
+        "page": 24
+      }
+    },
+    {
+      "name": "Butcher",
+      "id": "Butcher",
+      "difficulty": 25,
+      "descriptor": "faerie (devil)",
+      "source": {
+        "book": "Exquisite Agony",
+        "page": 24
+      }
+    },
+    {
+      "name": "Cambion",
+      "id": "Cambion",
+      "difficulty": 5,
+      "descriptor": "cambion",
+      "source": {
+        "book": "Exquisite Agony",
+        "page": 25
+      }
+    },
+    {
+      "name": "Chimera",
+      "id": "Chimera",
+      "difficulty": 750,
+      "descriptor": "monster",
+      "source": {
+        "book": "Exquisite Agony",
+        "page": 25
+      }
+    },
+    {
+      "name": "Devilkin",
+      "id": "Devilkin",
+      "difficulty": 5,
+      "descriptor": "faerie (devil)",
+      "source": {
+        "book": "Exquisite Agony",
+        "page": 26
+      }
+    },
+    {
+      "name": "Familiar",
+      "id": "Familiar",
+      "difficulty": 5,
+      "descriptor": "faerie (devil)",
+      "source": {
+        "book": "Exquisite Agony",
+        "page": 26
+      }
+    },
+    {
+      "name": "Gargoyle",
+      "id": "Gargoyle",
+      "difficulty": 50,
+      "descriptor": "faerie (devil)",
+      "source": {
+        "book": "Exquisite Agony",
+        "page": 26
+      }
+    },
+    {
+      "name": "Gaunt",
+      "id": "Gaunt",
+      "difficulty": 50,
+      "descriptor": "spirit",
+      "source": {
+        "book": "Exquisite Agony",
+        "page": 27
+      }
+    },
+    {
+      "name": "Hogman",
+      "id": "Hogman",
+      "difficulty": 1,
+      "descriptor": "monster",
+      "source": {
+        "book": "Exquisite Agony",
+        "page": 27
+      }
+    },
+    {
+      "name": "Ifrit",
+      "id": "Ifrit",
+      "difficulty": 500,
+      "descriptor": "faerie (devil)",
+      "source": {
+        "book": "Exquisite Agony",
+        "page": 28
+      }
+    },
+    {
+      "name": "Incubus/Succubus",
+      "id": "IncubusSuccubus",
+      "difficulty": 750,
+      "descriptor": "faerie (devil)",
+      "source": {
+        "book": "Exquisite Agony",
+        "page": 29
+      }
+    },
+    {
+      "name": "Lemure",
+      "id": "Lemure",
+      "difficulty": 25,
+      "descriptor": "spirit",
+      "source": {
+        "book": "Exquisite Agony",
+        "page": 29
+      }
+    },
+    {
+      "name": "Malebranche",
+      "id": "Malebranche",
+      "difficulty": 100,
+      "descriptor": "faerie (devil)",
+      "source": {
+        "book": "Exquisite Agony",
+        "page": 30
+      }
+    },
+    {
+      "name": "Seraphim",
+      "id": "Seraphim",
+      "difficulty": 50,
+      "descriptor": "faerie (devil)",
+      "source": {
+        "book": "Exquisite Agony",
+        "page": 30
+      }
+    },
+    {
+      "name": "Shedim",
+      "id": "Shedim",
+      "difficulty": 25,
+      "descriptor": "faerie (devil)",
+      "source": {
+        "book": "Exquisite Agony",
+        "page": 30
+      }
+    },
+    {
+      "name": "Termagant",
+      "id": "Termagant",
+      "difficulty": 250,
+      "descriptor": "faerie (devil)",
+      "source": {
+        "book": "Exquisite Agony",
+        "page": 31
+      }
+    },
+    {
+      "name": "Tormentor",
+      "id": "Tormentor",
+      "difficulty": 100,
+      "descriptor": "faerie (devil)",
       "source": {
         "book": "Exquisite Agony",
         "page": 32
       }
     },
     {
+      "name": "Zeboul",
+      "id": "Zeboul",
+      "difficulty": 100,
+      "descriptor": "faerie (devil)",
+      "source": {
+        "book": "Exquisite Agony",
+        "page": 32
+      }
+    },
+    {
+      "name": "Assembled",
+      "id": "Assembled",
+      "difficulty": 25,
+      "descriptor": "construct",
+      "source": {
+        "book": "False Lives",
+        "page": 6
+      }
+    },
+    {
+      "name": "Splitter",
+      "id": "Splitter",
+      "difficulty": 10,
+      "descriptor": "construct",
+      "source": {
+        "book": "False Lives",
+        "page": 2
+      }
+    },
+    {
+      "name": "Driller",
+      "id": "Driller",
+      "difficulty": 10,
+      "descriptor": "construct",
+      "source": {
+        "book": "False Lives",
+        "page": 2
+      }
+    },
+    {
+      "name": "Hammerer",
+      "id": "Hammerer",
+      "difficulty": 25,
+      "descriptor": "construct",
+      "source": {
+        "book": "False Lives",
+        "page": 3
+      }
+    },
+    {
+      "name": "Hauler",
+      "id": "Hauler",
+      "difficulty": 50,
+      "descriptor": "construct",
+      "source": {
+        "book": "False Lives",
+        "page": 3
+      }
+    },
+    {
+      "name": "Loader",
+      "id": "Loader",
+      "difficulty": 5,
+      "descriptor": "construct",
+      "source": {
+        "book": "False Lives",
+        "page": 3
+      }
+    },
+    {
+      "name": "Smelter",
+      "id": "Smelter",
+      "difficulty": 10,
+      "descriptor": "construct",
+      "source": {
+        "book": "False Lives",
+        "page": 3
+      }
+    },
+    {
+      "name": "Cherub",
+      "id": "Cherub",
+      "difficulty": 5,
+      "descriptor": "construct",
+      "source": {
+        "book": "False Lives",
+        "page": 5
+      }
+    },
+    {
+      "name": "Gladius",
+      "id": "Gladius",
+      "difficulty": 250,
+      "descriptor": "construct",
+      "source": {
+        "book": "False Lives",
+        "page": 5
+      }
+    },
+    {
+      "name": "Colossus",
+      "id": "Colossus",
+      "difficulty": 1000,
+      "descriptor": "construct",
+      "source": {
+        "book": "False Lives",
+        "page": 8
+      }
+    },
+    {
+      "name": "Legion",
+      "id": "Legion",
+      "difficulty": 50,
+      "descriptor": "construct",
+      "source": {
+        "book": "False Lives",
+        "page": 9
+      }
+    },
+    {
+      "name": "Golem",
+      "id": "Golem",
+      "difficulty": 500,
+      "descriptor": "construct",
+      "source": {
+        "book": "False Lives",
+        "page": 9
+      }
+    },
+    {
+      "name": "Tick-Tock",
+      "id": "Tick-Tock",
+      "difficulty": 25,
+      "descriptor": "construct",
+      "source": {
+        "book": "False Lives",
+        "page": 7
+      }
+    },
+    {
+      "name": "Promethean",
+      "id": "Promethean",
+      "difficulty": 250,
+      "descriptor": "construct",
+      "source": {
+        "book": "False Lives",
+        "page": 10
+      }
+    },
+    {
+      "name": "Rune-Carved Giant",
+      "id": "Rune-CarvedGiant",
+      "difficulty": 1000,
+      "descriptor": "giant",
+      "source": {
+        "book": "Forces of Nature",
+        "page": 4
+      }
+    },
+    {
+      "name": "Troll-Kin",
+      "id": "Troll-Kin",
+      "difficulty": 500,
+      "descriptor": "giant",
+      "source": {
+        "book": "Forces of Nature",
+        "page": 5
+      }
+    },
+    {
+      "name": "Dragonman",
+      "id": "Dragonman",
+      "difficulty": 50,
+      "descriptor": "lizardman",
+      "source": {
+        "book": "Foulest Reptiles",
+        "page": 5
+      }
+    },
+    {
+      "name": "Horned Devil",
+      "id": "HornedDevil",
+      "difficulty": 50,
+      "descriptor": "lizardman",
+      "source": {
+        "book": "Foulest Reptiles",
+        "page": 5
+      }
+    },
+    {
+      "name": "Indigon",
+      "id": "Indigon",
+      "difficulty": 10,
+      "descriptor": "lizardman",
+      "source": {
+        "book": "Foulest Reptiles",
+        "page": 5
+      }
+    },
+    {
+      "name": "Lizardman Shaman",
+      "id": "LizardmanShaman",
+      "difficulty": 50,
+      "descriptor": "lizardman",
+      "source": {
+        "book": "Foulest Reptiles",
+        "page": 3
+      }
+    },
+    {
+      "name": "Assassin",
+      "id": "Assassin",
+      "difficulty": 25,
+      "descriptor": "human",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 53
+      }
+    },
+    {
+      "name": "Beggar",
+      "id": "Beggar",
+      "difficulty": 1,
+      "descriptor": "human",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 53
+      }
+    },
+    {
+      "name": "Lobsterman",
+      "id": "Lobsterman",
+      "difficulty": 5,
+      "descriptor": "human",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 54
+      }
+    },
+    {
+      "name": "Longshoreman",
+      "id": "Longshoreman",
+      "difficulty": 1,
+      "descriptor": "human",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 54
+      }
+    },
+    {
+      "name": "Merchant",
+      "id": "Merchant",
+      "difficulty": 1,
+      "descriptor": "human",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 54
+      }
+    },
+    {
+      "name": "Pirate",
+      "id": "Pirate",
+      "difficulty": 5,
+      "descriptor": "human",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 54
+      }
+    },
+    {
+      "name": "Pirate Captain",
+      "id": "PirateCaptain",
+      "difficulty": 25,
+      "descriptor": "human",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 54
+      }
+    },
+    {
+      "name": "Celebrant of the Pirate God",
+      "id": "CelebrantofthePirateGod",
+      "difficulty": 5,
+      "descriptor": "human",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 55
+      }
+    },
+    {
+      "name": "Devotee of the Sea God",
+      "id": "DevoteeoftheSeaGod",
+      "difficulty": 5,
+      "descriptor": "human",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 55
+      }
+    },
+    {
+      "name": "Sailor",
+      "id": "Sailor",
+      "difficulty": 1,
+      "descriptor": "human",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 56
+      }
+    },
+    {
+      "name": "Urchin",
+      "id": "Urchin",
+      "difficulty": 1,
+      "descriptor": "humn",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 53
+      }
+    },
+    {
+      "name": "Freeporter",
+      "id": "Freeporter",
+      "difficulty": 1,
+      "descriptor": "human",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 53
+      }
+    },
+    {
+      "name": "Sea Lords's Guard",
+      "id": "SeaLordsGuard",
+      "difficulty": 10,
+      "descriptor": "human",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 56
+      }
+    },
+    {
+      "name": "Guard Sergeant",
+      "id": "GuardSergeant",
+      "difficulty": 25,
+      "descriptor": "human",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 56
+      }
+    },
+    {
+      "name": "Freeport Watch Sergeant",
+      "id": "FreeportWatchSergeant",
+      "difficulty": 25,
+      "descriptor": "human",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 56
+      }
+    },
+    {
+      "name": "Accursed Hand",
+      "id": "AccursedHand",
+      "difficulty": 1,
+      "descriptor": "undead",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 86
+      }
+    },
+    {
+      "name": "Alchemist's Fault",
+      "id": "AlchemistsFault",
+      "difficulty": 250,
+      "descriptor": "monster",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 87
+      }
+    },
+    {
+      "name": "Blemmyae",
+      "id": "Blemmyae",
+      "difficulty": 10,
+      "descriptor": "monster",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 87
+      }
+    },
+    {
+      "name": "Brass Monkey (Creature)",
+      "id": "BrassMonkeyCreature",
+      "difficulty": 5,
+      "descriptor": "construct",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 88
+      }
+    },
+    {
+      "name": "Brass Monkey (Object)",
+      "id": "BrassMonkeyObject",
+      "descriptor": "object",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 88
+      }
+    },
+    {
+      "name": "Burnling",
+      "id": "Burnling",
+      "difficulty": 10,
+      "descriptor": "genie",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 88
+      }
+    },
+    {
+      "name": "Chiao",
+      "id": "Chiao",
+      "difficulty": 5,
+      "descriptor": "human",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 89
+      }
+    },
+    {
+      "name": "Deadwood Tree",
+      "id": "DeadwoodTree",
+      "difficulty": 100,
+      "descriptor": "undead",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 89
+      }
+    },
+    {
+      "name": "Deep One",
+      "id": "DeepOne",
+      "difficulty": 10,
+      "descriptor": "deep one (aquatic)",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 90
+      }
+    },
+    {
+      "name": "Devil Lizard",
+      "id": "DevilLizard",
+      "difficulty": 25,
+      "descriptor": "faerie (devil)",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 90
+      }
+    },
+    {
+      "name": "Dream Child",
+      "id": "DreamChild",
+      "difficulty": 25,
+      "descriptor": "spirit",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 91
+      }
+    },
+    {
+      "name": "Fire Specter",
+      "id": "FireSpecter",
+      "difficulty": 25,
+      "descriptor": "undead",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 92
+      }
+    },
+    {
+      "name": "KotharTheAccursed",
+      "id": "KotharTheAccursed",
+      "difficulty": 50,
+      "descriptor": "undead",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 92
+      }
+    },
+    {
+      "name": "Fleshraker",
+      "id": "Fleshraker",
+      "difficulty": 25,
+      "descriptor": "faerie (devil)",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 93
+      }
+    },
+    {
+      "name": "Scalewing",
+      "id": "Scalewing",
+      "difficulty": 5,
+      "descriptor": "animal",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 93
+      }
+    },
+    {
+      "name": "Irontooth",
+      "id": "Irontooth",
+      "difficulty": 25,
+      "descriptor": "animal",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 93
+      }
+    },
+    {
+      "name": "Blackwing",
+      "id": "Blackwing",
+      "difficulty": 50,
+      "descriptor": "animal",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 93
+      }
+    },
+    {
+      "name": "Ghost Eater",
+      "id": "GhostEater",
+      "difficulty": 5,
+      "descriptor": "monster",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 94
+      }
+    },
+    {
+      "name": "Infernal Automaton",
+      "id": "InfernalAutomaton",
+      "difficulty": 50,
+      "descriptor": "construct",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 95
+      }
+    },
+    {
+      "name": "Malkin",
+      "id": "Malkin",
+      "difficulty": 5,
+      "descriptor": "faerie",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 95
+      }
+    },
+    {
+      "name": "Monstrous Clam",
+      "id": "MonstrousClam",
+      "difficulty": 5,
+      "descriptor": "animal",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 96
+      }
+    },
+    {
+      "name": "Monstrous Crab",
+      "id": "MonstrousCrab",
+      "difficulty": 5,
+      "descriptor": "animal",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 96
+      }
+    },
+    {
+      "name": "Swarm of Monstrous Jellyfish",
+      "id": "SwarmofMonstrousJellyfish",
+      "difficulty": 10,
+      "descriptor": "animal (swarm)",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 96
+      }
+    },
+    {
+      "name": "Monstrous Leech",
+      "id": "MonstrousLeech",
+      "difficulty": 10,
+      "descriptor": "animal (aquatic)",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 97
+      }
+    },
+    {
+      "name": "Nereid",
+      "id": "Nereid",
+      "difficulty": 10,
+      "descriptor": "faerie",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 97
+      }
+    },
+    {
+      "name": "Picacouatl",
+      "id": "Picacouatl",
+      "difficulty": 10,
+      "descriptor": "faerie",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 98
+      }
+    },
+    {
+      "name": "Pit-Briar",
+      "id": "Pit-Briar",
+      "difficulty": 50,
+      "descriptor": "plant",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 98
+      }
+    },
+    {
+      "name": "Pwalg",
+      "id": "Pwalg",
+      "difficulty": 25,
+      "descriptor": "demon",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 98
+      }
+    },
+    {
+      "name": "Reef Eel",
+      "id": "ReefEel",
+      "difficulty": 5,
+      "descriptor": "animal (aquatic)",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 98
+      }
+    },
+    {
+      "name": "Serpent Person",
+      "id": "SerpentPerson",
+      "difficulty": 10,
+      "descriptor": "serpent person",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 99
+      }
+    },
+    {
+      "name": "Valossan Mystic",
+      "id": "ValossanMystic",
+      "difficulty": 10,
+      "descriptor": "serpent person",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 100
+      }
+    },
+    {
+      "name": "Degenerate Serpent Person",
+      "id": "DegenerateSerpentPerson",
+      "difficulty": 5,
+      "descriptor": "serpent person",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 100
+      }
+    },
+    {
+      "name": "Shadow Serpent",
+      "id": "ShadowSerpent",
+      "difficulty": 50,
+      "descriptor": "spirit",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 100
+      }
+    },
+    {
+      "name": "Sharkman",
+      "id": "Sharkman",
+      "difficulty": 50,
+      "descriptor": "beastman",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 101
+      }
+    },
+    {
+      "name": "Skin Cloak",
+      "id": "SkinCloak",
+      "difficulty": 10,
+      "descriptor": "undead",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 101
+      }
+    },
+    {
+      "name": "Spirit Lizard",
+      "id": "SpiritLizard",
+      "difficulty": 10,
+      "descriptor": "faerie",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 102
+      }
+    },
+    {
+      "name": "Tavi",
+      "id": "Tavi",
+      "difficulty": 5,
+      "descriptor": "monster",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 102
+      }
+    },
+    {
+      "name": "Thanatos",
+      "id": "Thanatos",
+      "difficulty": 100,
+      "descriptor": "undead (aquatic)",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 102
+      }
+    },
+    {
+      "name": "Undine",
+      "id": "Undine",
+      "difficulty": 1,
+      "descriptor": "elemental",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 103
+      }
+    },
+    {
+      "name": "Vulpine",
+      "id": "Vulpine",
+      "difficulty": 25,
+      "descriptor": "faerie",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 103
+      }
+    },
+    {
+      "name": "X'sval, Avatar of the Unspeakable One",
+      "id": "Xsval",
+      "difficulty": 250,
+      "descriptor": "demon",
+      "source": {
+        "book": "Freeport Companion",
+        "page": 104
+      }
+    },
+    {
+      "name": "Reen Vivsector",
+      "id": "ReenVivsector",
+      "difficulty": 250,
+      "descriptor": "construct",
+      "source": {
+        "book": "From Beyond This World",
+        "page": 5
+      }
+    },
+    {
+      "name": "Reen Spellbreaker",
+      "id": "ReenSpellbreaker",
+      "difficulty": 500,
+      "descriptor": "construct",
+      "source": {
+        "book": "From Beyond This World",
+        "page": 6
+      }
+    },
+    {
+      "name": "Reen Drone Commoner",
+      "id": "ReenDroneCommoner",
+      "difficulty": 1,
+      "descriptor": "construct",
+      "source": {
+        "book": "From Beyond This World",
+        "page": 7
+      }
+    },
+    {
+      "name": "Reen Drone Patroller",
+      "id": "ReenDronePatroller",
+      "difficulty": 5,
+      "descriptor": "construct",
+      "source": {
+        "book": "From Beyond This World",
+        "page": 7
+      }
+    },
+    {
+      "name": "Reen Drone Mercenary",
+      "id": "ReenDroneMercenary",
+      "difficulty": 10,
+      "descriptor": "construct",
+      "source": {
+        "book": "From Beyond This World",
+        "page": 7
+      }
+    },
+    {
+      "name": "Boogeyman",
+      "id": "Boogeyman",
+      "difficulty": 50,
+      "descriptor": "ogre",
+      "source": {
+        "book": "Ghastly Gourmands",
+        "page": 5
+      }
+    },
+    {
+      "name": "Oni",
+      "id": "Oni",
+      "difficulty": 100,
+      "descriptor": "ogre",
+      "source": {
+        "book": "Ghastly Gourmands",
+        "page": 8
+      }
+    },
+    {
+      "name": "Stallos",
+      "id": "Stallos",
+      "difficulty": 100,
+      "descriptor": "ogre",
+      "source": {
+        "book": "Ghastly Gourmands",
+        "page": 8
+      }
+    },
+    {
+      "name": "Vodyanoy",
+      "id": "Vodyanoy",
+      "difficulty": 50,
+      "descriptor": "ogre",
+      "source": {
+        "book": "Ghastly Gourmands",
+        "page": 9
+      }
+    },
+    {
+      "name": "Flash Tailor",
+      "id": "FlashTailor",
+      "difficulty": 50,
+      "descriptor": "harvester",
+      "source": {
+        "book": "Horrific Parasites",
+        "page": 5
+      }
+    },
+    {
+      "name": "Humor Drinker",
+      "id": "HumorDrinker",
+      "difficulty": 100,
+      "descriptor": "harvester",
+      "source": {
+        "book": "Horrific Parasites",
+        "page": 5
+      }
+    },
+    {
+      "name": "Blessed Child",
+      "id": "BlessedChild",
+      "difficulty": 5,
+      "descriptor": "human",
+      "source": {
+        "book": "Hunger in the Void",
+        "page": 28
+      }
+    },
+    {
+      "name": "Bugbear",
+      "id": "Bugbear",
+      "difficulty": 50,
+      "descriptor": "beastman",
+      "source": {
+        "book": "Hunger in the Void",
+        "page": 48
+      }
+    },
+    {
+      "name": "Bugbear Headhunter",
+      "id": "BugbearHeadhunter",
+      "difficulty": 100,
+      "descriptor": "beastman",
+      "source": {
+        "book": "Hunger in the Void",
+        "page": 48
+      }
+    },
+    {
+      "name": "Fomor Mob",
+      "id": "FomorMob",
+      "difficulty": 10,
+      "descriptor": "beastman",
+      "source": {
+        "book": "Hunger in the Void",
+        "page": 44
+      }
+    },
+    {
+      "name": "Fomor Warrior",
+      "id": "FomorWarrior",
+      "difficulty": 10,
+      "descriptor": "beastman",
+      "source": {
+        "book": "Hunger in the Void",
+        "page": 44
+      }
+    },
+    {
+      "name": "Fomor Void Caller",
+      "id": "FomorVoidCaller",
+      "difficulty": 25,
+      "descriptor": "beastman",
+      "source": {
+        "book": "Hunger in the Void",
+        "page": 45
+      }
+    },
+    {
+      "name": "Knight of the One True God",
+      "id": "KnightoftheOneTrueGod",
+      "difficulty": 50,
+      "descriptor": "human",
+      "source": {
+        "book": "Hunger in the Void",
+        "page": 27
+      }
+    },
+    {
+      "name": "Nameless",
+      "id": "Nameless",
+      "difficulty": 25,
+      "descriptor": "human",
+      "source": {
+        "book": "Hunger in the Void",
+        "page": 29
+      }
+    },
+    {
+      "name": "Philosopher of the Glistening Prince",
+      "id": "PhilosopheroftheGlisteningPrince",
+      "difficulty": 5,
+      "descriptor": "human",
+      "source": {
+        "book": "Hunger in the Void",
+        "page": 31
+      }
+    },
+    {
+      "name": "Reaver of the Skull King",
+      "id": "ReaveroftheSkullKing",
+      "difficulty": 25,
+      "descriptor": "human",
+      "source": {
+        "book": "Hunger in the Void",
+        "page": 32
+      }
+    },
+    {
+      "name": "Sister of the Blue Hand",
+      "id": "SisteroftheBlueHand",
+      "difficulty": 25,
+      "descriptor": "human",
+      "source": {
+        "book": "Hunger in the Void",
+        "page": 36
+      }
+    },
+    {
+      "name": "Void Bull",
+      "id": "VoidBull",
+      "difficulty": 250,
+      "descriptor": "beastman (minotaur)",
+      "source": {
+        "book": "Hunger in the Void",
+        "page": 48
+      }
+    },
+    {
+      "name": "Warg Berserker",
+      "id": "WargBerserker",
+      "difficulty": 50,
+      "descriptor": "beastman",
+      "source": {
+        "book": "Hunger in the Void",
+        "page": 46
+      }
+    },
+    {
+      "name": "Warg Hunter",
+      "id": "WargHunter",
+      "difficulty": 25,
+      "descriptor": "beastman",
+      "source": {
+        "book": "Hunger in the Void",
+        "page": 46
+      }
+    },
+    {
       "name": "Demon Prince",
       "id": "DemonPrince",
       "difficulty": 1000,
+      "descriptor": "demon",
       "source": {
-       "book": "The Hunger in the Void",
+        "book": "Hunger in the Void",
         "page": 64
       }
     },
     {
-      "name": "Zombie",
-      "id": "Zombie",
-      "difficulty": 5,
+      "name": "Brother/Sister of Shadow",
+      "id": "BrotherSisterofShadow",
+      "difficulty": 1,
+      "descriptor": "human",
       "source": {
-        "book": "Shadow of the Demon Lord",
-        "page": 260
+        "book": "Hunger in the Void",
+        "page": 25
+      }
+    },
+    {
+      "name": "Father/Mother of Shadow",
+      "id": "FatherMotherofShadow",
+      "difficulty": 10,
+      "descriptor": "human",
+      "source": {
+        "book": "Hunger in the Void",
+        "page": 25
+      }
+    },
+    {
+      "name": "Seeker of the Wandering Star",
+      "id": "SeekeroftheWanderingStar",
+      "difficulty": 25,
+      "descriptor": "human",
+      "source": {
+        "book": "Hunger in the Void",
+        "page": 34
+      }
+    },
+    {
+      "name": "Barrow Grim",
+      "id": "BarrowGrim",
+      "difficulty": 10,
+      "descriptor": "undead",
+      "source": {
+        "book": "Lords of the Barrows",
+        "page": 10
+      }
+    },
+    {
+      "name": "Barrow Warrior",
+      "id": "BarrowWarrior",
+      "difficulty": 25,
+      "descriptor": "undead",
+      "source": {
+        "book": "Lords of the Barrows",
+        "page": 5
+      }
+    },
+    {
+      "name": "Blight Steed",
+      "id": "BlightSteed",
+      "difficulty": 25,
+      "descriptor": "undead",
+      "source": {
+        "book": "Lords of the Barrows",
+        "page": 8
+      }
+    },
+    {
+      "name": "Butcherbird",
+      "id": "Butcherbird",
+      "difficulty": 5,
+      "descriptor": "undead",
+      "source": {
+        "book": "Lords of the Barrows",
+        "page": 5
+      }
+    },
+    {
+      "name": "Deathless",
+      "id": "Deathless",
+      "difficulty": 500,
+      "descriptor": "undead",
+      "source": {
+        "book": "Lords of the Barrows",
+        "page": 6
+      }
+    },
+    {
+      "name": "Grave Regent",
+      "id": "GraveRegent",
+      "difficulty": 500,
+      "descriptor": "undead",
+      "source": {
+        "book": "Lords of the Barrows",
+        "page": 3
+      }
+    },
+    {
+      "name": "Oathbound",
+      "id": "Oathbound",
+      "difficulty": 100,
+      "descriptor": "undead",
+      "source": {
+        "book": "Lords of the Barrows",
+        "page": 100
+      }
+    },
+    {
+      "name": "Prophet of Decay",
+      "id": "ProphetofDecay",
+      "difficulty": 50,
+      "descriptor": "undead",
+      "source": {
+        "book": "Lords of the Barrows",
+        "page": 4
+      }
+    },
+    {
+      "name": "Wight Champion",
+      "id": "WightChampion",
+      "difficulty": 250,
+      "descriptor": "undead",
+      "source": {
+        "book": "Lords of the Barrows",
+        "page": 4
+      }
+    },
+    {
+      "name": "Wight Witch",
+      "id": "WightWitch",
+      "difficulty": 50,
+      "descriptor": "undead",
+      "source": {
+        "book": "Lords of the Barrows",
+        "page": 5
+      }
+    },
+    {
+      "name": "Menyhad",
+      "id": "Menyhad",
+      "difficulty": 50,
+      "descriptor": "faerie",
+      "source": {
+        "book": "Malicious Mischief",
+        "page": 4
+      }
+    },
+    {
+      "name": "Perooka",
+      "id": "Perooka",
+      "difficulty": 10,
+      "descriptor": "faerie",
+      "source": {
+        "book": "Malicious Mischief",
+        "page": 7
+      }
+    },
+    {
+      "name": "Welterkin",
+      "id": "Welterkin",
+      "difficulty": 5,
+      "descriptor": "faerie",
+      "source": {
+        "book": "Malicious Mischief",
+        "page": 2
+      }
+    },
+    {
+      "name": "Welterkin Matriarch",
+      "id": "WelterkinMatriarch",
+      "difficulty": 50,
+      "descriptor": "faerie",
+      "source": {
+        "book": "Malicious Mischief",
+        "page": 3
+      }
+    },
+    {
+      "name": "Balbator",
+      "id": "Balbator",
+      "difficulty": 750,
+      "descriptor": "demon",
+      "source": {
+        "book": "Men of Gog",
+        "page": 24
+      }
+    },
+    {
+      "name": "Blighter",
+      "id": "Blighter",
+      "difficulty": 100,
+      "descriptor": "human",
+      "source": {
+        "book": "Men of Gog",
+        "page": 28
+      }
+    },
+    {
+      "name": "Blight Wyvern",
+      "id": "BlightWyvern",
+      "difficulty": 250,
+      "descriptor": "monster",
+      "source": {
+        "book": "Men of Gog",
+        "page": 21
+      }
+    },
+    {
+      "name": "Demon-Binder",
+      "id": "Demon-Binder",
+      "difficulty": 100,
+      "descriptor": "human",
+      "source": {
+        "book": "Men of Gog",
+        "page": 28
+      }
+    },
+    {
+      "name": "Dreamstealer",
+      "id": "Dreamstealer",
+      "difficulty": 25,
+      "descriptor": "undead",
+      "source": {
+        "book": "Men of Gog",
+        "page": 22
+      }
+    },
+    {
+      "name": "Dread Cabalist",
+      "id": "Dread Cabalist",
+      "difficulty": 250,
+      "descriptor": "human",
+      "source": {
+        "book": "Men of Gog",
+        "page": 29
+      }
+    },
+    {
+      "name": "Disciple of the Witch-King",
+      "id": "DiscipleoftheWitch-King",
+      "difficulty": 1000,
+      "descriptor": "human",
+      "source": {
+        "book": "Men of Gog",
+        "page": 29
+      }
+    },
+    {
+      "name": "Exquisite One",
+      "id": "ExquisiteOne",
+      "difficulty": 100,
+      "descriptor": "human",
+      "source": {
+        "book": "Men of Gog",
+        "page": 30
+      }
+    },
+    {
+      "name": "Fallen",
+      "id": "Fallen",
+      "difficulty": 1,
+      "descriptor": "human",
+      "source": {
+        "book": "Men of Gog",
+        "page": 30
+      }
+    },
+    {
+      "name": "God-Hunter",
+      "id": "God-Hunter",
+      "difficulty": 100,
+      "descriptor": "human",
+      "source": {
+        "book": "Men of Gog",
+        "page": 31
+      }
+    },
+    {
+      "name": "Gog Deathseeker",
+      "id": "GogDeathseeker",
+      "difficulty": 25,
+      "descriptor": "human",
+      "source": {
+        "book": "Men of Gog",
+        "page": 31
+      }
+    },
+    {
+      "name": "Hujeta",
+      "id": "Hujeta",
+      "difficulty": 250,
+      "descriptor": "demon",
+      "source": {
+        "book": "Men of Gog",
+        "page": 25
+      }
+    },
+    {
+      "name": "Immortal",
+      "id": "Immortal",
+      "difficulty": 250,
+      "descriptor": "undead",
+      "source": {
+        "book": "Men of Gog",
+        "page": 20
+      }
+    },
+    {
+      "name": "Mindkiller",
+      "id": "Mindkiller",
+      "difficulty": 50,
+      "descriptor": "undead",
+      "source": {
+        "book": "Men of Gog",
+        "page": 24
+      }
+    },
+    {
+      "name": "Mog Croaker",
+      "id": "MogCroaker",
+      "difficulty": 10,
+      "descriptor": "monster",
+      "source": {
+        "book": "Men of Gog",
+        "page": 35
+      }
+    },
+    {
+      "name": "Great Mog",
+      "id": "GreatMog",
+      "difficulty": 50,
+      "descriptor": "monster",
+      "source": {
+        "book": "Men of Gog",
+        "page": 35
+      }
+    },
+    {
+      "name": "Nosferatu",
+      "id": "Nosferatu",
+      "difficulty": 250,
+      "descriptor": "undead",
+      "source": {
+        "book": "Men of Gog",
+        "page": 22
+      }
+    },
+    {
+      "name": "Plague Zombie",
+      "id": "PlagueZombie",
+      "difficulty": 10,
+      "descriptor": "undead",
+      "source": {
+        "book": "Men of Gog",
+        "page": 20
+      }
+    },
+    {
+      "name": "Pyron",
+      "id": "Pyron",
+      "difficulty": 250,
+      "descriptor": "demon",
+      "source": {
+        "book": "Men of Gog",
+        "page": 25
+      }
+    },
+    {
+      "name": "Revenant Assassin",
+      "id": "RevenantAssassin",
+      "difficulty": 100,
+      "descriptor": "revenant",
+      "source": {
+        "book": "Men of Gog",
+        "page": 32
+      }
+    },
+    {
+      "name": "Revenant Knight",
+      "id": "RevenantKnight",
+      "difficulty": 100,
+      "descriptor": "revenant",
+      "source": {
+        "book": "Men of Gog",
+        "page": 33
+      }
+    },
+    {
+      "name": "Revenant Necromancer",
+      "id": "RevenantNecromancer",
+      "difficulty": 50,
+      "descriptor": "revenant",
+      "source": {
+        "book": "Men of Gog",
+        "page": 33
+      }
+    },
+    {
+      "name": "Reviled",
+      "id": "Reviled",
+      "difficulty": 250,
+      "descriptor": "human",
+      "source": {
+        "book": "Men of Gog",
+        "page": 31
+      }
+    },
+    {
+      "name": "Uncrowned",
+      "id": "Uncrowned",
+      "difficulty": 500,
+      "descriptor": "undead",
+      "source": {
+        "book": "Men of Gog",
+        "page": 21
       }
     },
     {
       "name": "Zoyuu",
       "id": "Zoyuu",
       "difficulty": 100,
+      "descriptor": "monster",
       "source": {
         "book": "Men of Gog",
         "page": 19
+      }
+    },
+    {
+      "name": "Animated Plant",
+      "id": "AnimatedPlant",
+      "difficulty": 10,
+      "descriptor": "plant",
+      "source": {
+        "book": "Occult Philosophy",
+        "page": 135
+      }
+    },
+    {
+      "name": "Animated Tree",
+      "id": "AnimatedTree",
+      "difficulty": 100,
+      "descriptor": "plant",
+      "source": {
+        "book": "Occult Philosophy",
+        "page": 135
+      }
+    },
+    {
+      "name": "Arion Charger",
+      "id": "ArionCharger",
+      "difficulty": 100,
+      "descriptor": "animal",
+      "source": {
+        "book": "Occult Philosophy",
+        "page": 136
+      }
+    },
+    {
+      "name": "Faceless Servant",
+      "id": "FacelessServant",
+      "difficulty": 1,
+      "descriptor": "construct",
+      "source": {
+        "book": "Occult Philosophy",
+        "page": 137
+      }
+    },
+    {
+      "name": "Fire Imp",
+      "id": "FireImp",
+      "difficulty": 10,
+      "descriptor": "construct",
+      "source": {
+        "book": "Occult Philosophy",
+        "page": 138
+      }
+    },
+    {
+      "name": "Storm Genie",
+      "id": "StormGenie",
+      "difficulty": 100,
+      "descriptor": "genie",
+      "source": {
+        "book": "Occult Philosophy",
+        "page": 138
+      }
+    },
+    {
+      "name": "Grim Reaper",
+      "id": "GrimReaper",
+      "difficulty": 1000,
+      "descriptor": "spirit",
+      "source": {
+        "book": "Occult Philosophy",
+        "page": 138
+      }
+    },
+    {
+      "name": "Incarnation of Nature",
+      "id": "IncarnationofNature",
+      "difficulty": 1000,
+      "descriptor": "plant",
+      "source": {
+        "book": "Occult Philosophy",
+        "page": 139
+      }
+    },
+    {
+      "name": "Iron Guardian",
+      "id": "IronGuardian",
+      "difficulty": 750,
+      "descriptor": "construct",
+      "source": {
+        "book": "Occult Philosophy",
+        "page": 140
+      }
+    },
+    {
+      "name": "Mob of Corpses",
+      "id": "MobofCorpses",
+      "difficulty": 10,
+      "descriptor": "undead (mob)",
+      "source": {
+        "book": "Occult Philosophy",
+        "page": 135
+      }
+    },
+    {
+      "name": "Mob of Small Demons",
+      "id": "MobofSmallDemons",
+      "difficulty": 100,
+      "descriptor": "demon",
+      "source": {
+        "book": "Occult Philosophy",
+        "page": 137
+      }
+    },
+    {
+      "name": "Mob of Manes",
+      "id": "MobofManes",
+      "difficulty": 25,
+      "descriptor": "spirit",
+      "source": {
+        "book": "Occult Philosophy",
+        "page": 140
+      }
+    },
+    {
+      "name": "Mob of Medium Monsters",
+      "id": "MobofMediumMonsters",
+      "difficulty": 25,
+      "descriptor": "monster",
+      "source": {
+        "book": "Occult Philosophy",
+        "page": 141
+      }
+    },
+    {
+      "name": "Mob of Phantoms",
+      "id": "MobofPhantoms",
+      "difficulty": 100,
+      "descriptor": "spirit",
+      "source": {
+        "book": "Occult Philosophy",
+        "page": 142
+      }
+    },
+    {
+      "name": "Ore Thrall",
+      "id": "OreThrall",
+      "difficulty": 25,
+      "descriptor": "construct",
+      "source": {
+        "book": "Occult Philosophy",
+        "page": 142
+      }
+    },
+    {
+      "name": "Primal Champion",
+      "id": "PrimalChampion",
+      "difficulty": 250,
+      "descriptor": "animal",
+      "source": {
+        "book": "Occult Philosophy",
+        "page": 142
+      }
+    },
+    {
+      "name": "Slime",
+      "id": "Slime",
+      "difficulty": 10,
+      "descriptor": "ooze",
+      "source": {
+        "book": "Occult Philosophy",
+        "page": 143
+      }
+    },
+    {
+      "name": "Sprite",
+      "id": "Sprite",
+      "difficulty": 5,
+      "descriptor": "faerie",
+      "source": {
+        "book": "Occult Philosophy",
+        "page": 144
+      }
+    },
+    {
+      "name": "Stalwart Defender",
+      "id": "StalwartDefender",
+      "difficulty": 100,
+      "descriptor": "construct",
+      "source": {
+        "book": "Occult Philosophy",
+        "page": 144
+      }
+    },
+    {
+      "name": "Unicorn",
+      "id": "Unicorn",
+      "difficulty": 100,
+      "descriptor": "faerie",
+      "source": {
+        "book": "Occult Philosophy",
+        "page": 145
+      }
+    },
+    {
+      "name": "Titanic Monster",
+      "id": "TitanicMonster",
+      "difficulty": 500,
+      "descriptor": "monster",
+      "source": {
+        "book": "Occult Philosophy",
+        "page": 140
+      }
+    },
+    {
+      "name": "Boggle",
+      "id": "Boggle",
+      "difficulty": 10,
+      "descriptor": "monster",
+      "source": {
+        "book": "Odd Monsters",
+        "page": 3
+      }
+    },
+    {
+      "name": "Brag",
+      "id": "Brag",
+      "difficulty": 25,
+      "descriptor": "monster",
+      "source": {
+        "book": "Odd Monsters",
+        "page": 4
+      }
+    },
+    {
+      "name": "Buggane",
+      "id": "Buggane",
+      "difficulty": 50,
+      "descriptor": "monster",
+      "source": {
+        "book": "Odd Monsters",
+        "page": 4
+      }
+    },
+    {
+      "name": "Bloodsipper Drake",
+      "id": "BloodsipperDrake",
+      "difficulty": 250,
+      "descriptor": "monster",
+      "source": {
+        "book": "Of Fire and Venom",
+        "page": 6
+      }
+    },
+    {
+      "name": "Death Dragon",
+      "id": "DeathDragon",
+      "difficulty": 1000,
+      "descriptor": "undead",
+      "source": {
+        "book": "Of Fire and Venom",
+        "page": 6
+      }
+    },
+    {
+      "name": "Gaping Gorger",
+      "id": "GapingGorger",
+      "difficulty": 100,
+      "descriptor": "monster",
+      "source": {
+        "book": "Of Fire and Venom",
+        "page": 7
+      }
+    },
+    {
+      "name": "Rime Dragon",
+      "id": "RimeDragon",
+      "difficulty": 500,
+      "descriptor": "dragon",
+      "source": {
+        "book": "Of Fire and Venom",
+        "page": 7
+      }
+    },
+    {
+      "name": "Sea Dragon",
+      "id": "SeaDragon",
+      "difficulty": 500,
+      "descriptor": "monster (aquatic)",
+      "source": {
+        "book": "Of Fire and Venom",
+        "page": 8
+      }
+    },
+    {
+      "name": "Centaur Archer",
+      "id": "CentaurArcher",
+      "difficulty": 10,
+      "descriptor": "centaur",
+      "source": {
+        "book": "Riders of the Wind",
+        "page": 4
+      }
+    },
+    {
+      "name": "Centaur Champion",
+      "id": "CentaurChampion",
+      "difficulty": 25,
+      "descriptor": "centaur",
+      "source": {
+        "book": "Riders of the Wind",
+        "page": 25
+      }
+    },
+    {
+      "name": "Centaur Wind-Caller",
+      "id": "CentaurWind-Caller",
+      "difficulty": 10,
+      "descriptor": "centaur",
+      "source": {
+        "book": "Riders of the Wind",
+        "page": 4
+      }
+    },
+    {
+      "name": "Darkling",
+      "id": "Darkling",
+      "difficulty": 1,
+      "descriptor": "faerie (devil)",
+      "source": {
+        "book": "Scions of the Betrayer",
+        "page": 22
+      }
+    },
+    {
+      "name": "Darkling Man Hunter",
+      "id": "DarklingManHunter",
+      "difficulty": 50,
+      "descriptor": "faerie (devil)",
+      "source": {
+        "book": "Scions of the Betrayer",
+        "page": 24
+      }
+    },
+    {
+      "name": "Hellbound Darkling",
+      "id": "HellboundDarkling",
+      "difficulty": 250,
+      "descriptor": "faerie (devil)",
+      "source": {
+        "book": "Scions of the Betrayer",
+        "page": 23
+      }
+    },
+    {
+      "name": "Animated Beast",
+      "id": "AnimatedBeast",
+      "difficulty": 25,
+      "descriptor": "undead",
+      "source": {
+        "book": "Slaves in Death",
+        "page": 2
+      }
+    },
+    {
+      "name": "Animated Hulk",
+      "id": "AnimatedHulk",
+      "difficulty": 50,
+      "descriptor": "undead",
+      "source": {
+        "book": "Slaves in Death",
+        "page": 3
+      }
+    },
+    {
+      "name": "Animated Steed",
+      "id": "AnimatedSteed",
+      "difficulty": 1,
+      "descriptor": "undead",
+      "source": {
+        "book": "Slaves in Death",
+        "page": 2
+      }
+    },
+    {
+      "name": "Corpse Mob",
+      "id": "CorpseMob",
+      "difficulty": 10,
+      "descriptor": "undead (mob)",
+      "source": {
+        "book": "Slaves in Death",
+        "page": 3
+      }
+    },
+    {
+      "name": "Asrai",
+      "id": "Asrai",
+      "difficulty": 5,
+      "descriptor": "faerie",
+      "source": {
+        "book": "Terrible Beauty",
+        "page": 39
+      }
+    },
+    {
+      "name": "Banshee",
+      "id": "Banshee",
+      "difficulty": 500,
+      "descriptor": "spirit",
+      "source": {
+        "book": "Terrible Beauty",
+        "page": 40
+      }
+    },
+    {
+      "name": "Bean-Nighe",
+      "id": "Bean-Nighe",
+      "difficulty": 50,
+      "descriptor": "faerie",
+      "source": {
+        "book": "Terrible Beauty",
+        "page": 41
+      }
+    },
+    {
+      "name": "Cu Sith",
+      "id": "CuSith",
+      "difficulty": 50,
+      "descriptor": "faerie",
+      "source": {
+        "book": "Terrible Beauty",
+        "page": 41
+      }
+    },
+    {
+      "name": "Elf Highborn",
+      "id": "ElfHighborn",
+      "difficulty": 50,
+      "descriptor": "faerie",
+      "source": {
+        "book": "Terrible Beauty",
+        "page": 42
+      }
+    },
+    {
+      "name": "Elf Knight-Errant",
+      "id": "ElfKnight-Errant",
+      "difficulty": 25,
+      "descriptor": "faerie",
+      "source": {
+        "book": "Terrible Beauty",
+        "page": 43
+      }
+    },
+    {
+      "name": "Elf Reveller",
+      "id": "ElfReveller",
+      "difficulty": 5,
+      "descriptor": "faerie",
+      "source": {
+        "book": "Terrible Beauty",
+        "page": 43
+      }
+    },
+    {
+      "name": "Fachen",
+      "id": "Fachen",
+      "difficulty": 10,
+      "descriptor": "faerie",
+      "source": {
+        "book": "Terrible Beauty",
+        "page": 43
+      }
+    },
+    {
+      "name": "Faun",
+      "id": "Faun",
+      "difficulty": 1,
+      "descriptor": "faun",
+      "source": {
+        "book": "Terrible Beauty",
+        "page": 43
+      }
+    },
+    {
+      "name": "Imp",
+      "id": "Imp",
+      "difficulty": 25,
+      "descriptor": "faerie",
+      "source": {
+        "book": "Terrible Beauty",
+        "page": 44
+      }
+    },
+    {
+      "name": "Jabberwock",
+      "id": "Jabberwock",
+      "difficulty": 500,
+      "descriptor": "monster",
+      "source": {
+        "book": "Terrible Beauty",
+        "page": 44
+      }
+    },
+    {
+      "name": "Kobold",
+      "id": "Kobold",
+      "difficulty": 5,
+      "descriptor": "faerie",
+      "source": {
+        "book": "Terrible Beauty",
+        "page": 45
+      }
+    },
+    {
+      "name": "Lares",
+      "id": "Lares",
+      "difficulty": 5,
+      "descriptor": "spirit",
+      "source": {
+        "book": "Terrible Beauty",
+        "page": 45
+      }
+    },
+    {
+      "name": "Merrow Male",
+      "id": "MerrowMale",
+      "difficulty": 10,
+      "descriptor": "faerie (aquatic)",
+      "source": {
+        "book": "Terrible Beauty",
+        "page": 46
+      }
+    },
+    {
+      "name": "Merrow Maid",
+      "id": "MerrowMaid",
+      "difficulty": 10,
+      "descriptor": "faerie (aquatic)",
+      "source": {
+        "book": "Terrible Beauty",
+        "page": 46
+      }
+    },
+    {
+      "name": "Nymph",
+      "id": "Nymph",
+      "difficulty": 250,
+      "descriptor": "faerie",
+      "source": {
+        "book": "Terrible Beauty",
+        "page": 47
+      }
+    },
+    {
+      "name": "Pixie",
+      "id": "Pixie",
+      "difficulty": 5,
+      "descriptor": "faerie",
+      "source": {
+        "book": "Terrible Beauty",
+        "page": 48
+      }
+    },
+    {
+      "name": "Saytr",
+      "id": "Saytr",
+      "difficulty": 25,
+      "descriptor": "faerie",
+      "source": {
+        "book": "Terrible Beauty",
+        "page": 49
+      }
+    },
+    {
+      "name": "Controlled Flame",
+      "id": "ControlledFlame",
+      "descriptor": "construct",
+      "source": {
+        "book": "Terrible Beauty",
+        "page": 16
+      }
+    },
+    {
+      "name": "Anubin",
+      "id": "Anubin",
+      "difficulty": 25,
+      "descriptor": "beastman",
+      "source": {
+        "book": "Tombs of the Desolation",
+        "page": 26
+      }
+    },
+    {
+      "name": "Cyclops",
+      "id": "Cyclops",
+      "difficulty": 100,
+      "descriptor": "giant",
+      "source": {
+        "book": "Tombs of the Desolation",
+        "page": 27
+      }
+    },
+    {
+      "name": "Death Lord",
+      "id": "DeathLord",
+      "difficulty": 500,
+      "descriptor": "undead",
+      "source": {
+        "book": "Tombs of the Desolation",
+        "page": 27
+      }
+    },
+    {
+      "name": "Desiccated One",
+      "id": "DesiccatedOne",
+      "difficulty": 10,
+      "descriptor": "undead",
+      "source": {
+        "book": "Tombs of the Desolation",
+        "page": 28
+      }
+    },
+    {
+      "name": "Dust Devil",
+      "id": "DustDevil",
+      "difficulty": 25,
+      "descriptor": "genie",
+      "source": {
+        "book": "Tombs of the Desolation",
+        "page": 25
+      }
+    },
+    {
+      "name": "Forsaken",
+      "id": "Forsaken",
+      "difficulty": 25,
+      "descriptor": "undead",
+      "source": {
+        "book": "Tombs of the Desolation",
+        "page": 29
+      }
+    },
+    {
+      "name": "Giant Scorpion",
+      "id": "GianScorpion",
+      "difficulty": 100,
+      "descriptor": "animal",
+      "source": {
+        "book": "Tombs of the Desolation",
+        "page": 29
+      }
+    },
+    {
+      "name": "Great Horned Beetle",
+      "id": "GreatHornedBeetle",
+      "difficulty": 100,
+      "descriptor": "animal",
+      "source": {
+        "book": "Tombs of the Desolation",
+        "page": 30
+      }
+    },
+    {
+      "name": "Lamia",
+      "id": "Lamia",
+      "difficulty": 250,
+      "descriptor": "monster",
+      "source": {
+        "book": "Tombs of the Desolation",
+        "page": 31
+      }
+    },
+    {
+      "name": "Mummy",
+      "id": "Mummy",
+      "difficulty": 100,
+      "descriptor": "undead",
+      "source": {
+        "book": "Tombs of the Desolation",
+        "page": 31
+      }
+    },
+    {
+      "name": "Murk",
+      "id": "Murk",
+      "difficulty": 50,
+      "descriptor": "monster",
+      "source": {
+        "book": "Tombs of the Desolation",
+        "page": 31
+      }
+    },
+    {
+      "name": "Revenant",
+      "id": "Revenant",
+      "difficulty": 50,
+      "descriptor": "revenant",
+      "source": {
+        "book": "Tombs of the Desolation",
+        "page": 32
+      }
+    },
+    {
+      "name": "Sand Mite Swarm",
+      "id": "SandMiteSwarm",
+      "difficulty": 10,
+      "descriptor": "animal (swarm)",
+      "source": {
+        "book": "Tombs of the Desolation",
+        "page": 33
+      }
+    },
+    {
+      "name": "Salamander",
+      "id": "Salamander",
+      "difficulty": 5,
+      "descriptor": "elemental",
+      "source": {
+        "book": "Tombs of the Desolation",
+        "page": 32
+      }
+    },
+    {
+      "name": "Severed",
+      "id": "Severed",
+      "difficulty": 1,
+      "descriptor": "undead",
+      "source": {
+        "book": "Tombs of the Desolation",
+        "page": 33
+      }
+    },
+    {
+      "name": "Skeletal Steed",
+      "id": "SkeletalSteed",
+      "difficulty": 5,
+      "descriptor": "undead",
+      "source": {
+        "book": "Tombs of the Desolation",
+        "page": 33
+      }
+    },
+    {
+      "name": "Vampire Brood",
+      "id": "VampireBrood",
+      "difficulty": 50,
+      "descriptor": "undead",
+      "source": {
+        "book": "Tombs of the Desolation",
+        "page": 34
+      }
+    },
+    {
+      "name": "Whisper Cactus",
+      "id": "WhisperCactus",
+      "difficulty": 1,
+      "descriptor": "plant",
+      "source": {
+        "book": "Tombs of the Desolation",
+        "page": 34
+      }
+    },
+    {
+      "name": "Bloated",
+      "id": "Bloated",
+      "difficulty": 25,
+      "descriptor": "undead",
+      "source": {
+        "book": "Trapped in Bone and Flesh",
+        "page": 7
+      }
+    },
+    {
+      "name": "Boneguard Executioner",
+      "id": "BoneguardExecutioner",
+      "difficulty": 50,
+      "descriptor": "undead",
+      "source": {
+        "book": "Trapped in Bone and Flesh",
+        "page": 3
+      }
+    },
+    {
+      "name": "Boneguard Commander",
+      "id": "BoneguardCommander",
+      "difficulty": 100,
+      "descriptor": "undead",
+      "source": {
+        "book": "Trapped in Bone and Flesh",
+        "page": 3
+      }
+    },
+    {
+      "name": "Conflagration Boneguard",
+      "id": "ConflagrationBoneguard",
+      "difficulty": 50,
+      "descriptor": "undead",
+      "source": {
+        "book": "Trapped in Bone and Flesh",
+        "page": 3
+      }
+    },
+    {
+      "name": "Ghastly Boneguard",
+      "id": "GhastlyBoneguard",
+      "difficulty": 50,
+      "descriptor": "undead",
+      "source": {
+        "book": "Trapped in Bone and Flesh",
+        "page": 3
+      }
+    },
+    {
+      "name": "Symbiotic Boneguard",
+      "id": "SymbioticBoneguard",
+      "difficulty": 100,
+      "descriptor": "undead",
+      "source": {
+        "book": "Trapped in Bone and Flesh",
+        "page": 3
+      }
+    },
+    {
+      "name": "Spider Boneguard",
+      "id": "SpiderBoneguard",
+      "difficulty": 100,
+      "descriptor": "undead",
+      "source": {
+        "book": "Trapped in Bone and Flesh",
+        "page": 3
+      }
+    },
+    {
+      "name": "Blind Butcher",
+      "id": "BlindButcher",
+      "difficulty": 100,
+      "descriptor": "undead",
+      "source": {
+        "book": "Trapped in Bone and Flesh",
+        "page": 7
+      }
+    },
+    {
+      "name": "Cold Lover",
+      "id": "ColdLover",
+      "difficulty": 10,
+      "descriptor": "undead",
+      "source": {
+        "book": "Trapped in Bone and Flesh",
+        "page": 8
+      }
+    },
+    {
+      "name": "Corpse Mother",
+      "id": "CorpseMother",
+      "difficulty": 50,
+      "descriptor": "undead",
+      "source": {
+        "book": "Trapped in Bone and Flesh",
+        "page": 8
+      }
+    },
+    {
+      "name": "Death Angel",
+      "id": "DeathAngel",
+      "difficulty": 100,
+      "descriptor": "undead",
+      "source": {
+        "book": "Trapped in Bone and Flesh",
+        "page": 9
+      }
+    },
+    {
+      "name": "Dying Bride",
+      "id": "DyingBride",
+      "difficulty": 1,
+      "descriptor": "undead",
+      "source": {
+        "book": "Trapped in Bone and Flesh",
+        "page": 9
+      }
+    },
+    {
+      "name": "Eater of the Dead",
+      "id": "EateroftheDead",
+      "difficulty": 25,
+      "descriptor": "undead",
+      "source": {
+        "book": "Trapped in Bone and Flesh",
+        "page": 10
+      }
+    },
+    {
+      "name": "Encaged",
+      "id": "Encaged",
+      "difficulty": 25,
+      "descriptor": "undead",
+      "source": {
+        "book": "Trapped in Bone and Flesh",
+        "page": 11
+      }
+    },
+    {
+      "name": "Infested Grave Thrall",
+      "id": "InfestedGraveThrall",
+      "difficulty": 25,
+      "descriptor": "undead",
+      "source": {
+        "book": "Trapped in Bone and Flesh",
+        "page": 5
+      }
+    },
+    {
+      "name": "Grave Thrall Champion",
+      "id": "GraveThrallChampion",
+      "difficulty": 100,
+      "descriptor": "undead",
+      "source": {
+        "book": "Trapped in Bone and Flesh",
+        "page": 6
+      }
+    },
+    {
+      "name": "Relentless Grave Thrall",
+      "id": "RelentlessGraveThrall",
+      "difficulty": 10,
+      "descriptor": "undead",
+      "source": {
+        "book": "Trapped in Bone and Flesh",
+        "page": 6
+      }
+    },
+    {
+      "name": "Ragamuffin",
+      "id": "Ragamuffin",
+      "difficulty": 1,
+      "descriptor": "undead",
+      "source": {
+        "book": "Trapped in Bone and Flesh",
+        "page": 11
+      }
+    },
+    {
+      "name": "Rotten",
+      "id": "Rotten",
+      "difficulty": 1,
+      "descriptor": "undead",
+      "source": {
+        "book": "Trapped in Bone and Flesh",
+        "page": 12
+      }
+    },
+    {
+      "name": "Arcolinus, The Joyous One",
+      "id": "Arcolinus,theJoyousOne",
+      "difficulty": 25,
+      "descriptor": "demon",
+      "source": {
+        "book": "Unholy Champions of the Demon Lord",
+        "page": 2
+      }
+    },
+    {
+      "name": "Bloated Duchess, The",
+      "id": "BloatedDuchess,The",
+      "difficulty": 250,
+      "descriptor": "demon",
+      "source": {
+        "book": "Unholy Champions of the Demon Lord",
+        "page": 4
+      }
+    },
+    {
+      "name": "Cromethius",
+      "id": "Cromethius",
+      "difficulty": 250,
+      "descriptor": "demon",
+      "source": {
+        "book": "Unholy Champions of the Demon Lord",
+        "page": 5
+      }
+    },
+    {
+      "name": "Hinnom",
+      "id": "Hinnom",
+      "difficulty": 25,
+      "descriptor": "demon",
+      "source": {
+        "book": "Unholy Champions of the Demon Lord",
+        "page": 6
+      }
+    },
+    {
+      "name": "Yg’Zg’Zor",
+      "id": "Yg’Zg’Zor",
+      "difficulty": 500,
+      "descriptor": "demon",
+      "source": {
+        "book": "Unholy Champions of the Demon Lord",
+        "page": 9
+      }
+    },
+    {
+      "name": "Abomination",
+      "id": "Abomination",
+      "difficulty": 100,
+      "descriptor": "troglodyte",
+      "source": {
+        "book": "Wretched and Unclean",
+        "page": 6
+      }
+    },
+    {
+      "name": "Dark Speaker",
+      "id": "DarkSpeaker",
+      "difficulty": 50,
+      "descriptor": "troglodyte",
+      "source": {
+        "book": "Wretched and Unclean",
+        "page": 5
+      }
+    },
+    {
+      "name": "God-Killer",
+      "id": "God-Killer",
+      "difficulty": 50,
+      "descriptor": "troglodyte",
+      "source": {
+        "book": "Wretched and Unclean",
+        "page": 4
+      }
+    },
+    {
+      "name": "Pale Bride",
+      "id": "PaleBride",
+      "difficulty": 50,
+      "descriptor": "troglodyte",
+      "source": {
+        "book": "Wretched and Unclean",
+        "page": 50
+      }
+    },
+    {
+      "name": "Serpent of the Witch King",
+      "id": "SerpentoftheWitchKing",
+      "difficulty": 500,
+      "descriptor": "undead",
+      "source": {
+        "book": "Wretched and Unclean",
+        "page": 6
+      }
+    },
+    {
+      "name": "Slave of Ashrakal",
+      "id": "SlaveofAshrakal",
+      "difficulty": 10,
+      "descriptor": "troglodyte",
+      "source": {
+        "book": "Wretched and Unclean",
+        "page": 4
       }
     }
   ],
@@ -4027,7 +5029,7 @@
       "id": "Magician",
       "tier": "Novice",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 55
       }
     },
@@ -4036,7 +5038,7 @@
       "id": "Priest",
       "tier": "Novice",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 56
       }
     },
@@ -4045,7 +5047,7 @@
       "id": "Rogue",
       "tier": "Novice",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 57
       }
     },
@@ -4054,7 +5056,7 @@
       "id": "Warrior",
       "tier": "Novice",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 58
       }
     },
@@ -4342,7 +5344,7 @@
       "id": "Artificer",
       "tier": "Expert",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 61
       }
     },
@@ -4360,7 +5362,7 @@
       "id": "Assassin",
       "tier": "Expert",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 62
       }
     },
@@ -4396,7 +5398,7 @@
       "id": "Berserker",
       "tier": "Expert",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 63
       }
     },
@@ -4459,7 +5461,7 @@
       "id": "Cleric",
       "tier": "Expert",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 64
       }
     },
@@ -4612,7 +5614,7 @@
       "id": "Druid",
       "tier": "Expert",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 65
       }
     },
@@ -4684,7 +5686,7 @@
       "id": "Fighter",
       "tier": "Expert",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 66
       }
     },
@@ -4990,7 +5992,7 @@
       "id": "Oracle",
       "tier": "Expert",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 67
       }
     },
@@ -5008,7 +6010,7 @@
       "id": "Paladin",
       "tier": "Expert",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 68
       }
     },
@@ -5071,7 +6073,7 @@
       "id": "Ranger",
       "tier": "Expert",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 69
       }
     },
@@ -5152,7 +6154,7 @@
       "id": "Scout",
       "tier": "Expert",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 70
       }
     },
@@ -5215,7 +6217,7 @@
       "id": "Sorcerer",
       "tier": "Expert",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 71
       }
     },
@@ -5242,7 +6244,7 @@
       "id": "Spellbinder",
       "tier": "Expert",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 72
       }
     },
@@ -5314,7 +6316,7 @@
       "id": "Thief",
       "tier": "Expert",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 73
       }
     },
@@ -5395,7 +6397,7 @@
       "id": "Warlock",
       "tier": "Expert",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 74
       }
     },
@@ -5413,7 +6415,7 @@
       "id": "Witch",
       "tier": "Expert",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 75
       }
     },
@@ -5422,7 +6424,7 @@
       "id": "Wizard",
       "tier": "Expert",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 76
       }
     },
@@ -5485,7 +6487,7 @@
       "id": "Acrobat",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 79
       }
     },
@@ -5494,7 +6496,7 @@
       "id": "Abjurer",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 79
       }
     },
@@ -5503,7 +6505,7 @@
       "id": "Aeromancer",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 79
       }
     },
@@ -5512,7 +6514,7 @@
       "id": "Apocalyptist",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 80
       }
     },
@@ -5521,7 +6523,7 @@
       "id": "Arcanist",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 80
       }
     },
@@ -5530,7 +6532,7 @@
       "id": "Astromancer",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 80
       }
     },
@@ -5539,7 +6541,7 @@
       "id": "Avenger",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 80
       }
     },
@@ -5548,7 +6550,7 @@
       "id": "Bard",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 81
       }
     },
@@ -5557,7 +6559,7 @@
       "id": "Beastmaster",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 81
       }
     },
@@ -5566,7 +6568,7 @@
       "id": "Blade",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 82
       }
     },
@@ -5575,7 +6577,7 @@
       "id": "Brute",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 82
       }
     },
@@ -5584,7 +6586,7 @@
       "id": "Cavalier",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 82
       }
     },
@@ -5593,7 +6595,7 @@
       "id": "Champion",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 82
       }
     },
@@ -5602,7 +6604,7 @@
       "id": "Chaplain",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 82
       }
     },
@@ -5611,7 +6613,7 @@
       "id": "Chronomancer",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 83
       }
     },
@@ -5620,7 +6622,7 @@
       "id": "Conjurer",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 83
       }
     },
@@ -5629,7 +6631,7 @@
       "id": "Conqueror",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 83
       }
     },
@@ -5638,7 +6640,7 @@
       "id": "Destroyer",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 84
       }
     },
@@ -5647,7 +6649,7 @@
       "id": "DeathDealer",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 84
       }
     },
@@ -5656,7 +6658,7 @@
       "id": "Defender",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 84
       }
     },
@@ -5665,7 +6667,7 @@
       "id": "Dervish",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 84
       }
     },
@@ -5674,7 +6676,7 @@
       "id": "Diviner",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 85
       }
     },
@@ -5683,7 +6685,7 @@
       "id": "Diplomat",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 85
       }
     },
@@ -5692,7 +6694,7 @@
       "id": "Dreadnaught",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 85
       }
     },
@@ -5701,7 +6703,7 @@
       "id": "Enchanter",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 86
       }
     },
@@ -5710,7 +6712,7 @@
       "id": "Duelist",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 86
       }
     },
@@ -5719,7 +6721,7 @@
       "id": "Engineer",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 86
       }
     },
@@ -5728,7 +6730,7 @@
       "id": "Executioner",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 87
       }
     },
@@ -5737,7 +6739,7 @@
       "id": "Exorcist",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 87
       }
     },
@@ -5746,7 +6748,7 @@
       "id": "Explorer",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 87
       }
     },
@@ -5755,7 +6757,7 @@
       "id": "Geomancer",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 88
       }
     },
@@ -5764,7 +6766,7 @@
       "id": "Gladiator",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 88
       }
     },
@@ -5773,7 +6775,7 @@
       "id": "Healer",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 89
       }
     },
@@ -5782,7 +6784,7 @@
       "id": "Hexer",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 89
       }
     },
@@ -5791,7 +6793,7 @@
       "id": "Hydromancer",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 89
       }
     },
@@ -5800,7 +6802,7 @@
       "id": "Gunslinger",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 89
       }
     },
@@ -5809,7 +6811,7 @@
       "id": "Illusionist",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 90
       }
     },
@@ -5818,7 +6820,7 @@
       "id": "Infiltrator",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 90
       }
     },
@@ -5827,7 +6829,7 @@
       "id": "MageKnight",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 91
       }
     },
@@ -5836,7 +6838,7 @@
       "id": "Inquisitor",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 91
       }
     },
@@ -5845,7 +6847,7 @@
       "id": "Jack-Of-All-Trades",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 91
       }
     },
@@ -5854,7 +6856,7 @@
       "id": "Magus",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 92
       }
     },
@@ -5863,7 +6865,7 @@
       "id": "Marauder",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 92
       }
     },
@@ -5872,7 +6874,7 @@
       "id": "MiracleWorker",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 92
       }
     },
@@ -5881,7 +6883,7 @@
       "id": "Necromancer",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 93
       }
     },
@@ -5890,7 +6892,7 @@
       "id": "Myrmidon",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 93
       }
     },
@@ -5899,7 +6901,7 @@
       "id": "Poisoner",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 93
       }
     },
@@ -5908,7 +6910,7 @@
       "id": "Pyromancer",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 94
       }
     },
@@ -5917,7 +6919,7 @@
       "id": "Runesmith",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 94
       }
     },
@@ -5926,7 +6928,7 @@
       "id": "Savant",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 94
       }
     },
@@ -5935,7 +6937,7 @@
       "id": "Shapeshifter",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 95
       }
     },
@@ -5944,7 +6946,7 @@
       "id": "Stormbringer",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 95
       }
     },
@@ -5953,7 +6955,7 @@
       "id": "Sentinel",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 95
       }
     },
@@ -5962,7 +6964,7 @@
       "id": "Sharpshooter",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 95
       }
     },
@@ -5971,7 +6973,7 @@
       "id": "Technomancer",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 96
       }
     },
@@ -5980,7 +6982,7 @@
       "id": "Tenebrist",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 96
       }
     },
@@ -5989,7 +6991,7 @@
       "id": "Templar",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 96
       }
     },
@@ -5998,7 +7000,7 @@
       "id": "Thaumaturge",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 97
       }
     },
@@ -6007,7 +7009,7 @@
       "id": "Theurge",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 97
       }
     },
@@ -6016,7 +7018,7 @@
       "id": "Transmuter",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 97
       }
     },
@@ -6025,7 +7027,7 @@
       "id": "Traveler",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 97
       }
     },
@@ -6034,7 +7036,7 @@
       "id": "Woodwose",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 98
       }
     },
@@ -6043,7 +7045,7 @@
       "id": "WeaponMaster",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 98
       }
     },
@@ -6052,7 +7054,7 @@
       "id": "Zealot",
       "tier": "Master",
       "source": {
-       "book": "Shadow of the Demon Lord",
+        "book": "Shadow of the Demon Lord",
         "page": 98
       }
     },
