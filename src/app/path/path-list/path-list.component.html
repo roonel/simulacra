@@ -24,7 +24,7 @@
           *matRowDef="let myRowData; columns: columnsToDisplay"
           (click)="select(myRowData)"
           class="selected"
-          [class.selected]="myRowData === selected?.id"
+          [class.selected]="myRowData.id === selected?.id"
         ></tr>
       </table>
     </div>
