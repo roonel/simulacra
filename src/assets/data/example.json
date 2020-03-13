@@ -16,7 +16,7 @@
       "perception": "equals your Intellect",
       "defense": "equals your Agility",
       "health": "equals you Strength",
-      "healingRate": "one fourth of your Strenght",
+      "healingRate": "one fourth of your Strength",
       "size": "1",
       "speed": 10,
       "power": 0,
