@@ -1,8 +1,42 @@
-<mat-card>
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      {{table.title}}
+    </mat-panel-title>
+  </mat-expansion-panel-header>
   <mat-form-field>
     <input matInput [(ngModel)]="table.title" placeholder="Title"/>
   </mat-form-field>
-  <app-string-list-input [title]="'Columns: '" [(list)]="table.columns"></app-string-list-input>
-
-  <app-row-input [(list)]="table.rows" [columns]="table.columns?.length"></app-row-input>
-</mat-card>
+  <table>
+    <thead>
+    <tr>
+      <th></th>
+      <th *ngFor="let col of table.columns; let i = index; trackBy: trackByFn">
+        <input matInput [(ngModel)]="table.columns[i]"/>
+      </th>
+      <th>
+        <button mat-mini-fab (click)="addCol()">
+          <mat-icon>add</mat-icon>
+        </button>
+      </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let row of table.rows; let i = index; trackBy: trackByFn">
+      <td>
+        <mat-icon matSuffix (click)="removeRow(i)">remove</mat-icon>
+      </td>
+      <td *ngFor="let cell of row; let j = index; trackBy: trackByFn">
+        <input matInput [(ngModel)]="table.rows[i][j]"/>
+      </td>
+    </tr>
+    <tr>
+      <td [colSpan]="this.table.columns?.length + 2">
+        <button mat-mini-fab (click)="addRow()">
+          <mat-icon>add</mat-icon>
+        </button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</mat-expansion-panel>
