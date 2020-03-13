@@ -21,12 +21,14 @@ export class ProcessedTextComponent implements OnInit {
     if (value) {
       this._text = value;
       this.processText();
+    } else {
+      this.dataList = [];
     }
   }
 
   dataList = [];
 
-  constructor(private router: Router, private mds: MarkdownService) {
+  constructor(private mds: MarkdownService) {
   }
 
   ngOnInit(): void {
@@ -35,10 +37,5 @@ export class ProcessedTextComponent implements OnInit {
 
   processText() {
     this.dataList = this.mds.toJson(this._text);
-  }
-
-  navigate(link: string) {
-    const linkParts = link.split('/');
-    this.router.navigate([linkParts[0] + '-list', linkParts[1]]);
   }
 }

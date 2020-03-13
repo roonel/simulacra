@@ -7,19 +7,21 @@ import {Creature} from '../../data-model/creature';
   styleUrls: ['./creature-details.component.scss']
 })
 export class CreatureDetailsComponent implements OnInit {
-  @Input() creature: Creature;
 
-  constructor() {
-  }
+  @Input() creature: Creature;
+  @Input() tooltip: boolean;
+  constructor() { }
 
   ngOnInit(): void {
   }
 
+
   toStat(stat: number) {
     if (stat) {
-    return stat + ' (' + (stat - 10) + ')';
+      return stat + ' (' + (stat - 10) + ')';
     } else {
       return '—';
     }
   }
+
 }

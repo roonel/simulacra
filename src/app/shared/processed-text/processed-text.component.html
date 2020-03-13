@@ -2,12 +2,12 @@
   <ng-container [ngSwitch]="item.type">
     <ng-container *ngSwitchCase="'heading'"><span [ngClass]="'mat-h'+item.level">{{ item.content }}</span></ng-container>
     <ng-container *ngSwitchCase="'inline'">
-      <app-inline-render [content]="item.content" (linkClicked)="navigate($event)"></app-inline-render>
+      <app-inline-render [content]="item.content"></app-inline-render>
     </ng-container>
     <ng-container *ngSwitchCase="'list'">
       <ul>
         <li *ngFor="let li of item.content">
-          <app-inline-render [content]="li.content" (linkClicked)="navigate($event)"></app-inline-render>
+          <app-inline-render [content]="li.content"></app-inline-render>
         </li>
       </ul>
     </ng-container>

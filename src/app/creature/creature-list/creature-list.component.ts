@@ -16,7 +16,7 @@ export class CreatureListComponent implements OnInit {
   @ViewChild(MatSort, {static: true}) sort: MatSort;
   columnsToDisplay: string[] = ['name', 'descriptor', 'difficulty'];
   dataSource: MatTableDataSource<Creature>;
-  selection: SelectionModel<Creature>;
+  selected: Creature;
   bookSources: string[];
   descriptors: string[];
 
@@ -50,11 +50,10 @@ export class CreatureListComponent implements OnInit {
       return pred;
     };
 
-    this.selection = new SelectionModel<Creature>(false, null);
     this.route.paramMap.subscribe(paramMap => {
       if (paramMap.has('id')) {
         const id = paramMap.get('id');
-        this.selection.select(this.dataSource.data.find(s => s.id === id));
+        this.selected = this.dataSource.data.find(s => s.id === id);
       }
     });
   }

@@ -17,7 +17,7 @@ export class SpellListComponent implements OnInit {
   @ViewChild(MatSort, {static: true}) sort: MatSort;
   columnsToDisplay: string[] = ['name', 'tradition', 'type', 'level'];
   dataSource: MatTableDataSource<Spell>;
-  selection: SelectionModel<Spell>;
+  selected: Spell;
   bookSources: string[];
   traditions: {} = {};
 
@@ -55,11 +55,12 @@ export class SpellListComponent implements OnInit {
       return pred;
     };
 
-    this.selection = new SelectionModel<Spell>(false, null);
     this.route.paramMap.subscribe(paramMap => {
       if (paramMap.has('id')) {
         const id = paramMap.get('id');
-        this.selection.select(this.dataSource.data.find(s => s.id === id));
+        this.selected = this.dataSource.data.find(s => s.id === id);
+      } else if (this.dataSource.data.length > 0) {
+        this.select(this.dataSource.data[0]);
       }
     });
   }

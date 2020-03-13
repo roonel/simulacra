@@ -1,0 +1,12 @@
+::ng-deep {
+  .content-modal-box > mat-dialog-container {
+    padding: 3px;
+    margin: 0px;
+    overflow-x: hidden;
+  }
+}
+a {
+  cursor: pointer;
+  text-decoration: underline dashed;
+}
+

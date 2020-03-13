@@ -14,7 +14,16 @@ import { ConfirmationModalComponent } from './confirmation-modal/confirmation-mo
 import {TableEditComponent} from './table-edit/table-edit.component';
 import {RowInputComponent} from './table-edit/row-input/row-input.component';
 import {StringListInputComponent} from './string-list-input/string-list-input.component';
-import { IdEditComponent } from '../shared/id-edit/id-edit.component';
+import { IdEditComponent } from './id-edit/id-edit.component';
+import { ContentTooltipComponent } from './content-tooltip/content-tooltip.component';
+import {SpellDetailsComponent} from './spell-details/spell-details.component';
+import { CreatureDetailsComponent } from './creature-details/creature-details.component';
+import { TooltipDialogComponent } from './tooltip-dialog/tooltip-dialog.component';
+import {ItemDetailsComponent} from './item-details/item-details.component';
+import {AncestryDetailsComponent} from './ancestry-details/ancestry-details.component';
+import {PathDetailsComponent} from './path-details/path-details.component';
+import {RelicDetailsComponent} from './relic-details/relic-details.component';
+import {TraditionDetailsComponent} from './tradition-details/tradition-details.component';
 
 
 @NgModule({
@@ -31,6 +40,15 @@ import { IdEditComponent } from '../shared/id-edit/id-edit.component';
     RowInputComponent,
     StringListInputComponent,
     IdEditComponent,
+    ContentTooltipComponent,
+    SpellDetailsComponent,
+    AncestryDetailsComponent,
+    CreatureDetailsComponent,
+    ItemDetailsComponent,
+    PathDetailsComponent,
+    RelicDetailsComponent,
+    TraditionDetailsComponent,
+    TooltipDialogComponent
   ],
   imports: [
     CommonModule,
@@ -54,9 +72,17 @@ import { IdEditComponent } from '../shared/id-edit/id-edit.component';
     RowInputComponent,
     StringListInputComponent,
     IdEditComponent,
+    AncestryDetailsComponent,
+    SpellDetailsComponent,
+    CreatureDetailsComponent,
+    ItemDetailsComponent,
+    PathDetailsComponent,
+    RelicDetailsComponent,
+    TraditionDetailsComponent,
   ],
   entryComponents: [
-    ConfirmationModalComponent
+    ConfirmationModalComponent,
+    TooltipDialogComponent
   ]
 })
 export class SharedModule {

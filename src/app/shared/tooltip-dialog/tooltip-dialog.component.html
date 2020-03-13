@@ -1,0 +1,31 @@
+<mat-dialog-content cdkDrag
+                    cdkDragRootElement=".cdk-overlay-pane"
+                    (cdkDragStarted)="staying = true"
+                    (click)="staying = true"
+                    cdkDragHandle (mouseenter)="hover()" (mouseleave)="endHover()">
+  <ng-container [ngSwitch]="data.type">
+    <ng-container *ngSwitchCase="'ancestry'">
+      <app-ancestry-details [ancestry]="data.entry"></app-ancestry-details>
+    </ng-container>
+    <ng-container *ngSwitchCase="'creature'">
+      <app-creature-details [creature]="data.entry"></app-creature-details>
+    </ng-container>
+    <ng-container *ngSwitchCase="'item'">
+      <app-item-details [item]="data.entry"></app-item-details>
+    </ng-container>
+    <ng-container *ngSwitchCase="'path'">
+      <app-path-details [path]="data.entry"></app-path-details>
+    </ng-container>
+    <ng-container *ngSwitchCase="'relic'">
+      <app-relic-details [relic]="data.entry"></app-relic-details>
+    </ng-container>
+    <ng-container *ngSwitchCase="'tradition'">
+      <app-tradition-details [tradition]="data.entry"></app-tradition-details>
+    </ng-container>
+    <ng-container *ngSwitchCase="'spell'">
+      <app-spell-details [spell]="data.entry"></app-spell-details>
+    </ng-container>
+    <ng-container *ngSwitchDefault>{{ data.type }}</ng-container>
+  </ng-container>
+  <span (click)="dialogRef.close()" class="close-button" [ngStyle]="{'display': staying ? 'block' : 'none'}">X</span>
+</mat-dialog-content>

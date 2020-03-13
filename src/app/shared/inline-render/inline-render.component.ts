@@ -8,7 +8,6 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 export class InlineRenderComponent implements OnInit {
 
   @Input() content: any[];
-  @Output() linkClicked = new EventEmitter<string>();
   constructor() { }
 
   ngOnInit(): void {
