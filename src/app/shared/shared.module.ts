@@ -24,6 +24,7 @@ import {AncestryDetailsComponent} from './ancestry-details/ancestry-details.comp
 import {PathDetailsComponent} from './path-details/path-details.component';
 import {RelicDetailsComponent} from './relic-details/relic-details.component';
 import {TraditionDetailsComponent} from './tradition-details/tradition-details.component';
+import { TableListInputComponent } from './table-list-input/table-list-input.component';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import {TraditionDetailsComponent} from './tradition-details/tradition-details.c
     PathDetailsComponent,
     RelicDetailsComponent,
     TraditionDetailsComponent,
-    TooltipDialogComponent
+    TooltipDialogComponent,
+    TableListInputComponent
   ],
   imports: [
     CommonModule,
@@ -79,6 +81,7 @@ import {TraditionDetailsComponent} from './tradition-details/tradition-details.c
     PathDetailsComponent,
     RelicDetailsComponent,
     TraditionDetailsComponent,
+    TableListInputComponent,
   ],
   entryComponents: [
     ConfirmationModalComponent,

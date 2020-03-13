@@ -144,7 +144,7 @@ export class ContentHandlerComponent implements OnInit {
 
   addNewAncestry(contentIndex: number) {
     const dialogRef = this.dialog.open(AncestryEditComponent, {
-      data: {source: {}, powerfulAncestry: {}}
+      data: {source: {}, powerfulAncestry: {}, tables: []}
     });
     dialogRef.afterClosed().subscribe(result => {
       if (result) {

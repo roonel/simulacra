@@ -87,6 +87,9 @@
       <textarea matInput [(ngModel)]="ancestry.description"
                 cdkAutosizeMinRows="1" cdkAutosizeMaxRows="5"></textarea>
     </mat-form-field>
+    <h3>Ancestry Tables</h3>
+    <app-table-list-input [(list)]="ancestry.tables" title="Ancestry Tables"></app-table-list-input>
+    <h3>Source</h3>
     <mat-form-field>
       <input matInput [(ngModel)]="ancestry.source.book" placeholder="Book"/>
     </mat-form-field>
