@@ -24,6 +24,10 @@
                 cdkAutosizeMinRows="1" cdkAutosizeMaxRows="5"></textarea>
     </mat-form-field>
     <app-path-level-input [(pathLevels)]="path.pathLevels"></app-path-level-input>
+
+    <h3>Story Development</h3>
+    <app-table-edit [table]="path.storyDevelopment"></app-table-edit>
+    <h3>Source</h3>
     <mat-form-field>
       <input matInput [(ngModel)]="path.source.book" placeholder="Book"/>
     </mat-form-field>

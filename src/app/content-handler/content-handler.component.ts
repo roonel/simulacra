@@ -189,7 +189,7 @@ export class ContentHandlerComponent implements OnInit {
 
   addNewPath(contentIndex: number) {
     const dialogRef = this.dialog.open(PathEditComponent, {
-      data: {source: {}}
+      data: {source: {}, storyDevelopment: {}}
     });
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
