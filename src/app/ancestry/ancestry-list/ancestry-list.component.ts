@@ -18,7 +18,7 @@ export class AncestryListComponent implements OnInit {
 
   columnsToDisplay: string[] = ['name', 'source'];
   dataSource: MatTableDataSource<Ancestry>;
-  selection: SelectionModel<Ancestry>;
+  selected: Ancestry;
   bookSources: string[];
 
   ngOnInit() {
@@ -42,11 +42,12 @@ export class AncestryListComponent implements OnInit {
       return pred;
     };
 
-    this.selection = new SelectionModel<Ancestry>(false, null);
     this.route.paramMap.subscribe(paramMap => {
       if (paramMap.has('id')) {
         const id = paramMap.get('id');
-        this.selection.select(this.dataSource.data.find(s => s.id === id));
+        this.selected = this.dataSource.data.find(s => s.id === id);
+      } else if (this.dataSource.data.length > 0) {
+        this.select(this.dataSource.data[0]);
       }
     });
   }

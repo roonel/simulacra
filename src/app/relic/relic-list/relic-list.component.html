@@ -21,13 +21,13 @@
           *matRowDef="let myRowData; columns: columnsToDisplay"
           (click)="select(myRowData)"
           class="selected"
-          [class.selected]="myRowData === selection.selected[0]"
+          [class.selected]="myRowData.id === selected?.id"
         ></tr>
       </table>
     </div>
   </div>
   <div
-    style="flex-grow: 1; flex-shrink: 2; flex-basis: 100%; margin-left: 10px;" *ngIf="selection.hasValue()">
-    <app-relic-details [relic]="selection.selected[0]"></app-relic-details>
+    style="flex-grow: 1; flex-shrink: 2; flex-basis: 100%; margin-left: 10px;" *ngIf="selected">
+    <app-relic-details [relic]="selected"></app-relic-details>
   </div>
 </div>

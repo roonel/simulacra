@@ -2,7 +2,6 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 import {MatSort} from '@angular/material/sort';
 import {ContentService} from '../../content.service';
 import {MatTableDataSource} from '@angular/material/table';
-import {SelectionModel} from '@angular/cdk/collections';
 import {Item} from '../../data-model/item';
 import {ActivatedRoute, Router} from '@angular/router';
 import {ItemFilter} from '../item-filter';
@@ -20,12 +19,12 @@ export class ItemListComponent implements OnInit {
 
   columnsToDisplay: string[] = ['name', 'type', 'price', 'source'];
   dataSource: MatTableDataSource<Item>;
-  selection: SelectionModel<Item>;
+  selected: Item;
   bookSources: string[];
 
   ngOnInit() {
     const data = this.contentService.getItemList();
-    this.bookSources = [... new Set(data.map(d => d.source.book))];
+    this.bookSources = [...new Set(data.map(d => d.source.book))];
     this.dataSource = new MatTableDataSource<Item>(data);
     this.dataSource.sort = this.sort;
     this.dataSource.filterPredicate = (d: Item, filterString: string) => {
@@ -44,17 +43,18 @@ export class ItemListComponent implements OnInit {
       return pred;
     };
 
-    this.selection = new SelectionModel<Item>(false, null);
     this.route.paramMap.subscribe(paramMap => {
       if (paramMap.has('id')) {
         const id = paramMap.get('id');
-        this.selection.select(this.dataSource.data.find(s => s.id === id));
+        this.selected = this.dataSource.data.find(s => s.id === id);
+      } else if (this.dataSource.data.length > 0) {
+        this.select(this.dataSource.data[0]);
       }
     });
   }
 
   select(row: Item) {
-    this.router.navigate(['item-list', row.id ]);
+    this.router.navigate(['item-list', row.id]);
   }
 
   applyFilter(filter: string) {

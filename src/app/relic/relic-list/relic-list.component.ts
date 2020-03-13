@@ -2,7 +2,6 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 import {MatSort} from '@angular/material/sort';
 import {ContentService} from '../../content.service';
 import {MatTableDataSource} from '@angular/material/table';
-import {SelectionModel} from '@angular/cdk/collections';
 import {Relic} from '../../data-model/relic';
 import {ActivatedRoute, Router} from '@angular/router';
 import {RelicFilter} from '../relic-filter';
@@ -20,12 +19,12 @@ export class RelicListComponent implements OnInit {
 
   columnsToDisplay: string[] = ['name', 'source'];
   dataSource: MatTableDataSource<Relic>;
-  selection: SelectionModel<Relic>;
+  selected: Relic;
   bookSources: string[];
 
   ngOnInit() {
     const data = this.contentService.getRelicList();
-    this.bookSources = [... new Set(data.map(d => d.source.book))];
+    this.bookSources = [...new Set(data.map(d => d.source.book))];
     this.dataSource = new MatTableDataSource<Relic>(data);
     this.dataSource.sort = this.sort;
     this.dataSource.filterPredicate = (d: Relic, filterString: string) => {
@@ -44,17 +43,18 @@ export class RelicListComponent implements OnInit {
       return pred;
     };
 
-    this.selection = new SelectionModel<Relic>(false, null);
     this.route.paramMap.subscribe(paramMap => {
       if (paramMap.has('id')) {
         const id = paramMap.get('id');
-        this.selection.select(this.dataSource.data.find(s => s.id === id));
+        this.selected = this.dataSource.data.find(s => s.id === id);
+      } else if (this.dataSource.data.length > 0) {
+        this.select(this.dataSource.data[0]);
       }
     });
   }
 
   select(row: Relic) {
-    this.router.navigate(['relic-list', row.id ]);
+    this.router.navigate(['relic-list', row.id]);
   }
 
   applyFilter(filter: string) {

@@ -13,12 +13,12 @@
         </ng-container>
         <tr mat-header-row *matHeaderRowDef="columnsToDisplay; sticky: true"></tr>
         <tr mat-row *matRowDef="let myRowData; columns: columnsToDisplay" (click)="select(myRowData)"
-            class="selected" [class.selected]="myRowData === selection.selected[0]"></tr>
+            class="selected" [class.selected]="myRowData.id === selected?.id"></tr>
       </table>
     </div>
   </div>
   <div
-    style="flex-grow: 1; flex-shrink: 2; flex-basis: 100%; margin-left: 10px;" *ngIf="selection.hasValue()">
-    <app-ancestry-details [ancestry]="selection.selected[0]"></app-ancestry-details>
+    style="flex-grow: 1; flex-shrink: 2; flex-basis: 100%; margin-left: 10px;" *ngIf="selected">
+    <app-ancestry-details [ancestry]="selected"></app-ancestry-details>
   </div>
 </div>

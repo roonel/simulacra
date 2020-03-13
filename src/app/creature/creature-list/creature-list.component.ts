@@ -1,5 +1,4 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {SelectionModel} from '@angular/cdk/collections';
 import {MatTableDataSource} from '@angular/material/table';
 import {Creature} from '../../data-model/creature';
 import {CreatureFilter} from '../creature-filter';
@@ -54,6 +53,8 @@ export class CreatureListComponent implements OnInit {
       if (paramMap.has('id')) {
         const id = paramMap.get('id');
         this.selected = this.dataSource.data.find(s => s.id === id);
+      } else if (this.dataSource.data.length > 0) {
+        this.select(this.dataSource.data[0]);
       }
     });
   }

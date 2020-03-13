@@ -20,7 +20,7 @@ export class PathListComponent implements OnInit {
   columnsToDisplay: string[] = ['name', 'tier', 'source'];
   bookSources: string[];
   dataSource: MatTableDataSource<Path>;
-  selection: SelectionModel<Path>;
+  selected: Path;
 
   ngOnInit() {
     const data = this.contentService.getPathList();
@@ -46,11 +46,12 @@ export class PathListComponent implements OnInit {
       return pred;
     };
 
-    this.selection = new SelectionModel<Path>(false, null);
     this.route.paramMap.subscribe(paramMap => {
       if (paramMap.has('id')) {
         const id = paramMap.get('id');
-        this.selection.select(this.dataSource.data.find(s => s.id === id));
+        this.selected = this.dataSource.data.find(s => s.id === id);
+      } else if (this.dataSource.data.length > 0) {
+        this.select(this.dataSource.data[0]);
       }
     });
   }

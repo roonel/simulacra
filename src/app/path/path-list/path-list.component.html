@@ -24,13 +24,13 @@
           *matRowDef="let myRowData; columns: columnsToDisplay"
           (click)="select(myRowData)"
           class="selected"
-          [class.selected]="myRowData === selection.selected[0]"
+          [class.selected]="myRowData === selected?.id"
         ></tr>
       </table>
     </div>
   </div>
   <div
-    style="flex-grow: 1; flex-shrink: 2; flex-basis: 100%; margin-left: 10px;" *ngIf="selection.hasValue()">
-    <app-path-details [path]="selection.selected[0]"></app-path-details>
+    style="flex-grow: 1; flex-shrink: 2; flex-basis: 100%; margin-left: 10px;" *ngIf="selected">
+    <app-path-details [path]="selected"></app-path-details>
   </div>
 </div>

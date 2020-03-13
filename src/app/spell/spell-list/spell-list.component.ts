@@ -1,12 +1,10 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {Spell} from '../../data-model/spell';
 import {MatTableDataSource} from '@angular/material/table';
-import {SelectionModel} from '@angular/cdk/collections';
 import {SpellFilter} from '../spell-filter';
 import {ContentService} from '../../content.service';
 import {MatSort} from '@angular/material/sort';
 import {ActivatedRoute, Router} from '@angular/router';
-import {Tradition} from '../../data-model/tradition';
 
 @Component({
   selector: 'app-spell-list',
@@ -27,7 +25,7 @@ export class SpellListComponent implements OnInit {
   ngOnInit() {
     const data = this.contentService.getSpellList();
     this.contentService.getTraditionList().forEach(t => this.traditions[t.id] = t);
-    this.bookSources = [... new Set(data.map(d => d.source.book))];
+    this.bookSources = [...new Set(data.map(d => d.source.book))];
     this.dataSource = new MatTableDataSource<Spell>(data);
     this.dataSource.sort = this.sort;
     this.dataSource.filterPredicate = (d: Spell, filterString: string) => {
@@ -66,7 +64,7 @@ export class SpellListComponent implements OnInit {
   }
 
   select(row: Spell) {
-    this.router.navigate(['spell-list', row.id ]);
+    this.router.navigate(['spell-list', row.id]);
   }
 
   applyFilter(filter: string) {

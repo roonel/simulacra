@@ -31,13 +31,13 @@
           *matRowDef="let myRowData; columns: columnsToDisplay"
           (click)="select(myRowData)"
           class="selected"
-          [class.selected]="myRowData === selection.selected[0]"
+          [class.selected]="myRowData.id === selected?.id"
         ></tr>
       </table>
     </div>
   </div>
   <div
-    style="flex-grow: 1; flex-shrink: 2; flex-basis: 100%; margin-left: 10px;" *ngIf="selection.hasValue()">
-    <app-item-details [item]="selection.selected[0]"></app-item-details>
+    style="flex-grow: 1; flex-shrink: 2; flex-basis: 100%; margin-left: 10px;" *ngIf="selected">
+    <app-item-details [item]="selected"></app-item-details>
   </div>
 </div>
