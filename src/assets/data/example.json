@@ -246,8 +246,8 @@
           "characteristics": "statssss",
           "talents": [
             {
-              "name": "Shatter World",
-              "effect": "It's over"
+              "name": "Spell",
+              "effect": "Now I can cast [a spell!](spell/UtilitySpell)"
             }
           ]
         }
@@ -286,6 +286,20 @@
       "effect": "Do some damage on the target",
       "triggered": "Do less damage",
       "twentyPlus": "Even more damage"
+    },
+    {
+      "source": {
+        "book": "Example"
+      },
+      "name": "Summon Spell",
+      "id": "SummonSpell",
+      "tradition": "Example",
+      "level": 3,
+      "type": "Utility",
+      "duration": "5 days",
+      "target": "A place",
+      "effect": "Summon an [example creature](creature/ExampleCreature)",
+      "permanence": "And it stays!"
     },
     {
       "source": {
