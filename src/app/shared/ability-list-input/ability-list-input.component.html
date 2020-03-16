@@ -6,23 +6,10 @@
   </label>
   <div *ngFor="let item of list; let i = index; trackBy: trackByFn">
     <mat-form-field>
-      <input
-        matInput
-        [(ngModel)]="item.name"
-        [placeholder]="'Name'"
-        [name]="title + '_name_' + i"
-      />
+      <input matInput [(ngModel)]="item.name" [placeholder]="'Name'" [name]="title + '_name_' + i"/>
     </mat-form-field>
-    <mat-form-field>
-      <textarea
-        cdkAutosizeMinRows="1"
-        cdkAutosizeMaxRows="5"
-        matInput
-        [(ngModel)]="item.effect"
-        [placeholder]="'effect'"
-        [name]="title + '_effect_' + i"
-      ></textarea>
-      <mat-icon matSuffix (click)="remove(i)">remove</mat-icon>
-    </mat-form-field>
+    <app-md-input [(model)]="item.effect" [placeholder]="'effect'" [name]="title + '_effect_' + i">
+    </app-md-input>
+    <mat-icon matSuffix (click)="remove(i)">remove</mat-icon>
   </div>
 </div>

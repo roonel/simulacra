@@ -8,11 +8,7 @@
 
     <app-ability-list-input [(list)]="relic.gameEffects" [title]="'Game Effect'"></app-ability-list-input>
 
-    <mat-form-field>
-      <mat-label>Description</mat-label>
-      <textarea matInput [(ngModel)]="relic.description"
-                cdkAutosizeMinRows="1" cdkAutosizeMaxRows="5"></textarea>
-    </mat-form-field>
+    <app-md-input [label]="'Description'" [name]="'description'" [id]="'description'" [(model)]="relic.description"></app-md-input>
 
     <mat-form-field>
       <input matInput [(ngModel)]="relic.source.book" placeholder="Book"/>

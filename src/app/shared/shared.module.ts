@@ -26,6 +26,8 @@ import {RelicDetailsComponent} from './relic-details/relic-details.component';
 import {TraditionDetailsComponent} from './tradition-details/tradition-details.component';
 import { TableListInputComponent } from './table-list-input/table-list-input.component';
 import {PathLevelInputComponent} from './path-level-input/path-level-input.component';
+import { MdInputComponent } from './md-input/md-input.component';
+import { MdPreviewComponent } from './md-input/md-preview/md-preview.component';
 
 
 @NgModule({
@@ -52,7 +54,9 @@ import {PathLevelInputComponent} from './path-level-input/path-level-input.compo
     TraditionDetailsComponent,
     TooltipDialogComponent,
     TableListInputComponent,
-    PathLevelInputComponent
+    PathLevelInputComponent,
+    MdInputComponent,
+    MdPreviewComponent
   ],
   imports: [
     CommonModule,
@@ -84,11 +88,13 @@ import {PathLevelInputComponent} from './path-level-input/path-level-input.compo
     RelicDetailsComponent,
     TraditionDetailsComponent,
     TableListInputComponent,
-    PathLevelInputComponent
+    PathLevelInputComponent,
+    MdInputComponent
   ],
   entryComponents: [
     ConfirmationModalComponent,
-    TooltipDialogComponent
+    TooltipDialogComponent,
+    MdPreviewComponent
   ]
 })
 export class SharedModule {

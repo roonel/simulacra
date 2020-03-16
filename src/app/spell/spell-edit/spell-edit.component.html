@@ -1,4 +1,6 @@
-<h2 mat-dialog-title>Spell : {{spell.name}} <button mat-button (click)="openPreview()">Preview</button></h2>
+<h2 mat-dialog-title>Spell : {{spell.name}}
+  <button mat-button (click)="openPreview()">Preview</button>
+</h2>
 <mat-dialog-content>
   <mat-card>
     <mat-form-field>
@@ -9,12 +11,7 @@
       <input matInput [(ngModel)]="spell.tradition" placeholder="Tradition"/>
     </mat-form-field>
     <mat-form-field>
-      <input
-        matInput
-        type="number"
-        [(ngModel)]="spell.level"
-        placeholder="Level"
-      />
+      <input matInput type="number" [(ngModel)]="spell.level" placeholder="Level"/>
     </mat-form-field>
     <mat-form-field>
       <mat-label>Type</mat-label>
@@ -24,11 +21,7 @@
       </mat-select>
     </mat-form-field>
     <mat-form-field>
-      <input
-        matInput
-        [(ngModel)]="spell.requirement"
-        placeholder="Requirement"
-      />
+      <input matInput [(ngModel)]="spell.requirement" placeholder="Requirement"/>
     </mat-form-field>
     <mat-form-field>
       <input matInput [(ngModel)]="spell.area" placeholder="Area"/>
@@ -39,40 +32,13 @@
     <mat-form-field>
       <input matInput [(ngModel)]="spell.target" placeholder="Target"/>
     </mat-form-field>
-    <mat-form-field>
-      <mat-label>Effect</mat-label>
-      <textarea
-        matInput
-        [(ngModel)]="spell.effect"
-        cdkAutosizeMinRows="1"
-        cdkAutosizeMaxRows="5"
-      ></textarea>
-    </mat-form-field>
-    <mat-form-field>
-      <mat-label>Triggered</mat-label>
-      <textarea
-        matInput
-        [(ngModel)]="spell.triggered"
-        cdkAutosizeMinRows="1"
-        cdkAutosizeMaxRows="5"
-      ></textarea>
-    </mat-form-field>
-    <mat-form-field>
-      <mat-label>Twenty Plus</mat-label>
-      <textarea
-        matInput
-        [(ngModel)]="spell.twentyPlus"
-        cdkAutosizeMinRows="1"
-        cdkAutosizeMaxRows="5"
-      ></textarea>
-    </mat-form-field>
-    <mat-form-field>
-      <input
-        matInput
-        [(ngModel)]="spell.afterEffect"
-        placeholder="After Effect"
-      />
-    </mat-form-field>
+    <app-md-input [label]="'Effect'" [name]="'effect'" [id]="'effect'" [(model)]="spell.effect"></app-md-input>
+    <app-md-input [label]="'Triggered'" [name]="'triggered'" [id]="'triggered'"
+                  [(model)]="spell.triggered"></app-md-input>
+    <app-md-input [label]="'Twenty Plus'" [name]="'twentyPlus'" [id]="'twentyPlus'"
+                  [(model)]="spell.twentyPlus"></app-md-input>
+    <app-md-input [label]="'After Effect'" [name]="'afterEffect'" [id]="'afterEffect'"
+                  [(model)]="spell.afterEffect"></app-md-input>
     <mat-checkbox [(ngModel)]="spell.concentration">
       Concentration
     </mat-checkbox>
@@ -82,29 +48,16 @@
     <mat-checkbox [(ngModel)]="spell.pathSpell">
       Path Spell
     </mat-checkbox>
-    <mat-form-field>
-      <input matInput [(ngModel)]="spell.sacrifice" placeholder="Sacrifice"/>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput [(ngModel)]="spell.special" placeholder="Special"/>
-    </mat-form-field>
-    <mat-form-field>
-      <input
-        matInput
-        [(ngModel)]="spell.permanence"
-        placeholder="Permancence"
-      />
-    </mat-form-field>
+    <app-md-input [label]="'Sacrifice'" [name]="'sacrifice'" [id]="'sacrifice'"
+                  [(model)]="spell.sacrifice"></app-md-input>
+    <app-md-input [label]="'Special'" [name]="'special'" [id]="'special'" [(model)]="spell.special"></app-md-input>
+    <app-md-input [label]="'Permancence'" [name]="'permanence'" [id]="'permanence'"
+                  [(model)]="spell.permanence"></app-md-input>
     <mat-form-field>
       <input matInput [(ngModel)]="spell.source.book" placeholder="Book"/>
     </mat-form-field>
     <mat-form-field>
-      <input
-        matInput
-        type="number"
-        [(ngModel)]="spell.source.page"
-        placeholder="Book (Page)"
-      />
+      <input matInput type="number" [(ngModel)]="spell.source.page" placeholder="Book (Page)"/>
     </mat-form-field>
   </mat-card>
 </mat-dialog-content>

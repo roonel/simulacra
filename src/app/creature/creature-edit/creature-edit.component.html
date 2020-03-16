@@ -104,16 +104,8 @@
     <app-ability-list-input [(list)]="creature.endOfRound" [title]="'End of Round'">
     </app-ability-list-input>
 
-    <mat-form-field>
-      <mat-label>Description</mat-label>
-      <textarea matInput [(ngModel)]="creature.description"
-                cdkAutosizeMinRows="1" cdkAutosizeMaxRows="5"></textarea>
-    </mat-form-field>
-    <mat-form-field>
-      <mat-label>Extra</mat-label>
-      <textarea matInput [(ngModel)]="creature.extra"
-                cdkAutosizeMinRows="1" cdkAutosizeMaxRows="5"></textarea>
-    </mat-form-field>
+    <app-md-input [label]="'Description'" [name]="'description'" [id]="'description'" [(model)]="creature.description"></app-md-input>
+    <app-md-input [label]="'Extra'" [name]="'extra'" [id]="'extra'" [(model)]="creature.extra"></app-md-input>
     <mat-form-field>
       <input matInput [(ngModel)]="creature.source.book" placeholder="Book"/>
     </mat-form-field>

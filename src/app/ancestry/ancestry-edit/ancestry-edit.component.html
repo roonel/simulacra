@@ -82,11 +82,7 @@
     </mat-form-field>
     <app-ability-list-input [(list)]="ancestry.level4Benefits" [title]="'Level 4 Benefits'">
     </app-ability-list-input>
-    <mat-form-field>
-      <mat-label>Description</mat-label>
-      <textarea matInput [(ngModel)]="ancestry.description"
-                cdkAutosizeMinRows="1" cdkAutosizeMaxRows="5"></textarea>
-    </mat-form-field>
+    <app-md-input [label]="'Description'" [name]="'description'" [id]="'description'" [(model)]="ancestry.description"></app-md-input>
     <h3>Powerful Ancestry Levels</h3>
     <mat-checkbox [(ngModel)]="powerfulChecked" (change)="powerfulChanged()" >Powerful Ancestry</mat-checkbox>
     <app-path-level-input *ngIf="ancestry.powerfulAncestryLevels" [(pathLevels)]="ancestry.powerfulAncestryLevels"></app-path-level-input>

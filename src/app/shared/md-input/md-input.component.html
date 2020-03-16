@@ -1,0 +1,8 @@
+<mat-form-field (mouseleave)="leftHover()">
+  <mat-label *ngIf="label">{{label}}</mat-label>
+  <textarea cdkAutosizeMinRows="1" cdkAutosizeMaxRows="5" matInput #element
+            [(ngModel)]="model" [placeholder]="placeholder" [name]="name" [id]="id">
+  </textarea>
+  <mat-icon matSuffix (mouseenter)="hovering()">visibility</mat-icon>
+  <mat-icon matPrefix matTooltip="This field supports MarkDown">notes</mat-icon>
+</mat-form-field>

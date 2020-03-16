@@ -1,4 +1,6 @@
-<h2 mat-dialog-title>Item : {{item.name}} <button mat-button (click)="openPreview()">Preview</button></h2>
+<h2 mat-dialog-title>Item : {{item.name}}
+  <button mat-button (click)="openPreview()">Preview</button>
+</h2>
 <mat-dialog-content>
   <mat-card>
     <mat-form-field>
@@ -24,11 +26,8 @@
       <input matInput [(ngModel)]="item.type" placeholder="Type"/>
     </mat-form-field>
 
-    <mat-form-field>
-      <mat-label>Description</mat-label>
-      <textarea matInput [(ngModel)]="item.description"
-                cdkAutosizeMinRows="1" cdkAutosizeMaxRows="5"></textarea>
-    </mat-form-field>
+    <app-md-input [label]="'Description'" [name]="'description'" [id]="'description'"
+                  [(model)]="item.description"></app-md-input>
 
     <mat-form-field>
       <input matInput [(ngModel)]="item.source.book" placeholder="Book"/>
@@ -38,7 +37,8 @@
              placeholder="Book (Page)"/>
     </mat-form-field>
   </mat-card>
-  <mat-dialog-actions align="end">
-    <button mat-button mat-dialog-close>Cancel</button>
-    <button mat-button (click)="save()">Save</button>
-  </mat-dialog-actions>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button (click)="save()">Save</button>
+</mat-dialog-actions>
