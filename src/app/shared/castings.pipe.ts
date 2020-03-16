@@ -26,9 +26,9 @@ export class CastingsPipe implements PipeTransform {
   transform(spellId: string, power: number): string {
     const spell = this.contentService.getSpellList().find(s => s.id === spellId);
     if (spell) {
-      return '[' + spell.id + '](spell/' + spellId.replace(/\s/g, '') + ') (' + this.castingByRank[power][spell.level] + ')';
+      return '[' + spell.name + '](spell/' + spellId.replace(/\s/g, '') + ') (' + this.castingByRank[power][spell.level] + ')';
     } else {
-      return '[' + spell.id + '](spell/' + spellId + ') (?)';
+      return '[' + spellId + '](spell/' + spellId + ') (?)';
     }
   }
 
