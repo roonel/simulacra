@@ -1,6 +1,7 @@
 import {Component, Inject, Input, OnInit} from '@angular/core';
 import {Item} from '../../data-model/item';
-import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
+import {MAT_DIALOG_DATA, MatDialog, MatDialogRef} from '@angular/material/dialog';
+import {TooltipDialogComponent} from '../../shared/tooltip-dialog/tooltip-dialog.component';
 
 @Component({
   selector: 'app-item-edit',
@@ -11,8 +12,19 @@ export class ItemEditComponent implements OnInit {
 
   item: Item;
   constructor(public dialogRef: MatDialogRef<ItemEditComponent>,
-              @Inject(MAT_DIALOG_DATA) public data: any) {
+              @Inject(MAT_DIALOG_DATA) public data: any, private dialog: MatDialog) {
     this.item = JSON.parse(JSON.stringify(data));
+  }
+
+
+  openPreview() {
+    const previewDialog = this.dialog.open(TooltipDialogComponent, {
+      data : {
+        type: 'item',
+        staying: true,
+        entry: this.item,
+      }
+    });
   }
 
   ngOnInit(): void {

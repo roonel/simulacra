@@ -1,4 +1,5 @@
 <mat-dialog-content cdkDrag
+                    [cdkDragFreeDragPosition]="dragPosition"
                     cdkDragRootElement=".cdk-overlay-pane"
                     (cdkDragStarted)="staying = true"
                     (click)="staying = true"

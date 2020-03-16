@@ -1,6 +1,7 @@
 import {Component, Inject, Input, OnInit} from '@angular/core';
 import {Creature} from '../../data-model/creature';
-import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
+import {MAT_DIALOG_DATA, MatDialog, MatDialogRef} from '@angular/material/dialog';
+import {TooltipDialogComponent} from '../../shared/tooltip-dialog/tooltip-dialog.component';
 
 @Component({
   selector: 'app-creature-edit',
@@ -11,11 +12,21 @@ export class CreatureEditComponent implements OnInit {
 
   creature: Creature;
   constructor(public dialogRef: MatDialogRef<CreatureEditComponent>,
-              @Inject(MAT_DIALOG_DATA) public data: any) {
+              @Inject(MAT_DIALOG_DATA) public data: any, private dialog: MatDialog) {
     this.creature = JSON.parse(JSON.stringify(data));
   }
 
   ngOnInit(): void {
+  }
+
+  openPreview() {
+    const previewDialog = this.dialog.open(TooltipDialogComponent, {
+      data : {
+        type: 'creature',
+        staying: true,
+        entry: this.creature,
+      }
+    });
   }
 
   save() {

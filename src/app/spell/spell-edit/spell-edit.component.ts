@@ -1,6 +1,7 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {Spell} from '../../data-model/spell';
-import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
+import {MAT_DIALOG_DATA, MatDialog, MatDialogRef} from '@angular/material/dialog';
+import {TooltipDialogComponent} from '../../shared/tooltip-dialog/tooltip-dialog.component';
 
 @Component({
   selector: 'app-spell-edit',
@@ -12,11 +13,21 @@ export class SpellEditComponent implements OnInit {
   spell: Spell;
 
   constructor(public dialogRef: MatDialogRef<SpellEditComponent>,
-              @Inject(MAT_DIALOG_DATA) public data: any) {
+              @Inject(MAT_DIALOG_DATA) public data: any, private dialog: MatDialog) {
     this.spell = JSON.parse(JSON.stringify(data));
   }
 
   ngOnInit(): void {
+  }
+
+  openPreview() {
+    const previewDialog = this.dialog.open(TooltipDialogComponent, {
+      data : {
+        type: 'spell',
+        staying: true,
+        entry: this.spell,
+      }
+    });
   }
 
   save() {

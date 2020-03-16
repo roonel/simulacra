@@ -1,6 +1,7 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {Path} from '../../data-model/path';
-import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
+import {MAT_DIALOG_DATA, MatDialog, MatDialogRef} from '@angular/material/dialog';
+import {TooltipDialogComponent} from '../../shared/tooltip-dialog/tooltip-dialog.component';
 
 @Component({
   selector: 'app-path-edit',
@@ -12,11 +13,21 @@ export class PathEditComponent implements OnInit {
   path: Path;
 
   constructor(public dialogRef: MatDialogRef<PathEditComponent>,
-              @Inject(MAT_DIALOG_DATA) public data: any) {
+              @Inject(MAT_DIALOG_DATA) public data: any, private dialog: MatDialog) {
     this.path = JSON.parse(JSON.stringify(data));
   }
 
   ngOnInit(): void {
+  }
+
+  openPreview() {
+    const previewDialog = this.dialog.open(TooltipDialogComponent, {
+      data : {
+        type: 'path',
+        staying: true,
+        entry: this.path,
+      }
+    });
   }
 
   save() {

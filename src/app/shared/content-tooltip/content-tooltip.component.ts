@@ -44,7 +44,7 @@ export class ContentTooltipComponent implements OnInit {
     this.dialogConfig = new MatDialogConfig();
     this.dialogConfig.width = '325px';
     this.dialogConfig.hasBackdrop = false;
-    this.dialogConfig.data = {type: this.type, entry: this.entry, link: this.link, hover: this.textHover};
+    this.dialogConfig.data = {type: this.type, entry: this.entry, hover: this.textHover};
     this.dialogConfig.panelClass = 'content-modal-box';
     this.dialogConfig.closeOnNavigation = false;
   }

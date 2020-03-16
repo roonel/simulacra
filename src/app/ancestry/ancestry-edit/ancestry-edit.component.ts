@@ -1,6 +1,7 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {Ancestry} from '../../data-model/ancestry';
-import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
+import {MAT_DIALOG_DATA, MatDialog, MatDialogRef} from '@angular/material/dialog';
+import {TooltipDialogComponent} from '../../shared/tooltip-dialog/tooltip-dialog.component';
 
 @Component({
   selector: 'app-ancestry-edit',
@@ -13,7 +14,7 @@ export class AncestryEditComponent implements OnInit {
   powerfulChecked = false;
 
   constructor(public dialogRef: MatDialogRef<AncestryEditComponent>,
-              @Inject(MAT_DIALOG_DATA) public data: any) {
+              @Inject(MAT_DIALOG_DATA) public data: any, private dialog: MatDialog) {
     this.ancestry = JSON.parse(JSON.stringify(data));
     if (this.ancestry.powerfulAncestryLevels && this.ancestry.powerfulAncestryLevels.length > 0) {
       this.powerfulChecked = true;
@@ -25,6 +26,16 @@ export class AncestryEditComponent implements OnInit {
 
   save() {
     this.dialogRef.close(this.ancestry);
+  }
+
+  openPreview() {
+    const previewDialog = this.dialog.open(TooltipDialogComponent, {
+      data : {
+        type: 'ancestry',
+        staying: true,
+        entry: this.ancestry,
+      }
+    });
   }
 
   applyId() {

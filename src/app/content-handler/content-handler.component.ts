@@ -60,7 +60,7 @@ export class ContentHandlerComponent implements OnInit {
 
   editAncestry(entryIndex: number, contentIndex: number) {
     const dialogRef = this.dialog.open(AncestryEditComponent, {
-      data: this.addedContent[contentIndex].data.ancestries[entryIndex]
+      data: this.addedContent[contentIndex].data.ancestries[entryIndex], disableClose: false
     });
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
@@ -72,7 +72,7 @@ export class ContentHandlerComponent implements OnInit {
 
   editCreature(entryIndex: number, contentIndex: number) {
     const dialogRef = this.dialog.open(CreatureEditComponent, {
-      data: this.addedContent[contentIndex].data.creatures[entryIndex]
+      data: this.addedContent[contentIndex].data.creatures[entryIndex], disableClose: false
     });
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
@@ -84,7 +84,7 @@ export class ContentHandlerComponent implements OnInit {
 
   editItem(entryIndex: number, contentIndex: number) {
     const dialogRef = this.dialog.open(ItemEditComponent, {
-      data: this.addedContent[contentIndex].data.items[entryIndex]
+      data: this.addedContent[contentIndex].data.items[entryIndex], disableClose: false
     });
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
@@ -96,7 +96,7 @@ export class ContentHandlerComponent implements OnInit {
 
   editPath(entryIndex: number, contentIndex: number) {
     const dialogRef = this.dialog.open(PathEditComponent, {
-      data: this.addedContent[contentIndex].data.paths[entryIndex]
+      data: this.addedContent[contentIndex].data.paths[entryIndex], disableClose: false
     });
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
@@ -108,7 +108,7 @@ export class ContentHandlerComponent implements OnInit {
 
   editRelic(entryIndex: number, contentIndex: number) {
     const dialogRef = this.dialog.open(RelicEditComponent, {
-      data: this.addedContent[contentIndex].data.relics[entryIndex]
+      data: this.addedContent[contentIndex].data.relics[entryIndex], disableClose: false
     });
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
@@ -120,7 +120,7 @@ export class ContentHandlerComponent implements OnInit {
 
   editSpell(entryIndex: number, contentIndex: number) {
     const dialogRef = this.dialog.open(SpellEditComponent, {
-      data: this.addedContent[contentIndex].data.spells[entryIndex]
+      data: this.addedContent[contentIndex].data.spells[entryIndex], disableClose: false
     });
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
@@ -132,7 +132,7 @@ export class ContentHandlerComponent implements OnInit {
 
   editTradition(entryIndex: number, contentIndex: number) {
     const dialogRef = this.dialog.open(TraditionEditComponent, {
-      data: this.addedContent[contentIndex].data.traditions[entryIndex]
+      data: this.addedContent[contentIndex].data.traditions[entryIndex], disableClose: false
     });
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
@@ -144,7 +144,7 @@ export class ContentHandlerComponent implements OnInit {
 
   addNewAncestry(contentIndex: number) {
     const dialogRef = this.dialog.open(AncestryEditComponent, {
-      data: {source: {}, tables: []}
+      data: {source: {}, tables: []}, disableClose: false
     });
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
@@ -159,7 +159,7 @@ export class ContentHandlerComponent implements OnInit {
 
   addNewCreature(contentIndex: number) {
     const dialogRef = this.dialog.open(CreatureEditComponent, {
-      data: {source: {}, magic: {}}
+      data: {source: {}, magic: {}}, disableClose: false
     });
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
@@ -174,7 +174,7 @@ export class ContentHandlerComponent implements OnInit {
 
   addNewItem(contentIndex: number) {
     const dialogRef = this.dialog.open(ItemEditComponent, {
-      data: {source: {}}
+      data: {source: {}}, disableClose: false
     });
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
@@ -189,7 +189,7 @@ export class ContentHandlerComponent implements OnInit {
 
   addNewPath(contentIndex: number) {
     const dialogRef = this.dialog.open(PathEditComponent, {
-      data: {source: {}, storyDevelopment: {}}
+      data: {source: {}, storyDevelopment: {}}, disableClose: false
     });
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
@@ -204,7 +204,7 @@ export class ContentHandlerComponent implements OnInit {
 
   addNewRelic(contentIndex: number) {
     const dialogRef = this.dialog.open(RelicEditComponent, {
-      data: {source: {}}
+      data: {source: {}}, disableClose: false
     });
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
@@ -219,7 +219,7 @@ export class ContentHandlerComponent implements OnInit {
 
   addNewSpell(contentIndex: number) {
     const dialogRef = this.dialog.open(SpellEditComponent, {
-      data: {source: {}}
+      data: {source: {}}, disableClose: false
     });
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
@@ -234,7 +234,7 @@ export class ContentHandlerComponent implements OnInit {
 
   addNewTradition(contentIndex: number) {
     const dialogRef = this.dialog.open(TraditionEditComponent, {
-      data: {source: {}}
+      data: {source: {}}, disableClose: false
     });
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
