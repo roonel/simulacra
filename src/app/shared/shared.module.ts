@@ -25,6 +25,7 @@ import {PathDetailsComponent} from './path-details/path-details.component';
 import {RelicDetailsComponent} from './relic-details/relic-details.component';
 import {TraditionDetailsComponent} from './tradition-details/tradition-details.component';
 import { TableListInputComponent } from './table-list-input/table-list-input.component';
+import {PathLevelInputComponent} from './path-level-input/path-level-input.component';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { TableListInputComponent } from './table-list-input/table-list-input.com
     RelicDetailsComponent,
     TraditionDetailsComponent,
     TooltipDialogComponent,
-    TableListInputComponent
+    TableListInputComponent,
+    PathLevelInputComponent
   ],
   imports: [
     CommonModule,
@@ -82,6 +84,7 @@ import { TableListInputComponent } from './table-list-input/table-list-input.com
     RelicDetailsComponent,
     TraditionDetailsComponent,
     TableListInputComponent,
+    PathLevelInputComponent
   ],
   entryComponents: [
     ConfirmationModalComponent,

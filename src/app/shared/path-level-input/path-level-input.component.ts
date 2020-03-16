@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {PathLevel} from '../../../data-model/pathLevel';
+import {PathLevel} from '../../data-model/pathLevel';
 
 @Component({
   selector: 'app-path-level-input',

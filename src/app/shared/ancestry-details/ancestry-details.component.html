@@ -52,8 +52,18 @@
         </div>
       </mat-tab>
       <mat-tab label="Higher levels">
-        <div *ngIf="ancestry.powerfulAncestry">
-
+        <div *ngIf="ancestry.powerfulAncestryLevels">
+          <div *ngFor="let aL of ancestry.powerfulAncestryLevels">
+            <div *ngIf="aL.level < 4">
+              <h2>Level {{aL.level}} {{ancestry.name}}</h2>
+              <span *ngIf="aL.talents">
+                <div *ngFor="let talent of aL.talents">
+                  <b>{{talent.name}} </b>
+                  <app-processed-text [text]="talent.effect"></app-processed-text>
+                </div>
+              </span>
+            </div>
+          </div>
         </div>
         <div>
           <h2>Level 4 Expert {{ancestry.name}}</h2>
@@ -64,11 +74,24 @@
             {{ancestry.level4OptionsText}}
           </div>
           <span *ngIf="ancestry.level4Benefits">
-           <div *ngFor="let benefit of ancestry.level4Benefits">
-            <b>{{benefit.name}} </b>
-            <app-processed-text [text]="benefit.effect"></app-processed-text>
+             <div *ngFor="let benefit of ancestry.level4Benefits">
+              <b>{{benefit.name}} </b>
+              <app-processed-text [text]="benefit.effect"></app-processed-text>
+            </div>
+          </span>
+        </div>
+        <div *ngIf="ancestry.powerfulAncestryLevels">
+          <div *ngFor="let aL of ancestry.powerfulAncestryLevels">
+            <div *ngIf="aL.level > 4">
+              <h2>Level {{aL.level}} {{ancestry.name}}</h2>
+              <span *ngIf="aL.talents">
+                <div *ngFor="let talent of aL.talents">
+                  <b>{{talent.name}} </b>
+                  <app-processed-text [text]="talent.effect"></app-processed-text>
+                </div>
+              </span>
+            </div>
           </div>
-        </span>
         </div>
       </mat-tab>
     </mat-tab-group>

@@ -4,7 +4,6 @@ import {PathListComponent} from './path-list/path-list.component';
 import {SharedModule} from '../shared/shared.module';
 import {PathFilterComponent} from './path-filter/path-filter.component';
 import {PathEditComponent} from './path-edit/path-edit.component';
-import {PathLevelInputComponent} from './path-edit/path-level-input/path-level-input.component';
 
 
 @NgModule({
@@ -12,7 +11,6 @@ import {PathLevelInputComponent} from './path-edit/path-level-input/path-level-i
     PathListComponent,
     PathFilterComponent,
     PathEditComponent,
-    PathLevelInputComponent,
   ],
   imports: [
     CommonModule,
@@ -20,7 +18,7 @@ import {PathLevelInputComponent} from './path-edit/path-level-input/path-level-i
   ],
   exports: [
     PathListComponent,
-    PathEditComponent
+    PathEditComponent,
   ], entryComponents: [
     PathEditComponent
   ]

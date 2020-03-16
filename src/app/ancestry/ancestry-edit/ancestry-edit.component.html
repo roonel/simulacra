@@ -87,6 +87,9 @@
       <textarea matInput [(ngModel)]="ancestry.description"
                 cdkAutosizeMinRows="1" cdkAutosizeMaxRows="5"></textarea>
     </mat-form-field>
+    <h3>Powerful Ancestry Levels</h3>
+    <mat-checkbox [(ngModel)]="powerfulChecked" (change)="powerfulChanged()" >Powerful Ancestry</mat-checkbox>
+    <app-path-level-input *ngIf="ancestry.powerfulAncestryLevels" [(pathLevels)]="ancestry.powerfulAncestryLevels"></app-path-level-input>
     <h3>Ancestry Tables</h3>
     <app-table-list-input [(list)]="ancestry.tables" title="Ancestry Tables"></app-table-list-input>
     <h3>Source</h3>

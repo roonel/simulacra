@@ -10,10 +10,14 @@ import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 export class AncestryEditComponent implements OnInit {
 
   ancestry: Ancestry;
+  powerfulChecked = false;
 
   constructor(public dialogRef: MatDialogRef<AncestryEditComponent>,
               @Inject(MAT_DIALOG_DATA) public data: any) {
     this.ancestry = JSON.parse(JSON.stringify(data));
+    if (this.ancestry.powerfulAncestryLevels && this.ancestry.powerfulAncestryLevels.length > 0) {
+      this.powerfulChecked = true;
+    }
   }
 
   ngOnInit(): void {
@@ -25,5 +29,16 @@ export class AncestryEditComponent implements OnInit {
 
   applyId() {
     this.ancestry.id = this.ancestry.name.replace(/\s/g, '');
+  }
+
+  powerfulChanged() {
+    if (this.powerfulChecked) {
+      this.ancestry.powerfulAncestryLevels = [{
+        level: 1,
+        attributes: 'Increase two by 1'
+      }, {level: 2}, {level: 5}, {level: 8}];
+    } else if (!this.powerfulChecked) {
+      this.ancestry.powerfulAncestryLevels = [];
+    }
   }
 }

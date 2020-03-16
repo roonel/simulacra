@@ -2,6 +2,7 @@ import {Ability} from './ability';
 import {Path} from './path';
 import {Source} from './source';
 import {Table} from './table';
+import {PathLevel} from "./pathLevel";
 
 export interface Ancestry {
   name?: string;
@@ -27,7 +28,7 @@ export interface Ancestry {
   level4Characteristics?: string;
   level4OptionsText?: string;
   level4Benefits?: Ability[];
-  powerfulAncestry?: Path;
+  powerfulAncestryLevels?: PathLevel[];
   tables?: Table[];
   source?: Source;
 }
