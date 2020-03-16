@@ -12,7 +12,6 @@ import { InlineRenderComponent } from './inline-render/inline-render.component';
 import {AbilityListInputComponent} from './ability-list-input/ability-list-input.component';
 import { ConfirmationModalComponent } from './confirmation-modal/confirmation-modal.component';
 import {TableEditComponent} from './table-edit/table-edit.component';
-import {RowInputComponent} from './table-edit/row-input/row-input.component';
 import {StringListInputComponent} from './string-list-input/string-list-input.component';
 import { IdEditComponent } from './id-edit/id-edit.component';
 import { ContentTooltipComponent } from './content-tooltip/content-tooltip.component';
@@ -41,7 +40,6 @@ import { MdPreviewComponent } from './md-input/md-preview/md-preview.component';
     AbilityListInputComponent,
     ConfirmationModalComponent,
     TableEditComponent,
-    RowInputComponent,
     StringListInputComponent,
     IdEditComponent,
     ContentTooltipComponent,
@@ -77,7 +75,6 @@ import { MdPreviewComponent } from './md-input/md-preview/md-preview.component';
     CastingsPipe,
     AbilityListInputComponent,
     TableEditComponent,
-    RowInputComponent,
     StringListInputComponent,
     IdEditComponent,
     AncestryDetailsComponent,
