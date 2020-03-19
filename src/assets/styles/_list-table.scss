@@ -5,3 +5,12 @@ table {
 tr.selected {
   background: #777;
 }
+
+.table-side {
+  flex-grow: 2;
+  width: 0;
+}
+
+.details-side {
+  flex-grow: 1; width: 0; margin-left: 10px;
+}

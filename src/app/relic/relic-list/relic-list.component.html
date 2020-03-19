@@ -1,5 +1,5 @@
 <div style="display: flex; flex-direction: row;">
-  <div style="flex-grow: 2; flex-basis: 100%; flex-shrink: 1;">
+  <<div class="table-side">
     <app-relic-filter (filterChange)="applyFilter($event)" [sources]="bookSources"></app-relic-filter>
     <div style="height: 400px; overflow: auto;">
       <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
@@ -26,8 +26,7 @@
       </table>
     </div>
   </div>
-  <div
-    style="flex-grow: 1; flex-shrink: 2; flex-basis: 100%; margin-left: 10px;" *ngIf="selected">
+  <div class="details-side" *ngIf="selected">
     <app-relic-details [relic]="selected"></app-relic-details>
   </div>
 </div>
