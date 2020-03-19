@@ -17,6 +17,11 @@
         </mat-select>
       </mat-form-field>
     </div>
+    <div class="flex">
+      <mat-form-field>
+      <input matInput [(ngModel)]="path.shortDescription" placeholder="Short description"/>
+      </mat-form-field>
+    </div>
     <app-md-input [label]="'Description'" [name]="'description'" [id]="'description'"
                   [(model)]="path.description"></app-md-input>
     <app-md-input [label]="'Extra'" [name]="'extra'" [id]="'extra'" [(model)]="path.extra"></app-md-input>

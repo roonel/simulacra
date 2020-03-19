@@ -1,5 +1,4 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {SelectionModel} from '@angular/cdk/collections';
 import {Path} from '../../data-model/path';
 import {MatTableDataSource} from '@angular/material/table';
 import {ContentService} from '../../content.service';
@@ -17,7 +16,7 @@ export class PathListComponent implements OnInit {
   constructor(private contentService: ContentService, private route: ActivatedRoute, private router: Router) {
   }
 
-  columnsToDisplay: string[] = ['name', 'tier', 'source'];
+  columnsToDisplay: string[] = ['name', 'tier', 'shortDescription', 'source'];
   bookSources: string[];
   dataSource: MatTableDataSource<Path>;
   selected: Path;

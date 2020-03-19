@@ -5,6 +5,7 @@ import {Table} from './table';
 export interface Path {
   name?: string;
   id?: string;
+  shortDescription?: string;
   description?: string;
   storyDevelopment?: Table;
   tier?: string;
