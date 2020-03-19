@@ -1,24 +1,35 @@
-<h2 mat-dialog-title>Tradition : {{tradition.name}} <button mat-button (click)="openPreview()">Preview</button></h2>
+<h2 mat-dialog-title>Tradition : {{tradition.name}}
+  <button mat-button (click)="openPreview()">Preview</button>
+</h2>
 <mat-dialog-content>
   <mat-card>
-    <mat-form-field>
-      <input matInput [(ngModel)]="tradition.name" (ngModelChange)="applyId()" placeholder="Name"/>
-    </mat-form-field>
-    <app-id-edit [(value)]="tradition.id"></app-id-edit>
-    <app-md-input [label]="'Description'" [name]="'description'" [id]="'description'" [(model)]="tradition.description"></app-md-input>
-    <mat-checkbox [(ngModel)]="tradition.dark">
-      Dark
-    </mat-checkbox>
-    <mat-checkbox [(ngModel)]="tradition.psychic">
-      Psychic
-    </mat-checkbox>
-    <mat-form-field>
-      <input matInput [(ngModel)]="tradition.source.book" placeholder="Book"/>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput type="number" [(ngModel)]="tradition.source.page"
-             placeholder="Book (Page)"/>
-    </mat-form-field>
+    <div class="flex">
+      <mat-form-field>
+        <input matInput [(ngModel)]="tradition.name" (ngModelChange)="applyId()" placeholder="Name"/>
+      </mat-form-field>
+      <app-id-edit [(value)]="tradition.id">
+      </app-id-edit>
+    </div>
+    <app-md-input [label]="'Description'" [name]="'description'" [id]="'description'"
+                  [(model)]="tradition.description"></app-md-input>
+    <div class="flex">
+      <mat-checkbox [(ngModel)]="tradition.dark">
+        Dark
+      </mat-checkbox>
+      <mat-checkbox [(ngModel)]="tradition.psychic">
+        Psychic
+      </mat-checkbox>
+    </div>
+    <h3>Source</h3>
+    <div class="flex">
+      <mat-form-field>
+        <input matInput [(ngModel)]="tradition.source.book" placeholder="Book"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="number" [(ngModel)]="tradition.source.page"
+               placeholder="Book (Page)"/>
+      </mat-form-field>
+    </div>
   </mat-card>
 </mat-dialog-content>
 <mat-dialog-actions align="end">

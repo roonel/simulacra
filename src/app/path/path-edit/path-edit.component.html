@@ -1,35 +1,43 @@
-<h2 mat-dialog-title>Path : {{path.name}} <button mat-button (click)="openPreview()">Preview</button></h2>
+<h2 mat-dialog-title>Path : {{path.name}}
+  <button mat-button (click)="openPreview()">Preview</button>
+</h2>
 <mat-dialog-content>
   <mat-card>
-    <mat-form-field>
-      <input matInput [(ngModel)]="path.name" (ngModelChange)="applyId()" placeholder="Name"/>
-    </mat-form-field>
-    <app-id-edit [(value)]="path.id"></app-id-edit>
-    <mat-form-field>
-      <mat-label>Tier</mat-label>
-      <mat-select [(value)]="path.tier" (selectionChange)="onTierSelect()">
-        <mat-option [value]="'Novice'">Novice</mat-option>
-        <mat-option [value]="'Expert'">Expert</mat-option>
-        <mat-option [value]="'Master'">Master</mat-option>
-      </mat-select>
-    </mat-form-field>
-    <app-md-input [label]="'Description'" [name]="'description'" [id]="'description'" [(model)]="path.description"></app-md-input>
+    <div class="flex">
+      <mat-form-field>
+        <input matInput [(ngModel)]="path.name" (ngModelChange)="applyId()" placeholder="Name"/>
+      </mat-form-field>
+      <app-id-edit [(value)]="path.id"></app-id-edit>
+      <mat-form-field>
+        <mat-label>Tier</mat-label>
+        <mat-select [(value)]="path.tier" (selectionChange)="onTierSelect()">
+          <mat-option [value]="'Novice'">Novice</mat-option>
+          <mat-option [value]="'Expert'">Expert</mat-option>
+          <mat-option [value]="'Master'">Master</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <app-md-input [label]="'Description'" [name]="'description'" [id]="'description'"
+                  [(model)]="path.description"></app-md-input>
     <app-md-input [label]="'Extra'" [name]="'extra'" [id]="'extra'" [(model)]="path.extra"></app-md-input>
     <app-path-level-input [(pathLevels)]="path.pathLevels"></app-path-level-input>
 
     <h3>Story Development</h3>
     <app-table-edit [table]="path.storyDevelopment"></app-table-edit>
     <h3>Source</h3>
-    <mat-form-field>
-      <input matInput [(ngModel)]="path.source.book" placeholder="Book"/>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput type="number" [(ngModel)]="path.source.page"
-             placeholder="Book (Page)"/>
-    </mat-form-field>
+    <div class="flex">
+      <mat-form-field>
+        <input matInput [(ngModel)]="path.source.book" placeholder="Book"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="number" [(ngModel)]="path.source.page"
+               placeholder="Book (Page)"/>
+      </mat-form-field>
+    </div>
   </mat-card>
   <mat-dialog-actions align="end">
     <button mat-button mat-dialog-close>Cancel</button>
     <button mat-button (click)="save()">Save</button>
   </mat-dialog-actions>
 
+</mat-dialog-content>

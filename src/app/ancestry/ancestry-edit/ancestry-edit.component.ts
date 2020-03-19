@@ -34,7 +34,8 @@ export class AncestryEditComponent implements OnInit {
         type: 'ancestry',
         staying: true,
         entry: this.ancestry,
-      }
+      },
+      width: '500px',
     });
   }
 

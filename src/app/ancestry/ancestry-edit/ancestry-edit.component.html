@@ -1,101 +1,121 @@
-<h2 mat-dialog-title>Ancestry : {{ancestry.name}} <button mat-button (click)="openPreview()">Preview</button></h2>
+<h2 mat-dialog-title>Ancestry : {{ancestry.name}}
+  <button mat-button (click)="openPreview()">Preview</button>
+</h2>
 <mat-dialog-content>
   <mat-card>
-    <mat-form-field>
-      <input matInput [(ngModel)]="ancestry.name" (ngModelChange)="applyId()" placeholder="Name"/>
-    </mat-form-field>
-    <app-id-edit [(value)]="ancestry.id"></app-id-edit>
-    <mat-form-field>
-      <input matInput type="number" [(ngModel)]="ancestry.strength"
-             placeholder="Strength"/>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput type="number" [(ngModel)]="ancestry.agility"
-             placeholder="Agility"/>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput type="number" [(ngModel)]="ancestry.intellect"
-             placeholder="Intellect"/>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput type="number" [(ngModel)]="ancestry.will"
-             placeholder="Will"/>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput [(ngModel)]="ancestry.extraAttributes"
-             placeholder="Extra attributes"/>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput [(ngModel)]="ancestry.perception"
-             placeholder="Perception"/>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput [(ngModel)]="ancestry.defense"
-             placeholder="Defense"/>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput [(ngModel)]="ancestry.health"
-             placeholder="Health"/>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput [(ngModel)]="ancestry.healingRate"
-             placeholder="Healing Rate"/>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput [(ngModel)]="ancestry.size"
-             placeholder="Size"/>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput type="number" [(ngModel)]="ancestry.speed"
-             placeholder="Speed"/>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput type="number" [(ngModel)]="ancestry.power"
-             placeholder="Power"/>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput type="number" [(ngModel)]="ancestry.damage"
-             placeholder="Damage"/>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput type="number" [(ngModel)]="ancestry.insanity"
-             placeholder="Insanity"/>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput type="number" [(ngModel)]="ancestry.corruption"
-             placeholder="Corruption"/>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput [(ngModel)]="ancestry.languagesAndProfessions"
-             placeholder="Languages and Professions"/>
-    </mat-form-field>
+    <div class="flex">
+      <mat-form-field>
+        <input matInput [(ngModel)]="ancestry.name" (ngModelChange)="applyId()" placeholder="Name"/>
+      </mat-form-field>
+      <app-id-edit [(value)]="ancestry.id"></app-id-edit>
+    </div>
+    <div class="flex">
+      <mat-form-field>
+        <input matInput type="number" [(ngModel)]="ancestry.strength"
+               placeholder="Strength"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="number" [(ngModel)]="ancestry.agility"
+               placeholder="Agility"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="number" [(ngModel)]="ancestry.intellect"
+               placeholder="Intellect"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="number" [(ngModel)]="ancestry.will"
+               placeholder="Will"/>
+      </mat-form-field>
+    </div>
+    <div class="flex">
+      <mat-form-field>
+        <input matInput [(ngModel)]="ancestry.extraAttributes"
+               placeholder="Extra attributes"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="ancestry.perception"
+               placeholder="Perception"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="ancestry.defense"
+               placeholder="Defense"/>
+      </mat-form-field>
+    </div>
+    <div class="flex">
+      <mat-form-field>
+        <input matInput [(ngModel)]="ancestry.health"
+               placeholder="Health"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="ancestry.healingRate"
+               placeholder="Healing Rate"/>
+      </mat-form-field>
+    </div>
+    <div class="flex">
+      <mat-form-field>
+        <input matInput [(ngModel)]="ancestry.size"
+               placeholder="Size"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="number" [(ngModel)]="ancestry.speed"
+               placeholder="Speed"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="number" [(ngModel)]="ancestry.power"
+               placeholder="Power"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="number" [(ngModel)]="ancestry.damage"
+               placeholder="Damage"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="number" [(ngModel)]="ancestry.insanity"
+               placeholder="Insanity"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="number" [(ngModel)]="ancestry.corruption"
+               placeholder="Corruption"/>
+      </mat-form-field>
+    </div>
+    <div class="flex">
+      <mat-form-field>
+        <input matInput [(ngModel)]="ancestry.languagesAndProfessions"
+               placeholder="Languages and Professions"/>
+      </mat-form-field>
+    </div>
     <app-ability-list-input [(list)]="ancestry.traits" [title]="'Traits'">
     </app-ability-list-input>
 
-    <mat-form-field>
-      <input matInput [(ngModel)]="ancestry.level4Characteristics"
-             placeholder="Level 4 Characteristics"/>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput [(ngModel)]="ancestry.level4OptionsText"
-             placeholder="Level 4 options text"/>
-    </mat-form-field>
+    <div class="flex">
+      <mat-form-field>
+        <input matInput [(ngModel)]="ancestry.level4Characteristics"
+               placeholder="Level 4 Characteristics"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="ancestry.level4OptionsText"
+               placeholder="Level 4 options text"/>
+      </mat-form-field>
+    </div>
     <app-ability-list-input [(list)]="ancestry.level4Benefits" [title]="'Level 4 Benefits'">
     </app-ability-list-input>
-    <app-md-input [label]="'Description'" [name]="'description'" [id]="'description'" [(model)]="ancestry.description"></app-md-input>
+    <app-md-input [label]="'Description'" [name]="'description'" [id]="'description'"
+                  [(model)]="ancestry.description"></app-md-input>
     <h3>Powerful Ancestry Levels</h3>
-    <mat-checkbox [(ngModel)]="powerfulChecked" (change)="powerfulChanged()" >Powerful Ancestry</mat-checkbox>
-    <app-path-level-input *ngIf="ancestry.powerfulAncestryLevels" [(pathLevels)]="ancestry.powerfulAncestryLevels"></app-path-level-input>
+    <mat-checkbox [(ngModel)]="powerfulChecked" (change)="powerfulChanged()">Powerful Ancestry</mat-checkbox>
+    <app-path-level-input *ngIf="ancestry.powerfulAncestryLevels"
+                          [(pathLevels)]="ancestry.powerfulAncestryLevels"></app-path-level-input>
     <h3>Ancestry Tables</h3>
     <app-table-list-input [(list)]="ancestry.tables" title="Ancestry Tables"></app-table-list-input>
     <h3>Source</h3>
-    <mat-form-field>
-      <input matInput [(ngModel)]="ancestry.source.book" placeholder="Book"/>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput type="number" [(ngModel)]="ancestry.source.page"
-             placeholder="Book (Page)"/>
-    </mat-form-field>
+    <div class="flex">
+      <mat-form-field style="flex-grow: 2">
+        <input matInput [(ngModel)]="ancestry.source.book" placeholder="Book"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="number" [(ngModel)]="ancestry.source.page"
+               placeholder="Book (Page)"/>
+      </mat-form-field>
+    </div>
   </mat-card>
 </mat-dialog-content>
 <mat-dialog-actions align="end">

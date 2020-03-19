@@ -1,22 +1,29 @@
-<h2 mat-dialog-title>Relic : {{relic.name}} <button mat-button (click)="openPreview()">Preview</button></h2>
+<h2 mat-dialog-title>Relic : {{relic.name}}
+  <button mat-button (click)="openPreview()">Preview</button>
+</h2>
 <mat-dialog-content>
   <mat-card>
-    <mat-form-field>
-      <input matInput [(ngModel)]="relic.name" (ngModelChange)="applyId()" placeholder="Name"/>
-    </mat-form-field>
-    <app-id-edit [(value)]="relic.id"></app-id-edit>
+    <div class="flex">
+      <mat-form-field>
+        <input matInput [(ngModel)]="relic.name" (ngModelChange)="applyId()" placeholder="Name"/>
+      </mat-form-field>
+      <app-id-edit [(value)]="relic.id"></app-id-edit>
+    </div>
+    <app-ability-list-input [(list)]="relic.gameEffects" [title]="'Game Effects'"></app-ability-list-input>
 
-    <app-ability-list-input [(list)]="relic.gameEffects" [title]="'Game Effect'"></app-ability-list-input>
+    <app-md-input [label]="'Description'" [name]="'description'" [id]="'description'"
+                  [(model)]="relic.description"></app-md-input>
 
-    <app-md-input [label]="'Description'" [name]="'description'" [id]="'description'" [(model)]="relic.description"></app-md-input>
-
-    <mat-form-field>
-      <input matInput [(ngModel)]="relic.source.book" placeholder="Book"/>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput type="number" [(ngModel)]="relic.source.page"
-             placeholder="Book (Page)"/>
-    </mat-form-field>
+    <h3>Source</h3>
+    <div class="flex">
+      <mat-form-field>
+        <input matInput [(ngModel)]="relic.source.book" placeholder="Book"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="number" [(ngModel)]="relic.source.page"
+               placeholder="Book (Page)"/>
+      </mat-form-field>
+    </div>
   </mat-card>
 </mat-dialog-content>
 <mat-dialog-actions align="end">

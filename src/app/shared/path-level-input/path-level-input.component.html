@@ -5,19 +5,22 @@
     </button>
   </label>
   <div *ngFor="let item of pathLevels; let i = index; trackBy: trackByFn">
-    <mat-form-field>
-      <input matInput [(ngModel)]="item.level" type="number"
-             [placeholder]="'Level'" [name]="'plevel_level_' + i"/>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput [(ngModel)]="item.attributes"
-             [placeholder]="'Attributes'" [name]="'plevel_attributes_' + i"/>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput [(ngModel)]="item.characteristics"
-             [placeholder]="'Characteristics'" [name]="'plevel_characteristics_' + i"/>
-    </mat-form-field>
-    <app-ability-list-input [title]="'Level '+item.level" [(list)]="item.talents"></app-ability-list-input>
-    <mat-icon matSuffix (click)="remove(i)">remove</mat-icon>
+    <h2>Level {{item.level}}
+      <mat-icon matSuffix (click)="remove(i)">remove</mat-icon></h2>
+    <div class="flex">
+      <mat-form-field>
+        <input matInput [(ngModel)]="item.level" type="number"
+               [placeholder]="'Level'" [name]="'plevel_level_' + i"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="item.attributes"
+               [placeholder]="'Attributes'" [name]="'plevel_attributes_' + i"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="item.characteristics"
+               [placeholder]="'Characteristics'" [name]="'plevel_characteristics_' + i"/>
+      </mat-form-field>
+    </div>
+    <app-ability-list-input [title]="'Level '+item.level+' talents'" [(list)]="item.talents"></app-ability-list-input>
   </div>
 </div>

@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ContentService} from '../content.service';
-import {MatDialog} from '@angular/material/dialog';
+import {MatDialog, MatDialogConfig} from '@angular/material/dialog';
 import {AncestryEditComponent} from '../ancestry/ancestry-edit/ancestry-edit.component';
 import {ConfirmationModalComponent} from '../shared/confirmation-modal/confirmation-modal.component';
 import {CreatureEditComponent} from '../creature/creature-edit/creature-edit.component';
@@ -20,12 +20,17 @@ import {Content} from '../data-model/content';
 export class ContentHandlerComponent implements OnInit {
 
   addedContent: any[];
+  dialogSettings: MatDialogConfig;
 
   constructor(private contentService: ContentService, private dialog: MatDialog) {
   }
 
   ngOnInit(): void {
     this.refresh();
+    this.dialogSettings = {
+      disableClose: false,
+      width: '800px'
+    };
   }
 
   refresh() {
@@ -58,193 +63,55 @@ export class ContentHandlerComponent implements OnInit {
     event.stopPropagation();
   }
 
-  editAncestry(entryIndex: number, contentIndex: number) {
-    const dialogRef = this.dialog.open(AncestryEditComponent, {
-      data: this.addedContent[contentIndex].data.ancestries[entryIndex], disableClose: false
-    });
+  edit(dataset: string, entryIndex: number, contentIndex: number) {
+    const component = this.getComponent(dataset);
+    this.dialogSettings.data = this.addedContent[contentIndex].data[dataset][entryIndex];
+    const dialogRef = this.dialog.open(component, this.dialogSettings);
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
-        this.addedContent[contentIndex].data.ancestries[entryIndex] = result;
+        this.addedContent[contentIndex].data[dataset][entryIndex] = result;
         this.contentService.refresh(this.addedContent[contentIndex].fileName, this.addedContent[contentIndex].data);
       }
     });
   }
 
-  editCreature(entryIndex: number, contentIndex: number) {
-    const dialogRef = this.dialog.open(CreatureEditComponent, {
-      data: this.addedContent[contentIndex].data.creatures[entryIndex], disableClose: false
-    });
+  addNew(dataset: string, contentIndex: number) {
+    const component = this.getComponent(dataset);
+    this.dialogSettings.data = this.getDefaultData(dataset);
+    const dialogRef = this.dialog.open(component, this.dialogSettings);
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
-        this.addedContent[contentIndex].data.creatures[entryIndex] = result;
-        this.contentService.refresh(this.addedContent[contentIndex].fileName, this.addedContent[contentIndex].data);
-      }
-    });
-  }
-
-  editItem(entryIndex: number, contentIndex: number) {
-    const dialogRef = this.dialog.open(ItemEditComponent, {
-      data: this.addedContent[contentIndex].data.items[entryIndex], disableClose: false
-    });
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) {
-        this.addedContent[contentIndex].data.items[entryIndex] = result;
-        this.contentService.refresh(this.addedContent[contentIndex].fileName, this.addedContent[contentIndex].data);
-      }
-    });
-  }
-
-  editPath(entryIndex: number, contentIndex: number) {
-    const dialogRef = this.dialog.open(PathEditComponent, {
-      data: this.addedContent[contentIndex].data.paths[entryIndex], disableClose: false
-    });
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) {
-        this.addedContent[contentIndex].data.paths[entryIndex] = result;
-        this.contentService.refresh(this.addedContent[contentIndex].fileName, this.addedContent[contentIndex].data);
-      }
-    });
-  }
-
-  editRelic(entryIndex: number, contentIndex: number) {
-    const dialogRef = this.dialog.open(RelicEditComponent, {
-      data: this.addedContent[contentIndex].data.relics[entryIndex], disableClose: false
-    });
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) {
-        this.addedContent[contentIndex].data.relics[entryIndex] = result;
-        this.contentService.refresh(this.addedContent[contentIndex].fileName, this.addedContent[contentIndex].data);
-      }
-    });
-  }
-
-  editSpell(entryIndex: number, contentIndex: number) {
-    const dialogRef = this.dialog.open(SpellEditComponent, {
-      data: this.addedContent[contentIndex].data.spells[entryIndex], disableClose: false
-    });
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) {
-        this.addedContent[contentIndex].data.spells[entryIndex] = result;
-        this.contentService.refresh(this.addedContent[contentIndex].fileName, this.addedContent[contentIndex].data);
-      }
-    });
-  }
-
-  editTradition(entryIndex: number, contentIndex: number) {
-    const dialogRef = this.dialog.open(TraditionEditComponent, {
-      data: this.addedContent[contentIndex].data.traditions[entryIndex], disableClose: false
-    });
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) {
-        this.addedContent[contentIndex].data.traditions[entryIndex] = result;
-        this.contentService.refresh(this.addedContent[contentIndex].fileName, this.addedContent[contentIndex].data);
-      }
-    });
-  }
-
-  addNewAncestry(contentIndex: number) {
-    const dialogRef = this.dialog.open(AncestryEditComponent, {
-      data: {source: {}, tables: []}, disableClose: false
-    });
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) {
-        if (!this.addedContent[contentIndex].data.ancestries) {
-          this.addedContent[contentIndex].data.ancestries = [];
+        if (!this.addedContent[contentIndex].data[dataset]) {
+          this.addedContent[contentIndex].data[dataset] = [];
         }
-        this.addedContent[contentIndex].data.ancestries.push(result);
+        this.addedContent[contentIndex].data[dataset].push(result);
         this.contentService.refresh(this.addedContent[contentIndex].fileName, this.addedContent[contentIndex].data);
       }
     });
   }
 
-  addNewCreature(contentIndex: number) {
-    const dialogRef = this.dialog.open(CreatureEditComponent, {
-      data: {source: {}, magic: {}}, disableClose: false
-    });
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) {
-        if (!this.addedContent[contentIndex].data.creatures) {
-          this.addedContent[contentIndex].data.creatures = [];
-        }
-        this.addedContent[contentIndex].data.creatures.push(result);
-        this.contentService.refresh(this.addedContent[contentIndex].fileName, this.addedContent[contentIndex].data);
-      }
-    });
+  getComponent(type: string): any {
+    switch (type) {
+      case 'ancestries': return AncestryEditComponent;
+      case 'creatures': return CreatureEditComponent;
+      case 'items': return ItemEditComponent;
+      case 'paths': return PathEditComponent;
+      case 'relics': return RelicEditComponent;
+      case 'spells': return SpellEditComponent;
+      case 'traditions': return TraditionEditComponent;
+    }
   }
 
-  addNewItem(contentIndex: number) {
-    const dialogRef = this.dialog.open(ItemEditComponent, {
-      data: {source: {}}, disableClose: false
-    });
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) {
-        if (!this.addedContent[contentIndex].data.items) {
-          this.addedContent[contentIndex].data.items = [];
-        }
-        this.addedContent[contentIndex].data.items.push(result);
-        this.contentService.refresh(this.addedContent[contentIndex].fileName, this.addedContent[contentIndex].data);
-      }
-    });
-  }
-
-  addNewPath(contentIndex: number) {
-    const dialogRef = this.dialog.open(PathEditComponent, {
-      data: {source: {}, storyDevelopment: {}}, disableClose: false
-    });
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) {
-        if (!this.addedContent[contentIndex].data.paths) {
-          this.addedContent[contentIndex].data.paths = [];
-        }
-        this.addedContent[contentIndex].data.paths.push(result);
-        this.contentService.refresh(this.addedContent[contentIndex].fileName, this.addedContent[contentIndex].data);
-      }
-    });
-  }
-
-  addNewRelic(contentIndex: number) {
-    const dialogRef = this.dialog.open(RelicEditComponent, {
-      data: {source: {}}, disableClose: false
-    });
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) {
-        if (!this.addedContent[contentIndex].data.relics) {
-          this.addedContent[contentIndex].data.relics = [];
-        }
-        this.addedContent[contentIndex].data.relics.push(result);
-        this.contentService.refresh(this.addedContent[contentIndex].fileName, this.addedContent[contentIndex].data);
-      }
-    });
-  }
-
-  addNewSpell(contentIndex: number) {
-    const dialogRef = this.dialog.open(SpellEditComponent, {
-      data: {source: {}}, disableClose: false
-    });
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) {
-        if (!this.addedContent[contentIndex].data.spells) {
-          this.addedContent[contentIndex].data.spells = [];
-        }
-        this.addedContent[contentIndex].data.spells.push(result);
-        this.contentService.refresh(this.addedContent[contentIndex].fileName, this.addedContent[contentIndex].data);
-      }
-    });
-  }
-
-  addNewTradition(contentIndex: number) {
-    const dialogRef = this.dialog.open(TraditionEditComponent, {
-      data: {source: {}}, disableClose: false
-    });
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) {
-        if (!this.addedContent[contentIndex].data.traditions) {
-          this.addedContent[contentIndex].data.traditions = [];
-        }
-        this.addedContent[contentIndex].data.traditions.push(result);
-        this.contentService.refresh(this.addedContent[contentIndex].fileName, this.addedContent[contentIndex].data);
-      }
-    });
+  getDefaultData(type: string) {
+    switch (type) {
+      case 'ancestries': return {source: {}, tables: []};
+      case 'creatures': return {source: {}, magic: {}};
+      case 'items': return {source: {}};
+      case 'paths': return {source: {}, storyDevelopment: {}};
+      case 'relics': return {source: {}};
+      case 'spells': return {source: {}};
+      case 'traditions': return {source: {}};
+    }
   }
 
   removeEntry(dataSet: string, entryIndex: number, contentIndex: number) {

@@ -15,31 +15,31 @@
       </mat-panel-description>
       <ng-template matExpansionPanelContent>
         <app-content-category-display [title]="'Ancestry'" [data]="c.data.ancestries"
-                                      (addEntry)="addNewAncestry(i)" (editEntry)="editAncestry($event,i)"
+                                      (addEntry)="addNew('ancestries', i)" (editEntry)="edit('ancestries', $event,i)"
                                       (deleteEntry)="removeEntry('ancestries', $event, i)">
         </app-content-category-display>
         <app-content-category-display [title]="'Creature'" [data]="c.data.creatures"
-                                      (addEntry)="addNewCreature(i)" (editEntry)="editCreature($event,i)"
+                                      (addEntry)="addNew('creatures', i)" (editEntry)="edit('creatures',$event,i)"
                                       (deleteEntry)="removeEntry('creatures', $event, i)">
         </app-content-category-display>
         <app-content-category-display [title]="'Item'" [data]="c.data.items"
-                                      (addEntry)="addNewItem(i)" (editEntry)="editItem($event,i)"
+                                      (addEntry)="addNew('items', i)" (editEntry)="edit('items', $event,i)"
                                       (deleteEntry)="removeEntry('items', $event, i)">
         </app-content-category-display>
         <app-content-category-display [title]="'Path'" [data]="c.data.paths"
-                                      (addEntry)="addNewPath(i)" (editEntry)="editPath($event,i)"
+                                      (addEntry)="addNew('paths', i)" (editEntry)="edit('paths', $event,i)"
                                       (deleteEntry)="removeEntry('paths', $event, i)">
         </app-content-category-display>
         <app-content-category-display [title]="'Relic'" [data]="c.data.relics"
-                                      (addEntry)="addNewRelic(i)" (editEntry)="editRelic($event,i)"
+                                      (addEntry)="addNew('relics', i)" (editEntry)="edit('relics', $event,i)"
                                       (deleteEntry)="removeEntry('relics', $event, i)">
         </app-content-category-display>
         <app-content-category-display [title]="'Spell'" [data]="c.data.spells"
-                                      (addEntry)="addNewSpell(i)" (editEntry)="editSpell($event,i)"
+                                      (addEntry)="addNew('spells', i)" (editEntry)="edit('spells', $event,i)"
                                       (deleteEntry)="removeEntry('spells', $event, i)">
         </app-content-category-display>
         <app-content-category-display [title]="'Tradition'" [data]="c.data.traditions"
-                                      (addEntry)="addNewTradition(i)" (editEntry)="editTradition($event,i)"
+                                      (addEntry)="addNew('traditions', i)" (editEntry)="edit('traditions', $event,i)"
                                       (deleteEntry)="removeEntry('traditions', $event, i)">
         </app-content-category-display>
       </ng-template>

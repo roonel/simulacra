@@ -3,39 +3,43 @@
 </h2>
 <mat-dialog-content>
   <mat-card>
-    <mat-form-field>
-      <input matInput [(ngModel)]="item.name" (ngModelChange)="applyId()" placeholder="Name"/>
-    </mat-form-field>
-    <app-id-edit [(value)]="item.id"></app-id-edit>
+    <div class="flex">
+      <mat-form-field>
+        <input matInput [(ngModel)]="item.name" (ngModelChange)="applyId()" placeholder="Name"/>
+      </mat-form-field>
+      <app-id-edit [(value)]="item.id"></app-id-edit>
+    </div>
 
-    <mat-form-field>
-      <mat-label>Availability</mat-label>
-      <mat-select [(value)]="item.availability">
-        <mat-option [value]="'Common'">Common</mat-option>
-        <mat-option [value]="'Uncommon'">Uncommon</mat-option>
-        <mat-option [value]="'Rare'">Rare</mat-option>
-        <mat-option [value]="'Exotic'">Exotic</mat-option>
-      </mat-select>
-    </mat-form-field>
+    <div class="flex">
+      <mat-form-field>
+        <mat-label>Availability</mat-label>
+        <mat-select [(value)]="item.availability">
+          <mat-option [value]="'Common'">Common</mat-option>
+          <mat-option [value]="'Uncommon'">Uncommon</mat-option>
+          <mat-option [value]="'Rare'">Rare</mat-option>
+          <mat-option [value]="'Exotic'">Exotic</mat-option>
+        </mat-select>
+      </mat-form-field>
 
-    <mat-form-field>
-      <input matInput type="number" [(ngModel)]="item.price" placeholder="Price"/>
-    </mat-form-field>
+      <mat-form-field>
+        <input matInput type="number" [(ngModel)]="item.price" placeholder="Price"/>
+      </mat-form-field>
 
-    <mat-form-field>
-      <input matInput [(ngModel)]="item.type" placeholder="Type"/>
-    </mat-form-field>
-
+      <mat-form-field>
+        <input matInput [(ngModel)]="item.type" placeholder="Type"/>
+      </mat-form-field>
+    </div>
     <app-md-input [label]="'Description'" [name]="'description'" [id]="'description'"
                   [(model)]="item.description"></app-md-input>
-
-    <mat-form-field>
-      <input matInput [(ngModel)]="item.source.book" placeholder="Book"/>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput type="number" [(ngModel)]="item.source.page"
-             placeholder="Book (Page)"/>
-    </mat-form-field>
+    <div class="flex">
+      <mat-form-field>
+        <input matInput [(ngModel)]="item.source.book" placeholder="Book"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="number" [(ngModel)]="item.source.page"
+               placeholder="Book (Page)"/>
+      </mat-form-field>
+    </div>
   </mat-card>
 </mat-dialog-content>
 <mat-dialog-actions align="end">
