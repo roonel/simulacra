@@ -1,17 +1,11 @@
 <div>
-  <label
-  >{{ title }}
+  <label>{{ title }}
     <button mat-mini-fab (click)="add()">
       <mat-icon>add</mat-icon>
     </button>
   </label>
   <mat-form-field *ngFor="let item of list; let i = index; trackBy: trackByFn">
-    <input
-      matInput
-      [(ngModel)]="list[i]"
-      [placeholder]="title"
-      [name]="'title_' + i"
-    />
+    <input matInput [(ngModel)]="list[i]" [placeholder]="title" [name]="'title_' + i" (change)="listChange.emit(list)"/>
     <mat-icon matSuffix (click)="remove(i)">remove</mat-icon>
   </mat-form-field>
 </div>

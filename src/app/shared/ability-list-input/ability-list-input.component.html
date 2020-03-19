@@ -6,9 +6,9 @@
   </label>
   <div *ngFor="let item of list; let i = index; trackBy: trackByFn" class="flex">
     <mat-form-field>
-      <input matInput [(ngModel)]="item.name" [placeholder]="'Name'" [name]="title + '_name_' + i"/>
+      <input matInput [(ngModel)]="item.name" [placeholder]="'Name'" [name]="title + '_name_' + i" (change)="listChange.emit(list)"/>
     </mat-form-field>
-    <app-md-input [(model)]="item.effect" [placeholder]="'effect'" [name]="title + '_effect_' + i">
+    <app-md-input [(model)]="item.effect" [placeholder]="'effect'" [name]="title + '_effect_' + i" (modelChange)="listChange.emit(list)">
     </app-md-input>
     <mat-icon matSuffix (click)="remove(i)">remove</mat-icon>
   </div>

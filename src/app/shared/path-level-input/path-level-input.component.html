@@ -9,18 +9,18 @@
       <mat-icon matSuffix (click)="remove(i)">remove</mat-icon></h2>
     <div class="flex">
       <mat-form-field>
-        <input matInput [(ngModel)]="item.level" type="number"
+        <input matInput [(ngModel)]="item.level" type="number" (change)="pathLevelsChange.emit(pathLevels)"
                [placeholder]="'Level'" [name]="'plevel_level_' + i"/>
       </mat-form-field>
       <mat-form-field>
-        <input matInput [(ngModel)]="item.attributes"
+        <input matInput [(ngModel)]="item.attributes" (change)="pathLevelsChange.emit(pathLevels)"
                [placeholder]="'Attributes'" [name]="'plevel_attributes_' + i"/>
       </mat-form-field>
       <mat-form-field>
-        <input matInput [(ngModel)]="item.characteristics"
+        <input matInput [(ngModel)]="item.characteristics" (change)="pathLevelsChange.emit(pathLevels)"
                [placeholder]="'Characteristics'" [name]="'plevel_characteristics_' + i"/>
       </mat-form-field>
     </div>
-    <app-ability-list-input [title]="'Level '+item.level+' talents'" [(list)]="item.talents"></app-ability-list-input>
+    <app-ability-list-input [title]="'Level '+item.level+' talents'" [(list)]="item.talents" (listChange)="pathLevelsChange.emit(pathLevels)"></app-ability-list-input>
   </div>
 </div>
