@@ -1,5 +1,5 @@
 <div style="display: flex; flex-direction: row;">
-  <<div class="table-side">
+  <div class="table-side">
     <app-relic-filter (filterChange)="applyFilter($event)" [sources]="bookSources"></app-relic-filter>
     <div style="height: 400px; overflow: auto;">
       <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
