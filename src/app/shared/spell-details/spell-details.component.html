@@ -7,6 +7,7 @@
     {{ spell.level }}
   </mat-card-subtitle>
   <mat-card-content style="display: flex; flex-direction: column;">
+    <span *ngIf="spell.requirement"> <b>Requirements</b> {{ spell.requirement }}</span>
     <span *ngIf="spell.area"> <b>Area</b> {{ spell.area }} </span>
     <span *ngIf="spell.duration"> <b>Duration</b> {{ spell.duration }} </span>
     <span *ngIf="spell.target"> <b>Target</b> {{ spell.target }}</span>
