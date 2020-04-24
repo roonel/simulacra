@@ -53,4 +53,28 @@ export class AncestryEditComponent implements OnInit {
       this.ancestry.powerfulAncestryLevels = [];
     }
   }
+
+  secondaryChanged() {
+    if (this.ancestry.secondaryAncestry) {
+      delete this.ancestry.strength;
+      delete this.ancestry.agility;
+      delete this.ancestry.intellect;
+      delete this.ancestry.will;
+      delete this.ancestry.extraAttributes;
+      delete this.ancestry.perception;
+      delete this.ancestry.defense;
+      delete this.ancestry.health;
+      delete this.ancestry.healingRate;
+      delete this.ancestry.size;
+      delete this.ancestry.speed;
+      delete this.ancestry.power;
+      delete this.ancestry.damage;
+      delete this.ancestry.insanity;
+      delete this.ancestry.corruption;
+      delete this.ancestry.languagesAndProfessions;
+    } else {
+      delete this.ancestry.secondaryAttributes;
+      delete this.ancestry.secondaryCharacteristics;
+    }
+  }
 }

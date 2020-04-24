@@ -1,12 +1,15 @@
 import {Ability} from './ability';
-import {Path} from './path';
 import {Source} from './source';
 import {Table} from './table';
-import {PathLevel} from "./pathLevel";
+import {PathLevel} from './pathLevel';
 
 export interface Ancestry {
   name?: string;
   id?: string;
+  introductionText?: string;
+  secondaryAncestry?: boolean;
+  secondaryAttributes?: string;
+  secondaryCharacteristics?: string;
   description?: string;
   strength?: number;
   agility?: number;

@@ -6,32 +6,45 @@
     <mat-tab-group>
       <mat-tab label="Stats">
         <h1>Creating a {{ancestry.name}}</h1>
-        <div>
-          <b>Starting Attribute Scores</b> Strength {{ancestry.strength}}, Agility {{ancestry.agility}},
-          Intellect {{ancestry.intellect}}, Will {{ancestry.will}} <span
-          *ngIf="ancestry.extraAttributes">. {{ancestry.extraAttributes}}</span>
+        <div *ngIf="ancestry.introductionText">
+          <app-processed-text [text]="ancestry.introductionText"></app-processed-text>
         </div>
-        <div>
-          <b>Perception</b> {{ancestry.perception}}
+        <div *ngIf="!ancestry.secondaryAncestry">
+          <div>
+            <b>Starting Attribute Scores</b> Strength {{ancestry.strength}}, Agility {{ancestry.agility}},
+            Intellect {{ancestry.intellect}}, Will {{ancestry.will}} <span
+            *ngIf="ancestry.extraAttributes">. {{ancestry.extraAttributes}}</span>
+          </div>
+          <div>
+            <b>Perception</b> {{ancestry.perception}}
+          </div>
+          <div>
+            <b>Defense</b> {{ancestry.defense}}
+          </div>
+          <div>
+            <b>Health</b> {{ancestry.health}}
+          </div>
+          <div>
+            <b>Healing rate</b> {{ancestry.healingRate}}
+          </div>
+          <div>
+            <b>Size</b> {{ancestry.size}}, <b>Speed</b> {{ancestry.speed}}, <b>Power</b> {{ancestry.power}}
+          </div>
+          <div>
+            <b>Damage</b> {{ancestry.damage}}, <b>Insanity</b> {{ancestry.insanity}},
+            <b>Corruption</b> {{ancestry.corruption}}
+          </div>
+          <div>
+            <b>Languages and Professions</b> {{ancestry.languagesAndProfessions}}
+          </div>
         </div>
-        <div>
-          <b>Defense</b> {{ancestry.defense}}
-        </div>
-        <div>
-          <b>Health</b> {{ancestry.health}}
-        </div>
-        <div>
-          <b>Healing rate</b> {{ancestry.healingRate}}
-        </div>
-        <div>
-          <b>Size</b> {{ancestry.size}}, <b>Speed</b> {{ancestry.speed}}, <b>Power</b> {{ancestry.power}}
-        </div>
-        <div>
-          <b>Damage</b> {{ancestry.damage}}, <b>Insanity</b> {{ancestry.insanity}},
-          <b>Corruption</b> {{ancestry.corruption}}
-        </div>
-        <div>
-          <b>Languages and Professions</b> {{ancestry.languagesAndProfessions}}
+        <div *ngIf="ancestry.secondaryAncestry">
+          <div *ngIf="ancestry.secondaryAttributes">
+            <b>Attributes</b> {{ancestry.secondaryAttributes}}
+          </div>
+          <div *ngIf="ancestry.secondaryCharacteristics">
+            <b>Characteristics</b> {{ancestry.secondaryCharacteristics}}
+          </div>
         </div>
         <span *ngIf="ancestry.traits">
            <div *ngFor="let trait of ancestry.traits">
