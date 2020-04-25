@@ -105,7 +105,7 @@ export class ContentHandlerComponent implements OnInit {
   getDefaultData(type: string) {
     switch (type) {
       case 'ancestries': return {source: {}, tables: []};
-      case 'creatures': return {source: {}, magic: {}};
+      case 'creatures': return {source: {}};
       case 'items': return {source: {}};
       case 'paths': return {source: {}, storyDevelopment: {}};
       case 'relics': return {source: {}};
