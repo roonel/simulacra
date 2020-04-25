@@ -11,9 +11,14 @@ import {TooltipDialogComponent} from '../../shared/tooltip-dialog/tooltip-dialog
 export class CreatureEditComponent implements OnInit {
 
   creature: Creature;
+  usesMagic: boolean;
+
   constructor(public dialogRef: MatDialogRef<CreatureEditComponent>,
               @Inject(MAT_DIALOG_DATA) public data: any, private dialog: MatDialog) {
     this.creature = JSON.parse(JSON.stringify(data));
+    if (this.creature.magic) {
+      this.usesMagic = true;
+    }
   }
 
   ngOnInit(): void {
@@ -21,12 +26,20 @@ export class CreatureEditComponent implements OnInit {
 
   openPreview() {
     const previewDialog = this.dialog.open(TooltipDialogComponent, {
-      data : {
+      data: {
         type: 'creature',
         staying: true,
         entry: this.creature,
       }
     });
+  }
+
+  changeMagic() {
+    if (this.usesMagic) {
+      this.creature.magic = {};
+    } else {
+      delete this.creature.magic;
+    }
   }
 
   save() {

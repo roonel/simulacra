@@ -19,6 +19,7 @@
           <mat-option [value]="100">100</mat-option>
           <mat-option [value]="250">250</mat-option>
           <mat-option [value]="500">500</mat-option>
+          <mat-option [value]="750">750</mat-option>
           <mat-option [value]="1000">1000</mat-option>
         </mat-select>
       </mat-form-field>
@@ -87,11 +88,11 @@
     </div>
     <div class="flex">
       <mat-form-field>
-        <input matInput type="number" [(ngModel)]="creature.insanity"
+        <input matInput [(ngModel)]="creature.insanity"
                placeholder="Insanity"/>
       </mat-form-field>
       <mat-form-field>
-        <input matInput type="number" [(ngModel)]="creature.corruption"
+        <input matInput [(ngModel)]="creature.corruption"
                placeholder="Corruption"/>
       </mat-form-field>
       <mat-form-field>
@@ -114,6 +115,9 @@
     <app-ability-list-input [(list)]="creature.specialActions" [title]="'Special Actions'">
     </app-ability-list-input>
 
+    <mat-checkbox [(ngModel)]="usesMagic" (change)="changeMagic()">
+      Magic
+    </mat-checkbox>
     <app-creature-magic-input [(magic)]="creature.magic"></app-creature-magic-input>
 
     <app-ability-list-input [(list)]="creature.endOfRound" [title]="'End of Round'">

@@ -24,8 +24,8 @@ export interface Ancestry {
   speed?: number;
   power?: number;
   damage?: number;
-  insanity?: number;
-  corruption?: number;
+  insanity?: string;
+  corruption?: string;
   languagesAndProfessions?: string;
   traits?: Ability[];
   level4Characteristics?: string;

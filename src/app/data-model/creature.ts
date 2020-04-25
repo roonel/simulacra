@@ -21,8 +21,8 @@ export interface Creature {
   speed?: number;
   specialMovement?: string;
   traits?: Ability[];
-  insanity?: number;
-  corruption?: number;
+  insanity?: string;
+  corruption?: string;
   attacks?: Ability[];
   specialAttacks?: Ability[];
   specialActions?: Ability[];

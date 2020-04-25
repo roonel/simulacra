@@ -52,7 +52,7 @@
           </div>
         </div>
 
-        <div *ngIf="creature.magic">
+        <div *ngIf="creature.magic && creature.magic.power">
           <h2>Magic</h2>
           <b>Power</b> {{creature.magic.power}}
           <div *ngFor="let trad of creature.magic.traditions">
