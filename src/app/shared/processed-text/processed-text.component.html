@@ -1,6 +1,6 @@
 <ng-container *ngFor="let item of dataList">
   <ng-container [ngSwitch]="item.type">
-    <ng-container *ngSwitchCase="'heading'"><span [ngClass]="'mat-h'+item.level">{{ item.content }}</span></ng-container>
+    <ng-container *ngSwitchCase="'heading'"><p [ngClass]="'mat-h'+item.level">{{ item.content }}</p></ng-container>
     <ng-container *ngSwitchCase="'inline'">
       <app-inline-render [content]="item.content"></app-inline-render>
     </ng-container>
