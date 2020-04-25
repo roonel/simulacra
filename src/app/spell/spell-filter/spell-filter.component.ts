@@ -12,7 +12,7 @@ import {ContentService} from '../../content.service';
 export class SpellFilterComponent implements OnInit {
   @Output() filterChange: EventEmitter<string> = new EventEmitter<string>();
   dataFilter: SpellFilter;
-  levels: number[] = [0, 1, 2, 3, 4, 5];
+  levels: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   types: string[] = ['Attack', 'Utility'];
   traditions: Tradition[] = [];
   @Input() sources: string[];
@@ -22,6 +22,9 @@ export class SpellFilterComponent implements OnInit {
 
   ngOnInit() {
     this.traditions = this.contentService.getTraditionList();
+    this.traditions = this.traditions.sort((a, b) => {
+      return a.name.localeCompare(b.name);
+    });
     this.dataFilter = new SpellFilter();
     this.dataFilter.levels = [];
     this.dataFilter.types = [];

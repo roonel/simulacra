@@ -27,6 +27,7 @@ export class CreatureListComponent implements OnInit {
     this.dataSource = new MatTableDataSource<Creature>(data);
     this.bookSources = [... new Set(data.map(d => d.source.book))];
     this.descriptors = [... new Set(data.map(d => d.descriptor).filter(d => d))];
+    this.descriptors = this.descriptors.sort();
     this.dataSource.sort = this.sort;
     this.dataSource.filterPredicate = (d: Creature, filterString: string) => {
       if (!filterString) {
