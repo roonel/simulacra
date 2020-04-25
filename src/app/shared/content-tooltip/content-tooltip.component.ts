@@ -3,6 +3,7 @@ import {ContentService} from '../../content.service';
 import {TooltipDialogComponent} from '../tooltip-dialog/tooltip-dialog.component';
 import {MatDialog, MatDialogConfig, MatDialogRef, MatDialogState} from '@angular/material/dialog';
 import {BehaviorSubject, Subject} from 'rxjs';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-content-tooltip',
@@ -36,7 +37,7 @@ export class ContentTooltipComponent implements OnInit {
     }
   }
 
-  constructor(private contentService: ContentService, private dialog: MatDialog) {
+  constructor(private contentService: ContentService, private dialog: MatDialog, private router: Router) {
   }
 
 
@@ -57,10 +58,23 @@ export class ContentTooltipComponent implements OnInit {
       case 'creature':
         this.entry = this.contentService.getCreatureList().find(value => value.id === this.id);
         break;
+      case 'item':
+        this.entry = this.contentService.getItemList().find(value => value.id === this.id);
+        break;
+      case 'relic':
+        this.entry = this.contentService.getRelicList().find(value => value.id === this.id);
+        break;
+      case 'ancestry':
+        this.entry = this.contentService.getAncestryList().find(value => value.id === this.id);
+        break;
     }
   }
 
-  bup() {
+  navigate() {
+    this.router.navigate([this.type + '-list', this.id]);
+  }
+
+  showTooltip() {
     const bounding = this.linkElement.nativeElement.getBoundingClientRect();
     this.dialogConfig.position = {left: `${bounding.left - 325}px`, top: `${bounding.bottom - 20}px`};
     if (!this.dialogRef || this.dialogRef.getState() !== MatDialogState.OPEN) {
@@ -70,7 +84,7 @@ export class ContentTooltipComponent implements OnInit {
 
   hovering() {
     this.textHover.next(true);
-    this.bup();
+    this.showTooltip();
   }
 
   leftHover() {
