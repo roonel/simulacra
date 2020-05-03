@@ -1,0 +1,10 @@
+.flex {
+  display: flex;
+  align-items: baseline;
+}
+
+mat-form-field {
+  margin: 10px;
+  flex-grow: 1;
+  width: 0;
+}

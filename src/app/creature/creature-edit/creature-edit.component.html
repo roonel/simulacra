@@ -126,15 +126,7 @@
     <app-md-input [label]="'Description'" [name]="'description'" [id]="'description'"
                   [(model)]="creature.description"></app-md-input>
     <app-md-input [label]="'Extra'" [name]="'extra'" [id]="'extra'" [(model)]="creature.extra"></app-md-input>
-    <div class="flex">
-      <mat-form-field>
-        <input matInput [(ngModel)]="creature.source.book" placeholder="Book"/>
-      </mat-form-field>
-      <mat-form-field>
-        <input matInput type="number" [(ngModel)]="creature.source.page"
-               placeholder="Book (Page)"/>
-      </mat-form-field>
-    </div>
+    <app-source-input [source]="creature.source"></app-source-input>
   </mat-card>
 </mat-dialog-content>
 <mat-dialog-actions align="end">

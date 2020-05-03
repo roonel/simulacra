@@ -31,15 +31,7 @@
     </div>
     <app-md-input [label]="'Description'" [name]="'description'" [id]="'description'"
                   [(model)]="item.description"></app-md-input>
-    <div class="flex">
-      <mat-form-field>
-        <input matInput [(ngModel)]="item.source.book" placeholder="Book"/>
-      </mat-form-field>
-      <mat-form-field>
-        <input matInput type="number" [(ngModel)]="item.source.page"
-               placeholder="Book (Page)"/>
-      </mat-form-field>
-    </div>
+    <app-source-input [source]="item.source"></app-source-input>
   </mat-card>
 </mat-dialog-content>
 <mat-dialog-actions align="end">

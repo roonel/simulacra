@@ -14,6 +14,9 @@
     <ng-container *ngSwitchCase="'table'">
       <app-table [table]="item"></app-table>
     </ng-container>
+    <ng-container *ngSwitchCase="'hr'">
+      <hr/>
+    </ng-container>
     <ng-container *ngSwitchDefault>{{ item.content }}</ng-container>
   </ng-container>
 </ng-container>

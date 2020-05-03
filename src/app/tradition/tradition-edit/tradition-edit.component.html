@@ -10,6 +10,11 @@
       <app-id-edit [(value)]="tradition.id">
       </app-id-edit>
     </div>
+    <div class="flex">
+      <mat-form-field>
+        <input matInput [(ngModel)]="tradition.attribute" placeholder="Attribute"/>
+      </mat-form-field>
+    </div>
     <app-md-input [label]="'Description'" [name]="'description'" [id]="'description'"
                   [(model)]="tradition.description"></app-md-input>
     <div class="flex">
@@ -20,16 +25,7 @@
         Psychic
       </mat-checkbox>
     </div>
-    <h3>Source</h3>
-    <div class="flex">
-      <mat-form-field>
-        <input matInput [(ngModel)]="tradition.source.book" placeholder="Book"/>
-      </mat-form-field>
-      <mat-form-field>
-        <input matInput type="number" [(ngModel)]="tradition.source.page"
-               placeholder="Book (Page)"/>
-      </mat-form-field>
-    </div>
+    <app-source-input [source]="tradition.source"></app-source-input>
   </mat-card>
 </mat-dialog-content>
 <mat-dialog-actions align="end">

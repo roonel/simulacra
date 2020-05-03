@@ -66,15 +66,7 @@
         Path Spell
       </mat-checkbox>
     </div>
-    <h3>Source</h3>
-    <div class="flex">
-      <mat-form-field>
-        <input matInput [(ngModel)]="spell.source.book" placeholder="Book"/>
-      </mat-form-field>
-      <mat-form-field>
-        <input matInput type="number" [(ngModel)]="spell.source.page" placeholder="Book (Page)"/>
-      </mat-form-field>
-    </div>
+    <app-source-input [source]="spell.source"></app-source-input>
   </mat-card>
 </mat-dialog-content>
 <mat-dialog-actions align="end">

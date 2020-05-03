@@ -29,16 +29,7 @@
 
     <h3>Story Development</h3>
     <app-table-edit [table]="path.storyDevelopment"></app-table-edit>
-    <h3>Source</h3>
-    <div class="flex">
-      <mat-form-field>
-        <input matInput [(ngModel)]="path.source.book" placeholder="Book"/>
-      </mat-form-field>
-      <mat-form-field>
-        <input matInput type="number" [(ngModel)]="path.source.page"
-               placeholder="Book (Page)"/>
-      </mat-form-field>
-    </div>
+    <app-source-input [source]="path.source"></app-source-input>
   </mat-card>
   <mat-dialog-actions align="end">
     <button mat-button mat-dialog-close>Cancel</button>

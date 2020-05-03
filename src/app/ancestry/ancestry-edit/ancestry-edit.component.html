@@ -125,15 +125,7 @@
     <h3>Ancestry Tables</h3>
     <app-table-list-input [(list)]="ancestry.tables" title="Ancestry Tables"></app-table-list-input>
     <h3>Source</h3>
-    <div class="flex">
-      <mat-form-field style="flex-grow: 2">
-        <input matInput [(ngModel)]="ancestry.source.book" placeholder="Book"/>
-      </mat-form-field>
-      <mat-form-field>
-        <input matInput type="number" [(ngModel)]="ancestry.source.page"
-               placeholder="Book (Page)"/>
-      </mat-form-field>
-    </div>
+    <app-source-input [source]="ancestry.source"></app-source-input>
   </mat-card>
 </mat-dialog-content>
 <mat-dialog-actions align="end">

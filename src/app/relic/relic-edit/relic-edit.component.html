@@ -13,17 +13,7 @@
 
     <app-md-input [label]="'Description'" [name]="'description'" [id]="'description'"
                   [(model)]="relic.description"></app-md-input>
-
-    <h3>Source</h3>
-    <div class="flex">
-      <mat-form-field>
-        <input matInput [(ngModel)]="relic.source.book" placeholder="Book"/>
-      </mat-form-field>
-      <mat-form-field>
-        <input matInput type="number" [(ngModel)]="relic.source.page"
-               placeholder="Book (Page)"/>
-      </mat-form-field>
-    </div>
+    <app-source-input [source]="relic.source"></app-source-input>
   </mat-card>
 </mat-dialog-content>
 <mat-dialog-actions align="end">

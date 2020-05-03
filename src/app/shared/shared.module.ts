@@ -27,6 +27,7 @@ import { TableListInputComponent } from './table-list-input/table-list-input.com
 import {PathLevelInputComponent} from './path-level-input/path-level-input.component';
 import { MdInputComponent } from './md-input/md-input.component';
 import { MdPreviewComponent } from './md-input/md-preview/md-preview.component';
+import { SourceInputComponent } from './source-input/source-input.component';
 
 
 @NgModule({
@@ -54,7 +55,8 @@ import { MdPreviewComponent } from './md-input/md-preview/md-preview.component';
     TableListInputComponent,
     PathLevelInputComponent,
     MdInputComponent,
-    MdPreviewComponent
+    MdPreviewComponent,
+    SourceInputComponent
   ],
   imports: [
     CommonModule,
@@ -63,31 +65,32 @@ import { MdPreviewComponent } from './md-input/md-preview/md-preview.component';
     MaterialModule,
     HttpClientModule,
   ],
-  exports: [
-    CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
-    MaterialModule,
-    ProcessedTextComponent,
-    TableComponent,
-    TraditionIconComponent,
-    PricePipe,
-    CastingsPipe,
-    AbilityListInputComponent,
-    TableEditComponent,
-    StringListInputComponent,
-    IdEditComponent,
-    AncestryDetailsComponent,
-    SpellDetailsComponent,
-    CreatureDetailsComponent,
-    ItemDetailsComponent,
-    PathDetailsComponent,
-    RelicDetailsComponent,
-    TraditionDetailsComponent,
-    TableListInputComponent,
-    PathLevelInputComponent,
-    MdInputComponent
-  ],
+    exports: [
+        CommonModule,
+        FormsModule,
+        ReactiveFormsModule,
+        MaterialModule,
+        ProcessedTextComponent,
+        TableComponent,
+        TraditionIconComponent,
+        PricePipe,
+        CastingsPipe,
+        AbilityListInputComponent,
+        TableEditComponent,
+        StringListInputComponent,
+        IdEditComponent,
+        AncestryDetailsComponent,
+        SpellDetailsComponent,
+        CreatureDetailsComponent,
+        ItemDetailsComponent,
+        PathDetailsComponent,
+        RelicDetailsComponent,
+        TraditionDetailsComponent,
+        TableListInputComponent,
+        PathLevelInputComponent,
+        MdInputComponent,
+        SourceInputComponent
+    ],
   entryComponents: [
     ConfirmationModalComponent,
     TooltipDialogComponent,
