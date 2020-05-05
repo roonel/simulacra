@@ -47,7 +47,7 @@ export class AncestryEditComponent implements OnInit {
     if (this.powerfulChecked) {
       this.ancestry.powerfulAncestryLevels = [{
         level: 1,
-        attributes: 'Increase two by 1'
+        attributes: 'Choose two attributes and increase each by 1.'
       }, {level: 2}, {level: 5}, {level: 8}];
     } else if (!this.powerfulChecked) {
       this.ancestry.powerfulAncestryLevels = [];
