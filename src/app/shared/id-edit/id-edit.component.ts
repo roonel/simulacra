@@ -18,4 +18,8 @@ export class IdEditComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  change($event: any) {
+    this.value = $event;
+    this.valueChange.emit(this.value);
+  }
 }

@@ -7,7 +7,7 @@
       <mat-form-field>
         <input matInput [(ngModel)]="path.name" (ngModelChange)="applyId()" placeholder="Name"/>
       </mat-form-field>
-      <app-id-edit [(value)]="path.id"></app-id-edit>
+      <app-id-edit [value]="path.id" (valueChange)="path.id = $event"></app-id-edit>
       <mat-form-field>
         <mat-label>Tier</mat-label>
         <mat-select [(value)]="path.tier" (selectionChange)="onTierSelect()">

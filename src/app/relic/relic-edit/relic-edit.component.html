@@ -7,7 +7,7 @@
       <mat-form-field>
         <input matInput [(ngModel)]="relic.name" (ngModelChange)="applyId()" placeholder="Name"/>
       </mat-form-field>
-      <app-id-edit [(value)]="relic.id"></app-id-edit>
+      <app-id-edit [value]="relic.id" (valueChange)="relic.id = $event"></app-id-edit>
     </div>
     <app-ability-list-input [(list)]="relic.gameEffects" [title]="'Game Effects'"></app-ability-list-input>
 

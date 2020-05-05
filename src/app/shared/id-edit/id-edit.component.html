@@ -1,5 +1,5 @@
 <mat-form-field>
-  <input matInput [(ngModel)]="value" placeholder="Id" [name]="'id-input'" [formControl]="idFormControl"/>
+  <input matInput [ngModel]="value" (ngModelChange)="change($event)" placeholder="Id" [name]="'id-input'" [formControl]="idFormControl"/>
   <mat-error *ngIf="idFormControl.hasError('required')">
     Id is <strong>required</strong>
   </mat-error>

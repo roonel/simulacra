@@ -7,7 +7,7 @@
       <mat-form-field>
         <input matInput [(ngModel)]="ancestry.name" (ngModelChange)="applyId()" placeholder="Name"/>
       </mat-form-field>
-      <app-id-edit [(value)]="ancestry.id"></app-id-edit>
+      <app-id-edit [value]="ancestry.id" (valueChange)="ancestry.id = $event"></app-id-edit>
     </div>
     <div class="flex">
       <app-md-input [label]="'Introduction Text'" [name]="'introductionText'" [id]="'introductionText'"

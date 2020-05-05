@@ -7,7 +7,7 @@
       <mat-form-field>
         <input matInput [(ngModel)]="item.name" (ngModelChange)="applyId()" placeholder="Name"/>
       </mat-form-field>
-      <app-id-edit [(value)]="item.id"></app-id-edit>
+      <app-id-edit [value]="item.id" (valueChange)="item.id = $event"></app-id-edit>
     </div>
 
     <div class="flex">

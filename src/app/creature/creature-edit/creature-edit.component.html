@@ -7,7 +7,7 @@
       <mat-form-field>
         <input matInput [(ngModel)]="creature.name" (ngModelChange)="applyId()" placeholder="Name"/>
       </mat-form-field>
-      <app-id-edit [(value)]="creature.id"></app-id-edit>
+      <app-id-edit [value]="creature.id" (valueChange)="creature.id = $event"></app-id-edit>
       <mat-form-field>
         <mat-label>Difficulty</mat-label>
         <mat-select [(value)]="creature.difficulty">
