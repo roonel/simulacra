@@ -18,7 +18,7 @@ export interface Creature {
   agility?: number;
   intellect?: number;
   will?: number;
-  speed?: number;
+  speed?: string;
   specialMovement?: string;
   traits?: Ability[];
   insanity?: string;

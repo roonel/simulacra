@@ -67,7 +67,7 @@
       "agility": 10,
       "intellect": 10,
       "will": 10,
-      "speed": 10,
+      "speed": "10",
       "insanity": 2,
       "specialMovement": "flier",
       "traits": [
@@ -312,7 +312,7 @@
       "type": "Utility",
       "area": "Big circle on the ground",
       "effect": "Some useful stuff",
-      "afterEffect": "",
+      "aftereffect": "",
       "sacrifice": "Do some other spell"
     }
   ],
