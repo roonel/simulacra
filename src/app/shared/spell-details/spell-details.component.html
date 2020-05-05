@@ -7,23 +7,26 @@
     {{ spell.level }}
   </mat-card-subtitle>
   <mat-card-content style="display: flex; flex-direction: column;">
-    <span *ngIf="spell.requirement"> <b>Requirements</b> {{ spell.requirement }}</span>
+    <span *ngIf="spell.requirement"> <b>Requirements </b><app-processed-text [text]="spell.requirement"></app-processed-text></span>
     <span *ngIf="spell.area"> <b>Area</b> {{ spell.area }} </span>
+    <span *ngIf="spell.target"> <b>Target </b><app-processed-text [text]="spell.target"></app-processed-text></span>
     <span *ngIf="spell.duration"> <b>Duration</b> {{ spell.duration }} </span>
-    <span *ngIf="spell.target"> <b>Target</b> {{ spell.target }}</span>
     <mat-divider [inset]="true"></mat-divider>
     <app-processed-text [text]="spell.effect"></app-processed-text>
+    <span *ngIf="spell.triggered">
+      <b>Triggered </b> <app-processed-text [text]="spell.triggered"></app-processed-text>
+    </span>
     <span *ngIf="spell.twentyPlus">
       <b>Attack roll 20+ </b> <app-processed-text [text]="spell.twentyPlus"></app-processed-text>
     </span>
-    <span *ngIf="spell.triggered">
-      <b>Triggered </b> <app-processed-text [text]="spell.triggered"></app-processed-text>
+    <span *ngIf="spell.special">
+      <b>Special </b> <app-processed-text [text]="spell.special"></app-processed-text>
     </span>
     <span *ngIf="spell.sacrifice">
       <b>Sacrifice </b> <app-processed-text [text]="spell.sacrifice"></app-processed-text>
     </span>
-    <span *ngIf="spell.special">
-      <b>Special </b> <app-processed-text [text]="spell.special"></app-processed-text>
+    <span *ngIf="spell.aftereffect">
+      <b>Aftereffect </b> <app-processed-text [text]="spell.aftereffect"></app-processed-text>
     </span>
     <span *ngIf="spell.permanence">
       <b>Permanence </b> <app-processed-text [text]="spell.permanence"></app-processed-text>

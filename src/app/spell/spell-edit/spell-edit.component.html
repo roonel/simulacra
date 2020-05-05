@@ -12,10 +12,7 @@
 
     <div class="flex">
       <mat-form-field>
-        <input matInput [(ngModel)]="spell.tradition" placeholder="Tradition"/>
-      </mat-form-field>
-      <mat-form-field>
-        <input matInput type="number" [(ngModel)]="spell.level" placeholder="Level"/>
+        <input matInput [(ngModel)]="spell.tradition" placeholder="Tradition" name="spellTradition" id="spellTradition"/>
       </mat-form-field>
       <mat-form-field>
         <mat-label>Type</mat-label>
@@ -23,6 +20,9 @@
           <mat-option value="Attack">Attack</mat-option>
           <mat-option value="Utility">Utility</mat-option>
         </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="number" [(ngModel)]="spell.level" placeholder="Level"/>
       </mat-form-field>
     </div>
 
@@ -43,29 +43,27 @@
         <input matInput [(ngModel)]="spell.target" placeholder="Target"/>
       </mat-form-field>
     </div>
-    <app-md-input [label]="'Effect'" [name]="'effect'" [id]="'effect'" [(model)]="spell.effect"></app-md-input>
-    <app-md-input [label]="'Triggered'" [name]="'triggered'" [id]="'triggered'"
-                  [(model)]="spell.triggered"></app-md-input>
-    <app-md-input [label]="'Twenty Plus'" [name]="'twentyPlus'" [id]="'twentyPlus'"
-                  [(model)]="spell.twentyPlus"></app-md-input>
-    <app-md-input [label]="'After Effect'" [name]="'afterEffect'" [id]="'afterEffect'"
-                  [(model)]="spell.afterEffect"></app-md-input>
-    <app-md-input [label]="'Sacrifice'" [name]="'sacrifice'" [id]="'sacrifice'"
-                  [(model)]="spell.sacrifice"></app-md-input>
-    <app-md-input [label]="'Special'" [name]="'special'" [id]="'special'" [(model)]="spell.special"></app-md-input>
-    <app-md-input [label]="'Permanence'" [name]="'permanence'" [id]="'permanence'"
-                  [(model)]="spell.permanence"></app-md-input>
     <div class="flex">
       <mat-checkbox [(ngModel)]="spell.concentration">
         Concentration
-      </mat-checkbox>
-      <mat-checkbox [(ngModel)]="spell.incantationOnly">
-        Incantation Only
       </mat-checkbox>
       <mat-checkbox [(ngModel)]="spell.pathSpell">
         Path Spell
       </mat-checkbox>
     </div>
+    <app-md-input [label]="'Effect'" [name]="'effect'" [id]="'effect'" [(model)]="spell.effect"></app-md-input>
+    <app-md-input [label]="'Triggered'" [name]="'triggered'" [id]="'triggered'"
+                  [(model)]="spell.triggered"></app-md-input>
+    <app-md-input [label]="'Twenty Plus'" [name]="'twentyPlus'" [id]="'twentyPlus'"
+                  [(model)]="spell.twentyPlus"></app-md-input>
+    <app-md-input [label]="'Aftereffect'" [name]="'aftereffect'" [id]="'aftereffect'"
+                  [(model)]="spell.aftereffect"></app-md-input>
+    <app-md-input [label]="'Sacrifice'" [name]="'sacrifice'" [id]="'sacrifice'"
+                  [(model)]="spell.sacrifice"></app-md-input>
+    <app-md-input [label]="'Special'" [name]="'special'" [id]="'special'" [(model)]="spell.special"></app-md-input>
+    <app-md-input [label]="'Permanence'" [name]="'permanence'" [id]="'permanence'"
+                  [(model)]="spell.permanence"></app-md-input>
+
     <app-source-input [source]="spell.source"></app-source-input>
   </mat-card>
 </mat-dialog-content>

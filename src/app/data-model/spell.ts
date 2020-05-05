@@ -13,12 +13,11 @@ export interface Spell {
   effect?: string;
   twentyPlus?: string;
   triggered?: string;
-  afterEffect?: string;
+  aftereffect?: string;
   sacrifice?: string;
   concentration?: boolean;
   special?: string;
   permanence?: string;
-  incantationOnly?: boolean;
   pathSpell?: boolean;
   source?: Source;
 }
