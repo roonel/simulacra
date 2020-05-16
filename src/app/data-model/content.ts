@@ -5,6 +5,7 @@ import {Spell} from './spell';
 import {Item} from './item';
 import {Relic} from './relic';
 import {Tradition} from './tradition';
+import {Reference} from './reference';
 
 export interface Content {
   ancestries?: Ancestry[];
@@ -14,4 +15,5 @@ export interface Content {
   relics?: Relic[];
   spells?: Spell[];
   traditions?: Tradition[];
+  references?: Reference[];
 }

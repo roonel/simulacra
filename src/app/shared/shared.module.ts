@@ -7,27 +7,28 @@ import {MaterialModule} from '../material.module';
 import {TraditionIconComponent} from './tradition-icon/tradition-icon.component';
 import {HttpClientModule} from '@angular/common/http';
 import {PricePipe} from './price.pipe';
-import { CastingsPipe } from './castings.pipe';
-import { InlineRenderComponent } from './inline-render/inline-render.component';
+import {CastingsPipe} from './castings.pipe';
+import {InlineRenderComponent} from './inline-render/inline-render.component';
 import {AbilityListInputComponent} from './ability-list-input/ability-list-input.component';
-import { ConfirmationModalComponent } from './confirmation-modal/confirmation-modal.component';
+import {ConfirmationModalComponent} from './confirmation-modal/confirmation-modal.component';
 import {TableEditComponent} from './table-edit/table-edit.component';
 import {StringListInputComponent} from './string-list-input/string-list-input.component';
-import { IdEditComponent } from './id-edit/id-edit.component';
-import { ContentTooltipComponent } from './content-tooltip/content-tooltip.component';
+import {IdEditComponent} from './id-edit/id-edit.component';
+import {ContentTooltipComponent} from './content-tooltip/content-tooltip.component';
 import {SpellDetailsComponent} from './spell-details/spell-details.component';
-import { CreatureDetailsComponent } from './creature-details/creature-details.component';
-import { TooltipDialogComponent } from './tooltip-dialog/tooltip-dialog.component';
+import {CreatureDetailsComponent} from './creature-details/creature-details.component';
+import {TooltipDialogComponent} from './tooltip-dialog/tooltip-dialog.component';
 import {ItemDetailsComponent} from './item-details/item-details.component';
 import {AncestryDetailsComponent} from './ancestry-details/ancestry-details.component';
 import {PathDetailsComponent} from './path-details/path-details.component';
 import {RelicDetailsComponent} from './relic-details/relic-details.component';
 import {TraditionDetailsComponent} from './tradition-details/tradition-details.component';
-import { TableListInputComponent } from './table-list-input/table-list-input.component';
+import {TableListInputComponent} from './table-list-input/table-list-input.component';
 import {PathLevelInputComponent} from './path-level-input/path-level-input.component';
-import { MdInputComponent } from './md-input/md-input.component';
-import { MdPreviewComponent } from './md-input/md-preview/md-preview.component';
-import { SourceInputComponent } from './source-input/source-input.component';
+import {MdInputComponent} from './md-input/md-input.component';
+import {MdPreviewComponent} from './md-input/md-preview/md-preview.component';
+import {SourceInputComponent} from './source-input/source-input.component';
+import {ReferenceDetailsComponent} from './reference-details/reference-details.component';
 
 
 @NgModule({
@@ -56,7 +57,8 @@ import { SourceInputComponent } from './source-input/source-input.component';
     PathLevelInputComponent,
     MdInputComponent,
     MdPreviewComponent,
-    SourceInputComponent
+    SourceInputComponent,
+    ReferenceDetailsComponent
   ],
   imports: [
     CommonModule,
@@ -65,32 +67,33 @@ import { SourceInputComponent } from './source-input/source-input.component';
     MaterialModule,
     HttpClientModule,
   ],
-    exports: [
-        CommonModule,
-        FormsModule,
-        ReactiveFormsModule,
-        MaterialModule,
-        ProcessedTextComponent,
-        TableComponent,
-        TraditionIconComponent,
-        PricePipe,
-        CastingsPipe,
-        AbilityListInputComponent,
-        TableEditComponent,
-        StringListInputComponent,
-        IdEditComponent,
-        AncestryDetailsComponent,
-        SpellDetailsComponent,
-        CreatureDetailsComponent,
-        ItemDetailsComponent,
-        PathDetailsComponent,
-        RelicDetailsComponent,
-        TraditionDetailsComponent,
-        TableListInputComponent,
-        PathLevelInputComponent,
-        MdInputComponent,
-        SourceInputComponent
-    ],
+  exports: [
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MaterialModule,
+    ProcessedTextComponent,
+    TableComponent,
+    TraditionIconComponent,
+    PricePipe,
+    CastingsPipe,
+    AbilityListInputComponent,
+    TableEditComponent,
+    StringListInputComponent,
+    IdEditComponent,
+    AncestryDetailsComponent,
+    SpellDetailsComponent,
+    CreatureDetailsComponent,
+    ItemDetailsComponent,
+    PathDetailsComponent,
+    RelicDetailsComponent,
+    TraditionDetailsComponent,
+    TableListInputComponent,
+    PathLevelInputComponent,
+    MdInputComponent,
+    SourceInputComponent,
+    ReferenceDetailsComponent
+  ],
   entryComponents: [
     ConfirmationModalComponent,
     TooltipDialogComponent,

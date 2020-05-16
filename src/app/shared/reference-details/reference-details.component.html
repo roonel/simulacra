@@ -1,0 +1,20 @@
+<mat-card>
+  <mat-card-title>
+    {{ reference.name }}
+  </mat-card-title>
+  <mat-card-content style="display: flex; flex-direction: column;">
+    <div *ngIf="reference.referenceTabs.length > 1">
+    <mat-tab-group>
+      <mat-tab [label]="tab.title" *ngFor="let tab of reference.referenceTabs">
+        <app-processed-text [text]="tab.content"></app-processed-text>
+      </mat-tab>
+    </mat-tab-group>
+    </div>
+    <div *ngIf="reference.referenceTabs.length == 1">
+      <app-processed-text [text]="reference.referenceTabs[0].content"></app-processed-text>
+    </div>
+  </mat-card-content>
+  <mat-card-footer>
+    {{ reference.source.book }} Page {{ reference.source.page }}
+  </mat-card-footer>
+</mat-card>

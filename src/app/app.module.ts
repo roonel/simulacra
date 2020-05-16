@@ -15,6 +15,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import {ContentHandlerModule} from './content-handler/content-handler.module';
 import { FooterComponent } from './footer/footer.component';
 import { LicenseComponent } from './license/license.component';
+import {ReferenceModule} from "./reference/reference.module";
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { LicenseComponent } from './license/license.component';
     SpellModule,
     TraditionModule,
     RelicModule,
+    ReferenceModule,
     SharedModule,
     ContentHandlerModule
   ],

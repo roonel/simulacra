@@ -9,6 +9,7 @@ import {Relic} from './data-model/relic';
 import {Tradition} from './data-model/tradition';
 import referenceDoc from '../assets/data/reference.json';
 import exampleDoc from '../assets/data/example.json';
+import {Reference} from './data-model/reference';
 
 @Injectable({
   providedIn: 'root'
@@ -22,6 +23,7 @@ export class ContentService {
   private itemList: Item[];
   private relicList: Relic[];
   private traditionList: Tradition[];
+  private referenceList: Reference[];
 
   constructor() {
   }
@@ -34,6 +36,7 @@ export class ContentService {
     this.itemList = [];
     this.relicList = [];
     this.traditionList = [];
+    this.referenceList = [];
     const contentList = this.getContentList();
     if (contentList.length === 0) {
       this.addReferenceDoc();
@@ -61,6 +64,9 @@ export class ContentService {
       }
       if (content.traditions) {
         this.traditionList = this.traditionList.concat(content.traditions);
+      }
+      if (content.references) {
+        this.referenceList = this.referenceList.concat(content.references);
       }
     });
   }
@@ -142,6 +148,13 @@ export class ContentService {
       this.loadDataFromLocalStorage();
     }
     return this.traditionList;
+  }
+
+  getReferenceList(): Reference[] {
+    if (this.referenceList == null) {
+      this.loadDataFromLocalStorage();
+    }
+    return this.referenceList;
   }
 
   refresh(fileName: string, data: any) {

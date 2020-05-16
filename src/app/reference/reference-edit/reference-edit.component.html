@@ -1,0 +1,44 @@
+<h2 mat-dialog-title>Relic : {{reference.name}}
+  <button mat-button (click)="openPreview()">Preview</button>
+</h2>
+<mat-dialog-content>
+  <mat-card>
+    <div class="flex">
+      <mat-form-field>
+        <input matInput [(ngModel)]="reference.name" (ngModelChange)="applyId()" placeholder="Name"/>
+      </mat-form-field>
+      <app-id-edit [value]="reference.id" (valueChange)="reference.id = $event"></app-id-edit>
+    </div>
+    <div class="flex">
+      <mat-form-field>
+        <input matInput [(ngModel)]="reference.category" placeholder="Category"/>
+      </mat-form-field>
+    </div>
+    <div class="flex">
+      <label>Tabs
+        <button mat-mini-fab (click)="add()">
+          <mat-icon>add</mat-icon>
+        </button>
+      </label>
+    </div>
+    <mat-card *ngFor="let tab of reference.referenceTabs; let i = index" style="margin-bottom: 10px">
+      <div class="flex">
+        <mat-form-field>
+          <input matInput [(ngModel)]="tab.title" (ngModelChange)="applyTabId(i)" placeholder="Name"/>
+        </mat-form-field>
+        <app-id-edit [value]="tab.id" (valueChange)="tab.id = $event"></app-id-edit>
+        <mat-icon matSuffix (click)="remove(i)">remove</mat-icon>
+      </div>
+      <div class="flex">
+        <app-md-input [label]="'Content'" [name]="'content'" [id]="'content'"
+                      style="width: 100%"
+                      [(model)]="tab.content"></app-md-input>
+      </div>
+    </mat-card>
+    <app-source-input [source]="reference.source"></app-source-input>
+  </mat-card>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button (click)="save()">Save</button>
+</mat-dialog-actions>

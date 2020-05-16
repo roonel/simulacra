@@ -11,6 +11,7 @@ import {SpellEditComponent} from '../spell/spell-edit/spell-edit.component';
 import {TraditionEditComponent} from '../tradition/tradition-edit/tradition-edit.component';
 import {CreateGroupModalComponent} from './create-group-modal/create-group-modal.component';
 import {Content} from '../data-model/content';
+import {ReferenceEditComponent} from '../reference/reference-edit/reference-edit.component';
 
 @Component({
   selector: 'app-content-handler',
@@ -99,6 +100,7 @@ export class ContentHandlerComponent implements OnInit {
       case 'relics': return RelicEditComponent;
       case 'spells': return SpellEditComponent;
       case 'traditions': return TraditionEditComponent;
+      case 'references': return ReferenceEditComponent;
     }
   }
 
@@ -111,6 +113,7 @@ export class ContentHandlerComponent implements OnInit {
       case 'relics': return {source: {}};
       case 'spells': return {source: {}};
       case 'traditions': return {source: {}};
+      case 'references': return {source: {}};
     }
   }
 
@@ -150,7 +153,8 @@ export class ContentHandlerComponent implements OnInit {
           paths: [],
           relics: [],
           spells: [],
-          traditions: []
+          traditions: [],
+          references: []
         };
         this.contentService.uploadJson(JSON.stringify(content), result);
         this.refresh();

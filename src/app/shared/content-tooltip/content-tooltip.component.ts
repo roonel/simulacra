@@ -67,6 +67,9 @@ export class ContentTooltipComponent implements OnInit {
       case 'ancestry':
         this.entry = this.contentService.getAncestryList().find(value => value.id === this.id);
         break;
+      case 'reference':
+        this.entry = this.contentService.getReferenceList().find(value => value.id === this.id);
+        break;
     }
   }
 
