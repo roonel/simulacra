@@ -15,7 +15,8 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatSortModule} from '@angular/material/sort';
 import {MatDialogModule} from '@angular/material/dialog';
 import {DragDropModule} from '@angular/cdk/drag-drop';
-import {MatTooltipModule} from "@angular/material/tooltip";
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   imports: [
@@ -35,7 +36,8 @@ import {MatTooltipModule} from "@angular/material/tooltip";
     MatSortModule,
     MatDialogModule,
     DragDropModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatMenuModule
   ],
   exports: [
     MatButtonModule,
@@ -54,7 +56,8 @@ import {MatTooltipModule} from "@angular/material/tooltip";
     MatSortModule,
     MatDialogModule,
     DragDropModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatMenuModule
   ]
 })
 export class MaterialModule {

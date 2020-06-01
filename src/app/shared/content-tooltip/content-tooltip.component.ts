@@ -14,6 +14,7 @@ export class ContentTooltipComponent implements OnInit {
 
   // tslint:disable-next-line:variable-name
   type: string;
+  category: string;
   id: string;
   entry: any;
   dialogRef: MatDialogRef<TooltipDialogComponent>;
@@ -31,7 +32,12 @@ export class ContentTooltipComponent implements OnInit {
     if (value) {
       const linkParts = value.split('/');
       this.type = linkParts[0];
-      this.id = linkParts[1];
+      if (linkParts.length > 2){
+        this.category = linkParts[1];
+        this.id = linkParts[2];
+      } else {
+        this.id = linkParts[1];
+      }
 
       this.loadEntry();
     }
@@ -55,6 +61,9 @@ export class ContentTooltipComponent implements OnInit {
       case 'spell':
         this.entry = this.contentService.getSpellList().find(value => value.id === this.id);
         break;
+      case 'path':
+        this.entry = this.contentService.getPathList().find(value => value.id === this.id);
+        break;
       case 'creature':
         this.entry = this.contentService.getCreatureList().find(value => value.id === this.id);
         break;
@@ -74,7 +83,11 @@ export class ContentTooltipComponent implements OnInit {
   }
 
   navigate() {
-    this.router.navigate([this.type + '-list', this.id]);
+    if (this.category) {
+      this.router.navigate([this.type + '-list', this.category, this.id]);
+    } else {
+      this.router.navigate([this.type + '-list', this.id]);
+    }
   }
 
   showTooltip() {

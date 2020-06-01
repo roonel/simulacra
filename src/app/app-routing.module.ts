@@ -29,8 +29,8 @@ const routes: Routes = [
   {path: 'relic-list', component: RelicListComponent},
   {path: 'tradition-list/:id', component: TraditionListComponent},
   {path: 'tradition-list', component: TraditionListComponent},
-  {path: 'reference-list/:id', component: ReferenceListComponent},
-  {path: 'reference-list', component: ReferenceListComponent},
+  {path: 'reference-list/:category/:id', component: ReferenceListComponent},
+  {path: 'reference-list/:category', component: ReferenceListComponent},
   {path: 'license', component: LicenseComponent},
   {path: 'contents', component: ContentHandlerComponent}
 ];

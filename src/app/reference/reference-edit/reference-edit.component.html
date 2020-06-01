@@ -1,4 +1,4 @@
-<h2 mat-dialog-title>Relic : {{reference.name}}
+<h2 mat-dialog-title>Reference : {{reference.name}}
   <button mat-button (click)="openPreview()">Preview</button>
 </h2>
 <mat-dialog-content>
@@ -11,30 +11,18 @@
     </div>
     <div class="flex">
       <mat-form-field>
-        <input matInput [(ngModel)]="reference.category" placeholder="Category"/>
+          <mat-label>Category</mat-label>
+          <mat-select [(value)]="reference.category">
+            <mat-option [value]="'TraditionTalents'">Tradition Talents</mat-option>
+            <mat-option [value]="'Other'">Other</mat-option>
+          </mat-select>
       </mat-form-field>
     </div>
     <div class="flex">
-      <label>Tabs
-        <button mat-mini-fab (click)="add()">
-          <mat-icon>add</mat-icon>
-        </button>
-      </label>
+      <app-md-input [label]="'Content'" [name]="'content'" [id]="'content'"
+                    style="width: 100%"
+                    [(model)]="reference.content"></app-md-input>
     </div>
-    <mat-card *ngFor="let tab of reference.referenceTabs; let i = index" style="margin-bottom: 10px">
-      <div class="flex">
-        <mat-form-field>
-          <input matInput [(ngModel)]="tab.title" (ngModelChange)="applyTabId(i)" placeholder="Name"/>
-        </mat-form-field>
-        <app-id-edit [value]="tab.id" (valueChange)="tab.id = $event"></app-id-edit>
-        <mat-icon matSuffix (click)="remove(i)">remove</mat-icon>
-      </div>
-      <div class="flex">
-        <app-md-input [label]="'Content'" [name]="'content'" [id]="'content'"
-                      style="width: 100%"
-                      [(model)]="tab.content"></app-md-input>
-      </div>
-    </mat-card>
     <app-source-input [source]="reference.source"></app-source-input>
   </mat-card>
 </mat-dialog-content>

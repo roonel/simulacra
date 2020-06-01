@@ -7,7 +7,10 @@
   <button mat-button [routerLink]="'relic-list'">Relics</button>
   <button mat-button [routerLink]="'spell-list'">Spells</button>
   <button mat-button [routerLink]="'tradition-list'">Traditions</button>
-  <button mat-button [routerLink]="'reference-list'">References</button>
+  <button mat-button [matMenuTriggerFor]="refMenu">References</button>
+  <mat-menu #refMenu="matMenu">
+    <button mat-menu-item [routerLink]="'reference-list/traditiontalents'">Tradition Talents</button>
+  </mat-menu>
   <span class="spacer"></span>
   <button mat-icon-button [routerLink]="'contents'">
     <mat-icon>settings</mat-icon>

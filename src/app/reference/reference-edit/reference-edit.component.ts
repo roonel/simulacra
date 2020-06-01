@@ -39,21 +39,6 @@ export class ReferenceEditComponent implements OnInit {
     this.reference.id = this.reference.name.replace(/\s/g, '');
   }
 
-  applyTabId(index: number) {
-    this.reference.referenceTabs[index].id = this.reference.referenceTabs[index].title.replace(/\s/g, '');
-  }
-
-  add() {
-    if (!this.reference.referenceTabs) {
-      this.reference.referenceTabs = [];
-    }
-    this.reference.referenceTabs.push({});
-  }
-
-  remove(i: number) {
-    this.reference.referenceTabs.splice(i, 1);
-  }
-
   trackByFn(index: any, item: any) {
     return index;
   }
