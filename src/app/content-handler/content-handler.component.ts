@@ -12,6 +12,7 @@ import {TraditionEditComponent} from '../tradition/tradition-edit/tradition-edit
 import {CreateGroupModalComponent} from './create-group-modal/create-group-modal.component';
 import {Content} from '../data-model/content';
 import {ReferenceEditComponent} from '../reference/reference-edit/reference-edit.component';
+import {VehicleEditComponent} from '../vehicle/vehicle-edit/vehicle-edit.component';
 
 @Component({
   selector: 'app-content-handler',
@@ -101,6 +102,7 @@ export class ContentHandlerComponent implements OnInit {
       case 'spells': return SpellEditComponent;
       case 'traditions': return TraditionEditComponent;
       case 'references': return ReferenceEditComponent;
+      case 'vehicles': return VehicleEditComponent;
     }
   }
 
@@ -114,6 +116,7 @@ export class ContentHandlerComponent implements OnInit {
       case 'spells': return {source: {}};
       case 'traditions': return {source: {}};
       case 'references': return {source: {}};
+      case 'vehicles': return {source: {}};
     }
   }
 
@@ -154,7 +157,8 @@ export class ContentHandlerComponent implements OnInit {
           relics: [],
           spells: [],
           traditions: [],
-          references: []
+          references: [],
+          vehicles: []
         };
         this.contentService.uploadJson(JSON.stringify(content), result);
         this.refresh();
@@ -165,5 +169,48 @@ export class ContentHandlerComponent implements OnInit {
   addExamples() {
     this.contentService.addExample();
     this.refresh();
+  }
+
+  combine() {
+    const c: Content = {
+      ancestries: [],
+      creatures: [],
+      items: [],
+      paths: [],
+      relics: [],
+      spells: [],
+      traditions: [],
+      references: [],
+      vehicles: []
+    };
+    this.addedContent.forEach(content => {
+      content.data.ancestries?.forEach(a => c.ancestries.push(a));
+      content.data.creatures?.forEach(a => c.creatures.push(a));
+      content.data.items?.forEach(a => c.items.push(a));
+      content.data.paths?.forEach(a => c.paths.push(a));
+      content.data.relics?.forEach(a => c.relics.push(a));
+      content.data.spells?.forEach(a => c.spells.push(a));
+      content.data.traditions?.forEach(a => c.traditions.push(a));
+      content.data.references?.forEach(a => c.references.push(a));
+      content.data.vehicles?.forEach(a => c.vehicles.push(a));
+    });
+    c.ancestries = c.ancestries.sort((a, b) => (a.id > b.id) ? 1 : -1);
+    c.creatures = c.creatures.sort((a, b) => (a.id > b.id) ? 1 : -1);
+    c.items = c.items.sort((a, b) => (a.id > b.id) ? 1 : -1);
+    c.paths = c.paths.sort((a, b) => (a.id > b.id) ? 1 : -1);
+    c.relics = c.relics.sort((a, b) => (a.id > b.id) ? 1 : -1);
+    c.spells = c.spells.sort((a, b) => (a.id > b.id) ? 1 : -1);
+    c.traditions = c.traditions.sort((a, b) => (a.id > b.id) ? 1 : -1);
+    c.references = c.references.sort((a, b) => (a.id > b.id) ? 1 : -1);
+    c.vehicles = c.vehicles.sort((a, b) => (a.id > b.id) ? 1 : -1);
+
+    const sJson = JSON.stringify(c);
+    const element = document.createElement('a');
+    element.setAttribute('href', 'data:text/json;charset=UTF-8,' + encodeURIComponent(sJson));
+    element.setAttribute('download', 'combined.json');
+    element.style.display = 'none';
+    document.body.appendChild(element);
+    element.click();
+    document.body.removeChild(element);
   }
 }

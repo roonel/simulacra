@@ -10,6 +10,7 @@ import {Tradition} from './data-model/tradition';
 import referenceDoc from '../assets/data/reference.json';
 import exampleDoc from '../assets/data/example.json';
 import {Reference} from './data-model/reference';
+import {Vehicle} from './data-model/vehicle';
 
 @Injectable({
   providedIn: 'root'
@@ -24,6 +25,7 @@ export class ContentService {
   private relicList: Relic[];
   private traditionList: Tradition[];
   private referenceList: Reference[];
+  private vehicleList: Vehicle[];
 
   constructor() {
   }
@@ -37,6 +39,7 @@ export class ContentService {
     this.relicList = [];
     this.traditionList = [];
     this.referenceList = [];
+    this.vehicleList = [];
     const contentList = this.getContentList();
     if (contentList.length === 0) {
       this.addReferenceDoc();
@@ -67,6 +70,9 @@ export class ContentService {
       }
       if (content.references) {
         this.referenceList = this.referenceList.concat(content.references);
+      }
+      if (content.vehicles) {
+        this.vehicleList = this.vehicleList.concat(content.vehicles);
       }
     });
   }
@@ -155,6 +161,13 @@ export class ContentService {
       this.loadDataFromLocalStorage();
     }
     return this.referenceList;
+  }
+
+  getVehicleList(): Vehicle[] {
+    if (this.vehicleList == null) {
+      this.loadDataFromLocalStorage();
+    }
+    return this.vehicleList;
   }
 
   refresh(fileName: string, data: any) {

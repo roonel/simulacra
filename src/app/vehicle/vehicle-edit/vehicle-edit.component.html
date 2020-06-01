@@ -1,0 +1,92 @@
+<h2 mat-dialog-title>Vehicle : {{vehicle.name}}
+  <button mat-button (click)="openPreview()">Preview</button>
+</h2>
+<mat-dialog-content>
+  <mat-card>
+    <div class="flex">
+      <mat-form-field>
+        <input matInput [(ngModel)]="vehicle.name" (ngModelChange)="applyId()" placeholder="Name"/>
+      </mat-form-field>
+      <app-id-edit [value]="vehicle.id" (valueChange)="vehicle.id = $event"></app-id-edit>
+      <mat-form-field>
+        <input matInput [(ngModel)]="vehicle.size" placeholder="Size"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="vehicle.descriptor" placeholder="Descriptor"/>
+      </mat-form-field>
+    </div>
+
+    <div class="flex">
+      <mat-form-field>
+        <input matInput [(ngModel)]="vehicle.defense" placeholder="Defense"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="vehicle.armor" placeholder="Armor"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="vehicle.health" placeholder="Health"/>
+      </mat-form-field>
+    </div>
+
+    <div class="flex">
+      <mat-form-field>
+        <input matInput type="number" [(ngModel)]="vehicle.strength" placeholder="Strength"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="number" [(ngModel)]="vehicle.agility" placeholder="Agility"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="number" [(ngModel)]="vehicle.intellect" placeholder="Intellect"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="number" [(ngModel)]="vehicle.will" placeholder="Will"/>
+      </mat-form-field>
+    </div>
+    <div class="flex">
+      <mat-form-field>
+        <input matInput [(ngModel)]="vehicle.maximumSpeed" placeholder="Maximum Speed"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="vehicle.acceleration" placeholder="Acceleration"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="vehicle.deceleration" placeholder="Deceleration"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="vehicle.specialMovement" placeholder="Special Movement"/>
+      </mat-form-field>
+    </div>
+    <div class="flex">
+      <mat-form-field>
+        <input matInput [(ngModel)]="vehicle.space" placeholder="Space"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="vehicle.crew" placeholder="Crew"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="vehicle.cargo" placeholder="Cargo"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="number" [(ngModel)]="vehicle.price" placeholder="Price"/>
+      </mat-form-field>
+    </div>
+
+    <app-ability-list-input [(list)]="vehicle.traits" [title]="'Traits'">
+    </app-ability-list-input>
+
+    <app-ability-list-input [(list)]="vehicle.attacks" [title]="'Attacks'">
+    </app-ability-list-input>
+
+    <app-ability-list-input [(list)]="vehicle.specialAttacks" [title]="'Special Attacks'">
+    </app-ability-list-input>
+
+    <app-md-input [label]="'Description'" [name]="'description'" [id]="'description'"
+                  [(model)]="vehicle.description"></app-md-input>
+
+    <app-source-input [source]="vehicle.source"></app-source-input>
+  </mat-card>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button (click)="save()">Save</button>
+</mat-dialog-actions>

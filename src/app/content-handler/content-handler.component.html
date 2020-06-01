@@ -46,6 +46,10 @@
                                       (addEntry)="addNew('references', i)" (editEntry)="edit('references', $event,i)"
                                       (deleteEntry)="removeEntry('references', $event, i)">
         </app-content-category-display>
+        <app-content-category-display [title]="'Vehicle'" [data]="c.data.vehicles"
+                                      (addEntry)="addNew('vehicles', i)" (editEntry)="edit('vehicles', $event,i)"
+                                      (deleteEntry)="removeEntry('vehicles', $event, i)">
+        </app-content-category-display>
       </ng-template>
     </mat-expansion-panel-header>
   </mat-expansion-panel>

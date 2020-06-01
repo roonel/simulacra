@@ -1,0 +1,24 @@
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Filters
+      </mat-panel-title>
+      <mat-panel-description></mat-panel-description>
+    </mat-expansion-panel-header>
+    <label>Source</label>
+    <div class="checkbox-container">
+      <mat-checkbox (change)="checkboxChanged(data, $event, 'sources')"
+                    *ngFor="let data of sources" class="medium">
+        {{ data }}
+      </mat-checkbox>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>
+<mat-form-field style="width: 100%;" class="forced-white-color">
+  <input matInput [(ngModel)]="dataFilter.name"
+         placeholder="Search" (keyup)="emitChange()"/>
+  <button mat-button *ngIf="dataFilter.name" matSuffix mat-icon-button aria-label="Clear" (click)="resetNameFilter()">
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-form-field>

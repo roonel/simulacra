@@ -15,7 +15,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import {ContentHandlerModule} from './content-handler/content-handler.module';
 import { FooterComponent } from './footer/footer.component';
 import { LicenseComponent } from './license/license.component';
-import {ReferenceModule} from "./reference/reference.module";
+import {ReferenceModule} from './reference/reference.module';
+import {VehicleModule} from './vehicle/vehicle.module';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import {ReferenceModule} from "./reference/reference.module";
     RelicModule,
     ReferenceModule,
     SharedModule,
+    VehicleModule,
     ContentHandlerModule
   ],
   providers: [],

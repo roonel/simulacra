@@ -1,0 +1,61 @@
+<mat-card>
+  <mat-card-title>
+    {{ vehicle.name }}
+  </mat-card-title>
+  <mat-card-subtitle>
+    Size {{vehicle.size}} {{vehicle.descriptor}}
+  </mat-card-subtitle>
+  <mat-card-content style="display: flex; flex-direction: column;">
+    <mat-tab-group>
+      <mat-tab label="Stats">
+        <div>
+          <b>Defense</b> {{vehicle.defense}}<span *ngIf="vehicle.armor"> ({{vehicle.armor}})</span>;
+          <b>Health</b> {{vehicle.health}}
+        </div>
+        <div>
+          <b>Strength</b> {{toStat(vehicle.strength)}}, <b>Agility</b> {{toStat(vehicle.agility)}},
+          <b>Intellect</b> {{toStat(vehicle.intellect)}}, <b>Will</b> {{toStat(vehicle.will)}}
+        </div>
+        <div>
+          <b>Space</b> {{vehicle.space}}; <b>Maximum Speed</b> {{vehicle.maximumSpeed}} (acceleration {{vehicle.acceleration}}/ deceleration {{vehicle.deceleration}})<span *ngIf="vehicle.specialMovement">; {{vehicle.specialMovement}}</span>
+        </div>
+        <div>
+          <b>Crew</b> {{vehicle.crew}}
+        </div>
+        <div>
+          <b>Cargo</b> {{vehicle.cargo}}
+        </div>
+        <span *ngIf="vehicle.traits">
+          <div *ngFor="let trait of vehicle.traits">
+            <b>{{trait.name}} </b>
+            <app-processed-text [text]="trait.effect"></app-processed-text>
+          </div>
+        </span>
+        <mat-divider [inset]="true"></mat-divider>
+        <div *ngIf="vehicle.attacks">
+          <h2>Attack Options</h2>
+          <div *ngFor="let attack of vehicle.attacks">
+            <b>{{attack.name}} </b>
+            <app-processed-text [text]="attack.effect"></app-processed-text>
+          </div>
+        </div>
+        <div *ngIf="vehicle.specialAttacks">
+          <h2>Special Attacks</h2>
+          <div *ngFor="let attack of vehicle.specialAttacks">
+            <b>{{attack.name}} </b>
+            <app-processed-text [text]="attack.effect"></app-processed-text>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Lore" *ngIf="vehicle.description">
+        <app-processed-text [text]="vehicle.description"></app-processed-text>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card-content>
+  <mat-card-footer>
+    {{ vehicle.source.book }} Page {{ vehicle.source.page }}
+    <span style="float: right">
+      {{vehicle.price | price}}
+    </span>
+  </mat-card-footer>
+</mat-card>

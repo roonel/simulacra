@@ -29,6 +29,9 @@
     <ng-container *ngSwitchCase="'reference'">
       <app-reference-details [reference]="data.entry"></app-reference-details>
     </ng-container>
+    <ng-container *ngSwitchCase="'vehicle'">
+      <app-vehicle-details [vehicle]="data.entry"></app-vehicle-details>
+    </ng-container>
     <ng-container *ngSwitchDefault>{{ data.type }}</ng-container>
   </ng-container>
   <span (click)="dialogRef.close()" class="close-button" [ngStyle]="{'display': staying ? 'block' : 'none'}">X</span>

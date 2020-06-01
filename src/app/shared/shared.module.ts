@@ -29,6 +29,7 @@ import {MdInputComponent} from './md-input/md-input.component';
 import {MdPreviewComponent} from './md-input/md-preview/md-preview.component';
 import {SourceInputComponent} from './source-input/source-input.component';
 import {ReferenceDetailsComponent} from './reference-details/reference-details.component';
+import {VehicleDetailsComponent} from './vehicle-details/vehicle-details.component';
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import {ReferenceDetailsComponent} from './reference-details/reference-details.c
     MdInputComponent,
     MdPreviewComponent,
     SourceInputComponent,
-    ReferenceDetailsComponent
+    ReferenceDetailsComponent,
+    VehicleDetailsComponent
   ],
   imports: [
     CommonModule,
@@ -92,7 +94,8 @@ import {ReferenceDetailsComponent} from './reference-details/reference-details.c
     PathLevelInputComponent,
     MdInputComponent,
     SourceInputComponent,
-    ReferenceDetailsComponent
+    ReferenceDetailsComponent,
+    VehicleDetailsComponent
   ],
   entryComponents: [
     ConfirmationModalComponent,

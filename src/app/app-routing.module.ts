@@ -11,6 +11,7 @@ import {TraditionListComponent} from './tradition/tradition-list/tradition-list.
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {LicenseComponent} from './license/license.component';
 import {ReferenceListComponent} from './reference/reference-list/reference-list.component';
+import {VehicleListComponent} from './vehicle/vehicle-list/vehicle-list.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
@@ -27,6 +28,8 @@ const routes: Routes = [
   {path: 'item-list', component: ItemListComponent},
   {path: 'relic-list/:id', component: RelicListComponent},
   {path: 'relic-list', component: RelicListComponent},
+  {path: 'vehicle-list/:id', component: VehicleListComponent},
+  {path: 'vehicle-list', component: VehicleListComponent},
   {path: 'tradition-list/:id', component: TraditionListComponent},
   {path: 'tradition-list', component: TraditionListComponent},
   {path: 'reference-list/:category/:id', component: ReferenceListComponent},
