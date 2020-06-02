@@ -47,7 +47,12 @@ export class ContentHandlerComponent implements OnInit {
     reader.readAsText(files[0]);
     reader.onload = (data) => {
       const finalJson = reader.result;
-      this.contentService.uploadJson(finalJson.toString(), files[0].name);
+      let fileName = files[0].name;
+      if (fileName.indexOf('.json') > -1) {
+        fileName = fileName.split('.').slice(0, -1).join('.');
+      }
+
+      this.contentService.uploadJson(finalJson.toString(), fileName);
       this.refresh();
     };
   }

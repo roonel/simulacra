@@ -45,36 +45,25 @@ export class ContentService {
       this.addReferenceDoc();
     }
     this.getContentList().forEach(cj => {
-      const data = localStorage.getItem(cj);
-      const content: Content = JSON.parse(data);
-      if (content.ancestries) {
-        this.ancestryList = this.ancestryList.concat(content.ancestries);
-      }
-      if (content.spells) {
-        this.spellList = this.spellList.concat(content.spells);
-      }
-      if (content.creatures) {
-        this.creatureList = this.creatureList.concat(content.creatures);
-      }
-      if (content.paths) {
-        this.pathList = this.pathList.concat(content.paths);
-      }
-      if (content.items) {
-        this.itemList = this.itemList.concat(content.items);
-      }
-      if (content.relics) {
-        this.relicList = this.relicList.concat(content.relics);
-      }
-      if (content.traditions) {
-        this.traditionList = this.traditionList.concat(content.traditions);
-      }
-      if (content.references) {
-        this.referenceList = this.referenceList.concat(content.references);
-      }
-      if (content.vehicles) {
-        this.vehicleList = this.vehicleList.concat(content.vehicles);
-      }
+      this.ancestryList = this.ancestryList.concat(this.getDataList(cj + ':ancestries'));
+      this.spellList = this.spellList.concat(this.getDataList(cj + ':spells'));
+      this.creatureList = this.creatureList.concat(this.getDataList(cj + ':creatures'));
+      this.pathList = this.pathList.concat(this.getDataList(cj + ':paths'));
+      this.itemList = this.itemList.concat(this.getDataList(cj + ':items'));
+      this.relicList = this.relicList.concat(this.getDataList(cj + ':relics'));
+      this.traditionList = this.traditionList.concat(this.getDataList(cj + ':traditions'));
+      this.referenceList = this.referenceList.concat(this.getDataList(cj + ':references'));
+      this.vehicleList = this.vehicleList.concat(this.getDataList(cj + ':vehicles'));
     });
+  }
+
+  private getDataList(storageEntryName: string): any[] {
+    const contentData = localStorage.getItem(storageEntryName);
+    if (contentData) {
+      return JSON.parse(contentData);
+    } else {
+      return [];
+    }
   }
 
   getContentList(): string[] {
@@ -86,24 +75,80 @@ export class ContentService {
   }
 
   getContentFor(contentName: string): Content {
-    const data = localStorage.getItem(contentName);
-    return JSON.parse(data);
+    // Check if content name is valid
+    if (this.getContentList().indexOf(contentName) === -1) {
+      console.error('Invalid content name passed for download function');
+      return null;
+    }
+
+    if (localStorage.getItem(contentName)) {
+      // TODO remove in next update, left in to support older contents
+      const data = localStorage.getItem(contentName);
+      return JSON.parse(data);
+    } else {
+      const c: Content = {};
+      c.ancestries = this.getDataList(contentName + ':ancestries');
+      c.spells = this.getDataList(contentName + ':spells');
+      c.creatures = this.getDataList(contentName + ':creatures');
+      c.paths = this.getDataList(contentName + ':paths');
+      c.items = this.getDataList(contentName + ':items');
+      c.relics = this.getDataList(contentName + ':relics');
+      c.traditions = this.getDataList(contentName + ':traditions');
+      c.references = this.getDataList(contentName + ':references');
+      c.vehicles = this.getDataList(contentName + ':vehicles');
+      return c;
+    }
   }
 
-  uploadJson(json: string, filename: string): boolean {
-    if (localStorage.getItem(filename)) {
-      return false;
-    } else {
-      localStorage.setItem(filename, json);
-      localStorage.setItem('addedContentJsons', this.getContentList().concat(filename).join(','));
-      this.loadDataFromLocalStorage();
+  uploadJson(json: string, filename: string, refresh: boolean = false): boolean {
+    if (!refresh && this.getContentList().indexOf(filename) > -1) {
+      return; // Error message "A content entry with the same name has already been added"
+    }
+    // Convert to content
+    const c = JSON.parse(json) as Content;
+    this.saveToLocalStorage(c.ancestries, filename + ':ancestries');
+    this.saveToLocalStorage(c.creatures, filename + ':creatures');
+    this.saveToLocalStorage(c.items, filename + ':items');
+    this.saveToLocalStorage(c.paths, filename + ':paths');
+    this.saveToLocalStorage(c.references, filename + ':references');
+    this.saveToLocalStorage(c.relics, filename + ':relics');
+    this.saveToLocalStorage(c.spells, filename + ':spells');
+    this.saveToLocalStorage(c.traditions, filename + ':traditions');
+    this.saveToLocalStorage(c.vehicles, filename + ':vehicles');
+
+    localStorage.setItem('addedContentJsons', this.getContentList().concat(filename).join(','));
+    this.loadDataFromLocalStorage();
+  }
+
+  saveToLocalStorage(data: any[], name: string) {
+    if (data) {
+      localStorage.setItem(name, JSON.stringify(data));
     }
   }
 
   removeContent(contentName: string) {
     const contentList = this.getContentList();
-    localStorage.removeItem(contentName);
-    localStorage.setItem('addedContentJsons', contentList.filter(i => i !== contentName).join(','));
+    // Check if content name is valid
+    if (contentList.indexOf(contentName) === -1) {
+      console.error('Invalid content name passed for remove function');
+      return null;
+    }
+
+    if (localStorage.getItem(contentName)) {
+      // TODO remove in next update, left in to support older contents
+      localStorage.removeItem(contentName);
+    } else {
+      localStorage.removeItem(contentName + ':ancestries');
+      localStorage.removeItem(contentName + ':creatures');
+      localStorage.removeItem(contentName + ':items');
+      localStorage.removeItem(contentName + ':paths');
+      localStorage.removeItem(contentName + ':references');
+      localStorage.removeItem(contentName + ':relics');
+      localStorage.removeItem(contentName + ':spells');
+      localStorage.removeItem(contentName + ':traditions');
+      localStorage.removeItem(contentName + ':vehicles');
+      localStorage.setItem('addedContentJsons', contentList.filter(i => i !== contentName).join(','));
+    }
     this.loadDataFromLocalStorage();
   }
 
@@ -172,7 +217,7 @@ export class ContentService {
 
   refresh(fileName: string, data: any) {
     if (localStorage.getItem(fileName)) {
-      localStorage.setItem(fileName, JSON.stringify(data));
+      this.uploadJson(fileName, data, true);
       this.loadDataFromLocalStorage();
     }
   }
