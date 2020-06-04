@@ -137,6 +137,7 @@ export class ContentService {
     if (localStorage.getItem(contentName)) {
       // TODO remove in next update, left in to support older contents
       localStorage.removeItem(contentName);
+      localStorage.setItem('addedContentJsons', contentList.filter(i => i !== contentName).join(','));
     } else {
       localStorage.removeItem(contentName + ':ancestries');
       localStorage.removeItem(contentName + ':creatures');
