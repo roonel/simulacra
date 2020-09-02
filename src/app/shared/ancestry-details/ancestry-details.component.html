@@ -69,6 +69,9 @@
           <div *ngFor="let aL of ancestry.powerfulAncestryLevels">
             <div *ngIf="aL.level < 4">
               <h2>Level {{aL.level}} {{ancestry.name}}</h2>
+              <div *ngIf="aL.characteristics">
+                <b>Characteristics</b> {{aL.characteristics}}
+              </div>
               <span *ngIf="aL.talents">
                 <div *ngFor="let talent of aL.talents">
                   <b>{{talent.name}} </b>
@@ -97,6 +100,9 @@
           <div *ngFor="let aL of ancestry.powerfulAncestryLevels">
             <div *ngIf="aL.level > 4">
               <h2>Level {{aL.level}} {{ancestry.name}}</h2>
+              <div *ngIf="aL.characteristics">
+                <b>Characteristics</b> {{aL.characteristics}}
+              </div>
               <span *ngIf="aL.talents">
                 <div *ngFor="let talent of aL.talents">
                   <b>{{talent.name}} </b>
