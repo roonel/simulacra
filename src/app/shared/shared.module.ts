@@ -30,6 +30,7 @@ import {MdPreviewComponent} from './md-input/md-preview/md-preview.component';
 import {SourceInputComponent} from './source-input/source-input.component';
 import {ReferenceDetailsComponent} from './reference-details/reference-details.component';
 import {VehicleDetailsComponent} from './vehicle-details/vehicle-details.component';
+import { HighlightPipe } from './highlight.pipe';
 
 
 @NgModule({
@@ -60,7 +61,8 @@ import {VehicleDetailsComponent} from './vehicle-details/vehicle-details.compone
     MdPreviewComponent,
     SourceInputComponent,
     ReferenceDetailsComponent,
-    VehicleDetailsComponent
+    VehicleDetailsComponent,
+    HighlightPipe
   ],
   imports: [
     CommonModule,
@@ -95,7 +97,8 @@ import {VehicleDetailsComponent} from './vehicle-details/vehicle-details.compone
     MdInputComponent,
     SourceInputComponent,
     ReferenceDetailsComponent,
-    VehicleDetailsComponent
+    VehicleDetailsComponent,
+    HighlightPipe
   ],
   entryComponents: [
     ConfirmationModalComponent,

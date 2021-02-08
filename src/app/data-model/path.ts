@@ -1,15 +1,12 @@
 import {PathLevel} from './pathLevel';
-import {Source} from './source';
 import {Table} from './table';
+import {DataEntity} from './dataEntity';
 
-export interface Path {
-  name?: string;
-  id?: string;
+export interface Path extends DataEntity {
   shortDescription?: string;
   description?: string;
   storyDevelopment?: Table;
   tier?: string;
   pathLevels?: PathLevel[];
   extra?: string;
-  source?: Source;
 }

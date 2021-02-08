@@ -1,9 +1,7 @@
-import {Source} from './source';
 import {Ability} from './ability';
+import {DataEntity} from './dataEntity';
 
-export interface Vehicle {
-  name?: string;
-  id?: string;
+export interface Vehicle extends DataEntity {
   size?: string;
   descriptor?: string;
   price?: number;
@@ -25,5 +23,4 @@ export interface Vehicle {
   attacks?: Ability[];
   specialAttacks?: Ability[];
   description?: string;
-  source?: Source;
 }

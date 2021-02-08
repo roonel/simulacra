@@ -1,8 +1,6 @@
-import {Source} from './source';
+import {DataEntity} from './dataEntity';
 
-export interface Spell {
-  name?: string;
-  id?: string;
+export interface Spell extends DataEntity {
   tradition?: string;
   type?: string;
   level?: number;
@@ -19,5 +17,4 @@ export interface Spell {
   special?: string;
   permanence?: string;
   pathSpell?: boolean;
-  source?: Source;
 }

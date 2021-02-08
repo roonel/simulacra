@@ -1,6 +1,6 @@
 import {Ability} from './ability';
 
-export interface PathLevel{
+export interface PathLevel {
   level?: number;
   attributes?: string;
   characteristics?: string;

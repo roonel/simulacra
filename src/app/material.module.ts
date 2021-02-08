@@ -17,6 +17,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 @NgModule({
   imports: [
@@ -37,7 +38,8 @@ import {MatMenuModule} from '@angular/material/menu';
     MatDialogModule,
     DragDropModule,
     MatTooltipModule,
-    MatMenuModule
+    MatMenuModule,
+    MatAutocompleteModule,
   ],
   exports: [
     MatButtonModule,
@@ -57,7 +59,8 @@ import {MatMenuModule} from '@angular/material/menu';
     MatDialogModule,
     DragDropModule,
     MatTooltipModule,
-    MatMenuModule
+    MatMenuModule,
+    MatAutocompleteModule
   ]
 })
 export class MaterialModule {

@@ -1,9 +1,6 @@
-import {Source} from './source';
+import {DataEntity} from './dataEntity';
 
-export interface Reference {
-  name?: string;
-  id?: string;
+export interface Reference extends DataEntity {
   category?: string;
   content?: string;
-  source?: Source;
 }

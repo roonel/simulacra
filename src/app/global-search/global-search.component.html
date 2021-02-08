@@ -1,0 +1,20 @@
+<form name="global-search-form">
+  <mat-form-field class="global-search">
+    <input type="text"
+           placeholder="Search"
+           matInput
+           name="global-search-input"
+           [(ngModel)]="searchText"
+           (ngModelChange)="performSearch()"
+           [matAutocomplete]="auto">
+  </mat-form-field>
+
+  <mat-autocomplete #auto="matAutocomplete" (optionSelected)="navigate($event)" [displayWith]="displayFn">
+    <mat-option *ngFor="let option of options" [value]="option">
+      <span class="option">
+        <span class="option-name" [innerHTML]="option.name | highlight:searchText"></span>
+        <span class="option-type">{{option.type}}</span>
+      </span>
+    </mat-option>
+  </mat-autocomplete>
+</form>
