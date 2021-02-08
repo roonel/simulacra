@@ -1,11 +1,9 @@
 import {Ability} from './ability';
-import {Source} from './source';
 import {Table} from './table';
 import {PathLevel} from './pathLevel';
+import {DataEntity} from './dataEntity';
 
-export interface Ancestry {
-  name?: string;
-  id?: string;
+export interface Ancestry extends DataEntity {
   introductionText?: string;
   secondaryAncestry?: boolean;
   secondaryAttributes?: string;
@@ -33,5 +31,4 @@ export interface Ancestry {
   level4Benefits?: Ability[];
   powerfulAncestryLevels?: PathLevel[];
   tables?: Table[];
-  source?: Source;
 }

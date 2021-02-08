@@ -1,10 +1,8 @@
 import {Ability} from './ability';
-import {Source} from './source';
 import {CreatureMagic} from './creature-magic';
+import {DataEntity} from './dataEntity';
 
-export interface Creature {
-  name?: string;
-  id?: string;
+export interface Creature extends DataEntity {
   difficulty?: number;
   size?: string;
   frightening?: string;
@@ -30,5 +28,4 @@ export interface Creature {
   endOfRound?: Ability[];
   description?: string;
   extra?: string;
-  source?: Source;
 }

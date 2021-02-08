@@ -17,6 +17,7 @@ import { FooterComponent } from './footer/footer.component';
 import { LicenseComponent } from './license/license.component';
 import {ReferenceModule} from './reference/reference.module';
 import {VehicleModule} from './vehicle/vehicle.module';
+import { GlobalSearchComponent } from './global-search/global-search.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import {VehicleModule} from './vehicle/vehicle.module';
     DashboardComponent,
     FooterComponent,
     LicenseComponent,
+    GlobalSearchComponent,
   ],
   imports: [
     BrowserModule,

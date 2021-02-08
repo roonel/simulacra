@@ -1,11 +1,8 @@
-import {Source} from './source';
+import {DataEntity} from './dataEntity';
 
-export interface Tradition {
-  name?: string;
-  id?: string;
+export interface Tradition extends DataEntity {
   attribute?: string;
   dark?: boolean;
   psychic?: boolean;
   description?: string;
-  source?: Source;
 }

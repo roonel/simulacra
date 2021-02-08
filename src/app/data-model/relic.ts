@@ -1,10 +1,7 @@
 import {Ability} from './ability';
-import {Source} from './source';
+import {DataEntity} from './dataEntity';
 
-export interface Relic {
-  name?: string;
-  id?: string;
+export interface Relic extends DataEntity {
   description?: string;
   gameEffects?: Ability[];
-  source?: Source;
 }
