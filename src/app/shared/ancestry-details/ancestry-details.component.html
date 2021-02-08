@@ -54,7 +54,7 @@
         </span>
         <mat-divider [inset]="true"></mat-divider>
       </mat-tab>
-      <mat-tab label="Tables">
+      <mat-tab label="Tables" *ngIf="ancestry.tables.length > 0">
         <div *ngFor="let item of ancestry.tables">
           <app-table [table]="item"></app-table>
         </div>
