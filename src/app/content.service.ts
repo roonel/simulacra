@@ -116,7 +116,9 @@ export class ContentService {
     this.saveToLocalStorage(c.traditions, filename + ':traditions');
     this.saveToLocalStorage(c.vehicles, filename + ':vehicles');
 
-    localStorage.setItem('addedContentJsons', this.getContentList().concat(filename).join(','));
+    if (!refresh) {
+      localStorage.setItem('addedContentJsons', this.getContentList().concat(filename).join(','));
+    }
     this.loadDataFromLocalStorage();
   }
 
@@ -217,8 +219,8 @@ export class ContentService {
   }
 
   refresh(fileName: string, data: any) {
-    if (localStorage.getItem(fileName)) {
-      this.uploadJson(fileName, data, true);
+    if (this.getContentList().indexOf(fileName) > -1) {
+      this.uploadJson(JSON.stringify(data), fileName, true);
       this.loadDataFromLocalStorage();
     }
   }
